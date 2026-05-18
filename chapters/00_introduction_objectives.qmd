@@ -1,8 +1,8 @@
 # Introducción, antecedentes y objetivos
 
-## 1. Contexto general
+## Contexto general
 
-### 1.1. Sostenibilidad en acuicultura y reformulación de piensos
+### Sostenibilidad en acuicultura y reformulación de piensos
 
 La acuicultura se ha consolidado como una de las actividades de producción de alimentos de origen animal con mayor crecimiento a escala global. Sin embargo, este desarrollo plantea un reto central: mantener la productividad y la calidad nutricional de los peces cultivados reduciendo, al mismo tiempo, la presión sobre los recursos marinos utilizados tradicionalmente en la fabricación de piensos. En particular, la dependencia de la harina de pescado (*fishmeal*) como fuente proteica sigue siendo uno de los principales puntos críticos en la sostenibilidad de la alimentación acuícola, tanto por su coste como por su disponibilidad limitada y por el impacto asociado a la explotación de biomasa marina [@siddik2021enzymaticFishProteinHydrolysates].
 
@@ -10,13 +10,13 @@ En este contexto, la formulación de nuevos piensos acuícolas se orienta cada v
 
 Dentro de estas alternativas, los hidrolizados proteicos de pescado (*fish protein hydrolysates*, FPHs) resultan especialmente prometedores. Estos ingredientes se obtienen mediante hidrólisis enzimática de proteínas de origen marino, generando una matriz rica en péptidos de bajo peso molecular, aminoácidos libres y compuestos con potencial actividad funcional [@vazquez2020valorisationFishDiscards; @vazquez2024tailoredBlueWhitingHydrolysates]. Diversos estudios han mostrado que los FPHs pueden mejorar la digestibilidad, aportar péptidos bioactivos, modular respuestas inmunitarias y contribuir al mantenimiento de la salud intestinal en peces cultivados [@siddik2021enzymaticFishProteinHydrolysates; @siddik2018tunaHydrolysateBarramundi; @egerton2020fishProteinHydrolysateSalmon; @sandbakken2024salmonHydrolysateSalmonMicrobiota; @fan2024fishProteinHydrolysatesCommonCarp]. Por ello, su incorporación en piensos no solo responde a una necesidad de sustitución proteica, sino también a una oportunidad para formular dietas funcionales más sostenibles.
 
-### 1.2. Valorización de descartes de lirio mediante hidrolizados proteicos
+### Valorización de descartes de lirio mediante hidrolizados proteicos
 
 El lirio (*Micromesistius poutassou*, *blue whiting*) representa una especie de especial interés para la valorización de descartes pesqueros en el Atlántico nororiental. Su disponibilidad como biomasa procedente de descartes o de fracciones de bajo valor comercial permite plantear su transformación en ingredientes proteicos mediante procesos de hidrólisis enzimática. Frente a la transformación convencional en harina de pescado, la producción de hidrolizados puede ofrecer una valorización más eficiente y flexible, con menor impacto ambiental y mayor potencial de generación de productos funcionales [@vazquez2020valorisationFishDiscards; @vazquez2024tailoredBlueWhitingHydrolysates].
 
 En el marco de esta línea de trabajo, el hidrolizado proteico de lirio de bajo peso molecular, especialmente en el rango de 1–2 kDa, se plantea como una alternativa de interés para la formulación de piensos de rodaballo. El bajo peso molecular de los péptidos puede favorecer la digestibilidad y la disponibilidad de compuestos nitrogenados, además de modular la interacción entre dieta, epitelio intestinal y microbiota. Esta característica resulta relevante en especies carnívoras como el rodaballo, donde la sustitución de harina de pescado debe garantizar que no se comprometan ni el crecimiento ni la salud digestiva [@zheng2013sizeFractionatedTurbotHydrolysate; @wei2023fishProteinHydrolysateTurbot; @comesanaExp1BlueWhitingHydrolysate].
 
-### 1.3. El rodaballo como especie objetivo
+### El rodaballo como especie objetivo
 
 El rodaballo (*Scophthalmus maximus*) es una especie de alto valor comercial en la acuicultura europea, con una especial importancia productiva en Galicia. Su condición de especie carnívora y su relevancia económica lo convierten en un modelo adecuado para estudiar nuevas estrategias de alimentación orientadas a reducir la dependencia de la harina de pescado sin comprometer el rendimiento productivo ni el bienestar animal [@fernandezGonzalez2023europeanTurbotAquaculture].
 
@@ -24,7 +24,7 @@ La dieta tiene un papel decisivo en la fisiología digestiva del rodaballo. Adem
 
 Por tanto, el estudio de la microbiota intestinal permite complementar los análisis zootécnicos, fisiológicos e histológicos. En el caso de los hidrolizados proteicos, esta aproximación resulta particularmente relevante, ya que los péptidos y otros compuestos solubles presentes en el pienso pueden modificar la disponibilidad de sustratos para las bacterias intestinales y favorecer cambios taxonómicos o funcionales en la comunidad microbiana.
 
-## 2. Marco del proyecto: Programa de Ciencias Mariñas de Galicia y Actuación 8.2
+## Marco del proyecto: Programa de Ciencias Mariñas de Galicia y Actuación 8.2
 
 El presente trabajo se enmarca en el Programa de Ciencias Mariñas de Galicia, dentro de la Actuación 8.2, titulada **“Novas formulacións de pensos para o rodaballo: sustentabilidade dos descartes”**. Esta actuación tiene como objetivo general desarrollar y evaluar nuevas formulaciones de piensos para rodaballo basadas en la valorización de descartes pesqueros, con especial atención al uso de hidrolizados proteicos como ingredientes sostenibles.
 
@@ -32,11 +32,11 @@ La Actuación 8.2 responde a una necesidad aplicada: formular piensos que manten
 
 Dentro de este marco, la caracterización de la microbiota intestinal constituye una pieza clave. Su análisis permite determinar si las nuevas dietas generan comunidades bacterianas comparables a las observadas en peces alimentados con formulaciones control, o si, por el contrario, inducen alteraciones que pudieran comprometer la salud digestiva. La microbiota se utiliza así como bioindicador de adaptación nutricional, estabilidad intestinal y bienestar animal.
 
-## 3. Antecedentes experimentales
+## Antecedentes experimentales
 
 La investigación desarrollada dentro de la Actuación 8.2 se ha organizado de forma secuencial. Cada experimento ha servido para refinar la selección del ingrediente, ajustar los niveles de inclusión y avanzar hacia escenarios de sustitución más ambiciosos de harina de pescado. La lógica experimental puede resumirse en tres etapas: un experimento piloto inicial, un primer ensayo nutricional con inclusión moderada de hidrolizado de lirio y, finalmente, el Experimento 2, que constituye el presente trabajo.
 
-### 3.1. Experimento piloto: evaluación inicial de hidrolizados de descartes
+### Experimento piloto: evaluación inicial de hidrolizados de descartes
 
 En 2023 se llevó a cabo un experimento piloto orientado a evaluar el potencial de hidrolizados enzimáticos proteicos obtenidos a partir de descartes de lirio y atún. Este ensayo permitió explorar el efecto de diferentes hidrolizados sobre la microbiota intestinal del rodaballo y establecer una primera aproximación al comportamiento de estos ingredientes en condiciones de alimentación experimental.
 
@@ -44,7 +44,7 @@ Los resultados del piloto indicaron que las dietas con hidrolizado de lirio prom
 
 Este primer ensayo fue importante por dos razones. En primer lugar, permitió identificar el hidrolizado de lirio como una alternativa prometedora frente a otros ingredientes derivados de descartes. En segundo lugar, proporcionó una base microbiológica para continuar con ensayos de mayor escala, centrados en un hidrolizado de bajo peso molecular y en niveles definidos de sustitución de harina de pescado.
 
-### 3.2. Experimento 1: inclusión moderada de hidrolizado de lirio de bajo peso molecular
+### Experimento 1: inclusión moderada de hidrolizado de lirio de bajo peso molecular
 
 A partir de los resultados del piloto, se diseñó el Experimento 1 para evaluar dietas formuladas con hidrolizado proteico de lirio (*Micromesistius poutassou*) de bajo peso molecular, en el rango de 1–2 kDa. En este ensayo se comparó una dieta control con 30% de harina de pescado y sin hidrolizado frente a tres dietas experimentales con niveles crecientes de inclusión de hidrolizado: 5%, 10% y 15%. En dichas formulaciones, el hidrolizado sustituyó parcialmente a la harina de pescado, generando los tratamientos LB5, LB10 y LB15 [@comesanaExp1BlueWhitingHydrolysate].
 
@@ -54,7 +54,7 @@ Los resultados del Experimento 1 mostraron que la inclusión de hidrolizado de l
 
 En conjunto, el Experimento 1 respaldó la viabilidad del hidrolizado proteico de lirio de bajo peso molecular como ingrediente sostenible en piensos para rodaballo. La ausencia de efectos negativos claros y la conservación de un núcleo microbiano estable justificaron avanzar hacia un segundo ensayo con niveles de inclusión más elevados, incluyendo una formulación en la que la harina de pescado fuese sustituida completamente.
 
-## 4. Justificación del Experimento 2
+## Justificación del Experimento 2
 
 El Experimento 2 se diseñó como continuación directa del Experimento 1. La pregunta central ya no era únicamente si el hidrolizado de lirio podía sustituir parcialmente a la harina de pescado, sino si podía hacerlo en niveles más altos sin comprometer la estabilidad microbiológica del intestino. Para ello, se mantuvo el mismo tipo de hidrolizado —hidrolizado proteico de lirio de bajo peso molecular, 1–2 kDa— y se aumentaron los niveles de inclusión en la dieta.
 
@@ -68,7 +68,7 @@ De este modo, el tratamiento BL15 funciona como puente experimental entre el Exp
 
 Además, el Experimento 2 incorpora una dimensión temporal más clara en el análisis de microbiota, con muestras obtenidas a los 7, 30 y 90 días de alimentación. Esta aproximación permite diferenciar entre respuestas tempranas al cambio de dieta, ajustes intermedios y patrones consolidados tras un periodo prolongado de exposición al pienso experimental. Asimismo, la inclusión del análisis microbiológico de los propios piensos permite interpretar mejor qué parte de la señal detectada en el intestino podría estar relacionada con el alimento y qué parte refleja una comunidad seleccionada y estructurada por el hospedador.
 
-## 5. Objetivos del presente trabajo
+## Objetivos del presente trabajo
 
 El objetivo general del presente trabajo es **evaluar el efecto de dietas formuladas con hidrolizado proteico de lirio (*Micromesistius poutassou*) de bajo peso molecular sobre la microbiota intestinal del rodaballo (*Scophthalmus maximus*), determinando si niveles elevados de inclusión permiten sustituir parcial o totalmente la harina de pescado sin inducir alteraciones compatibles con disbiosis o pérdida de estabilidad intestinal**.
 
@@ -76,7 +76,7 @@ De este objetivo general se derivan los siguientes objetivos específicos:
 
 1.  Caracterizar la composición taxonómica de la microbiota intestinal de rodaballos alimentados con dieta control, BL15 y BL30 a lo largo del ensayo.
 
-2.  Comparar la composición microbiana de los piensos con la microbiota intestinal para valorar si la señal bacteriana detectada en el intestino refleja el alimento o una comunidad estructurada por el hospedador
+2.  Comparar la composición microbiana de los piensos con la microbiota intestinal para valorar si la señal bacteriana detectada en el intestino refleja el alimento o una comunidad estructurada por el hospedador.
 
 3.  Evaluar si la inclusión de hidrolizado de lirio modifica la diversidad alfa de la microbiota intestinal, utilizando métricas de riqueza y diversidad.
 
@@ -105,7 +105,7 @@ A partir de estos objetivos e hipótesis, el análisis downstream se organiza en
 
 Estas preguntas conectan el diseño nutricional con los bloques analíticos posteriores: control de calidad, filtrado taxonómico, composición bacteriana, rarefacción, diversidad alfa, diversidad beta, abundancia diferencial e interpretación biológica de los resultados.
 
-## 6. Relevancia del estudio
+## Relevancia del estudio
 
 El Experimento 2 representa un paso clave en la validación del hidrolizado proteico de lirio como ingrediente sostenible para piensos de rodaballo. Mientras que el Experimento 1 demostró la viabilidad de niveles moderados de inclusión, el presente trabajo evalúa una condición más exigente: aumentar la proporción de hidrolizado hasta un escenario de sustitución completa de la harina de pescado.
 
