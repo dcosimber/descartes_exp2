@@ -2,7 +2,11 @@
 
 ## 1. Diseño experimental
 
-El diseño experimental consistió en un ensayo nutricional longitudinal de 90 días con tres tratamientos dietéticos y tres réplicas por tratamiento.
+El diseño experimental del experimento 2 consistió en un ensayo nutricional longitudinal de 90 días con tres tratamientos dietéticos y tres réplicas por tratamiento.
+
+A continuación se detalla... (\@Tabla 1.)
+
+Tabla 1.
 
 | Factor                  | Descripción                       |
 |-------------------------|-----------------------------------|
@@ -52,7 +56,7 @@ Se utilizaron tres dietas:
 ## 4. Composición general de las dietas
 
 | Dieta | Hidrolizado de lirio | Harina de pescado | Interpretación |
-|-----------------|------------------:|------------------:|-----------------|
+|------------------|------------------:|------------------:|------------------|
 | CTRL / X | 0 % | 30 % | Control sin hidrolizado |
 | BL15 / Y | 15 % | reducida | Sustitución parcial |
 | BL30 / Z | alta inclusión | 0 % | Sustitución completa de harina de pescado |
