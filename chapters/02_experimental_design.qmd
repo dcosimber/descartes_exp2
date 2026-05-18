@@ -71,6 +71,17 @@ Table: Composición conceptual de los tratamientos dietéticos {#tbl-diet-summar
 
 En la formulación detallada, la dieta BL15 se diseñó para ser comparable a la dieta con 15 % de hidrolizado del Experimento 1, mientras que BL30 fue planteada para llevar la sustitución de harina de pescado al máximo nivel ensayado.
 
+### Composición proximal de los piensos
+
+Las tres dietas fueron formuladas para mantener una composición proximal equivalente en términos de proteína bruta y grasa bruta. Como se muestra en la @tbl-proximal-composition, CTRL, BL15 y BL30 presentan los mismos valores declarados de proteína y grasa. Esta equivalencia es fundamental para interpretar los resultados, ya que permite atribuir las diferencias observadas principalmente al cambio en la fuente proteica y no a variaciones mayores en el contenido total de proteína o lípidos del pienso.
+
+Table: Composición proximal declarada de los piensos experimentales {#tbl-proximal-composition}
+
+| Composición              | CTRL | BL15 | BL30 |
+|--------------------------|-----:|-----:|-----:|
+| Proteína bruta, % pienso | 53,1 | 53,1 | 53,1 |
+| Grasa bruta, % pienso    | 17,1 | 17,1 | 17,1 |
+
 ### Composición completa de los piensos
 
 Los piensos se fabricaron con un tamaño de pellet de 2,5 mm y una cantidad producida de 14 kg por dieta. La formulación detallada se muestra en la @tbl-ingredient-composition. En todas las dietas se mantuvo una base común de ingredientes proteicos y energéticos, modificando principalmente la relación entre harina de pescado e hidrolizado de lirio. Esta estrategia permite que la comparación entre tratamientos se centre en el efecto de la sustitución proteica y no en diferencias amplias de composición nutricional global.
@@ -97,17 +108,6 @@ Table: Formulación de ingredientes de los piensos experimentales {#tbl-ingredie
 | Rapeseed oil                |       5,800 |       7,500 |       8,700 |
 | Fish oil                    |       6,000 |       6,000 |       6,000 |
 | **Total**                   | **100,000** | **100,000** | **100,000** |
-
-### Composición proximal de los piensos
-
-Las tres dietas fueron formuladas para mantener una composición proximal equivalente en términos de proteína bruta y grasa bruta. Como se muestra en la @tbl-proximal-composition, CTRL, BL15 y BL30 presentan los mismos valores declarados de proteína y grasa. Esta equivalencia es fundamental para interpretar los resultados, ya que permite atribuir las diferencias observadas principalmente al cambio en la fuente proteica y no a variaciones mayores en el contenido total de proteína o lípidos del pienso.
-
-Table: Composición proximal declarada de los piensos experimentales {#tbl-proximal-composition}
-
-| Composición              | CTRL | BL15 | BL30 |
-|--------------------------|-----:|-----:|-----:|
-| Proteína bruta, % pienso | 53,1 | 53,1 | 53,1 |
-| Grasa bruta, % pienso    | 17,1 | 17,1 | 17,1 |
 
 ## Animales de experimentación
 
@@ -141,7 +141,7 @@ Table: Condiciones de mantenimiento y alimentación durante el Experimento 2 {#t
 | Estimación de ingesta | Pesada del pienso ofrecido y del pienso sobrante |
 | Ración preparada por toma | 1,5 % del peso de los peces |
 
-## Toma de muestras
+## Muestreo
 
 Se planificaron tres muestreos destructivos a lo largo del ensayo: D07, D30 y D90 (@tbl-sampling-timepoints). Estos puntos permiten capturar tres ventanas biológicas complementarias: una respuesta temprana tras el cambio de dieta, una fase intermedia de adaptación y un punto final asociado a exposición prolongada al tratamiento dietético.
 
