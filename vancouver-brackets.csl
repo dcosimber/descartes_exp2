@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" default-locale="en-US">
+  <info>
+    <title>Vancouver brackets local</title>
+    <id>http://www.zotero.org/styles/vancouver-brackets-local</id>
+    <link href="http://www.zotero.org/styles/vancouver" rel="template"/>
+    <author>
+      <name>Local Quarto style</name>
+    </author>
+    <category citation-format="numeric"/>
+    <category field="biology"/>
+    <updated>2026-05-12T00:00:00+00:00</updated>
+    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
+  </info>
+  <macro name="author">
+    <names variable="author">
+      <name initialize-with=". " name-as-sort-order="all" sort-separator=" " delimiter=", " delimiter-precedes-last="always"/>
+      <label form="short" prefix=", "/>
+      <substitute>
+        <names variable="editor"/>
+        <text variable="title"/>
+      </substitute>
+    </names>
+  </macro>
+  <macro name="issued-year">
+    <date variable="issued">
+      <date-part name="year"/>
+    </date>
+  </macro>
+  <macro name="journal-details">
+    <group delimiter="; ">
+      <text variable="container-title" form="short"/>
+      <text macro="issued-year"/>
+    </group>
+    <group prefix="; " delimiter=":">
+      <group delimiter="">
+        <text variable="volume"/>
+        <text variable="issue" prefix="(" suffix=")"/>
+      </group>
+      <text variable="page"/>
+    </group>
+  </macro>
+  <citation collapse="citation-number">
+    <sort>
+      <key variable="citation-number"/>
+    </sort>
+    <layout prefix="[" suffix="]" delimiter=",">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+  <bibliography second-field-align="flush" entry-spacing="0" line-spacing="1">
+    <sort>
+      <key variable="citation-number"/>
+    </sort>
+    <layout>
+      <text variable="citation-number" prefix="[" suffix="]"/>
+      <group delimiter=". " suffix=".">
+        <text macro="author"/>
+        <text variable="title"/>
+        <choose>
+          <if type="article-journal">
+            <text macro="journal-details"/>
+          </if>
+          <else-if type="webpage post-weblog" match="any">
+            <group delimiter=". ">
+              <text variable="container-title"/>
+              <text macro="issued-year"/>
+            </group>
+          </else-if>
+          <else>
+            <group delimiter=". ">
+              <text variable="publisher"/>
+              <text macro="issued-year"/>
+            </group>
+          </else>
+        </choose>
+      </group>
+      <text variable="DOI" prefix=" doi:"/>
+      <text variable="URL" prefix=" "/>
+    </layout>
+  </bibliography>
+</style>

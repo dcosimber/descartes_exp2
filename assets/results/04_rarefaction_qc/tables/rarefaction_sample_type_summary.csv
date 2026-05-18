@@ -1,0 +1,8 @@
+"object","sample_type","samples","min_reads","median_reads","max_reads","median_observed_asvs","median_expected_asvs_at_common_depth","median_final_slope_asvs_per_1000_reads"
+"final_all_samples","Feed",3,41298,41892,48640,25,24.9944419057253,4.78713114346847e-12
+"final_all_samples","Intestine",133,17111,55673,86030,16,15.4661427887103,1.88939082933687e-07
+"final_all_samples","Mock",2,32060,34985,37910,12,12,0
+"final_biological_intestine","Intestine",133,17111,55673,86030,16,15.4661427887103,1.88939082933687e-07
+"raw_all_samples","Feed",3,44535,48092,52571,214,206.846885305373,0.0901633411790597
+"raw_all_samples","Intestine",133,28400,56945,86842,40,38.9893553811277,0.00564899798315058
+"raw_all_samples","Mock",2,32235,35133,38031,23,22.9226963308001,0.00673984437253623

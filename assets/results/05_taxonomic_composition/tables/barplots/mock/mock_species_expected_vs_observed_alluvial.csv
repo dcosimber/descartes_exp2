@@ -1,0 +1,18 @@
+"tax_level","source","taxon_plot","percent"
+"Species","Expected","Limosilactobacillus fermentum",18.4
+"Species","Expected","Bacillus subtilis",17.4
+"Species","Expected","Staphylococcus aureus",15.5
+"Species","Expected","Listeria monocytogenes",14.1
+"Species","Expected","Salmonella enterica",10.4
+"Species","Expected","Escherichia-Shigella coli group",10.1
+"Species","Expected","Enterococcus faecalis",9.9
+"Species","Expected","Pseudomonas aeruginosa",4.2
+"Species","Observed","Limosilactobacillus fermentum",29.4068886665714
+"Species","Observed","Bacillus subtilis",15.4123195655281
+"Species","Observed","Escherichia-Shigella coli group",13.4328998142061
+"Species","Observed","Salmonella enterica",12.3309989995712
+"Species","Observed","Staphylococcus aureus",8.36072602543947
+"Species","Observed","Enterococcus faecalis",8.3435758182078
+"Species","Observed","Listeria monocytogenes",8.00771759325425
+"Species","Observed","Pseudomonas aeruginosa",3.02701157638988
+"Species","Observed","Salmonella unresolved",1.67786194083179

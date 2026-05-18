@@ -1,0 +1,19 @@
+"tax_level","sample_id","taxon_plot","count","percent"
+"Species","M1","Limosilactobacillus fermentum",8059,21.2582432075969
+"Species","M1","Bacillus subtilis",6412,16.9137430757056
+"Species","M1","Escherichia-Shigella coli group",5239,13.8195726721182
+"Species","M1","Salmonella enterica",4677,12.3371142178845
+"Species","M1","Staphylococcus aureus",4250,11.2107623318386
+"Species","M1","Listeria monocytogenes",3982,10.503824848325
+"Species","M1","Enterococcus faecalis",3531,9.31416512793458
+"Species","M1","Pseudomonas aeruginosa",1117,2.94645212345028
+"Species","M1","Salmonella unresolved",643,1.6961223951464
+"Species","M2","Limosilactobacillus fermentum",12517,39.0424204616344
+"Species","M2","Bacillus subtilis",4372,13.6369307548347
+"Species","M2","Escherichia-Shigella coli group",4160,12.975670617592
+"Species","M2","Salmonella enterica",3951,12.3237679351216
+"Species","M2","Enterococcus faecalis",2307,7.19588271990019
+"Species","M2","Listeria monocytogenes",1621,5.05614472863381
+"Species","M2","Staphylococcus aureus",1600,4.9906425452277
+"Species","M2","Pseudomonas aeruginosa",1001,3.12227074235808
+"Species","M2","Salmonella unresolved",531,1.65626949469744

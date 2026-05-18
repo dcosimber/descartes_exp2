@@ -1,0 +1,5 @@
+"step","samples","taxa","reads","min_reads","median_reads","max_reads","sparsity","reads_removed_from_previous","taxa_removed_from_previous"
+"raw_all_samples",138,14652,7667921,28400,56881,86842,0.989702152745631,,
+"taxonomic_filter",138,12461,7481712,17587,56361,86359,0.989536629646817,186209,2191
+"prevalence_filter",138,1101,7230537,17336,55616.5,86087,0.958621279732522,251175,11360
+"mean_abundance_filter",138,175,7133190,17111,55392,86030,0.865258799171843,97347,926

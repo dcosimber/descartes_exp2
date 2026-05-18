@@ -1,0 +1,6 @@
+"removal_step","removal_reason","asvs","raw_reads"
+"mean_abundance_filter","mean_abundance_filter",926,97347
+"prevalence_filter","prevalence_filter",11360,251175
+"retained_final","retained",175,7133190
+"taxonomic_filter","unclassified_all_ranks",1632,176947
+"taxonomic_filter","kingdom_only",559,9262

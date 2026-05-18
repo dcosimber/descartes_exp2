@@ -1,0 +1,5 @@
+"distance","taxonomic_level","dataset","samples","features","reads"
+"aitchison","ASV","biological_intestine",133,169,6931390
+"aitchison","ASV","ctrl_hydro_feed",136,170,7063220
+"aitchison","Genus","biological_intestine",133,77,6931390
+"aitchison","Genus","ctrl_hydro_feed",136,77,7063220

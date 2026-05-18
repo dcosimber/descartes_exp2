@@ -1,0 +1,6 @@
+"taxon_id","Kingdom","Phylum","Class","Order","Family","Genus","Species","Species_addSpecies","total_reads","total_samples_present","reads_Ctrl","reads_Hydrolysate","reads_Feed","mean_rel_abundance_Ctrl","mean_rel_abundance_Hydrolysate","mean_rel_abundance_Feed","samples_present_Ctrl","samples_present_Hydrolysate","samples_present_Feed"
+"ASV00042",,,,,,,,,6435,36,3257,3178,0,0.00169974453399646,0.00121501498962777,0,14,22,0
+"ASV00051",,,,,,,,,4348,53,548,3800,0,0.00027303461751134,0.00115849743508881,0,15,38,0
+"ASV00128",,,,,,,,,1331,23,418,913,0,0.000206713573160682,0.000339293767086628,0,10,13,0
+"ASV00179",,,,,,,,,824,39,153,671,0,7.54429876566284e-05,0.000233953959227611,0,12,27,0
+"ASV00224",,,,,,,,,619,40,170,449,0,7.60088564947036e-05,0.000161270895160035,0,10,30,0

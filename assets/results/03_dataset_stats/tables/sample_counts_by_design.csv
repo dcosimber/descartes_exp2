@@ -1,0 +1,14 @@
+"sample_type","diet_code","hydro_group","timepoint","diet_time","samples"
+"Feed","Ctrl","Ctrl",,,1
+"Feed","BL15","Hydrolysate",,,1
+"Feed","BL30","Hydrolysate",,,1
+"Intestine","Ctrl","Ctrl","D07","Ctrl_D07",15
+"Intestine","Ctrl","Ctrl","D30","Ctrl_D30",15
+"Intestine","Ctrl","Ctrl","D90","Ctrl_D90",15
+"Intestine","BL15","Hydrolysate","D07","BL15_D07",15
+"Intestine","BL15","Hydrolysate","D30","BL15_D30",15
+"Intestine","BL15","Hydrolysate","D90","BL15_D90",15
+"Intestine","BL30","Hydrolysate","D07","BL30_D07",15
+"Intestine","BL30","Hydrolysate","D30","BL30_D30",14
+"Intestine","BL30","Hydrolysate","D90","BL30_D90",14
+"Mock",,,,,2

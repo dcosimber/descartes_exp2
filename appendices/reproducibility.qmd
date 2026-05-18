@@ -1,0 +1,32 @@
+# Reproducibilidad
+
+## Actualizacion de contenidos
+
+Los capitulos bajo `chapters/generated/` no deben editarse manualmente. Se
+regeneran desde los reports Markdown del proyecto downstream con:
+
+```bash
+Rscript scripts/sync_downstream_reports.R
+```
+
+Despues de sincronizar, la web se renderiza con:
+
+```bash
+quarto render
+```
+
+## Publicacion
+
+El repositorio incluye un workflow de GitHub Pages en
+`.github/workflows/pages.yml`. Cuando el repositorio este publicado en GitHub,
+el sitio se podra desplegar automaticamente desde la carpeta `docs/`.
+
+## Fuente analitica
+
+Los resultados proceden de:
+
+```text
+/mnt/lustre/scratch/nlsas/home/otras/pia/dci/descartes_exp2/custom_downstream_analysis
+```
+
+Las figuras y tablas necesarias para la web se copian a `assets/results/`.

@@ -1,0 +1,62 @@
+project:
+  type: book
+  output-dir: docs
+  resources:
+    - assets/
+
+lang: es
+
+book:
+  title: "DESCARTES Exp2 microbiome"
+  site-url: "https://dcosimber.github.io/descartes_exp2/"
+  sidebar:
+    search: true
+  author:
+    - name: Daniel Costas
+      orcid: 0000-0003-4384-8469
+      email: daniel.costas.imbernon@gmail.com
+      affiliations:
+        - name: Instituto de Investigaciones Marinas (IIM-CSIC)
+          city: Vigo
+          state: Spain
+          url: https://www.iim.csic.es
+        - name: Aquabiotec Lab
+          city: Vigo
+          state: Spain
+          url: https://acuabiotec.csic.es
+  date: last-modified
+  chapters:
+    - index.qmd
+    - chapters/generated/01_filtering.qmd
+    - chapters/generated/02_dataset_stats.qmd
+    - chapters/generated/03_rarefaction_qc.qmd
+    - chapters/generated/04_taxonomic_composition.qmd
+    - chapters/generated/05_alpha_diversity.qmd
+    - chapters/generated/06_beta_diversity.qmd
+    - chapters/generated/07_differential_abundance.qmd
+    - chapters/generated/08_functional_prediction.qmd
+  appendices:
+    - appendices/reproducibility.qmd
+
+bibliography: references.bib
+csl: vancouver-brackets.csl
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: right
+    number-sections: true
+    smooth-scroll: true
+    anchor-sections: true
+    link-external-newwindow: true
+    lightbox:
+      match: auto
+      effect: zoom
+      desc-position: bottom
+    css: styles.css
+    theme:
+      light: cosmo
+      dark: darkly
+
+editor: visual

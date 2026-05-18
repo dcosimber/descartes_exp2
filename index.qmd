@@ -1,0 +1,54 @@
+# DESCARTES Exp2 microbiome
+
+Este libro Quarto recopila los resultados downstream del analisis de microbiota
+16S del experimento `descartes_exp2`.
+
+La idea es tener una web navegable, limpia y publicable en GitHub Pages, generada
+a partir de los reports Markdown que ya se estan creando dentro de
+`custom_downstream_analysis/results/*/reports/`.
+
+## Objetivo del libro
+
+Integrar en una unica documentacion:
+
+- el diseno del analisis y los filtros aplicados;
+- las estadisticas generales del dataset antes y despues del filtrado;
+- rarefaccion, composicion taxonomica, diversidad alfa y beta;
+- abundancia diferencial taxonomica;
+- prediccion funcional con PICRUSt2;
+- figuras, tablas y conclusiones biologicas listas para revisar y convertir en
+  texto de articulo.
+
+## Fuente de resultados
+
+Los capitulos generados se sincronizan desde:
+
+```text
+/mnt/lustre/scratch/nlsas/home/otras/pia/dci/descartes_exp2/custom_downstream_analysis
+```
+
+Para actualizar el libro despues de modificar cualquier bloque de analisis. En
+esta web, las figuras se guardan como `PNG` y las tablas como `CSV`; los formatos
+analiticos originales permanecen en `custom_downstream_analysis`.
+
+```bash
+Rscript scripts/sync_downstream_reports.R
+quarto render
+```
+
+## Estructura
+
+1. **Filtering:** criterios de filtrado, ASVs retenidas/eliminadas y profundidad final.
+2. **Dataset stats:** estadisticas globales para describir el set de datos.
+3. **Rarefaction QC:** suficiencia de profundidad y saturacion de riqueza.
+4. **Taxonomic composition:** barplots, mocks, Feed, Venn/UpSet y tendencias taxonomicas.
+5. **Alpha diversity:** riqueza, Shannon index y Simpson index.
+6. **Beta diversity:** Bray/Aitchison, PERMANOVA y betadisper.
+7. **Differential abundance:** DESeq2 y ALDEx2.
+8. **Functional prediction:** PICRUSt2, rutas KEGG y lectura biologica funcional.
+
+## Nota de uso
+
+Este repositorio no sustituye a los scripts analiticos originales. Es una capa
+de comunicacion y revision: recoge salidas ya generadas, las organiza como libro
+Quarto y facilita su publicacion online.

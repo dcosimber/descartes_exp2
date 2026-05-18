@@ -1,0 +1,14 @@
+"prevalence_group","n_samples","min_prevalence_fraction","min_prevalence_absolute_config","min_prevalence_required"
+"BL15_D07",15,0.1,2,2
+"BL15_D30",15,0.1,2,2
+"BL15_D90",15,0.1,2,2
+"BL30_D07",15,0.1,2,2
+"BL30_D30",14,0.1,2,2
+"BL30_D90",14,0.1,2,2
+"Ctrl_D07",15,0.1,2,2
+"Ctrl_D30",15,0.1,2,2
+"Ctrl_D90",15,0.1,2,2
+"Feed_BL15",1,0.1,2,1
+"Feed_BL30",1,0.1,2,1
+"Feed_Ctrl",1,0.1,2,1
+"Mock",2,0.1,2,2

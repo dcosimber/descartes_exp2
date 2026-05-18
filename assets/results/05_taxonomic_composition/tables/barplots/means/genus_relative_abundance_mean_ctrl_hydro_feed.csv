@@ -1,0 +1,49 @@
+"comparison_group","taxon_plot","mean_rel_abundance"
+"Ctrl","Vibrio",0.529106794325823
+"Ctrl","Unclassified Mycoplasmataceae genus",0.196345372039842
+"Ctrl","Delftia",0.0540714651143875
+"Ctrl","Cetobacterium",0.0707283520234667
+"Ctrl","Photobacterium",0.00105176905886019
+"Ctrl","Candidatus Hamiltonella",0.0368485818845159
+"Ctrl","Buchnera",0.0143625885816933
+"Ctrl","Mitochondria",0.00031604741914326
+"Ctrl","Bacteroides",0.0156336606114633
+"Ctrl","Chloroplast",0.0018627800709517
+"Ctrl","Blautia",0.0109711703444363
+"Ctrl","Lactococcus",0.00589209635848493
+"Ctrl","Others",0.0456021671825938
+"Ctrl","Streptococcus",0.00554234384806979
+"Ctrl","Acinetobacter",0.00366598301214786
+"Ctrl","Pseudomonas",0.00799882812412031
+"Feed","Vibrio",0
+"Feed","Unclassified Mycoplasmataceae genus",0
+"Feed","Delftia",0
+"Feed","Cetobacterium",0
+"Feed","Photobacterium",0
+"Feed","Candidatus Hamiltonella",0
+"Feed","Buchnera",0
+"Feed","Mitochondria",0.449756888404478
+"Feed","Bacteroides",0
+"Feed","Chloroplast",0.384311199569174
+"Feed","Blautia",0
+"Feed","Lactococcus",0.00970123347248547
+"Feed","Others",0.152905157356735
+"Feed","Streptococcus",0.00130386549537349
+"Feed","Acinetobacter",0
+"Feed","Pseudomonas",0.00202165570175439
+"Hydrolysate","Vibrio",0.505384451307182
+"Hydrolysate","Unclassified Mycoplasmataceae genus",0.26601237893165
+"Hydrolysate","Delftia",0.044264566191598
+"Hydrolysate","Cetobacterium",0.0231675448446251
+"Hydrolysate","Photobacterium",0.0783655165487388
+"Hydrolysate","Candidatus Hamiltonella",0.0230265935398106
+"Hydrolysate","Buchnera",0.0111715383837589
+"Hydrolysate","Mitochondria",6.43003725301706e-05
+"Hydrolysate","Bacteroides",0.0107707868198684
+"Hydrolysate","Chloroplast",0.00169232539944803
+"Hydrolysate","Blautia",0.00619378619839231
+"Hydrolysate","Lactococcus",0.000416384354290481
+"Hydrolysate","Others",0.0194126668920814
+"Hydrolysate","Streptococcus",0.00318003364652996
+"Hydrolysate","Acinetobacter",0.00647466514984069
+"Hydrolysate","Pseudomonas",0.000402461419655402

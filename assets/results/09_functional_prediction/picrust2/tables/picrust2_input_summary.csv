@@ -1,0 +1,10 @@
+"metric","value"
+"samples_in_picrust2_input",136
+"primary_intestine_samples",133
+"feed_context_samples",3
+"asvs_before_organelle_exclusion",170
+"asvs_excluded_as_chloroplast_or_mitochondria",10
+"asvs_in_picrust2_input",160
+"reads_before_organelle_exclusion",7063220
+"reads_excluded_as_chloroplast_or_mitochondria",119235
+"reads_in_picrust2_input",6943985

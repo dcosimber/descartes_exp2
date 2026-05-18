@@ -1,0 +1,2129 @@
+"sample_id","timepoint","diet_code","hydro_group","diet_time","taxon_plot","rel_abundance","sample_index"
+"X1.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Vibrio",1,1
+"X1.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Unclassified Mycoplasmataceae genus",0,1
+"X1.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Delftia",0,1
+"X1.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Cetobacterium",0,1
+"X1.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Photobacterium",0,1
+"X1.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Candidatus Hamiltonella",0,1
+"X1.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Buchnera",0,1
+"X1.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Others",0,1
+"X1.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Bacteroides",0,1
+"X1.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Blautia",0,1
+"X1.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Lactococcus",0,1
+"X1.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Cutibacterium",0,1
+"X1.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Streptococcus",0,1
+"X1.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Acinetobacter",0,1
+"X1.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Pseudomonas",0,1
+"X1.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Chloroplast",0,1
+"X1.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Vibrio",0.0157425018288222,1
+"X1.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Unclassified Mycoplasmataceae genus",0.982414045354792,1
+"X1.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Delftia",0,1
+"X1.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Cetobacterium",0,1
+"X1.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Photobacterium",0,1
+"X1.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Candidatus Hamiltonella",0,1
+"X1.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Buchnera",0,1
+"X1.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Others",0.00121433796634967,1
+"X1.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Bacteroides",0,1
+"X1.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Blautia",0,1
+"X1.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Lactococcus",0,1
+"X1.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Cutibacterium",0.000629114850036577,1
+"X1.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Streptococcus",0,1
+"X1.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Acinetobacter",0,1
+"X1.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Pseudomonas",0,1
+"X1.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Chloroplast",0,1
+"X1.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Vibrio",0.0581766246131873,1
+"X1.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Unclassified Mycoplasmataceae genus",0.940966436562723,1
+"X1.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Delftia",0,1
+"X1.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Cetobacterium",0,1
+"X1.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Photobacterium",0,1
+"X1.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Candidatus Hamiltonella",0,1
+"X1.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Buchnera",0,1
+"X1.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Others",0.000547488693168293,1
+"X1.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Bacteroides",0,1
+"X1.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Blautia",0,1
+"X1.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Lactococcus",0.000166626993572959,1
+"X1.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Cutibacterium",7.14115686741252e-05,1
+"X1.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Streptococcus",0,1
+"X1.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Acinetobacter",0,1
+"X1.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Pseudomonas",0,1
+"X1.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Chloroplast",7.14115686741252e-05,1
+"X1.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Vibrio",0.996022693162034,2
+"X1.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Unclassified Mycoplasmataceae genus",0.0036471153268896,2
+"X1.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Delftia",0,2
+"X1.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Cetobacterium",0,2
+"X1.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Photobacterium",0,2
+"X1.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Candidatus Hamiltonella",0,2
+"X1.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Buchnera",0,2
+"X1.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Others",0.000255147985831782,2
+"X1.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Bacteroides",0,2
+"X1.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Blautia",0,2
+"X1.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Lactococcus",7.50435252446419e-05,2
+"X1.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Cutibacterium",0,2
+"X1.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Streptococcus",0,2
+"X1.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Acinetobacter",0,2
+"X1.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Pseudomonas",0,2
+"X1.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Chloroplast",0,2
+"X1.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Vibrio",0.988741520704667,2
+"X1.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Unclassified Mycoplasmataceae genus",0,2
+"X1.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Delftia",0,2
+"X1.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Cetobacterium",0,2
+"X1.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Photobacterium",0,2
+"X1.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Candidatus Hamiltonella",0,2
+"X1.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Buchnera",0,2
+"X1.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Others",0.00459653741014478,2
+"X1.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Bacteroides",0,2
+"X1.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Blautia",0,2
+"X1.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Lactococcus",0,2
+"X1.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Cutibacterium",0.00157942695150349,2
+"X1.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Streptococcus",0.0011541966184064,2
+"X1.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Acinetobacter",0.00200465728460059,2
+"X1.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Pseudomonas",0.00192366103067733,2
+"X1.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Chloroplast",0,2
+"X1.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Vibrio",0.944923559388475,2
+"X1.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Unclassified Mycoplasmataceae genus",0.0550229856384306,2
+"X1.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Delftia",0,2
+"X1.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Cetobacterium",0,2
+"X1.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Photobacterium",0,2
+"X1.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Candidatus Hamiltonella",0,2
+"X1.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Buchnera",0,2
+"X1.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Others",5.34549730943302e-05,2
+"X1.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Bacteroides",0,2
+"X1.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Blautia",0,2
+"X1.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Lactococcus",0,2
+"X1.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Cutibacterium",0,2
+"X1.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Streptococcus",0,2
+"X1.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Acinetobacter",0,2
+"X1.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Pseudomonas",0,2
+"X1.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Chloroplast",0,2
+"X1.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Vibrio",0.993257233873109,3
+"X1.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Unclassified Mycoplasmataceae genus",0.00403504114680117,3
+"X1.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Delftia",0,3
+"X1.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Cetobacterium",0,3
+"X1.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Photobacterium",0,3
+"X1.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Candidatus Hamiltonella",0,3
+"X1.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Buchnera",0,3
+"X1.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Others",0.000973365188921334,3
+"X1.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Bacteroides",0,3
+"X1.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Blautia",0,3
+"X1.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Lactococcus",0,3
+"X1.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Cutibacterium",0.00173435979116892,3
+"X1.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Streptococcus",0,3
+"X1.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Acinetobacter",0,3
+"X1.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Pseudomonas",0,3
+"X1.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Chloroplast",0,3
+"X1.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Vibrio",0.0577009834882252,3
+"X1.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Unclassified Mycoplasmataceae genus",0,3
+"X1.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Delftia",0.165929802400072,3
+"X1.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Cetobacterium",0.00315798971397636,3
+"X1.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Photobacterium",0,3
+"X1.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Candidatus Hamiltonella",0.129703148966886,3
+"X1.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Buchnera",0.0716412523684923,3
+"X1.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Others",0.292565189930524,3
+"X1.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Bacteroides",0.0824686456735541,3
+"X1.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Blautia",0.0567535865740323,3
+"X1.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Lactococcus",0,3
+"X1.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Cutibacterium",0.00518812595867545,3
+"X1.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Streptococcus",0.0148425516556889,3
+"X1.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Acinetobacter",0.000451141387710909,3
+"X1.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Pseudomonas",0.116980961833439,3
+"X1.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Chloroplast",0.00261662004872327,3
+"X1.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Vibrio",0.000966578683222425,3
+"X1.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Unclassified Mycoplasmataceae genus",0.998754600542771,3
+"X1.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Delftia",0,3
+"X1.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Cetobacterium",0,3
+"X1.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Photobacterium",0,3
+"X1.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Candidatus Hamiltonella",0,3
+"X1.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Buchnera",0,3
+"X1.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Others",0,3
+"X1.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Bacteroides",0,3
+"X1.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Blautia",0,3
+"X1.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Lactococcus",0,3
+"X1.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Cutibacterium",0,3
+"X1.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Streptococcus",0,3
+"X1.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Acinetobacter",0.000278820774006469,3
+"X1.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Pseudomonas",0,3
+"X1.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Chloroplast",0,3
+"X1.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Vibrio",0.998713245885268,4
+"X1.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Unclassified Mycoplasmataceae genus",0.000537747988246365,4
+"X1.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Delftia",0,4
+"X1.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Cetobacterium",0,4
+"X1.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Photobacterium",0,4
+"X1.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Candidatus Hamiltonella",0,4
+"X1.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Buchnera",0,4
+"X1.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Others",0.000460926847068313,4
+"X1.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Bacteroides",0,4
+"X1.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Blautia",0,4
+"X1.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Lactococcus",0.000288079279417696,4
+"X1.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Cutibacterium",0,4
+"X1.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Streptococcus",0,4
+"X1.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Acinetobacter",0,4
+"X1.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Pseudomonas",0,4
+"X1.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Chloroplast",0,4
+"X1.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Vibrio",0.01013664374386,4
+"X1.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Unclassified Mycoplasmataceae genus",0.000245601500401893,4
+"X1.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Delftia",0.755961418237028,4
+"X1.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Cetobacterium",0,4
+"X1.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Photobacterium",0,4
+"X1.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Candidatus Hamiltonella",0.0102259533803697,4
+"X1.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Buchnera",0.00969009556131106,4
+"X1.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Others",0.0968786282039832,4
+"X1.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Bacteroides",0.0114986157006341,4
+"X1.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Blautia",0.0128605876574082,4
+"X1.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Lactococcus",0,4
+"X1.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Cutibacterium",0.0102706081986246,4
+"X1.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Streptococcus",0.0171251228007502,4
+"X1.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Acinetobacter",0.0389836563365187,4
+"X1.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Pseudomonas",0.0261230686791105,4
+"X1.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Chloroplast",0,4
+"X1.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Vibrio",0.954652900893385,4
+"X1.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Unclassified Mycoplasmataceae genus",0.0442347133868669,4
+"X1.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Delftia",0,4
+"X1.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Cetobacterium",0,4
+"X1.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Photobacterium",0,4
+"X1.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Candidatus Hamiltonella",0,4
+"X1.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Buchnera",0,4
+"X1.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Others",0.000295477456808148,4
+"X1.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Bacteroides",0,4
+"X1.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Blautia",0,4
+"X1.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Lactococcus",0.000434525671776689,4
+"X1.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Cutibacterium",0,4
+"X1.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Streptococcus",0.000382382591163486,4
+"X1.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Acinetobacter",0,4
+"X1.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Pseudomonas",0,4
+"X1.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Chloroplast",0,4
+"X1.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Vibrio",0.999129109514478,5
+"X1.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Unclassified Mycoplasmataceae genus",0,5
+"X1.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Delftia",0,5
+"X1.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Cetobacterium",0.000108861310690181,5
+"X1.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Photobacterium",0,5
+"X1.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Candidatus Hamiltonella",0,5
+"X1.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Buchnera",0,5
+"X1.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Others",3.11032316257659e-05,5
+"X1.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Bacteroides",0,5
+"X1.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Blautia",0,5
+"X1.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Lactococcus",0,5
+"X1.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Cutibacterium",0.000668719479953967,5
+"X1.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Streptococcus",6.22064632515318e-05,5
+"X1.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Acinetobacter",0,5
+"X1.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Pseudomonas",0,5
+"X1.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Chloroplast",0,5
+"X1.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Vibrio",0.0126510738196679,5
+"X1.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Unclassified Mycoplasmataceae genus",0,5
+"X1.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Delftia",0.410486044691766,5
+"X1.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Cetobacterium",0,5
+"X1.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Photobacterium",0,5
+"X1.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Candidatus Hamiltonella",0.00534736109903487,5
+"X1.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Buchnera",0.00130423441439875,5
+"X1.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Others",0.32301538996609,5
+"X1.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Bacteroides",0.00995565602991044,5
+"X1.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Blautia",0.0629945222154595,5
+"X1.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Lactococcus",0,5
+"X1.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Cutibacterium",0.0263020606903748,5
+"X1.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Streptococcus",0.00382575428223633,5
+"X1.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Acinetobacter",0.00347795843839666,5
+"X1.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Pseudomonas",0.140639944352665,5
+"X1.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Chloroplast",0,5
+"X1.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Vibrio",0.921211479402732,5
+"X1.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Unclassified Mycoplasmataceae genus",0.0787885205972678,5
+"X1.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Delftia",0,5
+"X1.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Cetobacterium",0,5
+"X1.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Photobacterium",0,5
+"X1.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Candidatus Hamiltonella",0,5
+"X1.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Buchnera",0,5
+"X1.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Others",0,5
+"X1.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Bacteroides",0,5
+"X1.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Blautia",0,5
+"X1.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Lactococcus",0,5
+"X1.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Cutibacterium",0,5
+"X1.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Streptococcus",0,5
+"X1.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Acinetobacter",0,5
+"X1.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Pseudomonas",0,5
+"X1.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Chloroplast",0,5
+"X2.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Vibrio",0.972089730213147,6
+"X2.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Unclassified Mycoplasmataceae genus",0,6
+"X2.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Delftia",0,6
+"X2.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Cetobacterium",0,6
+"X2.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Photobacterium",0,6
+"X2.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Candidatus Hamiltonella",0,6
+"X2.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Buchnera",0,6
+"X2.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Others",0.0162095692353555,6
+"X2.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Bacteroides",0,6
+"X2.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Blautia",0,6
+"X2.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Lactococcus",0.0072477269339693,6
+"X2.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Cutibacterium",0.000111790132657624,6
+"X2.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Streptococcus",0.00434118348487107,6
+"X2.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Acinetobacter",0,6
+"X2.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Pseudomonas",0,6
+"X2.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Chloroplast",0,6
+"X2.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Vibrio",0.0143281425589982,6
+"X2.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Unclassified Mycoplasmataceae genus",0.000481618237277252,6
+"X2.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Delftia",0.306710547439396,6
+"X2.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Cetobacterium",0,6
+"X2.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Photobacterium",0,6
+"X2.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Candidatus Hamiltonella",0.200192647294911,6
+"X2.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Buchnera",0.109728688393,6
+"X2.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Others",0.167924225397335,6
+"X2.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Bacteroides",0.0636538770268101,6
+"X2.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Blautia",0.0256461711350136,6
+"X2.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Lactococcus",0,6
+"X2.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Cutibacterium",0.00549847487558196,6
+"X2.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Streptococcus",0.0115989725477605,6
+"X2.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Acinetobacter",0.0468775084283192,6
+"X2.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Pseudomonas",0.0436265853266977,6
+"X2.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Chloroplast",0.0037325413388987,6
+"X2.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Vibrio",0.00275215065861215,6
+"X2.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Unclassified Mycoplasmataceae genus",0.028629290499022,6
+"X2.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Delftia",0,6
+"X2.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Cetobacterium",0.968618558842366,6
+"X2.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Photobacterium",0,6
+"X2.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Candidatus Hamiltonella",0,6
+"X2.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Buchnera",0,6
+"X2.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Others",0,6
+"X2.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Bacteroides",0,6
+"X2.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Blautia",0,6
+"X2.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Lactococcus",0,6
+"X2.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Cutibacterium",0,6
+"X2.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Streptococcus",0,6
+"X2.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Acinetobacter",0,6
+"X2.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Pseudomonas",0,6
+"X2.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Chloroplast",0,6
+"X2.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Vibrio",1,7
+"X2.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Unclassified Mycoplasmataceae genus",0,7
+"X2.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Delftia",0,7
+"X2.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Cetobacterium",0,7
+"X2.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Photobacterium",0,7
+"X2.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Candidatus Hamiltonella",0,7
+"X2.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Buchnera",0,7
+"X2.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Others",0,7
+"X2.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Bacteroides",0,7
+"X2.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Blautia",0,7
+"X2.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Lactococcus",0,7
+"X2.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Cutibacterium",0,7
+"X2.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Streptococcus",0,7
+"X2.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Acinetobacter",0,7
+"X2.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Pseudomonas",0,7
+"X2.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Chloroplast",0,7
+"X2.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Vibrio",1,7
+"X2.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Unclassified Mycoplasmataceae genus",0,7
+"X2.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Delftia",0,7
+"X2.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Cetobacterium",0,7
+"X2.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Photobacterium",0,7
+"X2.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Candidatus Hamiltonella",0,7
+"X2.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Buchnera",0,7
+"X2.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Others",0,7
+"X2.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Bacteroides",0,7
+"X2.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Blautia",0,7
+"X2.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Lactococcus",0,7
+"X2.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Cutibacterium",0,7
+"X2.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Streptococcus",0,7
+"X2.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Acinetobacter",0,7
+"X2.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Pseudomonas",0,7
+"X2.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Chloroplast",0,7
+"X2.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Vibrio",0.145116035761841,7
+"X2.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Unclassified Mycoplasmataceae genus",0.622622217995054,7
+"X2.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Delftia",0,7
+"X2.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Cetobacterium",0.232142857142857,7
+"X2.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Photobacterium",0,7
+"X2.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Candidatus Hamiltonella",0,7
+"X2.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Buchnera",0,7
+"X2.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Others",0.000118889100247289,7
+"X2.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Bacteroides",0,7
+"X2.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Blautia",0,7
+"X2.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Lactococcus",0,7
+"X2.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Cutibacterium",0,7
+"X2.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Streptococcus",0,7
+"X2.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Acinetobacter",0,7
+"X2.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Pseudomonas",0,7
+"X2.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Chloroplast",0,7
+"X2.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Vibrio",0.98673314471051,8
+"X2.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Unclassified Mycoplasmataceae genus",0,8
+"X2.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Delftia",0,8
+"X2.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Cetobacterium",0,8
+"X2.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Photobacterium",0,8
+"X2.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Candidatus Hamiltonella",0,8
+"X2.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Buchnera",0,8
+"X2.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Others",0.00574494513836174,8
+"X2.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Bacteroides",0,8
+"X2.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Blautia",0,8
+"X2.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Lactococcus",0.00545165965081775,8
+"X2.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Cutibacterium",0,8
+"X2.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Streptococcus",0.00207025050031054,8
+"X2.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Acinetobacter",0,8
+"X2.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Pseudomonas",0,8
+"X2.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Chloroplast",0,8
+"X2.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Vibrio",0.491794060797751,8
+"X2.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Unclassified Mycoplasmataceae genus",0,8
+"X2.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Delftia",0,8
+"X2.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Cetobacterium",0.508205939202249,8
+"X2.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Photobacterium",0,8
+"X2.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Candidatus Hamiltonella",0,8
+"X2.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Buchnera",0,8
+"X2.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Others",0,8
+"X2.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Bacteroides",0,8
+"X2.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Blautia",0,8
+"X2.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Lactococcus",0,8
+"X2.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Cutibacterium",0,8
+"X2.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Streptococcus",0,8
+"X2.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Acinetobacter",0,8
+"X2.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Pseudomonas",0,8
+"X2.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Chloroplast",0,8
+"X2.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Vibrio",0.234658664666167,8
+"X2.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Unclassified Mycoplasmataceae genus",0.746474118529632,8
+"X2.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Delftia",0,8
+"X2.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Cetobacterium",0.0187171792948237,8
+"X2.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Photobacterium",0,8
+"X2.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Candidatus Hamiltonella",0,8
+"X2.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Buchnera",0,8
+"X2.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Others",0,8
+"X2.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Bacteroides",0,8
+"X2.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Blautia",0,8
+"X2.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Lactococcus",0,8
+"X2.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Cutibacterium",0.000150037509377344,8
+"X2.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Streptococcus",0,8
+"X2.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Acinetobacter",0,8
+"X2.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Pseudomonas",0,8
+"X2.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Chloroplast",0,8
+"X2.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Vibrio",1,9
+"X2.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Unclassified Mycoplasmataceae genus",0,9
+"X2.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Delftia",0,9
+"X2.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Cetobacterium",0,9
+"X2.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Photobacterium",0,9
+"X2.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Candidatus Hamiltonella",0,9
+"X2.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Buchnera",0,9
+"X2.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Others",0,9
+"X2.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Bacteroides",0,9
+"X2.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Blautia",0,9
+"X2.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Lactococcus",0,9
+"X2.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Cutibacterium",0,9
+"X2.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Streptococcus",0,9
+"X2.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Acinetobacter",0,9
+"X2.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Pseudomonas",0,9
+"X2.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Chloroplast",0,9
+"X2.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Vibrio",0.128049298767531,9
+"X2.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Unclassified Mycoplasmataceae genus",0,9
+"X2.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Delftia",0.669315767105822,9
+"X2.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Cetobacterium",0.00403739906502337,9
+"X2.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Photobacterium",0,9
+"X2.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Candidatus Hamiltonella",0.011347216319592,9
+"X2.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Buchnera",0.00138121546961326,9
+"X2.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Others",0.0870803229919252,9
+"X2.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Bacteroides",0.00554611134721632,9
+"X2.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Blautia",0.000403739906502338,9
+"X2.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Lactococcus",0,9
+"X2.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Cutibacterium",0.00220994475138122,9
+"X2.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Streptococcus",0,9
+"X2.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Acinetobacter",0.0664258393540162,9
+"X2.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Pseudomonas",0.024203144921377,9
+"X2.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Chloroplast",0,9
+"X2.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Vibrio",0.000672930421533773,9
+"X2.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Unclassified Mycoplasmataceae genus",0.997651091924835,9
+"X2.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Delftia",0,9
+"X2.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Cetobacterium",0.00140934484509904,9
+"X2.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Photobacterium",0,9
+"X2.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Candidatus Hamiltonella",0,9
+"X2.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Buchnera",0,9
+"X2.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Others",5.07872016251905e-05,9
+"X2.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Bacteroides",0,9
+"X2.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Blautia",0,9
+"X2.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Lactococcus",0,9
+"X2.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Cutibacterium",5.07872016251905e-05,9
+"X2.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Streptococcus",0,9
+"X2.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Acinetobacter",0.000165058405281869,9
+"X2.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Pseudomonas",0,9
+"X2.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Chloroplast",0,9
+"X2.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Vibrio",0.999930756314159,10
+"X2.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Unclassified Mycoplasmataceae genus",0,10
+"X2.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Delftia",0,10
+"X2.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Cetobacterium",0,10
+"X2.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Photobacterium",6.92436858413973e-05,10
+"X2.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Candidatus Hamiltonella",0,10
+"X2.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Buchnera",0,10
+"X2.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Others",0,10
+"X2.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Bacteroides",0,10
+"X2.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Blautia",0,10
+"X2.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Lactococcus",0,10
+"X2.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Cutibacterium",0,10
+"X2.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Streptococcus",0,10
+"X2.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Acinetobacter",0,10
+"X2.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Pseudomonas",0,10
+"X2.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Chloroplast",0,10
+"X2.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Vibrio",0.997329361614709,10
+"X2.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Unclassified Mycoplasmataceae genus",0,10
+"X2.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Delftia",0,10
+"X2.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Cetobacterium",0,10
+"X2.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Photobacterium",0,10
+"X2.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Candidatus Hamiltonella",0,10
+"X2.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Buchnera",0,10
+"X2.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Others",0.00112988547070002,10
+"X2.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Bacteroides",0,10
+"X2.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Blautia",0,10
+"X2.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Lactococcus",0,10
+"X2.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Cutibacterium",0,10
+"X2.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Streptococcus",0,10
+"X2.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Acinetobacter",0,10
+"X2.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Pseudomonas",0.00154075291459093,10
+"X2.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Chloroplast",0,10
+"X2.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Vibrio",0.0169682461451806,10
+"X2.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Unclassified Mycoplasmataceae genus",0.981694008308104,10
+"X2.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Delftia",0,10
+"X2.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Cetobacterium",0.000387242131943956,10
+"X2.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Photobacterium",7.04076603534465e-05,10
+"X2.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Candidatus Hamiltonella",0,10
+"X2.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Buchnera",0,10
+"X2.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Others",0.000563261282827572,10
+"X2.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Bacteroides",0,10
+"X2.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Blautia",0,10
+"X2.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Lactococcus",0,10
+"X2.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Cutibacterium",0.000176019150883616,10
+"X2.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Streptococcus",0,10
+"X2.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Acinetobacter",0.000140815320706893,10
+"X2.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Pseudomonas",0,10
+"X2.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Chloroplast",0,10
+"X3.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Vibrio",0.0613619262603461,11
+"X3.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Unclassified Mycoplasmataceae genus",0.0022385252069225,11
+"X3.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Delftia",0,11
+"X3.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Cetobacterium",0.267814145974417,11
+"X3.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Photobacterium",0.0215199398043642,11
+"X3.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Candidatus Hamiltonella",0,11
+"X3.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Buchnera",0,11
+"X3.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Others",0.302765237020316,11
+"X3.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Bacteroides",0,11
+"X3.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Blautia",0,11
+"X3.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Lactococcus",0.247234762979684,11
+"X3.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Cutibacterium",0.00197516930022573,11
+"X3.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Streptococcus",0.0944507148231753,11
+"X3.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Acinetobacter",0.000413844996237773,11
+"X3.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Pseudomonas",0,11
+"X3.1t30","D30","Ctrl","Ctrl","Ctrl_D30","Chloroplast",0.000225733634311512,11
+"X3.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Vibrio",0.031841188929174,11
+"X3.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Unclassified Mycoplasmataceae genus",0,11
+"X3.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Delftia",0.0720465233155042,11
+"X3.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Cetobacterium",0,11
+"X3.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Photobacterium",0,11
+"X3.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Candidatus Hamiltonella",0.354094123559608,11
+"X3.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Buchnera",0.0780414258534659,11
+"X3.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Others",0.165057256703881,11
+"X3.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Bacteroides",0.147287934809922,11
+"X3.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Blautia",0.108985174282945,11
+"X3.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Lactococcus",0,11
+"X3.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Cutibacterium",0.00229744767921887,11
+"X3.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Streptococcus",0.0283591197903579,11
+"X3.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Acinetobacter",0.000358976199877948,11
+"X3.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Pseudomonas",0,11
+"X3.1t7","D07","Ctrl","Ctrl","Ctrl_D07","Chloroplast",0.0116308288760455,11
+"X3.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Vibrio",0.00187024207781261,11
+"X3.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Unclassified Mycoplasmataceae genus",0.907120090614546,11
+"X3.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Delftia",0.000763901693754445,11
+"X3.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Cetobacterium",0.048046782393383,11
+"X3.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Photobacterium",0,11
+"X3.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Candidatus Hamiltonella",0,11
+"X3.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Buchnera",0,11
+"X3.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Others",0.0218633933040065,11
+"X3.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Bacteroides",5.2682875431341e-05,11
+"X3.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Blautia",0,11
+"X3.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Lactococcus",0.00389853278191924,11
+"X3.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Cutibacterium",0.00381950846877223,11
+"X3.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Streptococcus",0.000632194505176093,11
+"X3.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Acinetobacter",0.000184390064009694,11
+"X3.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Pseudomonas",0,11
+"X3.1t90","D90","Ctrl","Ctrl","Ctrl_D90","Chloroplast",0.0117482812211891,11
+"X3.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Vibrio",0.999141771220728,12
+"X3.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Unclassified Mycoplasmataceae genus",0,12
+"X3.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Delftia",0,12
+"X3.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Cetobacterium",0.000408680371081777,12
+"X3.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Photobacterium",0,12
+"X3.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Candidatus Hamiltonella",0,12
+"X3.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Buchnera",0,12
+"X3.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Others",0.000102170092770444,12
+"X3.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Bacteroides",0,12
+"X3.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Blautia",0,12
+"X3.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Lactococcus",0.00034737831541951,12
+"X3.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Cutibacterium",0,12
+"X3.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Streptococcus",0,12
+"X3.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Acinetobacter",0,12
+"X3.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Pseudomonas",0,12
+"X3.2t30","D30","Ctrl","Ctrl","Ctrl_D30","Chloroplast",0,12
+"X3.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Vibrio",0.432006296653633,12
+"X3.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Unclassified Mycoplasmataceae genus",0,12
+"X3.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Delftia",0.0108668054638704,12
+"X3.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Cetobacterium",0,12
+"X3.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Photobacterium",0,12
+"X3.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Candidatus Hamiltonella",0.212791347179201,12
+"X3.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Buchnera",0.0923678464428985,12
+"X3.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Others",0.0972934545269893,12
+"X3.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Bacteroides",0.0764992636977606,12
+"X3.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Blautia",0.0515411567562078,12
+"X3.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Lactococcus",0,12
+"X3.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Cutibacterium",0.00043162545066775,12
+"X3.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Streptococcus",0.0164017671253745,12
+"X3.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Acinetobacter",0.00114253795764993,12
+"X3.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Pseudomonas",0.00200578885898543,12
+"X3.2t7","D07","Ctrl","Ctrl","Ctrl_D07","Chloroplast",0.00665210988676179,12
+"X3.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Vibrio",0.772763472259092,12
+"X3.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Unclassified Mycoplasmataceae genus",0.0871383063445713,12
+"X3.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Delftia",0,12
+"X3.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Cetobacterium",0.124834085479161,12
+"X3.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Photobacterium",0,12
+"X3.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Candidatus Hamiltonella",0,12
+"X3.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Buchnera",0,12
+"X3.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Others",0.0146336607379878,12
+"X3.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Bacteroides",0,12
+"X3.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Blautia",0,12
+"X3.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Lactococcus",0,12
+"X3.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Cutibacterium",0.000199097425006637,12
+"X3.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Streptococcus",0,12
+"X3.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Acinetobacter",0,12
+"X3.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Pseudomonas",0.000431377754181046,12
+"X3.2t90","D90","Ctrl","Ctrl","Ctrl_D90","Chloroplast",0,12
+"X3.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Vibrio",0.994423818883308,13
+"X3.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Unclassified Mycoplasmataceae genus",0,13
+"X3.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Delftia",0,13
+"X3.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Cetobacterium",0.00339229817281794,13
+"X3.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Photobacterium",0.00180534323360268,13
+"X3.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Candidatus Hamiltonella",0,13
+"X3.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Buchnera",0,13
+"X3.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Others",2.91184392516561e-05,13
+"X3.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Bacteroides",0,13
+"X3.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Blautia",0,13
+"X3.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Lactococcus",0,13
+"X3.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Cutibacterium",0.000291184392516561,13
+"X3.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Streptococcus",5.82368785033122e-05,13
+"X3.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Acinetobacter",0,13
+"X3.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Pseudomonas",0,13
+"X3.3t30","D30","Ctrl","Ctrl","Ctrl_D30","Chloroplast",0,13
+"X3.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Vibrio",0.0064142054720058,13
+"X3.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Unclassified Mycoplasmataceae genus",0,13
+"X3.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Delftia",0.0246783837651749,13
+"X3.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Cetobacterium",0.0019206377967023,13
+"X3.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Photobacterium",0,13
+"X3.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Candidatus Hamiltonella",0.341329951078094,13
+"X3.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Buchnera",0.0992208733466208,13
+"X3.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Others",0.193078456242073,13
+"X3.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Bacteroides",0.174596847254938,13
+"X3.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Blautia",0.103460771878964,13
+"X3.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Lactococcus",0,13
+"X3.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Cutibacterium",0.00173944555173039,13
+"X3.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Streptococcus",0.0325783656459504,13
+"X3.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Acinetobacter",0.00155825330675847,13
+"X3.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Pseudomonas",0.000507338285921363,13
+"X3.3t7","D07","Ctrl","Ctrl","Ctrl_D07","Chloroplast",0.0189164703750679,13
+"X3.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Vibrio",0.000166161790457201,13
+"X3.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Unclassified Mycoplasmataceae genus",0.943517772920741,13
+"X3.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Delftia",0,13
+"X3.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Cetobacterium",0.00194281478073035,13
+"X3.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Photobacterium",0,13
+"X3.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Candidatus Hamiltonella",0,13
+"X3.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Buchnera",0,13
+"X3.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Others",0.0509733246417935,13
+"X3.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Bacteroides",0,13
+"X3.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Blautia",0,13
+"X3.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Lactococcus",0,13
+"X3.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Cutibacterium",0.000933062361798126,13
+"X3.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Streptococcus",0,13
+"X3.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Acinetobacter",0.000830808952286003,13
+"X3.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Pseudomonas",0.00163605455219397,13
+"X3.3t90","D90","Ctrl","Ctrl","Ctrl_D90","Chloroplast",0,13
+"X3.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Vibrio",0.970625394819962,14
+"X3.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Unclassified Mycoplasmataceae genus",0,14
+"X3.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Delftia",0,14
+"X3.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Cetobacterium",0.00550993191549098,14
+"X3.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Photobacterium",0.0238646732645469,14
+"X3.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Candidatus Hamiltonella",0,14
+"X3.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Buchnera",0,14
+"X3.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Others",0,14
+"X3.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Bacteroides",0,14
+"X3.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Blautia",0,14
+"X3.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Lactococcus",0,14
+"X3.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Cutibacterium",0,14
+"X3.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Streptococcus",0,14
+"X3.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Acinetobacter",0,14
+"X3.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Pseudomonas",0,14
+"X3.4t30","D30","Ctrl","Ctrl","Ctrl_D30","Chloroplast",0,14
+"X3.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Vibrio",0.00106790799561884,14
+"X3.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Unclassified Mycoplasmataceae genus",0,14
+"X3.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Delftia",0.0164567360350493,14
+"X3.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Cetobacterium",0.00292990142387733,14
+"X3.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Photobacterium",0,14
+"X3.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Candidatus Hamiltonella",0.39315443592552,14
+"X3.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Buchnera",0.182940854326397,14
+"X3.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Others",0.146604600219058,14
+"X3.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Bacteroides",0.131955093099671,14
+"X3.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Blautia",0.0710569550930997,14
+"X3.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Lactococcus",0,14
+"X3.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Cutibacterium",0.00246440306681271,14
+"X3.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Streptococcus",0.0215224534501643,14
+"X3.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Acinetobacter",0.00128696604600219,14
+"X3.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Pseudomonas",0.000328587075575027,14
+"X3.4t7","D07","Ctrl","Ctrl","Ctrl_D07","Chloroplast",0.0282311062431544,14
+"X3.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Vibrio",0.846777537858747,14
+"X3.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Unclassified Mycoplasmataceae genus",0.15280776765669,14
+"X3.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Delftia",0,14
+"X3.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Cetobacterium",0.000414694484563355,14
+"X3.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Photobacterium",0,14
+"X3.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Candidatus Hamiltonella",0,14
+"X3.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Buchnera",0,14
+"X3.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Others",0,14
+"X3.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Bacteroides",0,14
+"X3.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Blautia",0,14
+"X3.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Lactococcus",0,14
+"X3.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Cutibacterium",0,14
+"X3.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Streptococcus",0,14
+"X3.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Acinetobacter",0,14
+"X3.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Pseudomonas",0,14
+"X3.4t90","D90","Ctrl","Ctrl","Ctrl_D90","Chloroplast",0,14
+"X3.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Vibrio",0.998441396508728,15
+"X3.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Unclassified Mycoplasmataceae genus",0,15
+"X3.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Delftia",0,15
+"X3.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Cetobacterium",0.00137523837465161,15
+"X3.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Photobacterium",0,15
+"X3.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Candidatus Hamiltonella",0,15
+"X3.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Buchnera",0,15
+"X3.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Others",0,15
+"X3.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Bacteroides",0,15
+"X3.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Blautia",0,15
+"X3.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Lactococcus",0,15
+"X3.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Cutibacterium",0.000183365116620214,15
+"X3.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Streptococcus",0,15
+"X3.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Acinetobacter",0,15
+"X3.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Pseudomonas",0,15
+"X3.5t30","D30","Ctrl","Ctrl","Ctrl_D30","Chloroplast",0,15
+"X3.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Vibrio",0.0084604083286894,15
+"X3.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Unclassified Mycoplasmataceae genus",0,15
+"X3.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Delftia",0,15
+"X3.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Cetobacterium",0.986422817771924,15
+"X3.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Photobacterium",0,15
+"X3.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Candidatus Hamiltonella",0,15
+"X3.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Buchnera",0,15
+"X3.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Others",0.00283702315213537,15
+"X3.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Bacteroides",0,15
+"X3.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Blautia",0,15
+"X3.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Lactococcus",0,15
+"X3.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Cutibacterium",0.00227975074725163,15
+"X3.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Streptococcus",0,15
+"X3.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Acinetobacter",0,15
+"X3.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Pseudomonas",0,15
+"X3.5t7","D07","Ctrl","Ctrl","Ctrl_D07","Chloroplast",0,15
+"X3.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Vibrio",0.741995343972469,15
+"X3.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Unclassified Mycoplasmataceae genus",0.256520125510307,15
+"X3.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Delftia",0,15
+"X3.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Cetobacterium",0.000978440568170316,15
+"X3.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Photobacterium",0,15
+"X3.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Candidatus Hamiltonella",0,15
+"X3.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Buchnera",0,15
+"X3.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Others",0.000118087654779176,15
+"X3.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Bacteroides",0,15
+"X3.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Blautia",0,15
+"X3.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Lactococcus",0,15
+"X3.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Cutibacterium",0,15
+"X3.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Streptococcus",0,15
+"X3.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Acinetobacter",0.000388002294274436,15
+"X3.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Pseudomonas",0,15
+"X3.5t90","D90","Ctrl","Ctrl","Ctrl_D90","Chloroplast",0,15
+"Y1.1t30","D30","BL15","Hydrolysate","BL15_D30","Vibrio",1,1
+"Y1.1t30","D30","BL15","Hydrolysate","BL15_D30","Unclassified Mycoplasmataceae genus",0,1
+"Y1.1t30","D30","BL15","Hydrolysate","BL15_D30","Delftia",0,1
+"Y1.1t30","D30","BL15","Hydrolysate","BL15_D30","Cetobacterium",0,1
+"Y1.1t30","D30","BL15","Hydrolysate","BL15_D30","Photobacterium",0,1
+"Y1.1t30","D30","BL15","Hydrolysate","BL15_D30","Candidatus Hamiltonella",0,1
+"Y1.1t30","D30","BL15","Hydrolysate","BL15_D30","Buchnera",0,1
+"Y1.1t30","D30","BL15","Hydrolysate","BL15_D30","Others",0,1
+"Y1.1t30","D30","BL15","Hydrolysate","BL15_D30","Bacteroides",0,1
+"Y1.1t30","D30","BL15","Hydrolysate","BL15_D30","Blautia",0,1
+"Y1.1t30","D30","BL15","Hydrolysate","BL15_D30","Lactococcus",0,1
+"Y1.1t30","D30","BL15","Hydrolysate","BL15_D30","Cutibacterium",0,1
+"Y1.1t30","D30","BL15","Hydrolysate","BL15_D30","Streptococcus",0,1
+"Y1.1t30","D30","BL15","Hydrolysate","BL15_D30","Acinetobacter",0,1
+"Y1.1t30","D30","BL15","Hydrolysate","BL15_D30","Pseudomonas",0,1
+"Y1.1t30","D30","BL15","Hydrolysate","BL15_D30","Chloroplast",0,1
+"Y1.1t7","D07","BL15","Hydrolysate","BL15_D07","Vibrio",0.00250499591882687,1
+"Y1.1t7","D07","BL15","Hydrolysate","BL15_D07","Unclassified Mycoplasmataceae genus",0,1
+"Y1.1t7","D07","BL15","Hydrolysate","BL15_D07","Delftia",0.0461594753581581,1
+"Y1.1t7","D07","BL15","Hydrolysate","BL15_D07","Cetobacterium",0.00211095161698894,1
+"Y1.1t7","D07","BL15","Hydrolysate","BL15_D07","Photobacterium",0,1
+"Y1.1t7","D07","BL15","Hydrolysate","BL15_D07","Candidatus Hamiltonella",0.334093275915449,1
+"Y1.1t7","D07","BL15","Hydrolysate","BL15_D07","Buchnera",0.145430493399758,1
+"Y1.1t7","D07","BL15","Hydrolysate","BL15_D07","Others",0.173379492808691,1
+"Y1.1t7","D07","BL15","Hydrolysate","BL15_D07","Bacteroides",0.153789861803034,1
+"Y1.1t7","D07","BL15","Hydrolysate","BL15_D07","Blautia",0.0848039629598356,1
+"Y1.1t7","D07","BL15","Hydrolysate","BL15_D07","Lactococcus",0,1
+"Y1.1t7","D07","BL15","Hydrolysate","BL15_D07","Cutibacterium",0.00191392946606997,1
+"Y1.1t7","D07","BL15","Hydrolysate","BL15_D07","Streptococcus",0.0266542824171803,1
+"Y1.1t7","D07","BL15","Hydrolysate","BL15_D07","Acinetobacter",0.0134256522840497,1
+"Y1.1t7","D07","BL15","Hydrolysate","BL15_D07","Pseudomonas",0.000816234625235723,1
+"Y1.1t7","D07","BL15","Hydrolysate","BL15_D07","Chloroplast",0.0149173914267218,1
+"Y1.1t90","D90","BL15","Hydrolysate","BL15_D90","Vibrio",0.0295258450091031,1
+"Y1.1t90","D90","BL15","Hydrolysate","BL15_D90","Unclassified Mycoplasmataceae genus",0.910710045119924,1
+"Y1.1t90","D90","BL15","Hydrolysate","BL15_D90","Delftia",0,1
+"Y1.1t90","D90","BL15","Hydrolysate","BL15_D90","Cetobacterium",0.0214913322251247,1
+"Y1.1t90","D90","BL15","Hydrolysate","BL15_D90","Photobacterium",0,1
+"Y1.1t90","D90","BL15","Hydrolysate","BL15_D90","Candidatus Hamiltonella",0,1
+"Y1.1t90","D90","BL15","Hydrolysate","BL15_D90","Buchnera",0,1
+"Y1.1t90","D90","BL15","Hydrolysate","BL15_D90","Others",0.0368875168210243,1
+"Y1.1t90","D90","BL15","Hydrolysate","BL15_D90","Bacteroides",0,1
+"Y1.1t90","D90","BL15","Hydrolysate","BL15_D90","Blautia",0,1
+"Y1.1t90","D90","BL15","Hydrolysate","BL15_D90","Lactococcus",0,1
+"Y1.1t90","D90","BL15","Hydrolysate","BL15_D90","Cutibacterium",0.000633262091348057,1
+"Y1.1t90","D90","BL15","Hydrolysate","BL15_D90","Streptococcus",0.000514525449220296,1
+"Y1.1t90","D90","BL15","Hydrolysate","BL15_D90","Acinetobacter",0,1
+"Y1.1t90","D90","BL15","Hydrolysate","BL15_D90","Pseudomonas",0.000237473284255521,1
+"Y1.1t90","D90","BL15","Hydrolysate","BL15_D90","Chloroplast",0,1
+"Y1.2t30","D30","BL15","Hydrolysate","BL15_D30","Vibrio",0.969261937196549,2
+"Y1.2t30","D30","BL15","Hydrolysate","BL15_D30","Unclassified Mycoplasmataceae genus",0.0264242551259213,2
+"Y1.2t30","D30","BL15","Hydrolysate","BL15_D30","Delftia",0,2
+"Y1.2t30","D30","BL15","Hydrolysate","BL15_D30","Cetobacterium",0,2
+"Y1.2t30","D30","BL15","Hydrolysate","BL15_D30","Photobacterium",0,2
+"Y1.2t30","D30","BL15","Hydrolysate","BL15_D30","Candidatus Hamiltonella",0,2
+"Y1.2t30","D30","BL15","Hydrolysate","BL15_D30","Buchnera",0,2
+"Y1.2t30","D30","BL15","Hydrolysate","BL15_D30","Others",0.00130986063082888,2
+"Y1.2t30","D30","BL15","Hydrolysate","BL15_D30","Bacteroides",0,2
+"Y1.2t30","D30","BL15","Hydrolysate","BL15_D30","Blautia",0,2
+"Y1.2t30","D30","BL15","Hydrolysate","BL15_D30","Lactococcus",0,2
+"Y1.2t30","D30","BL15","Hydrolysate","BL15_D30","Cutibacterium",0.00108281812148521,2
+"Y1.2t30","D30","BL15","Hydrolysate","BL15_D30","Streptococcus",0,2
+"Y1.2t30","D30","BL15","Hydrolysate","BL15_D30","Acinetobacter",0.000978029271018897,2
+"Y1.2t30","D30","BL15","Hydrolysate","BL15_D30","Pseudomonas",0.000943099654196794,2
+"Y1.2t30","D30","BL15","Hydrolysate","BL15_D30","Chloroplast",0,2
+"Y1.2t7","D07","BL15","Hydrolysate","BL15_D07","Vibrio",0.00344611528822055,2
+"Y1.2t7","D07","BL15","Hydrolysate","BL15_D07","Unclassified Mycoplasmataceae genus",0,2
+"Y1.2t7","D07","BL15","Hydrolysate","BL15_D07","Delftia",0.426597744360902,2
+"Y1.2t7","D07","BL15","Hydrolysate","BL15_D07","Cetobacterium",0,2
+"Y1.2t7","D07","BL15","Hydrolysate","BL15_D07","Photobacterium",0,2
+"Y1.2t7","D07","BL15","Hydrolysate","BL15_D07","Candidatus Hamiltonella",0.15062656641604,2
+"Y1.2t7","D07","BL15","Hydrolysate","BL15_D07","Buchnera",0.0519110275689223,2
+"Y1.2t7","D07","BL15","Hydrolysate","BL15_D07","Others",0.179793233082707,2
+"Y1.2t7","D07","BL15","Hydrolysate","BL15_D07","Bacteroides",0.0649749373433584,2
+"Y1.2t7","D07","BL15","Hydrolysate","BL15_D07","Blautia",0.0244360902255639,2
+"Y1.2t7","D07","BL15","Hydrolysate","BL15_D07","Lactococcus",0,2
+"Y1.2t7","D07","BL15","Hydrolysate","BL15_D07","Cutibacterium",0.0315789473684211,2
+"Y1.2t7","D07","BL15","Hydrolysate","BL15_D07","Streptococcus",0.0158521303258145,2
+"Y1.2t7","D07","BL15","Hydrolysate","BL15_D07","Acinetobacter",0.0302318295739348,2
+"Y1.2t7","D07","BL15","Hydrolysate","BL15_D07","Pseudomonas",0.00808270676691729,2
+"Y1.2t7","D07","BL15","Hydrolysate","BL15_D07","Chloroplast",0.012468671679198,2
+"Y1.2t90","D90","BL15","Hydrolysate","BL15_D90","Vibrio",0.00106505955241522,2
+"Y1.2t90","D90","BL15","Hydrolysate","BL15_D90","Unclassified Mycoplasmataceae genus",0.998285513891234,2
+"Y1.2t90","D90","BL15","Hydrolysate","BL15_D90","Delftia",0,2
+"Y1.2t90","D90","BL15","Hydrolysate","BL15_D90","Cetobacterium",0,2
+"Y1.2t90","D90","BL15","Hydrolysate","BL15_D90","Photobacterium",0,2
+"Y1.2t90","D90","BL15","Hydrolysate","BL15_D90","Candidatus Hamiltonella",0,2
+"Y1.2t90","D90","BL15","Hydrolysate","BL15_D90","Buchnera",0,2
+"Y1.2t90","D90","BL15","Hydrolysate","BL15_D90","Others",0.000415632996064475,2
+"Y1.2t90","D90","BL15","Hydrolysate","BL15_D90","Bacteroides",0,2
+"Y1.2t90","D90","BL15","Hydrolysate","BL15_D90","Blautia",0,2
+"Y1.2t90","D90","BL15","Hydrolysate","BL15_D90","Lactococcus",0,2
+"Y1.2t90","D90","BL15","Hydrolysate","BL15_D90","Cutibacterium",0.000116896780143134,2
+"Y1.2t90","D90","BL15","Hydrolysate","BL15_D90","Streptococcus",0,2
+"Y1.2t90","D90","BL15","Hydrolysate","BL15_D90","Acinetobacter",0,2
+"Y1.2t90","D90","BL15","Hydrolysate","BL15_D90","Pseudomonas",0,2
+"Y1.2t90","D90","BL15","Hydrolysate","BL15_D90","Chloroplast",0.000116896780143134,2
+"Y1.3t30","D30","BL15","Hydrolysate","BL15_D30","Vibrio",0.45545858395251,3
+"Y1.3t30","D30","BL15","Hydrolysate","BL15_D30","Unclassified Mycoplasmataceae genus",0,3
+"Y1.3t30","D30","BL15","Hydrolysate","BL15_D30","Delftia",0,3
+"Y1.3t30","D30","BL15","Hydrolysate","BL15_D30","Cetobacterium",0.007587372724771,3
+"Y1.3t30","D30","BL15","Hydrolysate","BL15_D30","Photobacterium",0.536521602390219,3
+"Y1.3t30","D30","BL15","Hydrolysate","BL15_D30","Candidatus Hamiltonella",0,3
+"Y1.3t30","D30","BL15","Hydrolysate","BL15_D30","Buchnera",0,3
+"Y1.3t30","D30","BL15","Hydrolysate","BL15_D30","Others",0.000432440932499902,3
+"Y1.3t30","D30","BL15","Hydrolysate","BL15_D30","Bacteroides",0,3
+"Y1.3t30","D30","BL15","Hydrolysate","BL15_D30","Blautia",0,3
+"Y1.3t30","D30","BL15","Hydrolysate","BL15_D30","Lactococcus",0,3
+"Y1.3t30","D30","BL15","Hydrolysate","BL15_D30","Cutibacterium",0,3
+"Y1.3t30","D30","BL15","Hydrolysate","BL15_D30","Streptococcus",0,3
+"Y1.3t30","D30","BL15","Hydrolysate","BL15_D30","Acinetobacter",0,3
+"Y1.3t30","D30","BL15","Hydrolysate","BL15_D30","Pseudomonas",0,3
+"Y1.3t30","D30","BL15","Hydrolysate","BL15_D30","Chloroplast",0,3
+"Y1.3t7","D07","BL15","Hydrolysate","BL15_D07","Vibrio",0.665904864331967,3
+"Y1.3t7","D07","BL15","Hydrolysate","BL15_D07","Unclassified Mycoplasmataceae genus",0,3
+"Y1.3t7","D07","BL15","Hydrolysate","BL15_D07","Delftia",0.283233626851292,3
+"Y1.3t7","D07","BL15","Hydrolysate","BL15_D07","Cetobacterium",0,3
+"Y1.3t7","D07","BL15","Hydrolysate","BL15_D07","Photobacterium",0,3
+"Y1.3t7","D07","BL15","Hydrolysate","BL15_D07","Candidatus Hamiltonella",0,3
+"Y1.3t7","D07","BL15","Hydrolysate","BL15_D07","Buchnera",0,3
+"Y1.3t7","D07","BL15","Hydrolysate","BL15_D07","Others",0.0123008671103045,3
+"Y1.3t7","D07","BL15","Hydrolysate","BL15_D07","Bacteroides",0,3
+"Y1.3t7","D07","BL15","Hydrolysate","BL15_D07","Blautia",0,3
+"Y1.3t7","D07","BL15","Hydrolysate","BL15_D07","Lactococcus",0,3
+"Y1.3t7","D07","BL15","Hydrolysate","BL15_D07","Cutibacterium",0.0158410073715579,3
+"Y1.3t7","D07","BL15","Hydrolysate","BL15_D07","Streptococcus",0,3
+"Y1.3t7","D07","BL15","Hydrolysate","BL15_D07","Acinetobacter",0.0220474558042616,3
+"Y1.3t7","D07","BL15","Hydrolysate","BL15_D07","Pseudomonas",0.000672178530617732,3
+"Y1.3t7","D07","BL15","Hydrolysate","BL15_D07","Chloroplast",0,3
+"Y1.3t90","D90","BL15","Hydrolysate","BL15_D90","Vibrio",0.321934208996862,3
+"Y1.3t90","D90","BL15","Hydrolysate","BL15_D90","Unclassified Mycoplasmataceae genus",0.656154829710566,3
+"Y1.3t90","D90","BL15","Hydrolysate","BL15_D90","Delftia",0,3
+"Y1.3t90","D90","BL15","Hydrolysate","BL15_D90","Cetobacterium",0,3
+"Y1.3t90","D90","BL15","Hydrolysate","BL15_D90","Photobacterium",0,3
+"Y1.3t90","D90","BL15","Hydrolysate","BL15_D90","Candidatus Hamiltonella",0,3
+"Y1.3t90","D90","BL15","Hydrolysate","BL15_D90","Buchnera",0,3
+"Y1.3t90","D90","BL15","Hydrolysate","BL15_D90","Others",0.00190631175171452,3
+"Y1.3t90","D90","BL15","Hydrolysate","BL15_D90","Bacteroides",0,3
+"Y1.3t90","D90","BL15","Hydrolysate","BL15_D90","Blautia",0,3
+"Y1.3t90","D90","BL15","Hydrolysate","BL15_D90","Lactococcus",0.000499825642217831,3
+"Y1.3t90","D90","BL15","Hydrolysate","BL15_D90","Cutibacterium",0.000255724747181216,3
+"Y1.3t90","D90","BL15","Hydrolysate","BL15_D90","Streptococcus",0.000674183424386842,3
+"Y1.3t90","D90","BL15","Hydrolysate","BL15_D90","Acinetobacter",0.018574915727072,3
+"Y1.3t90","D90","BL15","Hydrolysate","BL15_D90","Pseudomonas",0,3
+"Y1.3t90","D90","BL15","Hydrolysate","BL15_D90","Chloroplast",0,3
+"Y1.4t30","D30","BL15","Hydrolysate","BL15_D30","Vibrio",0.999450317124736,4
+"Y1.4t30","D30","BL15","Hydrolysate","BL15_D30","Unclassified Mycoplasmataceae genus",0.000422832980972516,4
+"Y1.4t30","D30","BL15","Hydrolysate","BL15_D30","Delftia",0,4
+"Y1.4t30","D30","BL15","Hydrolysate","BL15_D30","Cetobacterium",0,4
+"Y1.4t30","D30","BL15","Hydrolysate","BL15_D30","Photobacterium",0,4
+"Y1.4t30","D30","BL15","Hydrolysate","BL15_D30","Candidatus Hamiltonella",0,4
+"Y1.4t30","D30","BL15","Hydrolysate","BL15_D30","Buchnera",0,4
+"Y1.4t30","D30","BL15","Hydrolysate","BL15_D30","Others",0,4
+"Y1.4t30","D30","BL15","Hydrolysate","BL15_D30","Bacteroides",0,4
+"Y1.4t30","D30","BL15","Hydrolysate","BL15_D30","Blautia",0,4
+"Y1.4t30","D30","BL15","Hydrolysate","BL15_D30","Lactococcus",0,4
+"Y1.4t30","D30","BL15","Hydrolysate","BL15_D30","Cutibacterium",0.000126849894291755,4
+"Y1.4t30","D30","BL15","Hydrolysate","BL15_D30","Streptococcus",0,4
+"Y1.4t30","D30","BL15","Hydrolysate","BL15_D30","Acinetobacter",0,4
+"Y1.4t30","D30","BL15","Hydrolysate","BL15_D30","Pseudomonas",0,4
+"Y1.4t30","D30","BL15","Hydrolysate","BL15_D30","Chloroplast",0,4
+"Y1.4t7","D07","BL15","Hydrolysate","BL15_D07","Vibrio",0.000517705529095051,4
+"Y1.4t7","D07","BL15","Hydrolysate","BL15_D07","Unclassified Mycoplasmataceae genus",0,4
+"Y1.4t7","D07","BL15","Hydrolysate","BL15_D07","Delftia",0.479369434665562,4
+"Y1.4t7","D07","BL15","Hydrolysate","BL15_D07","Cetobacterium",0,4
+"Y1.4t7","D07","BL15","Hydrolysate","BL15_D07","Photobacterium",0,4
+"Y1.4t7","D07","BL15","Hydrolysate","BL15_D07","Candidatus Hamiltonella",0.162274798094844,4
+"Y1.4t7","D07","BL15","Hydrolysate","BL15_D07","Buchnera",0.0966815075585007,4
+"Y1.4t7","D07","BL15","Hydrolysate","BL15_D07","Others",0.081383309173742,4
+"Y1.4t7","D07","BL15","Hydrolysate","BL15_D07","Bacteroides",0.076672188858977,4
+"Y1.4t7","D07","BL15","Hydrolysate","BL15_D07","Blautia",0.0427107061503417,4
+"Y1.4t7","D07","BL15","Hydrolysate","BL15_D07","Lactococcus",0,4
+"Y1.4t7","D07","BL15","Hydrolysate","BL15_D07","Cutibacterium",0.00473700559121972,4
+"Y1.4t7","D07","BL15","Hydrolysate","BL15_D07","Streptococcus",0.025729964796024,4
+"Y1.4t7","D07","BL15","Hydrolysate","BL15_D07","Acinetobacter",0.0150911161731207,4
+"Y1.4t7","D07","BL15","Hydrolysate","BL15_D07","Pseudomonas",0.00419341478566991,4
+"Y1.4t7","D07","BL15","Hydrolysate","BL15_D07","Chloroplast",0.0106388486229033,4
+"Y1.4t90","D90","BL15","Hydrolysate","BL15_D90","Vibrio",0.31634793337446,4
+"Y1.4t90","D90","BL15","Hydrolysate","BL15_D90","Unclassified Mycoplasmataceae genus",0.680259099321407,4
+"Y1.4t90","D90","BL15","Hydrolysate","BL15_D90","Delftia",0,4
+"Y1.4t90","D90","BL15","Hydrolysate","BL15_D90","Cetobacterium",0,4
+"Y1.4t90","D90","BL15","Hydrolysate","BL15_D90","Photobacterium",0,4
+"Y1.4t90","D90","BL15","Hydrolysate","BL15_D90","Candidatus Hamiltonella",0,4
+"Y1.4t90","D90","BL15","Hydrolysate","BL15_D90","Buchnera",0,4
+"Y1.4t90","D90","BL15","Hydrolysate","BL15_D90","Others",0.00114127082048118,4
+"Y1.4t90","D90","BL15","Hydrolysate","BL15_D90","Bacteroides",0,4
+"Y1.4t90","D90","BL15","Hydrolysate","BL15_D90","Blautia",0,4
+"Y1.4t90","D90","BL15","Hydrolysate","BL15_D90","Lactococcus",0,4
+"Y1.4t90","D90","BL15","Hydrolysate","BL15_D90","Cutibacterium",0.00040098704503393,4
+"Y1.4t90","D90","BL15","Hydrolysate","BL15_D90","Streptococcus",0,4
+"Y1.4t90","D90","BL15","Hydrolysate","BL15_D90","Acinetobacter",0.00185070943861814,4
+"Y1.4t90","D90","BL15","Hydrolysate","BL15_D90","Pseudomonas",0,4
+"Y1.4t90","D90","BL15","Hydrolysate","BL15_D90","Chloroplast",0,4
+"Y1.5t30","D30","BL15","Hydrolysate","BL15_D30","Vibrio",0.817576762779621,5
+"Y1.5t30","D30","BL15","Hydrolysate","BL15_D30","Unclassified Mycoplasmataceae genus",0.000871821042783023,5
+"Y1.5t30","D30","BL15","Hydrolysate","BL15_D30","Delftia",0,5
+"Y1.5t30","D30","BL15","Hydrolysate","BL15_D30","Cetobacterium",0,5
+"Y1.5t30","D30","BL15","Hydrolysate","BL15_D30","Photobacterium",0.168920643021179,5
+"Y1.5t30","D30","BL15","Hydrolysate","BL15_D30","Candidatus Hamiltonella",0,5
+"Y1.5t30","D30","BL15","Hydrolysate","BL15_D30","Buchnera",0,5
+"Y1.5t30","D30","BL15","Hydrolysate","BL15_D30","Others",0.00374245130560517,5
+"Y1.5t30","D30","BL15","Hydrolysate","BL15_D30","Bacteroides",0,5
+"Y1.5t30","D30","BL15","Hydrolysate","BL15_D30","Blautia",0,5
+"Y1.5t30","D30","BL15","Hydrolysate","BL15_D30","Lactococcus",0.00408267415156928,5
+"Y1.5t30","D30","BL15","Hydrolysate","BL15_D30","Cutibacterium",0,5
+"Y1.5t30","D30","BL15","Hydrolysate","BL15_D30","Streptococcus",0.004805647699243,5
+"Y1.5t30","D30","BL15","Hydrolysate","BL15_D30","Acinetobacter",0,5
+"Y1.5t30","D30","BL15","Hydrolysate","BL15_D30","Pseudomonas",0,5
+"Y1.5t30","D30","BL15","Hydrolysate","BL15_D30","Chloroplast",0,5
+"Y1.5t7","D07","BL15","Hydrolysate","BL15_D07","Vibrio",0.994136929849209,5
+"Y1.5t7","D07","BL15","Hydrolysate","BL15_D07","Unclassified Mycoplasmataceae genus",0,5
+"Y1.5t7","D07","BL15","Hydrolysate","BL15_D07","Delftia",0,5
+"Y1.5t7","D07","BL15","Hydrolysate","BL15_D07","Cetobacterium",0.00104898379694671,5
+"Y1.5t7","D07","BL15","Hydrolysate","BL15_D07","Photobacterium",0,5
+"Y1.5t7","D07","BL15","Hydrolysate","BL15_D07","Candidatus Hamiltonella",0,5
+"Y1.5t7","D07","BL15","Hydrolysate","BL15_D07","Buchnera",0,5
+"Y1.5t7","D07","BL15","Hydrolysate","BL15_D07","Others",0.00192938091224127,5
+"Y1.5t7","D07","BL15","Hydrolysate","BL15_D07","Bacteroides",0,5
+"Y1.5t7","D07","BL15","Hydrolysate","BL15_D07","Blautia",0,5
+"Y1.5t7","D07","BL15","Hydrolysate","BL15_D07","Lactococcus",0,5
+"Y1.5t7","D07","BL15","Hydrolysate","BL15_D07","Cutibacterium",0.00123630233211576,5
+"Y1.5t7","D07","BL15","Hydrolysate","BL15_D07","Streptococcus",7.4927414067622e-05,5
+"Y1.5t7","D07","BL15","Hydrolysate","BL15_D07","Acinetobacter",0.00129249789266648,5
+"Y1.5t7","D07","BL15","Hydrolysate","BL15_D07","Pseudomonas",0.000280977802753583,5
+"Y1.5t7","D07","BL15","Hydrolysate","BL15_D07","Chloroplast",0,5
+"Y1.5t90","D90","BL15","Hydrolysate","BL15_D90","Vibrio",0.768115417992479,5
+"Y1.5t90","D90","BL15","Hydrolysate","BL15_D90","Unclassified Mycoplasmataceae genus",0.231884582007521,5
+"Y1.5t90","D90","BL15","Hydrolysate","BL15_D90","Delftia",0,5
+"Y1.5t90","D90","BL15","Hydrolysate","BL15_D90","Cetobacterium",0,5
+"Y1.5t90","D90","BL15","Hydrolysate","BL15_D90","Photobacterium",0,5
+"Y1.5t90","D90","BL15","Hydrolysate","BL15_D90","Candidatus Hamiltonella",0,5
+"Y1.5t90","D90","BL15","Hydrolysate","BL15_D90","Buchnera",0,5
+"Y1.5t90","D90","BL15","Hydrolysate","BL15_D90","Others",0,5
+"Y1.5t90","D90","BL15","Hydrolysate","BL15_D90","Bacteroides",0,5
+"Y1.5t90","D90","BL15","Hydrolysate","BL15_D90","Blautia",0,5
+"Y1.5t90","D90","BL15","Hydrolysate","BL15_D90","Lactococcus",0,5
+"Y1.5t90","D90","BL15","Hydrolysate","BL15_D90","Cutibacterium",0,5
+"Y1.5t90","D90","BL15","Hydrolysate","BL15_D90","Streptococcus",0,5
+"Y1.5t90","D90","BL15","Hydrolysate","BL15_D90","Acinetobacter",0,5
+"Y1.5t90","D90","BL15","Hydrolysate","BL15_D90","Pseudomonas",0,5
+"Y1.5t90","D90","BL15","Hydrolysate","BL15_D90","Chloroplast",0,5
+"Y2.1t30","D30","BL15","Hydrolysate","BL15_D30","Vibrio",0.944069112793632,6
+"Y2.1t30","D30","BL15","Hydrolysate","BL15_D30","Unclassified Mycoplasmataceae genus",0.0519899048728402,6
+"Y2.1t30","D30","BL15","Hydrolysate","BL15_D30","Delftia",0,6
+"Y2.1t30","D30","BL15","Hydrolysate","BL15_D30","Cetobacterium",0.00287322849932052,6
+"Y2.1t30","D30","BL15","Hydrolysate","BL15_D30","Photobacterium",0.00021355076684139,6
+"Y2.1t30","D30","BL15","Hydrolysate","BL15_D30","Candidatus Hamiltonella",0,6
+"Y2.1t30","D30","BL15","Hydrolysate","BL15_D30","Buchnera",0,6
+"Y2.1t30","D30","BL15","Hydrolysate","BL15_D30","Others",7.765482430596e-05,6
+"Y2.1t30","D30","BL15","Hydrolysate","BL15_D30","Bacteroides",0,6
+"Y2.1t30","D30","BL15","Hydrolysate","BL15_D30","Blautia",0,6
+"Y2.1t30","D30","BL15","Hydrolysate","BL15_D30","Lactococcus",0.00034944670937682,6
+"Y2.1t30","D30","BL15","Hydrolysate","BL15_D30","Cutibacterium",0,6
+"Y2.1t30","D30","BL15","Hydrolysate","BL15_D30","Streptococcus",0.00042710153368278,6
+"Y2.1t30","D30","BL15","Hydrolysate","BL15_D30","Acinetobacter",0,6
+"Y2.1t30","D30","BL15","Hydrolysate","BL15_D30","Pseudomonas",0,6
+"Y2.1t30","D30","BL15","Hydrolysate","BL15_D30","Chloroplast",0,6
+"Y2.1t7","D07","BL15","Hydrolysate","BL15_D07","Vibrio",0.00869421213877619,6
+"Y2.1t7","D07","BL15","Hydrolysate","BL15_D07","Unclassified Mycoplasmataceae genus",0,6
+"Y2.1t7","D07","BL15","Hydrolysate","BL15_D07","Delftia",0.910077005878943,6
+"Y2.1t7","D07","BL15","Hydrolysate","BL15_D07","Cetobacterium",0,6
+"Y2.1t7","D07","BL15","Hydrolysate","BL15_D07","Photobacterium",0,6
+"Y2.1t7","D07","BL15","Hydrolysate","BL15_D07","Candidatus Hamiltonella",0.00576854075239436,6
+"Y2.1t7","D07","BL15","Hydrolysate","BL15_D07","Buchnera",0.0037536915900748,6
+"Y2.1t7","D07","BL15","Hydrolysate","BL15_D07","Others",0.025282216886092,6
+"Y2.1t7","D07","BL15","Hydrolysate","BL15_D07","Bacteroides",0.0182440451547018,6
+"Y2.1t7","D07","BL15","Hydrolysate","BL15_D07","Blautia",0.00516132593635285,6
+"Y2.1t7","D07","BL15","Hydrolysate","BL15_D07","Lactococcus",0,6
+"Y2.1t7","D07","BL15","Hydrolysate","BL15_D07","Cutibacterium",0,6
+"Y2.1t7","D07","BL15","Hydrolysate","BL15_D07","Streptococcus",0.0140487427893241,6
+"Y2.1t7","D07","BL15","Hydrolysate","BL15_D07","Acinetobacter",0,6
+"Y2.1t7","D07","BL15","Hydrolysate","BL15_D07","Pseudomonas",0.00897021887334051,6
+"Y2.1t7","D07","BL15","Hydrolysate","BL15_D07","Chloroplast",0,6
+"Y2.1t90","D90","BL15","Hydrolysate","BL15_D90","Vibrio",0.00424690508940853,6
+"Y2.1t90","D90","BL15","Hydrolysate","BL15_D90","Unclassified Mycoplasmataceae genus",0.97068431911967,6
+"Y2.1t90","D90","BL15","Hydrolysate","BL15_D90","Delftia",0,6
+"Y2.1t90","D90","BL15","Hydrolysate","BL15_D90","Cetobacterium",0.0250343878954608,6
+"Y2.1t90","D90","BL15","Hydrolysate","BL15_D90","Photobacterium",0,6
+"Y2.1t90","D90","BL15","Hydrolysate","BL15_D90","Candidatus Hamiltonella",0,6
+"Y2.1t90","D90","BL15","Hydrolysate","BL15_D90","Buchnera",0,6
+"Y2.1t90","D90","BL15","Hydrolysate","BL15_D90","Others",3.43878954607978e-05,6
+"Y2.1t90","D90","BL15","Hydrolysate","BL15_D90","Bacteroides",0,6
+"Y2.1t90","D90","BL15","Hydrolysate","BL15_D90","Blautia",0,6
+"Y2.1t90","D90","BL15","Hydrolysate","BL15_D90","Lactococcus",0,6
+"Y2.1t90","D90","BL15","Hydrolysate","BL15_D90","Cutibacterium",0,6
+"Y2.1t90","D90","BL15","Hydrolysate","BL15_D90","Streptococcus",0,6
+"Y2.1t90","D90","BL15","Hydrolysate","BL15_D90","Acinetobacter",0,6
+"Y2.1t90","D90","BL15","Hydrolysate","BL15_D90","Pseudomonas",0,6
+"Y2.1t90","D90","BL15","Hydrolysate","BL15_D90","Chloroplast",0,6
+"Y2.2t30","D30","BL15","Hydrolysate","BL15_D30","Vibrio",0.113358863835414,7
+"Y2.2t30","D30","BL15","Hydrolysate","BL15_D30","Unclassified Mycoplasmataceae genus",0.885610757156841,7
+"Y2.2t30","D30","BL15","Hydrolysate","BL15_D30","Delftia",0,7
+"Y2.2t30","D30","BL15","Hydrolysate","BL15_D30","Cetobacterium",0,7
+"Y2.2t30","D30","BL15","Hydrolysate","BL15_D30","Photobacterium",0.000618227404647009,7
+"Y2.2t30","D30","BL15","Hydrolysate","BL15_D30","Candidatus Hamiltonella",0,7
+"Y2.2t30","D30","BL15","Hydrolysate","BL15_D30","Buchnera",0,7
+"Y2.2t30","D30","BL15","Hydrolysate","BL15_D30","Others",0,7
+"Y2.2t30","D30","BL15","Hydrolysate","BL15_D30","Bacteroides",0,7
+"Y2.2t30","D30","BL15","Hydrolysate","BL15_D30","Blautia",0,7
+"Y2.2t30","D30","BL15","Hydrolysate","BL15_D30","Lactococcus",0,7
+"Y2.2t30","D30","BL15","Hydrolysate","BL15_D30","Cutibacterium",0.000412151603098006,7
+"Y2.2t30","D30","BL15","Hydrolysate","BL15_D30","Streptococcus",0,7
+"Y2.2t30","D30","BL15","Hydrolysate","BL15_D30","Acinetobacter",0,7
+"Y2.2t30","D30","BL15","Hydrolysate","BL15_D30","Pseudomonas",0,7
+"Y2.2t30","D30","BL15","Hydrolysate","BL15_D30","Chloroplast",0,7
+"Y2.2t7","D07","BL15","Hydrolysate","BL15_D07","Vibrio",0.996247589597484,7
+"Y2.2t7","D07","BL15","Hydrolysate","BL15_D07","Unclassified Mycoplasmataceae genus",0,7
+"Y2.2t7","D07","BL15","Hydrolysate","BL15_D07","Delftia",0,7
+"Y2.2t7","D07","BL15","Hydrolysate","BL15_D07","Cetobacterium",0.00357868769869534,7
+"Y2.2t7","D07","BL15","Hydrolysate","BL15_D07","Photobacterium",0,7
+"Y2.2t7","D07","BL15","Hydrolysate","BL15_D07","Candidatus Hamiltonella",0,7
+"Y2.2t7","D07","BL15","Hydrolysate","BL15_D07","Buchnera",0,7
+"Y2.2t7","D07","BL15","Hydrolysate","BL15_D07","Others",0.000173722703820162,7
+"Y2.2t7","D07","BL15","Hydrolysate","BL15_D07","Bacteroides",0,7
+"Y2.2t7","D07","BL15","Hydrolysate","BL15_D07","Blautia",0,7
+"Y2.2t7","D07","BL15","Hydrolysate","BL15_D07","Lactococcus",0,7
+"Y2.2t7","D07","BL15","Hydrolysate","BL15_D07","Cutibacterium",0,7
+"Y2.2t7","D07","BL15","Hydrolysate","BL15_D07","Streptococcus",0,7
+"Y2.2t7","D07","BL15","Hydrolysate","BL15_D07","Acinetobacter",0,7
+"Y2.2t7","D07","BL15","Hydrolysate","BL15_D07","Pseudomonas",0,7
+"Y2.2t7","D07","BL15","Hydrolysate","BL15_D07","Chloroplast",0,7
+"Y2.2t90","D90","BL15","Hydrolysate","BL15_D90","Vibrio",0.968930285814947,7
+"Y2.2t90","D90","BL15","Hydrolysate","BL15_D90","Unclassified Mycoplasmataceae genus",0.0308054784868102,7
+"Y2.2t90","D90","BL15","Hydrolysate","BL15_D90","Delftia",0,7
+"Y2.2t90","D90","BL15","Hydrolysate","BL15_D90","Cetobacterium",0,7
+"Y2.2t90","D90","BL15","Hydrolysate","BL15_D90","Photobacterium",0.00011009820760118,7
+"Y2.2t90","D90","BL15","Hydrolysate","BL15_D90","Candidatus Hamiltonella",0,7
+"Y2.2t90","D90","BL15","Hydrolysate","BL15_D90","Buchnera",0,7
+"Y2.2t90","D90","BL15","Hydrolysate","BL15_D90","Others",0,7
+"Y2.2t90","D90","BL15","Hydrolysate","BL15_D90","Bacteroides",0,7
+"Y2.2t90","D90","BL15","Hydrolysate","BL15_D90","Blautia",0,7
+"Y2.2t90","D90","BL15","Hydrolysate","BL15_D90","Lactococcus",4.40392830404721e-05,7
+"Y2.2t90","D90","BL15","Hydrolysate","BL15_D90","Cutibacterium",0,7
+"Y2.2t90","D90","BL15","Hydrolysate","BL15_D90","Streptococcus",0.00011009820760118,7
+"Y2.2t90","D90","BL15","Hydrolysate","BL15_D90","Acinetobacter",0,7
+"Y2.2t90","D90","BL15","Hydrolysate","BL15_D90","Pseudomonas",0,7
+"Y2.2t90","D90","BL15","Hydrolysate","BL15_D90","Chloroplast",0,7
+"Y2.3t30","D30","BL15","Hydrolysate","BL15_D30","Vibrio",0.0309245483528162,8
+"Y2.3t30","D30","BL15","Hydrolysate","BL15_D30","Unclassified Mycoplasmataceae genus",0,8
+"Y2.3t30","D30","BL15","Hydrolysate","BL15_D30","Delftia",0,8
+"Y2.3t30","D30","BL15","Hydrolysate","BL15_D30","Cetobacterium",0.000602196245129295,8
+"Y2.3t30","D30","BL15","Hydrolysate","BL15_D30","Photobacterium",0.944403117251151,8
+"Y2.3t30","D30","BL15","Hydrolysate","BL15_D30","Candidatus Hamiltonella",0,8
+"Y2.3t30","D30","BL15","Hydrolysate","BL15_D30","Buchnera",0,8
+"Y2.3t30","D30","BL15","Hydrolysate","BL15_D30","Others",0.00936946510804109,8
+"Y2.3t30","D30","BL15","Hydrolysate","BL15_D30","Bacteroides",0,8
+"Y2.3t30","D30","BL15","Hydrolysate","BL15_D30","Blautia",0,8
+"Y2.3t30","D30","BL15","Hydrolysate","BL15_D30","Lactococcus",0.00715550832447751,8
+"Y2.3t30","D30","BL15","Hydrolysate","BL15_D30","Cutibacterium",0,8
+"Y2.3t30","D30","BL15","Hydrolysate","BL15_D30","Streptococcus",0.0075451647183847,8
+"Y2.3t30","D30","BL15","Hydrolysate","BL15_D30","Acinetobacter",0,8
+"Y2.3t30","D30","BL15","Hydrolysate","BL15_D30","Pseudomonas",0,8
+"Y2.3t30","D30","BL15","Hydrolysate","BL15_D30","Chloroplast",0,8
+"Y2.3t7","D07","BL15","Hydrolysate","BL15_D07","Vibrio",0.994833326954725,8
+"Y2.3t7","D07","BL15","Hydrolysate","BL15_D07","Unclassified Mycoplasmataceae genus",0,8
+"Y2.3t7","D07","BL15","Hydrolysate","BL15_D07","Delftia",0,8
+"Y2.3t7","D07","BL15","Hydrolysate","BL15_D07","Cetobacterium",0,8
+"Y2.3t7","D07","BL15","Hydrolysate","BL15_D07","Photobacterium",0,8
+"Y2.3t7","D07","BL15","Hydrolysate","BL15_D07","Candidatus Hamiltonella",0,8
+"Y2.3t7","D07","BL15","Hydrolysate","BL15_D07","Buchnera",0,8
+"Y2.3t7","D07","BL15","Hydrolysate","BL15_D07","Others",0.00252592904435684,8
+"Y2.3t7","D07","BL15","Hydrolysate","BL15_D07","Bacteroides",0,8
+"Y2.3t7","D07","BL15","Hydrolysate","BL15_D07","Blautia",0,8
+"Y2.3t7","D07","BL15","Hydrolysate","BL15_D07","Lactococcus",0,8
+"Y2.3t7","D07","BL15","Hydrolysate","BL15_D07","Cutibacterium",0.00141605113092732,8
+"Y2.3t7","D07","BL15","Hydrolysate","BL15_D07","Streptococcus",0,8
+"Y2.3t7","D07","BL15","Hydrolysate","BL15_D07","Acinetobacter",0,8
+"Y2.3t7","D07","BL15","Hydrolysate","BL15_D07","Pseudomonas",0,8
+"Y2.3t7","D07","BL15","Hydrolysate","BL15_D07","Chloroplast",0.0012246928699912,8
+"Y2.3t90","D90","BL15","Hydrolysate","BL15_D90","Vibrio",0.379471945976863,8
+"Y2.3t90","D90","BL15","Hydrolysate","BL15_D90","Unclassified Mycoplasmataceae genus",0.617151607963247,8
+"Y2.3t90","D90","BL15","Hydrolysate","BL15_D90","Delftia",0,8
+"Y2.3t90","D90","BL15","Hydrolysate","BL15_D90","Cetobacterium",0.0033764460598904,8
+"Y2.3t90","D90","BL15","Hydrolysate","BL15_D90","Photobacterium",0,8
+"Y2.3t90","D90","BL15","Hydrolysate","BL15_D90","Candidatus Hamiltonella",0,8
+"Y2.3t90","D90","BL15","Hydrolysate","BL15_D90","Buchnera",0,8
+"Y2.3t90","D90","BL15","Hydrolysate","BL15_D90","Others",0,8
+"Y2.3t90","D90","BL15","Hydrolysate","BL15_D90","Bacteroides",0,8
+"Y2.3t90","D90","BL15","Hydrolysate","BL15_D90","Blautia",0,8
+"Y2.3t90","D90","BL15","Hydrolysate","BL15_D90","Lactococcus",0,8
+"Y2.3t90","D90","BL15","Hydrolysate","BL15_D90","Cutibacterium",0,8
+"Y2.3t90","D90","BL15","Hydrolysate","BL15_D90","Streptococcus",0,8
+"Y2.3t90","D90","BL15","Hydrolysate","BL15_D90","Acinetobacter",0,8
+"Y2.3t90","D90","BL15","Hydrolysate","BL15_D90","Pseudomonas",0,8
+"Y2.3t90","D90","BL15","Hydrolysate","BL15_D90","Chloroplast",0,8
+"Y2.4t30","D30","BL15","Hydrolysate","BL15_D30","Vibrio",0.175237690724344,9
+"Y2.4t30","D30","BL15","Hydrolysate","BL15_D30","Unclassified Mycoplasmataceae genus",0.000196033587087921,9
+"Y2.4t30","D30","BL15","Hydrolysate","BL15_D30","Delftia",0,9
+"Y2.4t30","D30","BL15","Hydrolysate","BL15_D30","Cetobacterium",0.00114352925801287,9
+"Y2.4t30","D30","BL15","Hydrolysate","BL15_D30","Photobacterium",0.799212598425197,9
+"Y2.4t30","D30","BL15","Hydrolysate","BL15_D30","Candidatus Hamiltonella",0,9
+"Y2.4t30","D30","BL15","Hydrolysate","BL15_D30","Buchnera",0,9
+"Y2.4t30","D30","BL15","Hydrolysate","BL15_D30","Others",0.0103407717188878,9
+"Y2.4t30","D30","BL15","Hydrolysate","BL15_D30","Bacteroides",0,9
+"Y2.4t30","D30","BL15","Hydrolysate","BL15_D30","Blautia",0,9
+"Y2.4t30","D30","BL15","Hydrolysate","BL15_D30","Lactococcus",0.00707354526742249,9
+"Y2.4t30","D30","BL15","Hydrolysate","BL15_D30","Cutibacterium",0,9
+"Y2.4t30","D30","BL15","Hydrolysate","BL15_D30","Streptococcus",0.00669781422550397,9
+"Y2.4t30","D30","BL15","Hydrolysate","BL15_D30","Acinetobacter",0,9
+"Y2.4t30","D30","BL15","Hydrolysate","BL15_D30","Pseudomonas",0,9
+"Y2.4t30","D30","BL15","Hydrolysate","BL15_D30","Chloroplast",9.80167935439605e-05,9
+"Y2.4t7","D07","BL15","Hydrolysate","BL15_D07","Vibrio",0.972751209356439,9
+"Y2.4t7","D07","BL15","Hydrolysate","BL15_D07","Unclassified Mycoplasmataceae genus",0,9
+"Y2.4t7","D07","BL15","Hydrolysate","BL15_D07","Delftia",0,9
+"Y2.4t7","D07","BL15","Hydrolysate","BL15_D07","Cetobacterium",0.00816443165350152,9
+"Y2.4t7","D07","BL15","Hydrolysate","BL15_D07","Photobacterium",0,9
+"Y2.4t7","D07","BL15","Hydrolysate","BL15_D07","Candidatus Hamiltonella",0,9
+"Y2.4t7","D07","BL15","Hydrolysate","BL15_D07","Buchnera",0,9
+"Y2.4t7","D07","BL15","Hydrolysate","BL15_D07","Others",0.0061845569775274,9
+"Y2.4t7","D07","BL15","Hydrolysate","BL15_D07","Bacteroides",0,9
+"Y2.4t7","D07","BL15","Hydrolysate","BL15_D07","Blautia",0,9
+"Y2.4t7","D07","BL15","Hydrolysate","BL15_D07","Lactococcus",0,9
+"Y2.4t7","D07","BL15","Hydrolysate","BL15_D07","Cutibacterium",0.0103484171208132,9
+"Y2.4t7","D07","BL15","Hydrolysate","BL15_D07","Streptococcus",0.00255138489171923,9
+"Y2.4t7","D07","BL15","Hydrolysate","BL15_D07","Acinetobacter",0,9
+"Y2.4t7","D07","BL15","Hydrolysate","BL15_D07","Pseudomonas",0,9
+"Y2.4t7","D07","BL15","Hydrolysate","BL15_D07","Chloroplast",0,9
+"Y2.4t90","D90","BL15","Hydrolysate","BL15_D90","Vibrio",0.0222146991020619,9
+"Y2.4t90","D90","BL15","Hydrolysate","BL15_D90","Unclassified Mycoplasmataceae genus",0.964356531411713,9
+"Y2.4t90","D90","BL15","Hydrolysate","BL15_D90","Delftia",0,9
+"Y2.4t90","D90","BL15","Hydrolysate","BL15_D90","Cetobacterium",0.00206348438683884,9
+"Y2.4t90","D90","BL15","Hydrolysate","BL15_D90","Photobacterium",0,9
+"Y2.4t90","D90","BL15","Hydrolysate","BL15_D90","Candidatus Hamiltonella",0,9
+"Y2.4t90","D90","BL15","Hydrolysate","BL15_D90","Buchnera",0,9
+"Y2.4t90","D90","BL15","Hydrolysate","BL15_D90","Others",0.0107365672002708,9
+"Y2.4t90","D90","BL15","Hydrolysate","BL15_D90","Bacteroides",0,9
+"Y2.4t90","D90","BL15","Hydrolysate","BL15_D90","Blautia",0,9
+"Y2.4t90","D90","BL15","Hydrolysate","BL15_D90","Lactococcus",0,9
+"Y2.4t90","D90","BL15","Hydrolysate","BL15_D90","Cutibacterium",0.000322419435443569,9
+"Y2.4t90","D90","BL15","Hydrolysate","BL15_D90","Streptococcus",0,9
+"Y2.4t90","D90","BL15","Hydrolysate","BL15_D90","Acinetobacter",0,9
+"Y2.4t90","D90","BL15","Hydrolysate","BL15_D90","Pseudomonas",0.00030629846367139,9
+"Y2.4t90","D90","BL15","Hydrolysate","BL15_D90","Chloroplast",0,9
+"Y2.5t30","D30","BL15","Hydrolysate","BL15_D30","Vibrio",0.859483914209115,10
+"Y2.5t30","D30","BL15","Hydrolysate","BL15_D30","Unclassified Mycoplasmataceae genus",0,10
+"Y2.5t30","D30","BL15","Hydrolysate","BL15_D30","Delftia",0,10
+"Y2.5t30","D30","BL15","Hydrolysate","BL15_D30","Cetobacterium",0.140516085790885,10
+"Y2.5t30","D30","BL15","Hydrolysate","BL15_D30","Photobacterium",0,10
+"Y2.5t30","D30","BL15","Hydrolysate","BL15_D30","Candidatus Hamiltonella",0,10
+"Y2.5t30","D30","BL15","Hydrolysate","BL15_D30","Buchnera",0,10
+"Y2.5t30","D30","BL15","Hydrolysate","BL15_D30","Others",0,10
+"Y2.5t30","D30","BL15","Hydrolysate","BL15_D30","Bacteroides",0,10
+"Y2.5t30","D30","BL15","Hydrolysate","BL15_D30","Blautia",0,10
+"Y2.5t30","D30","BL15","Hydrolysate","BL15_D30","Lactococcus",0,10
+"Y2.5t30","D30","BL15","Hydrolysate","BL15_D30","Cutibacterium",0,10
+"Y2.5t30","D30","BL15","Hydrolysate","BL15_D30","Streptococcus",0,10
+"Y2.5t30","D30","BL15","Hydrolysate","BL15_D30","Acinetobacter",0,10
+"Y2.5t30","D30","BL15","Hydrolysate","BL15_D30","Pseudomonas",0,10
+"Y2.5t30","D30","BL15","Hydrolysate","BL15_D30","Chloroplast",0,10
+"Y2.5t7","D07","BL15","Hydrolysate","BL15_D07","Vibrio",0.969877678587466,10
+"Y2.5t7","D07","BL15","Hydrolysate","BL15_D07","Unclassified Mycoplasmataceae genus",5.38860848166975e-05,10
+"Y2.5t7","D07","BL15","Hydrolysate","BL15_D07","Delftia",0,10
+"Y2.5t7","D07","BL15","Hydrolysate","BL15_D07","Cetobacterium",0.0284159287266718,10
+"Y2.5t7","D07","BL15","Hydrolysate","BL15_D07","Photobacterium",0,10
+"Y2.5t7","D07","BL15","Hydrolysate","BL15_D07","Candidatus Hamiltonella",0,10
+"Y2.5t7","D07","BL15","Hydrolysate","BL15_D07","Buchnera",0,10
+"Y2.5t7","D07","BL15","Hydrolysate","BL15_D07","Others",0.000610708961255905,10
+"Y2.5t7","D07","BL15","Hydrolysate","BL15_D07","Bacteroides",0,10
+"Y2.5t7","D07","BL15","Hydrolysate","BL15_D07","Blautia",0,10
+"Y2.5t7","D07","BL15","Hydrolysate","BL15_D07","Lactococcus",0.000556822876439208,10
+"Y2.5t7","D07","BL15","Hydrolysate","BL15_D07","Cutibacterium",0,10
+"Y2.5t7","D07","BL15","Hydrolysate","BL15_D07","Streptococcus",0.000484974763350278,10
+"Y2.5t7","D07","BL15","Hydrolysate","BL15_D07","Acinetobacter",0,10
+"Y2.5t7","D07","BL15","Hydrolysate","BL15_D07","Pseudomonas",0,10
+"Y2.5t7","D07","BL15","Hydrolysate","BL15_D07","Chloroplast",0,10
+"Y2.5t90","D90","BL15","Hydrolysate","BL15_D90","Vibrio",0.584501772351319,10
+"Y2.5t90","D90","BL15","Hydrolysate","BL15_D90","Unclassified Mycoplasmataceae genus",0.396534068530918,10
+"Y2.5t90","D90","BL15","Hydrolysate","BL15_D90","Delftia",0,10
+"Y2.5t90","D90","BL15","Hydrolysate","BL15_D90","Cetobacterium",0.00025600630169358,10
+"Y2.5t90","D90","BL15","Hydrolysate","BL15_D90","Photobacterium",0,10
+"Y2.5t90","D90","BL15","Hydrolysate","BL15_D90","Candidatus Hamiltonella",0,10
+"Y2.5t90","D90","BL15","Hydrolysate","BL15_D90","Buchnera",0,10
+"Y2.5t90","D90","BL15","Hydrolysate","BL15_D90","Others",0.0178022843639228,10
+"Y2.5t90","D90","BL15","Hydrolysate","BL15_D90","Bacteroides",0,10
+"Y2.5t90","D90","BL15","Hydrolysate","BL15_D90","Blautia",0,10
+"Y2.5t90","D90","BL15","Hydrolysate","BL15_D90","Lactococcus",0,10
+"Y2.5t90","D90","BL15","Hydrolysate","BL15_D90","Cutibacterium",0.000393855848759354,10
+"Y2.5t90","D90","BL15","Hydrolysate","BL15_D90","Streptococcus",0,10
+"Y2.5t90","D90","BL15","Hydrolysate","BL15_D90","Acinetobacter",0,10
+"Y2.5t90","D90","BL15","Hydrolysate","BL15_D90","Pseudomonas",0.00051201260338716,10
+"Y2.5t90","D90","BL15","Hydrolysate","BL15_D90","Chloroplast",0,10
+"Y3.1t30","D30","BL15","Hydrolysate","BL15_D30","Vibrio",0.460636515912898,11
+"Y3.1t30","D30","BL15","Hydrolysate","BL15_D30","Unclassified Mycoplasmataceae genus",0,11
+"Y3.1t30","D30","BL15","Hydrolysate","BL15_D30","Delftia",0,11
+"Y3.1t30","D30","BL15","Hydrolysate","BL15_D30","Cetobacterium",0.00442541927745725,11
+"Y3.1t30","D30","BL15","Hydrolysate","BL15_D30","Photobacterium",0.534090204106955,11
+"Y3.1t30","D30","BL15","Hydrolysate","BL15_D30","Candidatus Hamiltonella",0,11
+"Y3.1t30","D30","BL15","Hydrolysate","BL15_D30","Buchnera",0,11
+"Y3.1t30","D30","BL15","Hydrolysate","BL15_D30","Others",0.000682424468019108,11
+"Y3.1t30","D30","BL15","Hydrolysate","BL15_D30","Bacteroides",0,11
+"Y3.1t30","D30","BL15","Hydrolysate","BL15_D30","Blautia",0,11
+"Y3.1t30","D30","BL15","Hydrolysate","BL15_D30","Lactococcus",0,11
+"Y3.1t30","D30","BL15","Hydrolysate","BL15_D30","Cutibacterium",0.000165436234671299,11
+"Y3.1t30","D30","BL15","Hydrolysate","BL15_D30","Streptococcus",0,11
+"Y3.1t30","D30","BL15","Hydrolysate","BL15_D30","Acinetobacter",0,11
+"Y3.1t30","D30","BL15","Hydrolysate","BL15_D30","Pseudomonas",0,11
+"Y3.1t30","D30","BL15","Hydrolysate","BL15_D30","Chloroplast",0,11
+"Y3.1t7","D07","BL15","Hydrolysate","BL15_D07","Vibrio",0.989290096406661,11
+"Y3.1t7","D07","BL15","Hydrolysate","BL15_D07","Unclassified Mycoplasmataceae genus",0,11
+"Y3.1t7","D07","BL15","Hydrolysate","BL15_D07","Delftia",0,11
+"Y3.1t7","D07","BL15","Hydrolysate","BL15_D07","Cetobacterium",0.00988606485539001,11
+"Y3.1t7","D07","BL15","Hydrolysate","BL15_D07","Photobacterium",0.00028045574057844,11
+"Y3.1t7","D07","BL15","Hydrolysate","BL15_D07","Candidatus Hamiltonella",0,11
+"Y3.1t7","D07","BL15","Hydrolysate","BL15_D07","Buchnera",0,11
+"Y3.1t7","D07","BL15","Hydrolysate","BL15_D07","Others",0,11
+"Y3.1t7","D07","BL15","Hydrolysate","BL15_D07","Bacteroides",0,11
+"Y3.1t7","D07","BL15","Hydrolysate","BL15_D07","Blautia",0,11
+"Y3.1t7","D07","BL15","Hydrolysate","BL15_D07","Lactococcus",0,11
+"Y3.1t7","D07","BL15","Hydrolysate","BL15_D07","Cutibacterium",0,11
+"Y3.1t7","D07","BL15","Hydrolysate","BL15_D07","Streptococcus",0,11
+"Y3.1t7","D07","BL15","Hydrolysate","BL15_D07","Acinetobacter",0.000543382997370728,11
+"Y3.1t7","D07","BL15","Hydrolysate","BL15_D07","Pseudomonas",0,11
+"Y3.1t7","D07","BL15","Hydrolysate","BL15_D07","Chloroplast",0,11
+"Y3.1t90","D90","BL15","Hydrolysate","BL15_D90","Vibrio",0.00114110589462702,11
+"Y3.1t90","D90","BL15","Hydrolysate","BL15_D90","Unclassified Mycoplasmataceae genus",0.998549165362546,11
+"Y3.1t90","D90","BL15","Hydrolysate","BL15_D90","Delftia",0,11
+"Y3.1t90","D90","BL15","Hydrolysate","BL15_D90","Cetobacterium",0,11
+"Y3.1t90","D90","BL15","Hydrolysate","BL15_D90","Photobacterium",0,11
+"Y3.1t90","D90","BL15","Hydrolysate","BL15_D90","Candidatus Hamiltonella",0,11
+"Y3.1t90","D90","BL15","Hydrolysate","BL15_D90","Buchnera",0,11
+"Y3.1t90","D90","BL15","Hydrolysate","BL15_D90","Others",0.000130412102243088,11
+"Y3.1t90","D90","BL15","Hydrolysate","BL15_D90","Bacteroides",0,11
+"Y3.1t90","D90","BL15","Hydrolysate","BL15_D90","Blautia",0,11
+"Y3.1t90","D90","BL15","Hydrolysate","BL15_D90","Lactococcus",0,11
+"Y3.1t90","D90","BL15","Hydrolysate","BL15_D90","Cutibacterium",0.000179316640584246,11
+"Y3.1t90","D90","BL15","Hydrolysate","BL15_D90","Streptococcus",0,11
+"Y3.1t90","D90","BL15","Hydrolysate","BL15_D90","Acinetobacter",0,11
+"Y3.1t90","D90","BL15","Hydrolysate","BL15_D90","Pseudomonas",0,11
+"Y3.1t90","D90","BL15","Hydrolysate","BL15_D90","Chloroplast",0,11
+"Y3.2t30","D30","BL15","Hydrolysate","BL15_D30","Vibrio",0.00813578846949979,12
+"Y3.2t30","D30","BL15","Hydrolysate","BL15_D30","Unclassified Mycoplasmataceae genus",0.000377990172255521,12
+"Y3.2t30","D30","BL15","Hydrolysate","BL15_D30","Delftia",0,12
+"Y3.2t30","D30","BL15","Hydrolysate","BL15_D30","Cetobacterium",0.967276850801879,12
+"Y3.2t30","D30","BL15","Hydrolysate","BL15_D30","Photobacterium",0.02383138038411,12
+"Y3.2t30","D30","BL15","Hydrolysate","BL15_D30","Candidatus Hamiltonella",0,12
+"Y3.2t30","D30","BL15","Hydrolysate","BL15_D30","Buchnera",0,12
+"Y3.2t30","D30","BL15","Hydrolysate","BL15_D30","Others",0.000305992044206851,12
+"Y3.2t30","D30","BL15","Hydrolysate","BL15_D30","Bacteroides",0,12
+"Y3.2t30","D30","BL15","Hydrolysate","BL15_D30","Blautia",0,12
+"Y3.2t30","D30","BL15","Hydrolysate","BL15_D30","Lactococcus",0,12
+"Y3.2t30","D30","BL15","Hydrolysate","BL15_D30","Cutibacterium",7.19981280486707e-05,12
+"Y3.2t30","D30","BL15","Hydrolysate","BL15_D30","Streptococcus",0,12
+"Y3.2t30","D30","BL15","Hydrolysate","BL15_D30","Acinetobacter",0,12
+"Y3.2t30","D30","BL15","Hydrolysate","BL15_D30","Pseudomonas",0,12
+"Y3.2t30","D30","BL15","Hydrolysate","BL15_D30","Chloroplast",0,12
+"Y3.2t7","D07","BL15","Hydrolysate","BL15_D07","Vibrio",0.0553154566236713,12
+"Y3.2t7","D07","BL15","Hydrolysate","BL15_D07","Unclassified Mycoplasmataceae genus",0,12
+"Y3.2t7","D07","BL15","Hydrolysate","BL15_D07","Delftia",0.879307180163193,12
+"Y3.2t7","D07","BL15","Hydrolysate","BL15_D07","Cetobacterium",0,12
+"Y3.2t7","D07","BL15","Hydrolysate","BL15_D07","Photobacterium",0,12
+"Y3.2t7","D07","BL15","Hydrolysate","BL15_D07","Candidatus Hamiltonella",0.00352083298569975,12
+"Y3.2t7","D07","BL15","Hydrolysate","BL15_D07","Buchnera",0.00225266565435766,12
+"Y3.2t7","D07","BL15","Hydrolysate","BL15_D07","Others",0.0419329539955614,12
+"Y3.2t7","D07","BL15","Hydrolysate","BL15_D07","Bacteroides",0.0057067529910394,12
+"Y3.2t7","D07","BL15","Hydrolysate","BL15_D07","Blautia",0.00562332092976689,12
+"Y3.2t7","D07","BL15","Hydrolysate","BL15_D07","Lactococcus",0,12
+"Y3.2t7","D07","BL15","Hydrolysate","BL15_D07","Cutibacterium",0.00255302107493868,12
+"Y3.2t7","D07","BL15","Hydrolysate","BL15_D07","Streptococcus",0,12
+"Y3.2t7","D07","BL15","Hydrolysate","BL15_D07","Acinetobacter",0.00332059603864573,12
+"Y3.2t7","D07","BL15","Hydrolysate","BL15_D07","Pseudomonas",0,12
+"Y3.2t7","D07","BL15","Hydrolysate","BL15_D07","Chloroplast",0.000467219543126033,12
+"Y3.2t90","D90","BL15","Hydrolysate","BL15_D90","Vibrio",0.00312685142518597,12
+"Y3.2t90","D90","BL15","Hydrolysate","BL15_D90","Unclassified Mycoplasmataceae genus",0.993812125600685,12
+"Y3.2t90","D90","BL15","Hydrolysate","BL15_D90","Delftia",0,12
+"Y3.2t90","D90","BL15","Hydrolysate","BL15_D90","Cetobacterium",3.29142255282733e-05,12
+"Y3.2t90","D90","BL15","Hydrolysate","BL15_D90","Photobacterium",0,12
+"Y3.2t90","D90","BL15","Hydrolysate","BL15_D90","Candidatus Hamiltonella",0,12
+"Y3.2t90","D90","BL15","Hydrolysate","BL15_D90","Buchnera",0,12
+"Y3.2t90","D90","BL15","Hydrolysate","BL15_D90","Others",0.0014811401487723,12
+"Y3.2t90","D90","BL15","Hydrolysate","BL15_D90","Bacteroides",0,12
+"Y3.2t90","D90","BL15","Hydrolysate","BL15_D90","Blautia",0,12
+"Y3.2t90","D90","BL15","Hydrolysate","BL15_D90","Lactococcus",6.58284510565466e-05,12
+"Y3.2t90","D90","BL15","Hydrolysate","BL15_D90","Cutibacterium",0,12
+"Y3.2t90","D90","BL15","Hydrolysate","BL15_D90","Streptococcus",0,12
+"Y3.2t90","D90","BL15","Hydrolysate","BL15_D90","Acinetobacter",0.00014811401487723,12
+"Y3.2t90","D90","BL15","Hydrolysate","BL15_D90","Pseudomonas",0,12
+"Y3.2t90","D90","BL15","Hydrolysate","BL15_D90","Chloroplast",0.00133302613389507,12
+"Y3.3t30","D30","BL15","Hydrolysate","BL15_D30","Vibrio",0.294770750563728,13
+"Y3.3t30","D30","BL15","Hydrolysate","BL15_D30","Unclassified Mycoplasmataceae genus",0.0458713626114034,13
+"Y3.3t30","D30","BL15","Hydrolysate","BL15_D30","Delftia",0,13
+"Y3.3t30","D30","BL15","Hydrolysate","BL15_D30","Cetobacterium",0.330978202512617,13
+"Y3.3t30","D30","BL15","Hydrolysate","BL15_D30","Photobacterium",0.282894878127349,13
+"Y3.3t30","D30","BL15","Hydrolysate","BL15_D30","Candidatus Hamiltonella",0,13
+"Y3.3t30","D30","BL15","Hydrolysate","BL15_D30","Buchnera",0,13
+"Y3.3t30","D30","BL15","Hydrolysate","BL15_D30","Others",0.0292064855578224,13
+"Y3.3t30","D30","BL15","Hydrolysate","BL15_D30","Bacteroides",0,13
+"Y3.3t30","D30","BL15","Hydrolysate","BL15_D30","Blautia",0,13
+"Y3.3t30","D30","BL15","Hydrolysate","BL15_D30","Lactococcus",0,13
+"Y3.3t30","D30","BL15","Hydrolysate","BL15_D30","Cutibacterium",0.00369376140878342,13
+"Y3.3t30","D30","BL15","Hydrolysate","BL15_D30","Streptococcus",0.000579834639750886,13
+"Y3.3t30","D30","BL15","Hydrolysate","BL15_D30","Acinetobacter",0.011338988510684,13
+"Y3.3t30","D30","BL15","Hydrolysate","BL15_D30","Pseudomonas",0.000665736067862128,13
+"Y3.3t30","D30","BL15","Hydrolysate","BL15_D30","Chloroplast",0,13
+"Y3.3t7","D07","BL15","Hydrolysate","BL15_D07","Vibrio",0.954661953159523,13
+"Y3.3t7","D07","BL15","Hydrolysate","BL15_D07","Unclassified Mycoplasmataceae genus",0,13
+"Y3.3t7","D07","BL15","Hydrolysate","BL15_D07","Delftia",0,13
+"Y3.3t7","D07","BL15","Hydrolysate","BL15_D07","Cetobacterium",0.0306849315068493,13
+"Y3.3t7","D07","BL15","Hydrolysate","BL15_D07","Photobacterium",0.0115952275740168,13
+"Y3.3t7","D07","BL15","Hydrolysate","BL15_D07","Candidatus Hamiltonella",0,13
+"Y3.3t7","D07","BL15","Hydrolysate","BL15_D07","Buchnera",0,13
+"Y3.3t7","D07","BL15","Hydrolysate","BL15_D07","Others",0.000972160848431286,13
+"Y3.3t7","D07","BL15","Hydrolysate","BL15_D07","Bacteroides",0,13
+"Y3.3t7","D07","BL15","Hydrolysate","BL15_D07","Blautia",0,13
+"Y3.3t7","D07","BL15","Hydrolysate","BL15_D07","Lactococcus",0.000989836500220946,13
+"Y3.3t7","D07","BL15","Hydrolysate","BL15_D07","Cutibacterium",0,13
+"Y3.3t7","D07","BL15","Hydrolysate","BL15_D07","Streptococcus",0.00102518780380027,13
+"Y3.3t7","D07","BL15","Hydrolysate","BL15_D07","Acinetobacter",7.0702607158639e-05,13
+"Y3.3t7","D07","BL15","Hydrolysate","BL15_D07","Pseudomonas",0,13
+"Y3.3t7","D07","BL15","Hydrolysate","BL15_D07","Chloroplast",0,13
+"Y3.3t90","D90","BL15","Hydrolysate","BL15_D90","Vibrio",0.704563706833339,13
+"Y3.3t90","D90","BL15","Hydrolysate","BL15_D90","Unclassified Mycoplasmataceae genus",0.29540137574636,13
+"Y3.3t90","D90","BL15","Hydrolysate","BL15_D90","Delftia",0,13
+"Y3.3t90","D90","BL15","Hydrolysate","BL15_D90","Cetobacterium",3.49174203009882e-05,13
+"Y3.3t90","D90","BL15","Hydrolysate","BL15_D90","Photobacterium",0,13
+"Y3.3t90","D90","BL15","Hydrolysate","BL15_D90","Candidatus Hamiltonella",0,13
+"Y3.3t90","D90","BL15","Hydrolysate","BL15_D90","Buchnera",0,13
+"Y3.3t90","D90","BL15","Hydrolysate","BL15_D90","Others",0,13
+"Y3.3t90","D90","BL15","Hydrolysate","BL15_D90","Bacteroides",0,13
+"Y3.3t90","D90","BL15","Hydrolysate","BL15_D90","Blautia",0,13
+"Y3.3t90","D90","BL15","Hydrolysate","BL15_D90","Lactococcus",0,13
+"Y3.3t90","D90","BL15","Hydrolysate","BL15_D90","Cutibacterium",0,13
+"Y3.3t90","D90","BL15","Hydrolysate","BL15_D90","Streptococcus",0,13
+"Y3.3t90","D90","BL15","Hydrolysate","BL15_D90","Acinetobacter",0,13
+"Y3.3t90","D90","BL15","Hydrolysate","BL15_D90","Pseudomonas",0,13
+"Y3.3t90","D90","BL15","Hydrolysate","BL15_D90","Chloroplast",0,13
+"Y3.4t30","D30","BL15","Hydrolysate","BL15_D30","Vibrio",0.793255321109371,14
+"Y3.4t30","D30","BL15","Hydrolysate","BL15_D30","Unclassified Mycoplasmataceae genus",0,14
+"Y3.4t30","D30","BL15","Hydrolysate","BL15_D30","Delftia",0,14
+"Y3.4t30","D30","BL15","Hydrolysate","BL15_D30","Cetobacterium",0.13146595411407,14
+"Y3.4t30","D30","BL15","Hydrolysate","BL15_D30","Photobacterium",0.0743020363033263,14
+"Y3.4t30","D30","BL15","Hydrolysate","BL15_D30","Candidatus Hamiltonella",0,14
+"Y3.4t30","D30","BL15","Hydrolysate","BL15_D30","Buchnera",0,14
+"Y3.4t30","D30","BL15","Hydrolysate","BL15_D30","Others",0.000128996590804386,14
+"Y3.4t30","D30","BL15","Hydrolysate","BL15_D30","Bacteroides",0,14
+"Y3.4t30","D30","BL15","Hydrolysate","BL15_D30","Blautia",0,14
+"Y3.4t30","D30","BL15","Hydrolysate","BL15_D30","Lactococcus",0,14
+"Y3.4t30","D30","BL15","Hydrolysate","BL15_D30","Cutibacterium",0.000552842532018797,14
+"Y3.4t30","D30","BL15","Hydrolysate","BL15_D30","Streptococcus",0,14
+"Y3.4t30","D30","BL15","Hydrolysate","BL15_D30","Acinetobacter",0.000294849350410025,14
+"Y3.4t30","D30","BL15","Hydrolysate","BL15_D30","Pseudomonas",0,14
+"Y3.4t30","D30","BL15","Hydrolysate","BL15_D30","Chloroplast",0,14
+"Y3.4t7","D07","BL15","Hydrolysate","BL15_D07","Vibrio",0.943841109753369,14
+"Y3.4t7","D07","BL15","Hydrolysate","BL15_D07","Unclassified Mycoplasmataceae genus",0,14
+"Y3.4t7","D07","BL15","Hydrolysate","BL15_D07","Delftia",0,14
+"Y3.4t7","D07","BL15","Hydrolysate","BL15_D07","Cetobacterium",0.0560728361702494,14
+"Y3.4t7","D07","BL15","Hydrolysate","BL15_D07","Photobacterium",0,14
+"Y3.4t7","D07","BL15","Hydrolysate","BL15_D07","Candidatus Hamiltonella",0,14
+"Y3.4t7","D07","BL15","Hydrolysate","BL15_D07","Buchnera",0,14
+"Y3.4t7","D07","BL15","Hydrolysate","BL15_D07","Others",3.44216305526393e-05,14
+"Y3.4t7","D07","BL15","Hydrolysate","BL15_D07","Bacteroides",0,14
+"Y3.4t7","D07","BL15","Hydrolysate","BL15_D07","Blautia",0,14
+"Y3.4t7","D07","BL15","Hydrolysate","BL15_D07","Lactococcus",0,14
+"Y3.4t7","D07","BL15","Hydrolysate","BL15_D07","Cutibacterium",5.16324458289589e-05,14
+"Y3.4t7","D07","BL15","Hydrolysate","BL15_D07","Streptococcus",0,14
+"Y3.4t7","D07","BL15","Hydrolysate","BL15_D07","Acinetobacter",0,14
+"Y3.4t7","D07","BL15","Hydrolysate","BL15_D07","Pseudomonas",0,14
+"Y3.4t7","D07","BL15","Hydrolysate","BL15_D07","Chloroplast",0,14
+"Y3.4t90","D90","BL15","Hydrolysate","BL15_D90","Vibrio",0.000150875075437538,14
+"Y3.4t90","D90","BL15","Hydrolysate","BL15_D90","Unclassified Mycoplasmataceae genus",0.996513109367666,14
+"Y3.4t90","D90","BL15","Hydrolysate","BL15_D90","Delftia",0,14
+"Y3.4t90","D90","BL15","Hydrolysate","BL15_D90","Cetobacterium",0.00316837658418829,14
+"Y3.4t90","D90","BL15","Hydrolysate","BL15_D90","Photobacterium",0,14
+"Y3.4t90","D90","BL15","Hydrolysate","BL15_D90","Candidatus Hamiltonella",0,14
+"Y3.4t90","D90","BL15","Hydrolysate","BL15_D90","Buchnera",0,14
+"Y3.4t90","D90","BL15","Hydrolysate","BL15_D90","Others",0,14
+"Y3.4t90","D90","BL15","Hydrolysate","BL15_D90","Bacteroides",0,14
+"Y3.4t90","D90","BL15","Hydrolysate","BL15_D90","Blautia",0,14
+"Y3.4t90","D90","BL15","Hydrolysate","BL15_D90","Lactococcus",0,14
+"Y3.4t90","D90","BL15","Hydrolysate","BL15_D90","Cutibacterium",0,14
+"Y3.4t90","D90","BL15","Hydrolysate","BL15_D90","Streptococcus",0,14
+"Y3.4t90","D90","BL15","Hydrolysate","BL15_D90","Acinetobacter",0.000167638972708375,14
+"Y3.4t90","D90","BL15","Hydrolysate","BL15_D90","Pseudomonas",0,14
+"Y3.4t90","D90","BL15","Hydrolysate","BL15_D90","Chloroplast",0,14
+"Y3.5t30","D30","BL15","Hydrolysate","BL15_D30","Vibrio",0.987580953782749,15
+"Y3.5t30","D30","BL15","Hydrolysate","BL15_D30","Unclassified Mycoplasmataceae genus",0,15
+"Y3.5t30","D30","BL15","Hydrolysate","BL15_D30","Delftia",0,15
+"Y3.5t30","D30","BL15","Hydrolysate","BL15_D30","Cetobacterium",0.0121798645863998,15
+"Y3.5t30","D30","BL15","Hydrolysate","BL15_D30","Photobacterium",0.000239181630850751,15
+"Y3.5t30","D30","BL15","Hydrolysate","BL15_D30","Candidatus Hamiltonella",0,15
+"Y3.5t30","D30","BL15","Hydrolysate","BL15_D30","Buchnera",0,15
+"Y3.5t30","D30","BL15","Hydrolysate","BL15_D30","Others",0,15
+"Y3.5t30","D30","BL15","Hydrolysate","BL15_D30","Bacteroides",0,15
+"Y3.5t30","D30","BL15","Hydrolysate","BL15_D30","Blautia",0,15
+"Y3.5t30","D30","BL15","Hydrolysate","BL15_D30","Lactococcus",0,15
+"Y3.5t30","D30","BL15","Hydrolysate","BL15_D30","Cutibacterium",0,15
+"Y3.5t30","D30","BL15","Hydrolysate","BL15_D30","Streptococcus",0,15
+"Y3.5t30","D30","BL15","Hydrolysate","BL15_D30","Acinetobacter",0,15
+"Y3.5t30","D30","BL15","Hydrolysate","BL15_D30","Pseudomonas",0,15
+"Y3.5t30","D30","BL15","Hydrolysate","BL15_D30","Chloroplast",0,15
+"Y3.5t7","D07","BL15","Hydrolysate","BL15_D07","Vibrio",0.902089362485154,15
+"Y3.5t7","D07","BL15","Hydrolysate","BL15_D07","Unclassified Mycoplasmataceae genus",0,15
+"Y3.5t7","D07","BL15","Hydrolysate","BL15_D07","Delftia",0.00023419595510129,15
+"Y3.5t7","D07","BL15","Hydrolysate","BL15_D07","Cetobacterium",0.0467555496077218,15
+"Y3.5t7","D07","BL15","Hydrolysate","BL15_D07","Photobacterium",0.00207430703089714,15
+"Y3.5t7","D07","BL15","Hydrolysate","BL15_D07","Candidatus Hamiltonella",0,15
+"Y3.5t7","D07","BL15","Hydrolysate","BL15_D07","Buchnera",0,15
+"Y3.5t7","D07","BL15","Hydrolysate","BL15_D07","Others",0.00374713528162064,15
+"Y3.5t7","D07","BL15","Hydrolysate","BL15_D07","Bacteroides",0,15
+"Y3.5t7","D07","BL15","Hydrolysate","BL15_D07","Blautia",0,15
+"Y3.5t7","D07","BL15","Hydrolysate","BL15_D07","Lactococcus",0.000853142407868984,15
+"Y3.5t7","D07","BL15","Hydrolysate","BL15_D07","Cutibacterium",0.0434098931062748,15
+"Y3.5t7","D07","BL15","Hydrolysate","BL15_D07","Streptococcus",8.36414125361749e-05,15
+"Y3.5t7","D07","BL15","Hydrolysate","BL15_D07","Acinetobacter",0,15
+"Y3.5t7","D07","BL15","Hydrolysate","BL15_D07","Pseudomonas",0,15
+"Y3.5t7","D07","BL15","Hydrolysate","BL15_D07","Chloroplast",0.000752772712825574,15
+"Y3.5t90","D90","BL15","Hydrolysate","BL15_D90","Vibrio",0.700241562329886,15
+"Y3.5t90","D90","BL15","Hydrolysate","BL15_D90","Unclassified Mycoplasmataceae genus",0.29963935764834,15
+"Y3.5t90","D90","BL15","Hydrolysate","BL15_D90","Delftia",0,15
+"Y3.5t90","D90","BL15","Hydrolysate","BL15_D90","Cetobacterium",5.10342950462711e-05,15
+"Y3.5t90","D90","BL15","Hydrolysate","BL15_D90","Photobacterium",6.80457267283615e-05,15
+"Y3.5t90","D90","BL15","Hydrolysate","BL15_D90","Candidatus Hamiltonella",0,15
+"Y3.5t90","D90","BL15","Hydrolysate","BL15_D90","Buchnera",0,15
+"Y3.5t90","D90","BL15","Hydrolysate","BL15_D90","Others",0,15
+"Y3.5t90","D90","BL15","Hydrolysate","BL15_D90","Bacteroides",0,15
+"Y3.5t90","D90","BL15","Hydrolysate","BL15_D90","Blautia",0,15
+"Y3.5t90","D90","BL15","Hydrolysate","BL15_D90","Lactococcus",0,15
+"Y3.5t90","D90","BL15","Hydrolysate","BL15_D90","Cutibacterium",0,15
+"Y3.5t90","D90","BL15","Hydrolysate","BL15_D90","Streptococcus",0,15
+"Y3.5t90","D90","BL15","Hydrolysate","BL15_D90","Acinetobacter",0,15
+"Y3.5t90","D90","BL15","Hydrolysate","BL15_D90","Pseudomonas",0,15
+"Y3.5t90","D90","BL15","Hydrolysate","BL15_D90","Chloroplast",0,15
+"Z1.1t30","D30","BL30","Hydrolysate","BL30_D30","Vibrio",0.803942629683452,1
+"Z1.1t30","D30","BL30","Hydrolysate","BL30_D30","Unclassified Mycoplasmataceae genus",0.196057370316548,1
+"Z1.1t30","D30","BL30","Hydrolysate","BL30_D30","Delftia",0,1
+"Z1.1t30","D30","BL30","Hydrolysate","BL30_D30","Cetobacterium",0,1
+"Z1.1t30","D30","BL30","Hydrolysate","BL30_D30","Photobacterium",0,1
+"Z1.1t30","D30","BL30","Hydrolysate","BL30_D30","Candidatus Hamiltonella",0,1
+"Z1.1t30","D30","BL30","Hydrolysate","BL30_D30","Buchnera",0,1
+"Z1.1t30","D30","BL30","Hydrolysate","BL30_D30","Others",0,1
+"Z1.1t30","D30","BL30","Hydrolysate","BL30_D30","Bacteroides",0,1
+"Z1.1t30","D30","BL30","Hydrolysate","BL30_D30","Blautia",0,1
+"Z1.1t30","D30","BL30","Hydrolysate","BL30_D30","Lactococcus",0,1
+"Z1.1t30","D30","BL30","Hydrolysate","BL30_D30","Cutibacterium",0,1
+"Z1.1t30","D30","BL30","Hydrolysate","BL30_D30","Streptococcus",0,1
+"Z1.1t30","D30","BL30","Hydrolysate","BL30_D30","Acinetobacter",0,1
+"Z1.1t30","D30","BL30","Hydrolysate","BL30_D30","Pseudomonas",0,1
+"Z1.1t30","D30","BL30","Hydrolysate","BL30_D30","Chloroplast",0,1
+"Z1.1t7","D07","BL30","Hydrolysate","BL30_D07","Vibrio",0.720389495426379,1
+"Z1.1t7","D07","BL30","Hydrolysate","BL30_D07","Unclassified Mycoplasmataceae genus",0,1
+"Z1.1t7","D07","BL30","Hydrolysate","BL30_D07","Delftia",0.0346808301367168,1
+"Z1.1t7","D07","BL30","Hydrolysate","BL30_D07","Cetobacterium",0.000668830530146553,1
+"Z1.1t7","D07","BL30","Hydrolysate","BL30_D07","Photobacterium",0,1
+"Z1.1t7","D07","BL30","Hydrolysate","BL30_D07","Candidatus Hamiltonella",0.068161699616406,1
+"Z1.1t7","D07","BL30","Hydrolysate","BL30_D07","Buchnera",0.0279925248352513,1
+"Z1.1t7","D07","BL30","Hydrolysate","BL30_D07","Others",0.0208714468378086,1
+"Z1.1t7","D07","BL30","Hydrolysate","BL30_D07","Bacteroides",0.0188649552473689,1
+"Z1.1t7","D07","BL30","Hydrolysate","BL30_D07","Blautia",0.0131208812825809,1
+"Z1.1t7","D07","BL30","Hydrolysate","BL30_D07","Lactococcus",0,1
+"Z1.1t7","D07","BL30","Hydrolysate","BL30_D07","Cutibacterium",0,1
+"Z1.1t7","D07","BL30","Hydrolysate","BL30_D07","Streptococcus",0.0160912756958788,1
+"Z1.1t7","D07","BL30","Hydrolysate","BL30_D07","Acinetobacter",0.0759909511163568,1
+"Z1.1t7","D07","BL30","Hydrolysate","BL30_D07","Pseudomonas",0,1
+"Z1.1t7","D07","BL30","Hydrolysate","BL30_D07","Chloroplast",0.00316710927510573,1
+"Z1.1t90","D90","BL30","Hydrolysate","BL30_D90","Vibrio",0.953229965393228,1
+"Z1.1t90","D90","BL30","Hydrolysate","BL30_D90","Unclassified Mycoplasmataceae genus",0.04673610639886,1
+"Z1.1t90","D90","BL30","Hydrolysate","BL30_D90","Delftia",0,1
+"Z1.1t90","D90","BL30","Hydrolysate","BL30_D90","Cetobacterium",0,1
+"Z1.1t90","D90","BL30","Hydrolysate","BL30_D90","Photobacterium",0,1
+"Z1.1t90","D90","BL30","Hydrolysate","BL30_D90","Candidatus Hamiltonella",0,1
+"Z1.1t90","D90","BL30","Hydrolysate","BL30_D90","Buchnera",0,1
+"Z1.1t90","D90","BL30","Hydrolysate","BL30_D90","Others",0,1
+"Z1.1t90","D90","BL30","Hydrolysate","BL30_D90","Bacteroides",0,1
+"Z1.1t90","D90","BL30","Hydrolysate","BL30_D90","Blautia",0,1
+"Z1.1t90","D90","BL30","Hydrolysate","BL30_D90","Lactococcus",0,1
+"Z1.1t90","D90","BL30","Hydrolysate","BL30_D90","Cutibacterium",3.39282079120581e-05,1
+"Z1.1t90","D90","BL30","Hydrolysate","BL30_D90","Streptococcus",0,1
+"Z1.1t90","D90","BL30","Hydrolysate","BL30_D90","Acinetobacter",0,1
+"Z1.1t90","D90","BL30","Hydrolysate","BL30_D90","Pseudomonas",0,1
+"Z1.1t90","D90","BL30","Hydrolysate","BL30_D90","Chloroplast",0,1
+"Z1.2t30","D30","BL30","Hydrolysate","BL30_D30","Vibrio",0.0399895170117317,2
+"Z1.2t30","D30","BL30","Hydrolysate","BL30_D30","Unclassified Mycoplasmataceae genus",0,2
+"Z1.2t30","D30","BL30","Hydrolysate","BL30_D30","Delftia",0,2
+"Z1.2t30","D30","BL30","Hydrolysate","BL30_D30","Cetobacterium",0,2
+"Z1.2t30","D30","BL30","Hydrolysate","BL30_D30","Photobacterium",0.955539796815022,2
+"Z1.2t30","D30","BL30","Hydrolysate","BL30_D30","Candidatus Hamiltonella",0,2
+"Z1.2t30","D30","BL30","Hydrolysate","BL30_D30","Buchnera",0,2
+"Z1.2t30","D30","BL30","Hydrolysate","BL30_D30","Others",0.00114079578213884,2
+"Z1.2t30","D30","BL30","Hydrolysate","BL30_D30","Bacteroides",0,2
+"Z1.2t30","D30","BL30","Hydrolysate","BL30_D30","Blautia",0,2
+"Z1.2t30","D30","BL30","Hydrolysate","BL30_D30","Lactococcus",0.00172660983242635,2
+"Z1.2t30","D30","BL30","Hydrolysate","BL30_D30","Cutibacterium",0,2
+"Z1.2t30","D30","BL30","Hydrolysate","BL30_D30","Streptococcus",0.00160328055868161,2
+"Z1.2t30","D30","BL30","Hydrolysate","BL30_D30","Acinetobacter",0,2
+"Z1.2t30","D30","BL30","Hydrolysate","BL30_D30","Pseudomonas",0,2
+"Z1.2t30","D30","BL30","Hydrolysate","BL30_D30","Chloroplast",0,2
+"Z1.2t7","D07","BL30","Hydrolysate","BL30_D07","Vibrio",0.0613722842764208,2
+"Z1.2t7","D07","BL30","Hydrolysate","BL30_D07","Unclassified Mycoplasmataceae genus",0,2
+"Z1.2t7","D07","BL30","Hydrolysate","BL30_D07","Delftia",0.674143856634344,2
+"Z1.2t7","D07","BL30","Hydrolysate","BL30_D07","Cetobacterium",0,2
+"Z1.2t7","D07","BL30","Hydrolysate","BL30_D07","Photobacterium",0,2
+"Z1.2t7","D07","BL30","Hydrolysate","BL30_D07","Candidatus Hamiltonella",0.0239658770099423,2
+"Z1.2t7","D07","BL30","Hydrolysate","BL30_D07","Buchnera",0.00518595802135755,2
+"Z1.2t7","D07","BL30","Hydrolysate","BL30_D07","Others",0.0394316926476003,2
+"Z1.2t7","D07","BL30","Hydrolysate","BL30_D07","Bacteroides",0.00116607340125199,2
+"Z1.2t7","D07","BL30","Hydrolysate","BL30_D07","Blautia",0,2
+"Z1.2t7","D07","BL30","Hydrolysate","BL30_D07","Lactococcus",0,2
+"Z1.2t7","D07","BL30","Hydrolysate","BL30_D07","Cutibacterium",0.00699644040751197,2
+"Z1.2t7","D07","BL30","Hydrolysate","BL30_D07","Streptococcus",0,2
+"Z1.2t7","D07","BL30","Hydrolysate","BL30_D07","Acinetobacter",0.178378544249417,2
+"Z1.2t7","D07","BL30","Hydrolysate","BL30_D07","Pseudomonas",0.00521664416349577,2
+"Z1.2t7","D07","BL30","Hydrolysate","BL30_D07","Chloroplast",0.0041426291886584,2
+"Z1.2t90","D90","BL30","Hydrolysate","BL30_D90","Vibrio",0.000244264154235366,2
+"Z1.2t90","D90","BL30","Hydrolysate","BL30_D90","Unclassified Mycoplasmataceae genus",0.999755735845765,2
+"Z1.2t90","D90","BL30","Hydrolysate","BL30_D90","Delftia",0,2
+"Z1.2t90","D90","BL30","Hydrolysate","BL30_D90","Cetobacterium",0,2
+"Z1.2t90","D90","BL30","Hydrolysate","BL30_D90","Photobacterium",0,2
+"Z1.2t90","D90","BL30","Hydrolysate","BL30_D90","Candidatus Hamiltonella",0,2
+"Z1.2t90","D90","BL30","Hydrolysate","BL30_D90","Buchnera",0,2
+"Z1.2t90","D90","BL30","Hydrolysate","BL30_D90","Others",0,2
+"Z1.2t90","D90","BL30","Hydrolysate","BL30_D90","Bacteroides",0,2
+"Z1.2t90","D90","BL30","Hydrolysate","BL30_D90","Blautia",0,2
+"Z1.2t90","D90","BL30","Hydrolysate","BL30_D90","Lactococcus",0,2
+"Z1.2t90","D90","BL30","Hydrolysate","BL30_D90","Cutibacterium",0,2
+"Z1.2t90","D90","BL30","Hydrolysate","BL30_D90","Streptococcus",0,2
+"Z1.2t90","D90","BL30","Hydrolysate","BL30_D90","Acinetobacter",0,2
+"Z1.2t90","D90","BL30","Hydrolysate","BL30_D90","Pseudomonas",0,2
+"Z1.2t90","D90","BL30","Hydrolysate","BL30_D90","Chloroplast",0,2
+"Z1.3t30","D30","BL30","Hydrolysate","BL30_D30","Vibrio",0.981551486513093,3
+"Z1.3t30","D30","BL30","Hydrolysate","BL30_D30","Unclassified Mycoplasmataceae genus",0.00316991533766489,3
+"Z1.3t30","D30","BL30","Hydrolysate","BL30_D30","Delftia",0,3
+"Z1.3t30","D30","BL30","Hydrolysate","BL30_D30","Cetobacterium",0,3
+"Z1.3t30","D30","BL30","Hydrolysate","BL30_D30","Photobacterium",0.0150423311675527,3
+"Z1.3t30","D30","BL30","Hydrolysate","BL30_D30","Candidatus Hamiltonella",0,3
+"Z1.3t30","D30","BL30","Hydrolysate","BL30_D30","Buchnera",0,3
+"Z1.3t30","D30","BL30","Hydrolysate","BL30_D30","Others",0,3
+"Z1.3t30","D30","BL30","Hydrolysate","BL30_D30","Bacteroides",0,3
+"Z1.3t30","D30","BL30","Hydrolysate","BL30_D30","Blautia",0,3
+"Z1.3t30","D30","BL30","Hydrolysate","BL30_D30","Lactococcus",0,3
+"Z1.3t30","D30","BL30","Hydrolysate","BL30_D30","Cutibacterium",0.000236266981689309,3
+"Z1.3t30","D30","BL30","Hydrolysate","BL30_D30","Streptococcus",0,3
+"Z1.3t30","D30","BL30","Hydrolysate","BL30_D30","Acinetobacter",0,3
+"Z1.3t30","D30","BL30","Hydrolysate","BL30_D30","Pseudomonas",0,3
+"Z1.3t30","D30","BL30","Hydrolysate","BL30_D30","Chloroplast",0,3
+"Z1.3t7","D07","BL30","Hydrolysate","BL30_D07","Vibrio",1,3
+"Z1.3t7","D07","BL30","Hydrolysate","BL30_D07","Unclassified Mycoplasmataceae genus",0,3
+"Z1.3t7","D07","BL30","Hydrolysate","BL30_D07","Delftia",0,3
+"Z1.3t7","D07","BL30","Hydrolysate","BL30_D07","Cetobacterium",0,3
+"Z1.3t7","D07","BL30","Hydrolysate","BL30_D07","Photobacterium",0,3
+"Z1.3t7","D07","BL30","Hydrolysate","BL30_D07","Candidatus Hamiltonella",0,3
+"Z1.3t7","D07","BL30","Hydrolysate","BL30_D07","Buchnera",0,3
+"Z1.3t7","D07","BL30","Hydrolysate","BL30_D07","Others",0,3
+"Z1.3t7","D07","BL30","Hydrolysate","BL30_D07","Bacteroides",0,3
+"Z1.3t7","D07","BL30","Hydrolysate","BL30_D07","Blautia",0,3
+"Z1.3t7","D07","BL30","Hydrolysate","BL30_D07","Lactococcus",0,3
+"Z1.3t7","D07","BL30","Hydrolysate","BL30_D07","Cutibacterium",0,3
+"Z1.3t7","D07","BL30","Hydrolysate","BL30_D07","Streptococcus",0,3
+"Z1.3t7","D07","BL30","Hydrolysate","BL30_D07","Acinetobacter",0,3
+"Z1.3t7","D07","BL30","Hydrolysate","BL30_D07","Pseudomonas",0,3
+"Z1.3t7","D07","BL30","Hydrolysate","BL30_D07","Chloroplast",0,3
+"Z1.3t90","D90","BL30","Hydrolysate","BL30_D90","Vibrio",0.00213568488314015,3
+"Z1.3t90","D90","BL30","Hydrolysate","BL30_D90","Unclassified Mycoplasmataceae genus",0.99786431511686,3
+"Z1.3t90","D90","BL30","Hydrolysate","BL30_D90","Delftia",0,3
+"Z1.3t90","D90","BL30","Hydrolysate","BL30_D90","Cetobacterium",0,3
+"Z1.3t90","D90","BL30","Hydrolysate","BL30_D90","Photobacterium",0,3
+"Z1.3t90","D90","BL30","Hydrolysate","BL30_D90","Candidatus Hamiltonella",0,3
+"Z1.3t90","D90","BL30","Hydrolysate","BL30_D90","Buchnera",0,3
+"Z1.3t90","D90","BL30","Hydrolysate","BL30_D90","Others",0,3
+"Z1.3t90","D90","BL30","Hydrolysate","BL30_D90","Bacteroides",0,3
+"Z1.3t90","D90","BL30","Hydrolysate","BL30_D90","Blautia",0,3
+"Z1.3t90","D90","BL30","Hydrolysate","BL30_D90","Lactococcus",0,3
+"Z1.3t90","D90","BL30","Hydrolysate","BL30_D90","Cutibacterium",0,3
+"Z1.3t90","D90","BL30","Hydrolysate","BL30_D90","Streptococcus",0,3
+"Z1.3t90","D90","BL30","Hydrolysate","BL30_D90","Acinetobacter",0,3
+"Z1.3t90","D90","BL30","Hydrolysate","BL30_D90","Pseudomonas",0,3
+"Z1.3t90","D90","BL30","Hydrolysate","BL30_D90","Chloroplast",0,3
+"Z1.4t30","D30","BL30","Hydrolysate","BL30_D30","Vibrio",0.255320091233198,4
+"Z1.4t30","D30","BL30","Hydrolysate","BL30_D30","Unclassified Mycoplasmataceae genus",0.193250514847539,4
+"Z1.4t30","D30","BL30","Hydrolysate","BL30_D30","Delftia",0,4
+"Z1.4t30","D30","BL30","Hydrolysate","BL30_D30","Cetobacterium",0,4
+"Z1.4t30","D30","BL30","Hydrolysate","BL30_D30","Photobacterium",0.538829469208796,4
+"Z1.4t30","D30","BL30","Hydrolysate","BL30_D30","Candidatus Hamiltonella",0,4
+"Z1.4t30","D30","BL30","Hydrolysate","BL30_D30","Buchnera",0,4
+"Z1.4t30","D30","BL30","Hydrolysate","BL30_D30","Others",0.00146150269049359,4
+"Z1.4t30","D30","BL30","Hydrolysate","BL30_D30","Bacteroides",0,4
+"Z1.4t30","D30","BL30","Hydrolysate","BL30_D30","Blautia",0,4
+"Z1.4t30","D30","BL30","Hydrolysate","BL30_D30","Lactococcus",0.00372018866671095,4
+"Z1.4t30","D30","BL30","Hydrolysate","BL30_D30","Cutibacterium",0,4
+"Z1.4t30","D30","BL30","Hydrolysate","BL30_D30","Streptococcus",0.00741823335326292,4
+"Z1.4t30","D30","BL30","Hydrolysate","BL30_D30","Acinetobacter",0,4
+"Z1.4t30","D30","BL30","Hydrolysate","BL30_D30","Pseudomonas",0,4
+"Z1.4t30","D30","BL30","Hydrolysate","BL30_D30","Chloroplast",0,4
+"Z1.4t7","D07","BL30","Hydrolysate","BL30_D07","Vibrio",0.99017036838819,4
+"Z1.4t7","D07","BL30","Hydrolysate","BL30_D07","Unclassified Mycoplasmataceae genus",0,4
+"Z1.4t7","D07","BL30","Hydrolysate","BL30_D07","Delftia",0,4
+"Z1.4t7","D07","BL30","Hydrolysate","BL30_D07","Cetobacterium",0.000535188654000535,4
+"Z1.4t7","D07","BL30","Hydrolysate","BL30_D07","Photobacterium",0.0069039336366069,4
+"Z1.4t7","D07","BL30","Hydrolysate","BL30_D07","Candidatus Hamiltonella",0,4
+"Z1.4t7","D07","BL30","Hydrolysate","BL30_D07","Buchnera",0,4
+"Z1.4t7","D07","BL30","Hydrolysate","BL30_D07","Others",0.00183748104540184,4
+"Z1.4t7","D07","BL30","Hydrolysate","BL30_D07","Bacteroides",0,4
+"Z1.4t7","D07","BL30","Hydrolysate","BL30_D07","Blautia",0,4
+"Z1.4t7","D07","BL30","Hydrolysate","BL30_D07","Lactococcus",0,4
+"Z1.4t7","D07","BL30","Hydrolysate","BL30_D07","Cutibacterium",0.000553028275800553,4
+"Z1.4t7","D07","BL30","Hydrolysate","BL30_D07","Streptococcus",0,4
+"Z1.4t7","D07","BL30","Hydrolysate","BL30_D07","Acinetobacter",0,4
+"Z1.4t7","D07","BL30","Hydrolysate","BL30_D07","Pseudomonas",0,4
+"Z1.4t7","D07","BL30","Hydrolysate","BL30_D07","Chloroplast",0,4
+"Z1.4t90","D90","BL30","Hydrolysate","BL30_D90","Vibrio",0.0639066032324459,4
+"Z1.4t90","D90","BL30","Hydrolysate","BL30_D90","Unclassified Mycoplasmataceae genus",0.93597530114384,4
+"Z1.4t90","D90","BL30","Hydrolysate","BL30_D90","Delftia",0,4
+"Z1.4t90","D90","BL30","Hydrolysate","BL30_D90","Cetobacterium",0,4
+"Z1.4t90","D90","BL30","Hydrolysate","BL30_D90","Photobacterium",0,4
+"Z1.4t90","D90","BL30","Hydrolysate","BL30_D90","Candidatus Hamiltonella",0,4
+"Z1.4t90","D90","BL30","Hydrolysate","BL30_D90","Buchnera",0,4
+"Z1.4t90","D90","BL30","Hydrolysate","BL30_D90","Others",0.000118095623713601,4
+"Z1.4t90","D90","BL30","Hydrolysate","BL30_D90","Bacteroides",0,4
+"Z1.4t90","D90","BL30","Hydrolysate","BL30_D90","Blautia",0,4
+"Z1.4t90","D90","BL30","Hydrolysate","BL30_D90","Lactococcus",0,4
+"Z1.4t90","D90","BL30","Hydrolysate","BL30_D90","Cutibacterium",0,4
+"Z1.4t90","D90","BL30","Hydrolysate","BL30_D90","Streptococcus",0,4
+"Z1.4t90","D90","BL30","Hydrolysate","BL30_D90","Acinetobacter",0,4
+"Z1.4t90","D90","BL30","Hydrolysate","BL30_D90","Pseudomonas",0,4
+"Z1.4t90","D90","BL30","Hydrolysate","BL30_D90","Chloroplast",0,4
+"Z1.5t30","D30","BL30","Hydrolysate","BL30_D30","Vibrio",0.571221856643296,5
+"Z1.5t30","D30","BL30","Hydrolysate","BL30_D30","Unclassified Mycoplasmataceae genus",0,5
+"Z1.5t30","D30","BL30","Hydrolysate","BL30_D30","Delftia",0,5
+"Z1.5t30","D30","BL30","Hydrolysate","BL30_D30","Cetobacterium",0,5
+"Z1.5t30","D30","BL30","Hydrolysate","BL30_D30","Photobacterium",0.425711874041791,5
+"Z1.5t30","D30","BL30","Hydrolysate","BL30_D30","Candidatus Hamiltonella",0,5
+"Z1.5t30","D30","BL30","Hydrolysate","BL30_D30","Buchnera",0,5
+"Z1.5t30","D30","BL30","Hydrolysate","BL30_D30","Others",0.000654596820037553,5
+"Z1.5t30","D30","BL30","Hydrolysate","BL30_D30","Bacteroides",0,5
+"Z1.5t30","D30","BL30","Hydrolysate","BL30_D30","Blautia",0,5
+"Z1.5t30","D30","BL30","Hydrolysate","BL30_D30","Lactococcus",0.00125751494375635,5
+"Z1.5t30","D30","BL30","Hydrolysate","BL30_D30","Cutibacterium",0,5
+"Z1.5t30","D30","BL30","Hydrolysate","BL30_D30","Streptococcus",0.00115415755111884,5
+"Z1.5t30","D30","BL30","Hydrolysate","BL30_D30","Acinetobacter",0,5
+"Z1.5t30","D30","BL30","Hydrolysate","BL30_D30","Pseudomonas",0,5
+"Z1.5t30","D30","BL30","Hydrolysate","BL30_D30","Chloroplast",0,5
+"Z1.5t7","D07","BL30","Hydrolysate","BL30_D07","Vibrio",0.999822936770721,5
+"Z1.5t7","D07","BL30","Hydrolysate","BL30_D07","Unclassified Mycoplasmataceae genus",0,5
+"Z1.5t7","D07","BL30","Hydrolysate","BL30_D07","Delftia",0,5
+"Z1.5t7","D07","BL30","Hydrolysate","BL30_D07","Cetobacterium",0.000177063229279176,5
+"Z1.5t7","D07","BL30","Hydrolysate","BL30_D07","Photobacterium",0,5
+"Z1.5t7","D07","BL30","Hydrolysate","BL30_D07","Candidatus Hamiltonella",0,5
+"Z1.5t7","D07","BL30","Hydrolysate","BL30_D07","Buchnera",0,5
+"Z1.5t7","D07","BL30","Hydrolysate","BL30_D07","Others",0,5
+"Z1.5t7","D07","BL30","Hydrolysate","BL30_D07","Bacteroides",0,5
+"Z1.5t7","D07","BL30","Hydrolysate","BL30_D07","Blautia",0,5
+"Z1.5t7","D07","BL30","Hydrolysate","BL30_D07","Lactococcus",0,5
+"Z1.5t7","D07","BL30","Hydrolysate","BL30_D07","Cutibacterium",0,5
+"Z1.5t7","D07","BL30","Hydrolysate","BL30_D07","Streptococcus",0,5
+"Z1.5t7","D07","BL30","Hydrolysate","BL30_D07","Acinetobacter",0,5
+"Z1.5t7","D07","BL30","Hydrolysate","BL30_D07","Pseudomonas",0,5
+"Z1.5t7","D07","BL30","Hydrolysate","BL30_D07","Chloroplast",0,5
+"Z2.1t7","D07","BL30","Hydrolysate","BL30_D07","Vibrio",0.0414871229582123,6
+"Z2.1t7","D07","BL30","Hydrolysate","BL30_D07","Unclassified Mycoplasmataceae genus",0,6
+"Z2.1t7","D07","BL30","Hydrolysate","BL30_D07","Delftia",0.0225139459531683,6
+"Z2.1t7","D07","BL30","Hydrolysate","BL30_D07","Cetobacterium",0.000768280054781708,6
+"Z2.1t7","D07","BL30","Hydrolysate","BL30_D07","Photobacterium",0,6
+"Z2.1t7","D07","BL30","Hydrolysate","BL30_D07","Candidatus Hamiltonella",0.262217323045061,6
+"Z2.1t7","D07","BL30","Hydrolysate","BL30_D07","Buchnera",0.145872999966597,6
+"Z2.1t7","D07","BL30","Hydrolysate","BL30_D07","Others",0.172796205364599,6
+"Z2.1t7","D07","BL30","Hydrolysate","BL30_D07","Bacteroides",0.180412198951131,6
+"Z2.1t7","D07","BL30","Hydrolysate","BL30_D07","Blautia",0.12001870594916,6
+"Z2.1t7","D07","BL30","Hydrolysate","BL30_D07","Lactococcus",0,6
+"Z2.1t7","D07","BL30","Hydrolysate","BL30_D07","Cutibacterium",0.000835087016067074,6
+"Z2.1t7","D07","BL30","Hydrolysate","BL30_D07","Streptococcus",0.0334368841233257,6
+"Z2.1t7","D07","BL30","Hydrolysate","BL30_D07","Acinetobacter",0.00227143668370244,6
+"Z2.1t7","D07","BL30","Hydrolysate","BL30_D07","Pseudomonas",0.00146975314827805,6
+"Z2.1t7","D07","BL30","Hydrolysate","BL30_D07","Chloroplast",0.0159000567859171,6
+"Z2.1t90","D90","BL30","Hydrolysate","BL30_D90","Vibrio",0.0600507422772311,5
+"Z2.1t90","D90","BL30","Hydrolysate","BL30_D90","Unclassified Mycoplasmataceae genus",0.921778036822436,5
+"Z2.1t90","D90","BL30","Hydrolysate","BL30_D90","Delftia",0,5
+"Z2.1t90","D90","BL30","Hydrolysate","BL30_D90","Cetobacterium",0.0160112455857647,5
+"Z2.1t90","D90","BL30","Hydrolysate","BL30_D90","Photobacterium",0,5
+"Z2.1t90","D90","BL30","Hydrolysate","BL30_D90","Candidatus Hamiltonella",0,5
+"Z2.1t90","D90","BL30","Hydrolysate","BL30_D90","Buchnera",0,5
+"Z2.1t90","D90","BL30","Hydrolysate","BL30_D90","Others",0.000685706449069153,5
+"Z2.1t90","D90","BL30","Hydrolysate","BL30_D90","Bacteroides",0,5
+"Z2.1t90","D90","BL30","Hydrolysate","BL30_D90","Blautia",0,5
+"Z2.1t90","D90","BL30","Hydrolysate","BL30_D90","Lactococcus",0.000222854595947475,5
+"Z2.1t90","D90","BL30","Hydrolysate","BL30_D90","Cutibacterium",5.14279836801865e-05,5
+"Z2.1t90","D90","BL30","Hydrolysate","BL30_D90","Streptococcus",0,5
+"Z2.1t90","D90","BL30","Hydrolysate","BL30_D90","Acinetobacter",0,5
+"Z2.1t90","D90","BL30","Hydrolysate","BL30_D90","Pseudomonas",0,5
+"Z2.1t90","D90","BL30","Hydrolysate","BL30_D90","Chloroplast",0.00119998628587102,5
+"Z2.2t30","D30","BL30","Hydrolysate","BL30_D30","Vibrio",0.40390352818894,6
+"Z2.2t30","D30","BL30","Hydrolysate","BL30_D30","Unclassified Mycoplasmataceae genus",0.00163609416203107,6
+"Z2.2t30","D30","BL30","Hydrolysate","BL30_D30","Delftia",0,6
+"Z2.2t30","D30","BL30","Hydrolysate","BL30_D30","Cetobacterium",0.00284872865859527,6
+"Z2.2t30","D30","BL30","Hydrolysate","BL30_D30","Photobacterium",0.581602602352126,6
+"Z2.2t30","D30","BL30","Hydrolysate","BL30_D30","Candidatus Hamiltonella",0,6
+"Z2.2t30","D30","BL30","Hydrolysate","BL30_D30","Buchnera",0,6
+"Z2.2t30","D30","BL30","Hydrolysate","BL30_D30","Others",0.00175158316170385,6
+"Z2.2t30","D30","BL30","Hydrolysate","BL30_D30","Bacteroides",0,6
+"Z2.2t30","D30","BL30","Hydrolysate","BL30_D30","Blautia",0,6
+"Z2.2t30","D30","BL30","Hydrolysate","BL30_D30","Lactococcus",0.00119338632995207,6
+"Z2.2t30","D30","BL30","Hydrolysate","BL30_D30","Cutibacterium",0.00171308682847959,6
+"Z2.2t30","D30","BL30","Hydrolysate","BL30_D30","Streptococcus",0.000692933998036687,6
+"Z2.2t30","D30","BL30","Hydrolysate","BL30_D30","Acinetobacter",0.00465805632013551,6
+"Z2.2t30","D30","BL30","Hydrolysate","BL30_D30","Pseudomonas",0,6
+"Z2.2t30","D30","BL30","Hydrolysate","BL30_D30","Chloroplast",0,6
+"Z2.2t7","D07","BL30","Hydrolysate","BL30_D07","Vibrio",0.493892817485828,7
+"Z2.2t7","D07","BL30","Hydrolysate","BL30_D07","Unclassified Mycoplasmataceae genus",0.473379697270762,7
+"Z2.2t7","D07","BL30","Hydrolysate","BL30_D07","Delftia",0,7
+"Z2.2t7","D07","BL30","Hydrolysate","BL30_D07","Cetobacterium",0.0107533165799778,7
+"Z2.2t7","D07","BL30","Hydrolysate","BL30_D07","Photobacterium",0,7
+"Z2.2t7","D07","BL30","Hydrolysate","BL30_D07","Candidatus Hamiltonella",0,7
+"Z2.2t7","D07","BL30","Hydrolysate","BL30_D07","Buchnera",0,7
+"Z2.2t7","D07","BL30","Hydrolysate","BL30_D07","Others",0.00712991642802875,7
+"Z2.2t7","D07","BL30","Hydrolysate","BL30_D07","Bacteroides",0,7
+"Z2.2t7","D07","BL30","Hydrolysate","BL30_D07","Blautia",0,7
+"Z2.2t7","D07","BL30","Hydrolysate","BL30_D07","Lactococcus",0,7
+"Z2.2t7","D07","BL30","Hydrolysate","BL30_D07","Cutibacterium",0.0104026649523698,7
+"Z2.2t7","D07","BL30","Hydrolysate","BL30_D07","Streptococcus",0,7
+"Z2.2t7","D07","BL30","Hydrolysate","BL30_D07","Acinetobacter",0.00444158728303431,7
+"Z2.2t7","D07","BL30","Hydrolysate","BL30_D07","Pseudomonas",0,7
+"Z2.2t7","D07","BL30","Hydrolysate","BL30_D07","Chloroplast",0,7
+"Z2.2t90","D90","BL30","Hydrolysate","BL30_D90","Vibrio",0.492649999200218,6
+"Z2.2t90","D90","BL30","Hydrolysate","BL30_D90","Unclassified Mycoplasmataceae genus",0.505686453284707,6
+"Z2.2t90","D90","BL30","Hydrolysate","BL30_D90","Delftia",0,6
+"Z2.2t90","D90","BL30","Hydrolysate","BL30_D90","Cetobacterium",0,6
+"Z2.2t90","D90","BL30","Hydrolysate","BL30_D90","Photobacterium",0,6
+"Z2.2t90","D90","BL30","Hydrolysate","BL30_D90","Candidatus Hamiltonella",0,6
+"Z2.2t90","D90","BL30","Hydrolysate","BL30_D90","Buchnera",0,6
+"Z2.2t90","D90","BL30","Hydrolysate","BL30_D90","Others",0.0016635475150759,6
+"Z2.2t90","D90","BL30","Hydrolysate","BL30_D90","Bacteroides",0,6
+"Z2.2t90","D90","BL30","Hydrolysate","BL30_D90","Blautia",0,6
+"Z2.2t90","D90","BL30","Hydrolysate","BL30_D90","Lactococcus",0,6
+"Z2.2t90","D90","BL30","Hydrolysate","BL30_D90","Cutibacterium",0,6
+"Z2.2t90","D90","BL30","Hydrolysate","BL30_D90","Streptococcus",0,6
+"Z2.2t90","D90","BL30","Hydrolysate","BL30_D90","Acinetobacter",0,6
+"Z2.2t90","D90","BL30","Hydrolysate","BL30_D90","Pseudomonas",0,6
+"Z2.2t90","D90","BL30","Hydrolysate","BL30_D90","Chloroplast",0,6
+"Z2.3t30","D30","BL30","Hydrolysate","BL30_D30","Vibrio",0.994054065098793,7
+"Z2.3t30","D30","BL30","Hydrolysate","BL30_D30","Unclassified Mycoplasmataceae genus",0.00410698596268977,7
+"Z2.3t30","D30","BL30","Hydrolysate","BL30_D30","Delftia",0,7
+"Z2.3t30","D30","BL30","Hydrolysate","BL30_D30","Cetobacterium",0,7
+"Z2.3t30","D30","BL30","Hydrolysate","BL30_D30","Photobacterium",0.00183894893851781,7
+"Z2.3t30","D30","BL30","Hydrolysate","BL30_D30","Candidatus Hamiltonella",0,7
+"Z2.3t30","D30","BL30","Hydrolysate","BL30_D30","Buchnera",0,7
+"Z2.3t30","D30","BL30","Hydrolysate","BL30_D30","Others",0,7
+"Z2.3t30","D30","BL30","Hydrolysate","BL30_D30","Bacteroides",0,7
+"Z2.3t30","D30","BL30","Hydrolysate","BL30_D30","Blautia",0,7
+"Z2.3t30","D30","BL30","Hydrolysate","BL30_D30","Lactococcus",0,7
+"Z2.3t30","D30","BL30","Hydrolysate","BL30_D30","Cutibacterium",0,7
+"Z2.3t30","D30","BL30","Hydrolysate","BL30_D30","Streptococcus",0,7
+"Z2.3t30","D30","BL30","Hydrolysate","BL30_D30","Acinetobacter",0,7
+"Z2.3t30","D30","BL30","Hydrolysate","BL30_D30","Pseudomonas",0,7
+"Z2.3t30","D30","BL30","Hydrolysate","BL30_D30","Chloroplast",0,7
+"Z2.3t7","D07","BL30","Hydrolysate","BL30_D07","Vibrio",0.00566526383943024,8
+"Z2.3t7","D07","BL30","Hydrolysate","BL30_D07","Unclassified Mycoplasmataceae genus",0,8
+"Z2.3t7","D07","BL30","Hydrolysate","BL30_D07","Delftia",0.0739074134023956,8
+"Z2.3t7","D07","BL30","Hydrolysate","BL30_D07","Cetobacterium",0.000356102298478472,8
+"Z2.3t7","D07","BL30","Hydrolysate","BL30_D07","Photobacterium",0,8
+"Z2.3t7","D07","BL30","Hydrolysate","BL30_D07","Candidatus Hamiltonella",0.338944642279055,8
+"Z2.3t7","D07","BL30","Hydrolysate","BL30_D07","Buchnera",0.182615733247006,8
+"Z2.3t7","D07","BL30","Hydrolysate","BL30_D07","Others",0.150404661702816,8
+"Z2.3t7","D07","BL30","Hydrolysate","BL30_D07","Bacteroides",0.113013920362577,8
+"Z2.3t7","D07","BL30","Hydrolysate","BL30_D07","Blautia",0.084817092910327,8
+"Z2.3t7","D07","BL30","Hydrolysate","BL30_D07","Lactococcus",0,8
+"Z2.3t7","D07","BL30","Hydrolysate","BL30_D07","Cutibacterium",0.00216898672709615,8
+"Z2.3t7","D07","BL30","Hydrolysate","BL30_D07","Streptococcus",0.0308514082227258,8
+"Z2.3t7","D07","BL30","Hydrolysate","BL30_D07","Acinetobacter",0.00809323405632891,8
+"Z2.3t7","D07","BL30","Hydrolysate","BL30_D07","Pseudomonas",0.000226610553577209,8
+"Z2.3t7","D07","BL30","Hydrolysate","BL30_D07","Chloroplast",0.00893493039818712,8
+"Z2.3t90","D90","BL30","Hydrolysate","BL30_D90","Vibrio",0,7
+"Z2.3t90","D90","BL30","Hydrolysate","BL30_D90","Unclassified Mycoplasmataceae genus",0.99586094185778,7
+"Z2.3t90","D90","BL30","Hydrolysate","BL30_D90","Delftia",0,7
+"Z2.3t90","D90","BL30","Hydrolysate","BL30_D90","Cetobacterium",0.000479633346952552,7
+"Z2.3t90","D90","BL30","Hydrolysate","BL30_D90","Photobacterium",0,7
+"Z2.3t90","D90","BL30","Hydrolysate","BL30_D90","Candidatus Hamiltonella",0,7
+"Z2.3t90","D90","BL30","Hydrolysate","BL30_D90","Buchnera",0,7
+"Z2.3t90","D90","BL30","Hydrolysate","BL30_D90","Others",0.00365942479526762,7
+"Z2.3t90","D90","BL30","Hydrolysate","BL30_D90","Bacteroides",0,7
+"Z2.3t90","D90","BL30","Hydrolysate","BL30_D90","Blautia",0,7
+"Z2.3t90","D90","BL30","Hydrolysate","BL30_D90","Lactococcus",0,7
+"Z2.3t90","D90","BL30","Hydrolysate","BL30_D90","Cutibacterium",0,7
+"Z2.3t90","D90","BL30","Hydrolysate","BL30_D90","Streptococcus",0,7
+"Z2.3t90","D90","BL30","Hydrolysate","BL30_D90","Acinetobacter",0,7
+"Z2.3t90","D90","BL30","Hydrolysate","BL30_D90","Pseudomonas",0,7
+"Z2.3t90","D90","BL30","Hydrolysate","BL30_D90","Chloroplast",0,7
+"Z2.4t30","D30","BL30","Hydrolysate","BL30_D30","Vibrio",0.99808146661219,8
+"Z2.4t30","D30","BL30","Hydrolysate","BL30_D30","Unclassified Mycoplasmataceae genus",0.000479633346952552,8
+"Z2.4t30","D30","BL30","Hydrolysate","BL30_D30","Delftia",0,8
+"Z2.4t30","D30","BL30","Hydrolysate","BL30_D30","Cetobacterium",0.000461869148917272,8
+"Z2.4t30","D30","BL30","Hydrolysate","BL30_D30","Photobacterium",0.000817153109622866,8
+"Z2.4t30","D30","BL30","Hydrolysate","BL30_D30","Candidatus Hamiltonella",0,8
+"Z2.4t30","D30","BL30","Hydrolysate","BL30_D30","Buchnera",0,8
+"Z2.4t30","D30","BL30","Hydrolysate","BL30_D30","Others",0,8
+"Z2.4t30","D30","BL30","Hydrolysate","BL30_D30","Bacteroides",0,8
+"Z2.4t30","D30","BL30","Hydrolysate","BL30_D30","Blautia",0,8
+"Z2.4t30","D30","BL30","Hydrolysate","BL30_D30","Lactococcus",0,8
+"Z2.4t30","D30","BL30","Hydrolysate","BL30_D30","Cutibacterium",0,8
+"Z2.4t30","D30","BL30","Hydrolysate","BL30_D30","Streptococcus",0,8
+"Z2.4t30","D30","BL30","Hydrolysate","BL30_D30","Acinetobacter",0.000159877782317517,8
+"Z2.4t30","D30","BL30","Hydrolysate","BL30_D30","Pseudomonas",0,8
+"Z2.4t30","D30","BL30","Hydrolysate","BL30_D30","Chloroplast",0,8
+"Z2.4t7","D07","BL30","Hydrolysate","BL30_D07","Vibrio",0.000879352796341892,9
+"Z2.4t7","D07","BL30","Hydrolysate","BL30_D07","Unclassified Mycoplasmataceae genus",0,9
+"Z2.4t7","D07","BL30","Hydrolysate","BL30_D07","Delftia",0.0380583890256771,9
+"Z2.4t7","D07","BL30","Hydrolysate","BL30_D07","Cetobacterium",0,9
+"Z2.4t7","D07","BL30","Hydrolysate","BL30_D07","Photobacterium",0,9
+"Z2.4t7","D07","BL30","Hydrolysate","BL30_D07","Candidatus Hamiltonella",0.313330988392543,9
+"Z2.4t7","D07","BL30","Hydrolysate","BL30_D07","Buchnera",0.145058037284559,9
+"Z2.4t7","D07","BL30","Hydrolysate","BL30_D07","Others",0.179880408019698,9
+"Z2.4t7","D07","BL30","Hydrolysate","BL30_D07","Bacteroides",0.148294055575097,9
+"Z2.4t7","D07","BL30","Hydrolysate","BL30_D07","Blautia",0.0990151248680971,9
+"Z2.4t7","D07","BL30","Hydrolysate","BL30_D07","Lactococcus",0,9
+"Z2.4t7","D07","BL30","Hydrolysate","BL30_D07","Cutibacterium",0.00225114315863524,9
+"Z2.4t7","D07","BL30","Hydrolysate","BL30_D07","Streptococcus",0.0386915230390433,9
+"Z2.4t7","D07","BL30","Hydrolysate","BL30_D07","Acinetobacter",0.0027435807245867,9
+"Z2.4t7","D07","BL30","Hydrolysate","BL30_D07","Pseudomonas",0,9
+"Z2.4t7","D07","BL30","Hydrolysate","BL30_D07","Chloroplast",0.0317973971157228,9
+"Z2.4t90","D90","BL30","Hydrolysate","BL30_D90","Vibrio",0.681137196841512,8
+"Z2.4t90","D90","BL30","Hydrolysate","BL30_D90","Unclassified Mycoplasmataceae genus",0.318704173716864,8
+"Z2.4t90","D90","BL30","Hydrolysate","BL30_D90","Delftia",0,8
+"Z2.4t90","D90","BL30","Hydrolysate","BL30_D90","Cetobacterium",0.000158629441624365,8
+"Z2.4t90","D90","BL30","Hydrolysate","BL30_D90","Photobacterium",0,8
+"Z2.4t90","D90","BL30","Hydrolysate","BL30_D90","Candidatus Hamiltonella",0,8
+"Z2.4t90","D90","BL30","Hydrolysate","BL30_D90","Buchnera",0,8
+"Z2.4t90","D90","BL30","Hydrolysate","BL30_D90","Others",0,8
+"Z2.4t90","D90","BL30","Hydrolysate","BL30_D90","Bacteroides",0,8
+"Z2.4t90","D90","BL30","Hydrolysate","BL30_D90","Blautia",0,8
+"Z2.4t90","D90","BL30","Hydrolysate","BL30_D90","Lactococcus",0,8
+"Z2.4t90","D90","BL30","Hydrolysate","BL30_D90","Cutibacterium",0,8
+"Z2.4t90","D90","BL30","Hydrolysate","BL30_D90","Streptococcus",0,8
+"Z2.4t90","D90","BL30","Hydrolysate","BL30_D90","Acinetobacter",0,8
+"Z2.4t90","D90","BL30","Hydrolysate","BL30_D90","Pseudomonas",0,8
+"Z2.4t90","D90","BL30","Hydrolysate","BL30_D90","Chloroplast",0,8
+"Z2.5t30","D30","BL30","Hydrolysate","BL30_D30","Vibrio",0.802694365450427,9
+"Z2.5t30","D30","BL30","Hydrolysate","BL30_D30","Unclassified Mycoplasmataceae genus",0,9
+"Z2.5t30","D30","BL30","Hydrolysate","BL30_D30","Delftia",0,9
+"Z2.5t30","D30","BL30","Hydrolysate","BL30_D30","Cetobacterium",0,9
+"Z2.5t30","D30","BL30","Hydrolysate","BL30_D30","Photobacterium",0.196438039234588,9
+"Z2.5t30","D30","BL30","Hydrolysate","BL30_D30","Candidatus Hamiltonella",0,9
+"Z2.5t30","D30","BL30","Hydrolysate","BL30_D30","Buchnera",0,9
+"Z2.5t30","D30","BL30","Hydrolysate","BL30_D30","Others",0.000289198438328433,9
+"Z2.5t30","D30","BL30","Hydrolysate","BL30_D30","Bacteroides",0,9
+"Z2.5t30","D30","BL30","Hydrolysate","BL30_D30","Blautia",0,9
+"Z2.5t30","D30","BL30","Hydrolysate","BL30_D30","Lactococcus",0.000120499349303514,9
+"Z2.5t30","D30","BL30","Hydrolysate","BL30_D30","Cutibacterium",0,9
+"Z2.5t30","D30","BL30","Hydrolysate","BL30_D30","Streptococcus",0.000457897527353352,9
+"Z2.5t30","D30","BL30","Hydrolysate","BL30_D30","Acinetobacter",0,9
+"Z2.5t30","D30","BL30","Hydrolysate","BL30_D30","Pseudomonas",0,9
+"Z2.5t30","D30","BL30","Hydrolysate","BL30_D30","Chloroplast",0,9
+"Z2.5t7","D07","BL30","Hydrolysate","BL30_D07","Vibrio",0.959951612016349,10
+"Z2.5t7","D07","BL30","Hydrolysate","BL30_D07","Unclassified Mycoplasmataceae genus",0,10
+"Z2.5t7","D07","BL30","Hydrolysate","BL30_D07","Delftia",0,10
+"Z2.5t7","D07","BL30","Hydrolysate","BL30_D07","Cetobacterium",0.000256602943602339,10
+"Z2.5t7","D07","BL30","Hydrolysate","BL30_D07","Photobacterium",0,10
+"Z2.5t7","D07","BL30","Hydrolysate","BL30_D07","Candidatus Hamiltonella",0,10
+"Z2.5t7","D07","BL30","Hydrolysate","BL30_D07","Buchnera",0,10
+"Z2.5t7","D07","BL30","Hydrolysate","BL30_D07","Others",0.0103007753074653,10
+"Z2.5t7","D07","BL30","Hydrolysate","BL30_D07","Bacteroides",0,10
+"Z2.5t7","D07","BL30","Hydrolysate","BL30_D07","Blautia",0,10
+"Z2.5t7","D07","BL30","Hydrolysate","BL30_D07","Lactococcus",9.16439084294067e-05,10
+"Z2.5t7","D07","BL30","Hydrolysate","BL30_D07","Cutibacterium",0.00493044227350208,10
+"Z2.5t7","D07","BL30","Hydrolysate","BL30_D07","Streptococcus",0,10
+"Z2.5t7","D07","BL30","Hydrolysate","BL30_D07","Acinetobacter",0.000788137612492898,10
+"Z2.5t7","D07","BL30","Hydrolysate","BL30_D07","Pseudomonas",0.00135632984475522,10
+"Z2.5t7","D07","BL30","Hydrolysate","BL30_D07","Chloroplast",0.0223244560934035,10
+"Z2.5t90","D90","BL30","Hydrolysate","BL30_D90","Vibrio",0.0159460976979225,9
+"Z2.5t90","D90","BL30","Hydrolysate","BL30_D90","Unclassified Mycoplasmataceae genus",0.983211678832117,9
+"Z2.5t90","D90","BL30","Hydrolysate","BL30_D90","Delftia",0,9
+"Z2.5t90","D90","BL30","Hydrolysate","BL30_D90","Cetobacterium",0.000800112296462661,9
+"Z2.5t90","D90","BL30","Hydrolysate","BL30_D90","Photobacterium",0,9
+"Z2.5t90","D90","BL30","Hydrolysate","BL30_D90","Candidatus Hamiltonella",0,9
+"Z2.5t90","D90","BL30","Hydrolysate","BL30_D90","Buchnera",0,9
+"Z2.5t90","D90","BL30","Hydrolysate","BL30_D90","Others",0,9
+"Z2.5t90","D90","BL30","Hydrolysate","BL30_D90","Bacteroides",0,9
+"Z2.5t90","D90","BL30","Hydrolysate","BL30_D90","Blautia",0,9
+"Z2.5t90","D90","BL30","Hydrolysate","BL30_D90","Lactococcus",0,9
+"Z2.5t90","D90","BL30","Hydrolysate","BL30_D90","Cutibacterium",0,9
+"Z2.5t90","D90","BL30","Hydrolysate","BL30_D90","Streptococcus",0,9
+"Z2.5t90","D90","BL30","Hydrolysate","BL30_D90","Acinetobacter",4.21111734980348e-05,9
+"Z2.5t90","D90","BL30","Hydrolysate","BL30_D90","Pseudomonas",0,9
+"Z2.5t90","D90","BL30","Hydrolysate","BL30_D90","Chloroplast",0,9
+"Z3.1t30","D30","BL30","Hydrolysate","BL30_D30","Vibrio",0.898298764856677,10
+"Z3.1t30","D30","BL30","Hydrolysate","BL30_D30","Unclassified Mycoplasmataceae genus",0.101126388565214,10
+"Z3.1t30","D30","BL30","Hydrolysate","BL30_D30","Delftia",0,10
+"Z3.1t30","D30","BL30","Hydrolysate","BL30_D30","Cetobacterium",0.000419482638079702,10
+"Z3.1t30","D30","BL30","Hydrolysate","BL30_D30","Photobacterium",0,10
+"Z3.1t30","D30","BL30","Hydrolysate","BL30_D30","Candidatus Hamiltonella",0,10
+"Z3.1t30","D30","BL30","Hydrolysate","BL30_D30","Buchnera",0,10
+"Z3.1t30","D30","BL30","Hydrolysate","BL30_D30","Others",0,10
+"Z3.1t30","D30","BL30","Hydrolysate","BL30_D30","Bacteroides",0,10
+"Z3.1t30","D30","BL30","Hydrolysate","BL30_D30","Blautia",0,10
+"Z3.1t30","D30","BL30","Hydrolysate","BL30_D30","Lactococcus",0,10
+"Z3.1t30","D30","BL30","Hydrolysate","BL30_D30","Cutibacterium",0.000155363940029519,10
+"Z3.1t30","D30","BL30","Hydrolysate","BL30_D30","Streptococcus",0,10
+"Z3.1t30","D30","BL30","Hydrolysate","BL30_D30","Acinetobacter",0,10
+"Z3.1t30","D30","BL30","Hydrolysate","BL30_D30","Pseudomonas",0,10
+"Z3.1t30","D30","BL30","Hydrolysate","BL30_D30","Chloroplast",0,10
+"Z3.1t7","D07","BL30","Hydrolysate","BL30_D07","Vibrio",0.00413188057167115,11
+"Z3.1t7","D07","BL30","Hydrolysate","BL30_D07","Unclassified Mycoplasmataceae genus",0,11
+"Z3.1t7","D07","BL30","Hydrolysate","BL30_D07","Delftia",0.0269987264751663,11
+"Z3.1t7","D07","BL30","Hydrolysate","BL30_D07","Cetobacterium",0.000311306070468374,11
+"Z3.1t7","D07","BL30","Hydrolysate","BL30_D07","Photobacterium",0.000962218763265884,11
+"Z3.1t7","D07","BL30","Hydrolysate","BL30_D07","Candidatus Hamiltonella",0.363435686995896,11
+"Z3.1t7","D07","BL30","Hydrolysate","BL30_D07","Buchnera",0.176340738644404,11
+"Z3.1t7","D07","BL30","Hydrolysate","BL30_D07","Others",0.14982312155087,11
+"Z3.1t7","D07","BL30","Hydrolysate","BL30_D07","Bacteroides",0.166690250459884,11
+"Z3.1t7","D07","BL30","Hydrolysate","BL30_D07","Blautia",0.0653459742464978,11
+"Z3.1t7","D07","BL30","Hydrolysate","BL30_D07","Lactococcus",0,11
+"Z3.1t7","D07","BL30","Hydrolysate","BL30_D07","Cutibacterium",0.00121692373001274,11
+"Z3.1t7","D07","BL30","Hydrolysate","BL30_D07","Streptococcus",0.0267723220602802,11
+"Z3.1t7","D07","BL30","Hydrolysate","BL30_D07","Acinetobacter",0.00107542097070893,11
+"Z3.1t7","D07","BL30","Hydrolysate","BL30_D07","Pseudomonas",0.000198103863025329,11
+"Z3.1t7","D07","BL30","Hydrolysate","BL30_D07","Chloroplast",0.0166973255978492,11
+"Z3.1t90","D90","BL30","Hydrolysate","BL30_D90","Vibrio",0.174384345989216,10
+"Z3.1t90","D90","BL30","Hydrolysate","BL30_D90","Unclassified Mycoplasmataceae genus",0.154353586450979,10
+"Z3.1t90","D90","BL30","Hydrolysate","BL30_D90","Delftia",0,10
+"Z3.1t90","D90","BL30","Hydrolysate","BL30_D90","Cetobacterium",0,10
+"Z3.1t90","D90","BL30","Hydrolysate","BL30_D90","Photobacterium",0.655789649230085,10
+"Z3.1t90","D90","BL30","Hydrolysate","BL30_D90","Candidatus Hamiltonella",0,10
+"Z3.1t90","D90","BL30","Hydrolysate","BL30_D90","Buchnera",0,10
+"Z3.1t90","D90","BL30","Hydrolysate","BL30_D90","Others",0.00342802082754276,10
+"Z3.1t90","D90","BL30","Hydrolysate","BL30_D90","Bacteroides",0,10
+"Z3.1t90","D90","BL30","Hydrolysate","BL30_D90","Blautia",0,10
+"Z3.1t90","D90","BL30","Hydrolysate","BL30_D90","Lactococcus",0.00533659458558008,10
+"Z3.1t90","D90","BL30","Hydrolysate","BL30_D90","Cutibacterium",0,10
+"Z3.1t90","D90","BL30","Hydrolysate","BL30_D90","Streptococcus",0.00670780291659718,10
+"Z3.1t90","D90","BL30","Hydrolysate","BL30_D90","Acinetobacter",0,10
+"Z3.1t90","D90","BL30","Hydrolysate","BL30_D90","Pseudomonas",0,10
+"Z3.1t90","D90","BL30","Hydrolysate","BL30_D90","Chloroplast",0,10
+"Z3.2t30","D30","BL30","Hydrolysate","BL30_D30","Vibrio",0.999278375313563,11
+"Z3.2t30","D30","BL30","Hydrolysate","BL30_D30","Unclassified Mycoplasmataceae genus",0.000721624686436892,11
+"Z3.2t30","D30","BL30","Hydrolysate","BL30_D30","Delftia",0,11
+"Z3.2t30","D30","BL30","Hydrolysate","BL30_D30","Cetobacterium",0,11
+"Z3.2t30","D30","BL30","Hydrolysate","BL30_D30","Photobacterium",0,11
+"Z3.2t30","D30","BL30","Hydrolysate","BL30_D30","Candidatus Hamiltonella",0,11
+"Z3.2t30","D30","BL30","Hydrolysate","BL30_D30","Buchnera",0,11
+"Z3.2t30","D30","BL30","Hydrolysate","BL30_D30","Others",0,11
+"Z3.2t30","D30","BL30","Hydrolysate","BL30_D30","Bacteroides",0,11
+"Z3.2t30","D30","BL30","Hydrolysate","BL30_D30","Blautia",0,11
+"Z3.2t30","D30","BL30","Hydrolysate","BL30_D30","Lactococcus",0,11
+"Z3.2t30","D30","BL30","Hydrolysate","BL30_D30","Cutibacterium",0,11
+"Z3.2t30","D30","BL30","Hydrolysate","BL30_D30","Streptococcus",0,11
+"Z3.2t30","D30","BL30","Hydrolysate","BL30_D30","Acinetobacter",0,11
+"Z3.2t30","D30","BL30","Hydrolysate","BL30_D30","Pseudomonas",0,11
+"Z3.2t30","D30","BL30","Hydrolysate","BL30_D30","Chloroplast",0,11
+"Z3.2t7","D07","BL30","Hydrolysate","BL30_D07","Vibrio",0.993610835465956,12
+"Z3.2t7","D07","BL30","Hydrolysate","BL30_D07","Unclassified Mycoplasmataceae genus",0,12
+"Z3.2t7","D07","BL30","Hydrolysate","BL30_D07","Delftia",0,12
+"Z3.2t7","D07","BL30","Hydrolysate","BL30_D07","Cetobacterium",0.00604098118068975,12
+"Z3.2t7","D07","BL30","Hydrolysate","BL30_D07","Photobacterium",0.000348183353353876,12
+"Z3.2t7","D07","BL30","Hydrolysate","BL30_D07","Candidatus Hamiltonella",0,12
+"Z3.2t7","D07","BL30","Hydrolysate","BL30_D07","Buchnera",0,12
+"Z3.2t7","D07","BL30","Hydrolysate","BL30_D07","Others",0,12
+"Z3.2t7","D07","BL30","Hydrolysate","BL30_D07","Bacteroides",0,12
+"Z3.2t7","D07","BL30","Hydrolysate","BL30_D07","Blautia",0,12
+"Z3.2t7","D07","BL30","Hydrolysate","BL30_D07","Lactococcus",0,12
+"Z3.2t7","D07","BL30","Hydrolysate","BL30_D07","Cutibacterium",0,12
+"Z3.2t7","D07","BL30","Hydrolysate","BL30_D07","Streptococcus",0,12
+"Z3.2t7","D07","BL30","Hydrolysate","BL30_D07","Acinetobacter",0,12
+"Z3.2t7","D07","BL30","Hydrolysate","BL30_D07","Pseudomonas",0,12
+"Z3.2t7","D07","BL30","Hydrolysate","BL30_D07","Chloroplast",0,12
+"Z3.2t90","D90","BL30","Hydrolysate","BL30_D90","Vibrio",0.000500402108837459,11
+"Z3.2t90","D90","BL30","Hydrolysate","BL30_D90","Unclassified Mycoplasmataceae genus",0.999231525332857,11
+"Z3.2t90","D90","BL30","Hydrolysate","BL30_D90","Delftia",0,11
+"Z3.2t90","D90","BL30","Hydrolysate","BL30_D90","Cetobacterium",0.000268072558305781,11
+"Z3.2t90","D90","BL30","Hydrolysate","BL30_D90","Photobacterium",0,11
+"Z3.2t90","D90","BL30","Hydrolysate","BL30_D90","Candidatus Hamiltonella",0,11
+"Z3.2t90","D90","BL30","Hydrolysate","BL30_D90","Buchnera",0,11
+"Z3.2t90","D90","BL30","Hydrolysate","BL30_D90","Others",0,11
+"Z3.2t90","D90","BL30","Hydrolysate","BL30_D90","Bacteroides",0,11
+"Z3.2t90","D90","BL30","Hydrolysate","BL30_D90","Blautia",0,11
+"Z3.2t90","D90","BL30","Hydrolysate","BL30_D90","Lactococcus",0,11
+"Z3.2t90","D90","BL30","Hydrolysate","BL30_D90","Cutibacterium",0,11
+"Z3.2t90","D90","BL30","Hydrolysate","BL30_D90","Streptococcus",0,11
+"Z3.2t90","D90","BL30","Hydrolysate","BL30_D90","Acinetobacter",0,11
+"Z3.2t90","D90","BL30","Hydrolysate","BL30_D90","Pseudomonas",0,11
+"Z3.2t90","D90","BL30","Hydrolysate","BL30_D90","Chloroplast",0,11
+"Z3.3t30","D30","BL30","Hydrolysate","BL30_D30","Vibrio",0.932109893279492,12
+"Z3.3t30","D30","BL30","Hydrolysate","BL30_D30","Unclassified Mycoplasmataceae genus",0.0349545716758004,12
+"Z3.3t30","D30","BL30","Hydrolysate","BL30_D30","Delftia",0,12
+"Z3.3t30","D30","BL30","Hydrolysate","BL30_D30","Cetobacterium",0.0178107874242861,12
+"Z3.3t30","D30","BL30","Hydrolysate","BL30_D30","Photobacterium",0.00117176233054514,12
+"Z3.3t30","D30","BL30","Hydrolysate","BL30_D30","Candidatus Hamiltonella",0,12
+"Z3.3t30","D30","BL30","Hydrolysate","BL30_D30","Buchnera",0,12
+"Z3.3t30","D30","BL30","Hydrolysate","BL30_D30","Others",0.00537207960773003,12
+"Z3.3t30","D30","BL30","Hydrolysate","BL30_D30","Bacteroides",0,12
+"Z3.3t30","D30","BL30","Hydrolysate","BL30_D30","Blautia",0,12
+"Z3.3t30","D30","BL30","Hydrolysate","BL30_D30","Lactococcus",0,12
+"Z3.3t30","D30","BL30","Hydrolysate","BL30_D30","Cutibacterium",0.0033890972021921,12
+"Z3.3t30","D30","BL30","Hydrolysate","BL30_D30","Streptococcus",0.00391188347274301,12
+"Z3.3t30","D30","BL30","Hydrolysate","BL30_D30","Acinetobacter",0.00127992500721085,12
+"Z3.3t30","D30","BL30","Hydrolysate","BL30_D30","Pseudomonas",0,12
+"Z3.3t30","D30","BL30","Hydrolysate","BL30_D30","Chloroplast",0,12
+"Z3.3t7","D07","BL30","Hydrolysate","BL30_D07","Vibrio",0.971833390235575,13
+"Z3.3t7","D07","BL30","Hydrolysate","BL30_D07","Unclassified Mycoplasmataceae genus",0,13
+"Z3.3t7","D07","BL30","Hydrolysate","BL30_D07","Delftia",0,13
+"Z3.3t7","D07","BL30","Hydrolysate","BL30_D07","Cetobacterium",0.0263912598156367,13
+"Z3.3t7","D07","BL30","Hydrolysate","BL30_D07","Photobacterium",0,13
+"Z3.3t7","D07","BL30","Hydrolysate","BL30_D07","Candidatus Hamiltonella",0,13
+"Z3.3t7","D07","BL30","Hydrolysate","BL30_D07","Buchnera",0,13
+"Z3.3t7","D07","BL30","Hydrolysate","BL30_D07","Others",5.12120177534995e-05,13
+"Z3.3t7","D07","BL30","Hydrolysate","BL30_D07","Bacteroides",0,13
+"Z3.3t7","D07","BL30","Hydrolysate","BL30_D07","Blautia",0,13
+"Z3.3t7","D07","BL30","Hydrolysate","BL30_D07","Lactococcus",0,13
+"Z3.3t7","D07","BL30","Hydrolysate","BL30_D07","Cutibacterium",0,13
+"Z3.3t7","D07","BL30","Hydrolysate","BL30_D07","Streptococcus",0,13
+"Z3.3t7","D07","BL30","Hydrolysate","BL30_D07","Acinetobacter",0.00172413793103448,13
+"Z3.3t7","D07","BL30","Hydrolysate","BL30_D07","Pseudomonas",0,13
+"Z3.3t7","D07","BL30","Hydrolysate","BL30_D07","Chloroplast",0,13
+"Z3.3t90","D90","BL30","Hydrolysate","BL30_D90","Vibrio",0.0111123165382887,12
+"Z3.3t90","D90","BL30","Hydrolysate","BL30_D90","Unclassified Mycoplasmataceae genus",0.916603381739845,12
+"Z3.3t90","D90","BL30","Hydrolysate","BL30_D90","Delftia",0,12
+"Z3.3t90","D90","BL30","Hydrolysate","BL30_D90","Cetobacterium",0,12
+"Z3.3t90","D90","BL30","Hydrolysate","BL30_D90","Photobacterium",0.0472699657486478,12
+"Z3.3t90","D90","BL30","Hydrolysate","BL30_D90","Candidatus Hamiltonella",0,12
+"Z3.3t90","D90","BL30","Hydrolysate","BL30_D90","Buchnera",0,12
+"Z3.3t90","D90","BL30","Hydrolysate","BL30_D90","Others",0.013623049145266,12
+"Z3.3t90","D90","BL30","Hydrolysate","BL30_D90","Bacteroides",0,12
+"Z3.3t90","D90","BL30","Hydrolysate","BL30_D90","Blautia",0,12
+"Z3.3t90","D90","BL30","Hydrolysate","BL30_D90","Lactococcus",0.00130186135176604,12
+"Z3.3t90","D90","BL30","Hydrolysate","BL30_D90","Cutibacterium",0.00319265998171195,12
+"Z3.3t90","D90","BL30","Hydrolysate","BL30_D90","Streptococcus",0.00296018474032516,12
+"Z3.3t90","D90","BL30","Hydrolysate","BL30_D90","Acinetobacter",0.00119337290578553,12
+"Z3.3t90","D90","BL30","Hydrolysate","BL30_D90","Pseudomonas",0,12
+"Z3.3t90","D90","BL30","Hydrolysate","BL30_D90","Chloroplast",0.00274320784836415,12
+"Z3.4t30","D30","BL30","Hydrolysate","BL30_D30","Vibrio",0.809155024633867,13
+"Z3.4t30","D30","BL30","Hydrolysate","BL30_D30","Unclassified Mycoplasmataceae genus",0.188719038941756,13
+"Z3.4t30","D30","BL30","Hydrolysate","BL30_D30","Delftia",0,13
+"Z3.4t30","D30","BL30","Hydrolysate","BL30_D30","Cetobacterium",0,13
+"Z3.4t30","D30","BL30","Hydrolysate","BL30_D30","Photobacterium",0.000793008031315381,13
+"Z3.4t30","D30","BL30","Hydrolysate","BL30_D30","Candidatus Hamiltonella",0,13
+"Z3.4t30","D30","BL30","Hydrolysate","BL30_D30","Buchnera",0,13
+"Z3.4t30","D30","BL30","Hydrolysate","BL30_D30","Others",0.000118107579132078,13
+"Z3.4t30","D30","BL30","Hydrolysate","BL30_D30","Bacteroides",0,13
+"Z3.4t30","D30","BL30","Hydrolysate","BL30_D30","Blautia",0,13
+"Z3.4t30","D30","BL30","Hydrolysate","BL30_D30","Lactococcus",0,13
+"Z3.4t30","D30","BL30","Hydrolysate","BL30_D30","Cutibacterium",0.000809880542619964,13
+"Z3.4t30","D30","BL30","Hydrolysate","BL30_D30","Streptococcus",0,13
+"Z3.4t30","D30","BL30","Hydrolysate","BL30_D30","Acinetobacter",0.000404940271309982,13
+"Z3.4t30","D30","BL30","Hydrolysate","BL30_D30","Pseudomonas",0,13
+"Z3.4t30","D30","BL30","Hydrolysate","BL30_D30","Chloroplast",0,13
+"Z3.4t7","D07","BL30","Hydrolysate","BL30_D07","Vibrio",0.826386022836704,14
+"Z3.4t7","D07","BL30","Hydrolysate","BL30_D07","Unclassified Mycoplasmataceae genus",9.17136699225019e-05,14
+"Z3.4t7","D07","BL30","Hydrolysate","BL30_D07","Delftia",0,14
+"Z3.4t7","D07","BL30","Hydrolysate","BL30_D07","Cetobacterium",0.00210941440821754,14
+"Z3.4t7","D07","BL30","Hydrolysate","BL30_D07","Photobacterium",0.00130691979639565,14
+"Z3.4t7","D07","BL30","Hydrolysate","BL30_D07","Candidatus Hamiltonella",0,14
+"Z3.4t7","D07","BL30","Hydrolysate","BL30_D07","Buchnera",0,14
+"Z3.4t7","D07","BL30","Hydrolysate","BL30_D07","Others",0.00740587884624203,14
+"Z3.4t7","D07","BL30","Hydrolysate","BL30_D07","Bacteroides",0,14
+"Z3.4t7","D07","BL30","Hydrolysate","BL30_D07","Blautia",0,14
+"Z3.4t7","D07","BL30","Hydrolysate","BL30_D07","Lactococcus",0,14
+"Z3.4t7","D07","BL30","Hydrolysate","BL30_D07","Cutibacterium",0.00389783097170633,14
+"Z3.4t7","D07","BL30","Hydrolysate","BL30_D07","Streptococcus",0,14
+"Z3.4t7","D07","BL30","Hydrolysate","BL30_D07","Acinetobacter",0.158802219470812,14
+"Z3.4t7","D07","BL30","Hydrolysate","BL30_D07","Pseudomonas",0,14
+"Z3.4t7","D07","BL30","Hydrolysate","BL30_D07","Chloroplast",0,14
+"Z3.4t90","D90","BL30","Hydrolysate","BL30_D90","Vibrio",0.00145970534320049,13
+"Z3.4t90","D90","BL30","Hydrolysate","BL30_D90","Unclassified Mycoplasmataceae genus",0.994874057980854,13
+"Z3.4t90","D90","BL30","Hydrolysate","BL30_D90","Delftia",0,13
+"Z3.4t90","D90","BL30","Hydrolysate","BL30_D90","Cetobacterium",0.00302125059406613,13
+"Z3.4t90","D90","BL30","Hydrolysate","BL30_D90","Photobacterium",0.000203679815330301,13
+"Z3.4t90","D90","BL30","Hydrolysate","BL30_D90","Candidatus Hamiltonella",0,13
+"Z3.4t90","D90","BL30","Hydrolysate","BL30_D90","Buchnera",0,13
+"Z3.4t90","D90","BL30","Hydrolysate","BL30_D90","Others",0.000186706497386109,13
+"Z3.4t90","D90","BL30","Hydrolysate","BL30_D90","Bacteroides",0,13
+"Z3.4t90","D90","BL30","Hydrolysate","BL30_D90","Blautia",0,13
+"Z3.4t90","D90","BL30","Hydrolysate","BL30_D90","Lactococcus",0,13
+"Z3.4t90","D90","BL30","Hydrolysate","BL30_D90","Cutibacterium",8.48665897209587e-05,13
+"Z3.4t90","D90","BL30","Hydrolysate","BL30_D90","Streptococcus",0,13
+"Z3.4t90","D90","BL30","Hydrolysate","BL30_D90","Acinetobacter",0.000169733179441917,13
+"Z3.4t90","D90","BL30","Hydrolysate","BL30_D90","Pseudomonas",0,13
+"Z3.4t90","D90","BL30","Hydrolysate","BL30_D90","Chloroplast",0,13
+"Z3.5t30","D30","BL30","Hydrolysate","BL30_D30","Vibrio",0.395622598949706,14
+"Z3.5t30","D30","BL30","Hydrolysate","BL30_D30","Unclassified Mycoplasmataceae genus",0.388608888732245,14
+"Z3.5t30","D30","BL30","Hydrolysate","BL30_D30","Delftia",0,14
+"Z3.5t30","D30","BL30","Hydrolysate","BL30_D30","Cetobacterium",0.00310154019666584,14
+"Z3.5t30","D30","BL30","Hydrolysate","BL30_D30","Photobacterium",0.0828957107108871,14
+"Z3.5t30","D30","BL30","Hydrolysate","BL30_D30","Candidatus Hamiltonella",0,14
+"Z3.5t30","D30","BL30","Hydrolysate","BL30_D30","Buchnera",0,14
+"Z3.5t30","D30","BL30","Hydrolysate","BL30_D30","Others",0.0986853698939132,14
+"Z3.5t30","D30","BL30","Hydrolysate","BL30_D30","Bacteroides",0,14
+"Z3.5t30","D30","BL30","Hydrolysate","BL30_D30","Blautia",0,14
+"Z3.5t30","D30","BL30","Hydrolysate","BL30_D30","Lactococcus",0,14
+"Z3.5t30","D30","BL30","Hydrolysate","BL30_D30","Cutibacterium",0.0204067247030628,14
+"Z3.5t30","D30","BL30","Hydrolysate","BL30_D30","Streptococcus",0.00123356712367392,14
+"Z3.5t30","D30","BL30","Hydrolysate","BL30_D30","Acinetobacter",0.00817678779120995,14
+"Z3.5t30","D30","BL30","Hydrolysate","BL30_D30","Pseudomonas",0.00126881189863603,14
+"Z3.5t30","D30","BL30","Hydrolysate","BL30_D30","Chloroplast",0,14
+"Z3.5t7","D07","BL30","Hydrolysate","BL30_D07","Vibrio",0.893145574550076,15
+"Z3.5t7","D07","BL30","Hydrolysate","BL30_D07","Unclassified Mycoplasmataceae genus",0,15
+"Z3.5t7","D07","BL30","Hydrolysate","BL30_D07","Delftia",0,15
+"Z3.5t7","D07","BL30","Hydrolysate","BL30_D07","Cetobacterium",0.103718279834379,15
+"Z3.5t7","D07","BL30","Hydrolysate","BL30_D07","Photobacterium",0.00313614561554544,15
+"Z3.5t7","D07","BL30","Hydrolysate","BL30_D07","Candidatus Hamiltonella",0,15
+"Z3.5t7","D07","BL30","Hydrolysate","BL30_D07","Buchnera",0,15
+"Z3.5t7","D07","BL30","Hydrolysate","BL30_D07","Others",0,15
+"Z3.5t7","D07","BL30","Hydrolysate","BL30_D07","Bacteroides",0,15
+"Z3.5t7","D07","BL30","Hydrolysate","BL30_D07","Blautia",0,15
+"Z3.5t7","D07","BL30","Hydrolysate","BL30_D07","Lactococcus",0,15
+"Z3.5t7","D07","BL30","Hydrolysate","BL30_D07","Cutibacterium",0,15
+"Z3.5t7","D07","BL30","Hydrolysate","BL30_D07","Streptococcus",0,15
+"Z3.5t7","D07","BL30","Hydrolysate","BL30_D07","Acinetobacter",0,15
+"Z3.5t7","D07","BL30","Hydrolysate","BL30_D07","Pseudomonas",0,15
+"Z3.5t7","D07","BL30","Hydrolysate","BL30_D07","Chloroplast",0,15
+"Z3.5t90","D90","BL30","Hydrolysate","BL30_D90","Vibrio",0.000219928680270826,14
+"Z3.5t90","D90","BL30","Hydrolysate","BL30_D90","Unclassified Mycoplasmataceae genus",0.999591561022354,14
+"Z3.5t90","D90","BL30","Hydrolysate","BL30_D90","Delftia",0,14
+"Z3.5t90","D90","BL30","Hydrolysate","BL30_D90","Cetobacterium",0,14
+"Z3.5t90","D90","BL30","Hydrolysate","BL30_D90","Photobacterium",0.000188510297374994,14
+"Z3.5t90","D90","BL30","Hydrolysate","BL30_D90","Candidatus Hamiltonella",0,14
+"Z3.5t90","D90","BL30","Hydrolysate","BL30_D90","Buchnera",0,14
+"Z3.5t90","D90","BL30","Hydrolysate","BL30_D90","Others",0,14
+"Z3.5t90","D90","BL30","Hydrolysate","BL30_D90","Bacteroides",0,14
+"Z3.5t90","D90","BL30","Hydrolysate","BL30_D90","Blautia",0,14
+"Z3.5t90","D90","BL30","Hydrolysate","BL30_D90","Lactococcus",0,14
+"Z3.5t90","D90","BL30","Hydrolysate","BL30_D90","Cutibacterium",0,14
+"Z3.5t90","D90","BL30","Hydrolysate","BL30_D90","Streptococcus",0,14
+"Z3.5t90","D90","BL30","Hydrolysate","BL30_D90","Acinetobacter",0,14
+"Z3.5t90","D90","BL30","Hydrolysate","BL30_D90","Pseudomonas",0,14
+"Z3.5t90","D90","BL30","Hydrolysate","BL30_D90","Chloroplast",0,14

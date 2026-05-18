@@ -1,0 +1,11 @@
+.quarto/
+docs/
+/.Rproj.user/
+.DS_Store
+Thumbs.db
+*.Rhistory
+*.RData
+*.Rproj
+
+/.quarto/
+**/*.quarto_ipynb

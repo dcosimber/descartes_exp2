@@ -1,0 +1,13 @@
+"step","sample_type","samples","reads","min_reads","median_reads","max_reads"
+"raw_all_samples","Mock",2,70266,32235,35133,38031
+"raw_all_samples","Intestine",133,7452457,28400,56945,86842
+"raw_all_samples","Feed",3,145198,44535,48092,52571
+"taxonomic_filter","Mock",2,70264,32233,35132,38031
+"taxonomic_filter","Intestine",133,7266286,17587,56568,86359
+"taxonomic_filter","Feed",3,145162,44526,48080,52556
+"prevalence_filter","Mock",2,70163,32167,35081.5,37996
+"prevalence_filter","Intestine",133,7015212,17336,55955,86087
+"prevalence_filter","Feed",3,145162,44526,48080,52556
+"mean_abundance_filter","Mock",2,69970,32060,34985,37910
+"mean_abundance_filter","Intestine",133,6931390,17111,55673,86030
+"mean_abundance_filter","Feed",3,131830,41298,41892,48640
