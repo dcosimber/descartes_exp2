@@ -19,6 +19,13 @@ body {
   line-height: 1.58;
 }
 
+:root {
+  --quarto-grid-body-width: 980px;
+  --quarto-grid-margin-width: 235px;
+  --quarto-grid-sidebar-width: 280px;
+  --quarto-grid-column-gutter-width: 1rem;
+}
+
 p {
   text-align: justify;
   text-justify: inter-word;
@@ -107,11 +114,16 @@ h4 {
 #quarto-sidebar .sidebar-title {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 0.65rem;
   padding-top: 0.35rem;
   padding-bottom: 0.25rem;
   margin-bottom: 0.2rem;
   min-height: auto;
+}
+
+#quarto-sidebar .sidebar-title > a {
+  flex: 1 1 auto;
 }
 
 #quarto-sidebar .sidebar-logo {
@@ -474,26 +486,33 @@ code {
    12. Theme toggle placement
    ----------------------------------------------------- */
 
-/* Move the light/dark toggle to the top-right corner */
+/* Keep the light/dark toggle inside the sidebar header. */
 .quarto-color-scheme-toggle,
 #quarto-color-scheme-toggle,
 a.quarto-color-scheme-toggle,
 button.quarto-color-scheme-toggle {
-  position: fixed !important;
-  top: 16px !important;
-  right: 20px !important;
-  left: auto !important;
-  bottom: auto !important;
-  z-index: 3000 !important;
+  position: static !important;
+  inset: auto !important;
+  z-index: auto !important;
   border-radius: 999px;
   display: inline-flex !important;
   align-items: center;
   justify-content: center;
-  min-width: 2.2rem;
-  min-height: 2.2rem;
-  padding: 0.35rem 0.55rem;
+  width: 1.75rem;
+  min-width: 1.75rem;
+  height: 1.75rem;
+  min-height: 1.75rem;
+  padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  box-shadow: none;
+  opacity: 0.78;
+}
+
+.quarto-color-scheme-toggle:hover,
+#quarto-color-scheme-toggle:hover,
+a.quarto-color-scheme-toggle:hover,
+button.quarto-color-scheme-toggle:hover {
+  opacity: 1;
 }
 
 /* Slightly soften appearance over light theme */
@@ -520,7 +539,12 @@ html.quarto-dark button.quarto-color-scheme-toggle {
 
 @media (min-width: 1200px) {
   #quarto-content {
-    column-gap: 1.4rem;
+    column-gap: 0.8rem;
+  }
+
+  main.content,
+  #quarto-document-content {
+    max-width: 980px;
   }
 }
 
