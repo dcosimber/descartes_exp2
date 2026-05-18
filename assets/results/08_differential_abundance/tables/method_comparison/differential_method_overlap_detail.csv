@@ -1,0 +1,620 @@
+"level","comparison","taxon_id","taxon_label","deseq2_significant","deseq2_direction","aldex2_significant","aldex2_direction","result_class","direction_agreement"
+"asv","BL15_D30_vs_D07","ASV00025","Blautia (ASV00025)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D30_vs_D07","ASV00017","Buchnera (ASV00017)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D30_vs_D07","ASV00012","Candidatus Hamiltonella (ASV00012)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D30_vs_D07","ASV00009","Photobacterium (ASV00009)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D30_vs_D07","ASV00067","Photobacterium (ASV00067)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D30_vs_D07","ASV00037","Streptococcus (ASV00037)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D30_vs_D07","ASV00002","Unclassified Mycoplasmataceae genus (ASV00002)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D30_vs_D07","ASV00006","acidovorans (ASV00006)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D30_vs_D07","ASV00019","dorei (ASV00019)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D30_vs_D07","ASV00016","phosphoreum (ASV00016)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D30_vs_D07","ASV00020","phosphoreum (ASV00020)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D30_vs_D07","ASV00041","phosphoreum (ASV00041)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D30_vs_D07","ASV00063","phosphoreum (ASV00063)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D30_vs_D07","ASV00031","thetaiotaomicron (ASV00031)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D90_vs_D07","ASV00025","Blautia (ASV00025)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D90_vs_D07","ASV00017","Buchnera (ASV00017)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D90_vs_D07","ASV00012","Candidatus Hamiltonella (ASV00012)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D90_vs_D07","ASV00037","Streptococcus (ASV00037)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D90_vs_D07","ASV00002","Unclassified Mycoplasmataceae genus (ASV00002)",TRUE,"up",TRUE,"up","both",TRUE
+"asv","BL15_D90_vs_D07","ASV00086","Unclassified Mycoplasmataceae genus (ASV00086)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D90_vs_D07","ASV00177","Unclassified Mycoplasmataceae genus (ASV00177)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D90_vs_D07","ASV00006","acidovorans (ASV00006)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D90_vs_D07","ASV00019","dorei (ASV00019)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D90_vs_D07","ASV00031","thetaiotaomicron (ASV00031)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D90_vs_D30","ASV00009","Photobacterium (ASV00009)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D90_vs_D30","ASV00067","Photobacterium (ASV00067)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D90_vs_D30","ASV00002","Unclassified Mycoplasmataceae genus (ASV00002)",FALSE,,TRUE,"up","aldex2_only",FALSE
+"asv","BL15_D90_vs_D30","ASV00016","phosphoreum (ASV00016)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D90_vs_D30","ASV00020","phosphoreum (ASV00020)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D90_vs_D30","ASV00041","phosphoreum (ASV00041)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL15_D90_vs_D30","ASV00063","phosphoreum (ASV00063)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00066","Bacteroides (ASV00066)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00025","Blautia (ASV00025)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00054","Blautia (ASV00054)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00017","Buchnera (ASV00017)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00012","Candidatus Hamiltonella (ASV00012)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00053","Fusicatenibacter (ASV00053)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00062","Mammaliicoccus (ASV00062)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00064","Mediterraneibacter (ASV00064)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00009","Photobacterium (ASV00009)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00015","Photobacterium (ASV00015)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00058","Photobacterium (ASV00058)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00037","Streptococcus (ASV00037)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00039","Streptococcus (ASV00039)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00097","Streptococcus (ASV00097)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00065","Unclassified Cyanobacteriota (ASV00065)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00087","Unclassified Cyanobacteriota (ASV00087)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00002","Unclassified Mycoplasmataceae genus (ASV00002)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00023","Vibrio (ASV00023)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00006","acidovorans (ASV00006)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00057","bromii (ASV00057)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00049","cohnii (ASV00049)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00019","dorei (ASV00019)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00104","faecium (ASV00104)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00047","johnsonii (ASV00047)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00050","johnsonii (ASV00050)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00029","lactis (ASV00029)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00068","merdae (ASV00068)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00016","phosphoreum (ASV00016)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00020","phosphoreum (ASV00020)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00041","phosphoreum (ASV00041)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00031","thetaiotaomicron (ASV00031)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D30_vs_D07","ASV00060","xylosus (ASV00060)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00066","Bacteroides (ASV00066)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00025","Blautia (ASV00025)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00054","Blautia (ASV00054)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00077","Blautia (ASV00077)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00017","Buchnera (ASV00017)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00012","Candidatus Hamiltonella (ASV00012)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00053","Fusicatenibacter (ASV00053)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00062","Mammaliicoccus (ASV00062)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00064","Mediterraneibacter (ASV00064)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00009","Photobacterium (ASV00009)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00037","Streptococcus (ASV00037)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00065","Unclassified Cyanobacteriota (ASV00065)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00002","Unclassified Mycoplasmataceae genus (ASV00002)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00086","Unclassified Mycoplasmataceae genus (ASV00086)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00177","Unclassified Mycoplasmataceae genus (ASV00177)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00006","acidovorans (ASV00006)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00057","bromii (ASV00057)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00049","cohnii (ASV00049)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00019","dorei (ASV00019)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00045","johnsonii (ASV00045)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00047","johnsonii (ASV00047)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00050","johnsonii (ASV00050)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00016","phosphoreum (ASV00016)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00031","thetaiotaomicron (ASV00031)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D07","ASV00060","xylosus (ASV00060)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D30","ASV00009","Photobacterium (ASV00009)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D30","ASV00015","Photobacterium (ASV00015)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D30","ASV00058","Photobacterium (ASV00058)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D30","ASV00002","Unclassified Mycoplasmataceae genus (ASV00002)",TRUE,"up",TRUE,"up","both",TRUE
+"asv","BL30_D90_vs_D30","ASV00086","Unclassified Mycoplasmataceae genus (ASV00086)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D30","ASV00177","Unclassified Mycoplasmataceae genus (ASV00177)",TRUE,"up",TRUE,"up","both",TRUE
+"asv","BL30_D90_vs_D30","ASV00008","Vibrio (ASV00008)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D30","ASV00011","Vibrio (ASV00011)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D30","ASV00013","Vibrio (ASV00013)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D30","ASV00021","Vibrio (ASV00021)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D30","ASV00016","phosphoreum (ASV00016)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D30","ASV00020","phosphoreum (ASV00020)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","BL30_D90_vs_D30","ASV00041","phosphoreum (ASV00041)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00080","Anaerobutyricum (ASV00080)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00213","Anaerobutyricum (ASV00213)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00138","Anaerostipes (ASV00138)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00066","Bacteroides (ASV00066)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00025","Blautia (ASV00025)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00054","Blautia (ASV00054)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00077","Blautia (ASV00077)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00092","Blautia (ASV00092)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00106","Blautia (ASV00106)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00108","Blautia (ASV00108)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00232","Blautia (ASV00232)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00169","Bradyrhizobium (ASV00169)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00078","Brevundimonas (ASV00078)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00017","Buchnera (ASV00017)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00195","Burkholderia-Caballeronia-Paraburkholderia (ASV00195)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00012","Candidatus Hamiltonella (ASV00012)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00200","Enterobacter (ASV00200)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00100","Enterocloster (ASV00100)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00036","Escherichia-Shigella (ASV00036)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00142","Extibacter (ASV00142)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00154","Flavonifractor (ASV00154)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00160","Flavonifractor (ASV00160)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00258","Frisingicoccus (ASV00258)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00053","Fusicatenibacter (ASV00053)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00132","Intestinibacter (ASV00132)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00134","Lachnospiraceae NK4A136 group (ASV00134)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00248","Lachnospiraceae NK4A136 group (ASV00248)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00061","Lactiplantibacillus (ASV00061)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00056","Lactococcus (ASV00056)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00094","Latilactobacillus (ASV00094)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00062","Mammaliicoccus (ASV00062)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00064","Mediterraneibacter (ASV00064)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00111","Neobacillus (ASV00111)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00083","Oscillibacter (ASV00083)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00175","Paracoccus (ASV00175)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00015","Photobacterium (ASV00015)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00098","Priestia (ASV00098)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00211","Priestia (ASV00211)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00059","Pseudomonas (ASV00059)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00118","Pseudomonas (ASV00118)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00191","Serratia (ASV00191)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00238","Sphingomonas (ASV00238)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00133","Staphylococcus (ASV00133)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00037","Streptococcus (ASV00037)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00039","Streptococcus (ASV00039)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00071","Streptococcus (ASV00071)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00097","Streptococcus (ASV00097)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00109","Streptomyces (ASV00109)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00129","Streptomyces (ASV00129)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00139","Streptomyces (ASV00139)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00202","Streptomyces (ASV00202)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00157","Sutterella (ASV00157)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00065","Unclassified Cyanobacteriota (ASV00065)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00087","Unclassified Cyanobacteriota (ASV00087)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00125","Unclassified Cyanobacteriota (ASV00125)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00206","Unclassified Enterobacteriaceae genus (ASV00206)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00255","Unclassified Enterobacteriaceae genus (ASV00255)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00172","Unclassified Lachnospiraceae genus (ASV00172)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00204","Unclassified Oscillospiraceae genus (ASV00204)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00193","Unclassified Xanthobacteraceae genus (ASV00193)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00218","Unclassified [Eubacterium] coprostanoligenes group genus (ASV00218)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00008","Vibrio (ASV00008)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00010","Vibrio (ASV00010)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00011","Vibrio (ASV00011)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00013","Vibrio (ASV00013)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00021","Vibrio (ASV00021)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00155","[Ruminococcus] gnavus group (ASV00155)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00006","acidovorans (ASV00006)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00198","agglomerans (ASV00198)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00212","bicirculans (ASV00212)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00057","bromii (ASV00057)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00052","bullata (ASV00052)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00049","cohnii (ASV00049)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00099","corrugata (ASV00099)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00019","dorei (ASV00019)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00104","faecium (ASV00104)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00178","finegoldii (ASV00178)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00150","fragilis (ASV00150)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00147","hadrus (ASV00147)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00046","johnsonii (ASV00046)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00029","lactis (ASV00029)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00253","liquefaciens (ASV00253)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00068","merdae (ASV00068)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00186","muciniphila (ASV00186)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00035","pentosaceus (ASV00035)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00001","scophthalmi (ASV00001)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00031","thetaiotaomicron (ASV00031)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00114","umsongensis (ASV00114)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00266","umsongensis (ASV00266)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00159","vagans (ASV00159)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00084","vancouverensis (ASV00084)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00189","variicola (ASV00189)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D30_vs_D07","ASV00060","xylosus (ASV00060)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00080","Anaerobutyricum (ASV00080)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00138","Anaerostipes (ASV00138)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00066","Bacteroides (ASV00066)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00025","Blautia (ASV00025)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00054","Blautia (ASV00054)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00077","Blautia (ASV00077)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00092","Blautia (ASV00092)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00106","Blautia (ASV00106)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00108","Blautia (ASV00108)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00169","Bradyrhizobium (ASV00169)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00078","Brevundimonas (ASV00078)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00017","Buchnera (ASV00017)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00195","Burkholderia-Caballeronia-Paraburkholderia (ASV00195)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00012","Candidatus Hamiltonella (ASV00012)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00200","Enterobacter (ASV00200)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00100","Enterocloster (ASV00100)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00142","Extibacter (ASV00142)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00154","Flavonifractor (ASV00154)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00053","Fusicatenibacter (ASV00053)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00134","Lachnospiraceae NK4A136 group (ASV00134)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00062","Mammaliicoccus (ASV00062)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00064","Mediterraneibacter (ASV00064)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00111","Neobacillus (ASV00111)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00083","Oscillibacter (ASV00083)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00175","Paracoccus (ASV00175)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00098","Priestia (ASV00098)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00211","Priestia (ASV00211)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00059","Pseudomonas (ASV00059)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00118","Pseudomonas (ASV00118)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00191","Serratia (ASV00191)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00238","Sphingomonas (ASV00238)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00133","Staphylococcus (ASV00133)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00037","Streptococcus (ASV00037)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00071","Streptococcus (ASV00071)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00097","Streptococcus (ASV00097)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00109","Streptomyces (ASV00109)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00129","Streptomyces (ASV00129)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00139","Streptomyces (ASV00139)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00157","Sutterella (ASV00157)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00065","Unclassified Cyanobacteriota (ASV00065)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00087","Unclassified Cyanobacteriota (ASV00087)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00125","Unclassified Cyanobacteriota (ASV00125)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00206","Unclassified Enterobacteriaceae genus (ASV00206)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00255","Unclassified Enterobacteriaceae genus (ASV00255)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00002","Unclassified Mycoplasmataceae genus (ASV00002)",FALSE,,TRUE,"up","aldex2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00086","Unclassified Mycoplasmataceae genus (ASV00086)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00177","Unclassified Mycoplasmataceae genus (ASV00177)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00204","Unclassified Oscillospiraceae genus (ASV00204)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00218","Unclassified [Eubacterium] coprostanoligenes group genus (ASV00218)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00155","[Ruminococcus] gnavus group (ASV00155)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00006","acidovorans (ASV00006)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00057","bromii (ASV00057)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00052","bullata (ASV00052)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00049","cohnii (ASV00049)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00099","corrugata (ASV00099)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00019","dorei (ASV00019)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00150","fragilis (ASV00150)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00147","hadrus (ASV00147)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00253","liquefaciens (ASV00253)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00068","merdae (ASV00068)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00031","thetaiotaomicron (ASV00031)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00114","umsongensis (ASV00114)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00266","umsongensis (ASV00266)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00084","vancouverensis (ASV00084)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D07","ASV00060","xylosus (ASV00060)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D30","ASV00007","Cetobacterium (ASV00007)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D30","ASV00015","Photobacterium (ASV00015)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D30","ASV00002","Unclassified Mycoplasmataceae genus (ASV00002)",TRUE,"up",TRUE,"up","both",TRUE
+"asv","Ctrl_D90_vs_D30","ASV00013","Vibrio (ASV00013)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Ctrl_D90_vs_D30","ASV00030","monocytogenes (ASV00030)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00080","Anaerobutyricum (ASV00080)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00066","Bacteroides (ASV00066)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00025","Blautia (ASV00025)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00054","Blautia (ASV00054)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00092","Blautia (ASV00092)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00106","Blautia (ASV00106)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00017","Buchnera (ASV00017)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00012","Candidatus Hamiltonella (ASV00012)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00100","Enterocloster (ASV00100)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00036","Escherichia-Shigella (ASV00036)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00053","Fusicatenibacter (ASV00053)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00132","Intestinibacter (ASV00132)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00062","Mammaliicoccus (ASV00062)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00064","Mediterraneibacter (ASV00064)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00083","Oscillibacter (ASV00083)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00009","Photobacterium (ASV00009)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00015","Photobacterium (ASV00015)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00058","Photobacterium (ASV00058)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00067","Photobacterium (ASV00067)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00133","Staphylococcus (ASV00133)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00037","Streptococcus (ASV00037)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00039","Streptococcus (ASV00039)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00097","Streptococcus (ASV00097)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00065","Unclassified Cyanobacteriota (ASV00065)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00087","Unclassified Cyanobacteriota (ASV00087)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00002","Unclassified Mycoplasmataceae genus (ASV00002)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00023","Vibrio (ASV00023)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00162","Vibrio (ASV00162)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00006","acidovorans (ASV00006)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00032","acnes (ASV00032)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00057","bromii (ASV00057)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00052","bullata (ASV00052)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00090","caprae (ASV00090)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00049","cohnii (ASV00049)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00019","dorei (ASV00019)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00104","faecium (ASV00104)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00047","johnsonii (ASV00047)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00050","johnsonii (ASV00050)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00068","merdae (ASV00068)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00016","phosphoreum (ASV00016)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00020","phosphoreum (ASV00020)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00063","phosphoreum (ASV00063)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00031","thetaiotaomicron (ASV00031)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D30_vs_D07","ASV00060","xylosus (ASV00060)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00080","Anaerobutyricum (ASV00080)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00066","Bacteroides (ASV00066)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00025","Blautia (ASV00025)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00054","Blautia (ASV00054)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00077","Blautia (ASV00077)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00092","Blautia (ASV00092)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00106","Blautia (ASV00106)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00017","Buchnera (ASV00017)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00012","Candidatus Hamiltonella (ASV00012)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00100","Enterocloster (ASV00100)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00053","Fusicatenibacter (ASV00053)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00132","Intestinibacter (ASV00132)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00062","Mammaliicoccus (ASV00062)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00064","Mediterraneibacter (ASV00064)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00083","Oscillibacter (ASV00083)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00133","Staphylococcus (ASV00133)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00037","Streptococcus (ASV00037)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00097","Streptococcus (ASV00097)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00065","Unclassified Cyanobacteriota (ASV00065)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00087","Unclassified Cyanobacteriota (ASV00087)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00002","Unclassified Mycoplasmataceae genus (ASV00002)",TRUE,"up",TRUE,"up","both",TRUE
+"asv","Hydrolysate_D90_vs_D07","ASV00086","Unclassified Mycoplasmataceae genus (ASV00086)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00177","Unclassified Mycoplasmataceae genus (ASV00177)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00006","acidovorans (ASV00006)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00032","acnes (ASV00032)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00057","bromii (ASV00057)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00052","bullata (ASV00052)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00049","cohnii (ASV00049)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00019","dorei (ASV00019)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00104","faecium (ASV00104)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00046","johnsonii (ASV00046)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00068","merdae (ASV00068)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00016","phosphoreum (ASV00016)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00031","thetaiotaomicron (ASV00031)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D07","ASV00060","xylosus (ASV00060)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D30","ASV00061","Lactiplantibacillus (ASV00061)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D30","ASV00009","Photobacterium (ASV00009)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D30","ASV00015","Photobacterium (ASV00015)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D30","ASV00058","Photobacterium (ASV00058)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D30","ASV00002","Unclassified Mycoplasmataceae genus (ASV00002)",TRUE,"up",TRUE,"up","both",TRUE
+"asv","Hydrolysate_D90_vs_D30","ASV00177","Unclassified Mycoplasmataceae genus (ASV00177)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D30","ASV00103","Unclassified Paracoccaceae genus (ASV00103)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D30","ASV00008","Vibrio (ASV00008)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D30","ASV00010","Vibrio (ASV00010)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D30","ASV00011","Vibrio (ASV00011)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D30","ASV00013","Vibrio (ASV00013)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D30","ASV00021","Vibrio (ASV00021)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D30","ASV00029","lactis (ASV00029)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D30","ASV00035","pentosaceus (ASV00035)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D30","ASV00016","phosphoreum (ASV00016)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D30","ASV00020","phosphoreum (ASV00020)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D30","ASV00041","phosphoreum (ASV00041)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D30","ASV00001","scophthalmi (ASV00001)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D30","ASV00004","scophthalmi (ASV00004)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","Hydrolysate_D90_vs_D30","ASV00005","scophthalmi (ASV00005)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","global_BL15_vs_Ctrl","ASV00009","Photobacterium (ASV00009)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_BL15_vs_Ctrl","ASV00015","Photobacterium (ASV00015)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_BL15_vs_Ctrl","ASV00067","Photobacterium (ASV00067)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_BL15_vs_Ctrl","ASV00129","Streptomyces (ASV00129)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","global_BL15_vs_Ctrl","ASV00016","phosphoreum (ASV00016)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_BL15_vs_Ctrl","ASV00020","phosphoreum (ASV00020)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_BL15_vs_Ctrl","ASV00063","phosphoreum (ASV00063)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_BL30_vs_BL15","ASV00027","Cetobacterium (ASV00027)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","global_BL30_vs_BL15","ASV00058","Photobacterium (ASV00058)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_BL30_vs_BL15","ASV00067","Photobacterium (ASV00067)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","global_BL30_vs_BL15","ASV00039","Streptococcus (ASV00039)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","global_BL30_vs_BL15","ASV00002","Unclassified Mycoplasmataceae genus (ASV00002)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_BL30_vs_BL15","ASV00016","phosphoreum (ASV00016)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_BL30_vs_Ctrl","ASV00009","Photobacterium (ASV00009)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_BL30_vs_Ctrl","ASV00058","Photobacterium (ASV00058)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_BL30_vs_Ctrl","ASV00002","Unclassified Mycoplasmataceae genus (ASV00002)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_BL30_vs_Ctrl","ASV00050","johnsonii (ASV00050)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_BL30_vs_Ctrl","ASV00016","phosphoreum (ASV00016)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_BL30_vs_Ctrl","ASV00020","phosphoreum (ASV00020)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_BL30_vs_Ctrl","ASV00041","phosphoreum (ASV00041)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_Hydrolysate_vs_Ctrl","ASV00009","Photobacterium (ASV00009)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_Hydrolysate_vs_Ctrl","ASV00015","Photobacterium (ASV00015)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_Hydrolysate_vs_Ctrl","ASV00058","Photobacterium (ASV00058)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_Hydrolysate_vs_Ctrl","ASV00067","Photobacterium (ASV00067)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_Hydrolysate_vs_Ctrl","ASV00163","Pseudoalteromonas (ASV00163)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_Hydrolysate_vs_Ctrl","ASV00002","Unclassified Mycoplasmataceae genus (ASV00002)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_Hydrolysate_vs_Ctrl","ASV00021","Vibrio (ASV00021)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_Hydrolysate_vs_Ctrl","ASV00006","acidovorans (ASV00006)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","global_Hydrolysate_vs_Ctrl","ASV00072","jogaejeotgali (ASV00072)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","global_Hydrolysate_vs_Ctrl","ASV00050","johnsonii (ASV00050)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_Hydrolysate_vs_Ctrl","ASV00016","phosphoreum (ASV00016)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_Hydrolysate_vs_Ctrl","ASV00020","phosphoreum (ASV00020)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_Hydrolysate_vs_Ctrl","ASV00041","phosphoreum (ASV00041)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","global_Hydrolysate_vs_Ctrl","ASV00063","phosphoreum (ASV00063)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","t30_BL30_vs_BL15","ASV00007","Cetobacterium (ASV00007)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t30_BL30_vs_BL15","ASV00027","Cetobacterium (ASV00027)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t30_BL30_vs_BL15","ASV00058","Photobacterium (ASV00058)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","t30_BL30_vs_BL15","ASV00067","Photobacterium (ASV00067)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t30_BL30_vs_Ctrl","ASV00009","Photobacterium (ASV00009)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","t30_BL30_vs_Ctrl","ASV00058","Photobacterium (ASV00058)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","t30_BL30_vs_Ctrl","ASV00002","Unclassified Mycoplasmataceae genus (ASV00002)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","t30_BL30_vs_Ctrl","ASV00016","phosphoreum (ASV00016)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","t30_Hydrolysate_vs_Ctrl","ASV00009","Photobacterium (ASV00009)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","t30_Hydrolysate_vs_Ctrl","ASV00058","Photobacterium (ASV00058)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","t30_Hydrolysate_vs_Ctrl","ASV00002","Unclassified Mycoplasmataceae genus (ASV00002)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","t30_Hydrolysate_vs_Ctrl","ASV00016","phosphoreum (ASV00016)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","t30_Hydrolysate_vs_Ctrl","ASV00020","phosphoreum (ASV00020)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","t7_BL15_vs_Ctrl","ASV00195","Burkholderia-Caballeronia-Paraburkholderia (ASV00195)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_BL15_vs_Ctrl","ASV00098","Priestia (ASV00098)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_BL15_vs_Ctrl","ASV00211","Priestia (ASV00211)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_BL15_vs_Ctrl","ASV00118","Pseudomonas (ASV00118)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_BL15_vs_Ctrl","ASV00129","Streptomyces (ASV00129)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_BL15_vs_Ctrl","ASV00139","Streptomyces (ASV00139)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_BL15_vs_Ctrl","ASV00253","liquefaciens (ASV00253)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_BL30_vs_Ctrl","ASV00200","Enterobacter (ASV00200)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_BL30_vs_Ctrl","ASV00111","Neobacillus (ASV00111)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_BL30_vs_Ctrl","ASV00098","Priestia (ASV00098)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_BL30_vs_Ctrl","ASV00118","Pseudomonas (ASV00118)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_BL30_vs_Ctrl","ASV00238","Sphingomonas (ASV00238)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_BL30_vs_Ctrl","ASV00129","Streptomyces (ASV00129)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_BL30_vs_Ctrl","ASV00202","Streptomyces (ASV00202)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_BL30_vs_Ctrl","ASV00255","Unclassified Enterobacteriaceae genus (ASV00255)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_BL30_vs_Ctrl","ASV00198","agglomerans (ASV00198)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_BL30_vs_Ctrl","ASV00099","corrugata (ASV00099)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_BL30_vs_Ctrl","ASV00253","liquefaciens (ASV00253)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_BL30_vs_Ctrl","ASV00266","umsongensis (ASV00266)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_Hydrolysate_vs_Ctrl","ASV00200","Enterobacter (ASV00200)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_Hydrolysate_vs_Ctrl","ASV00111","Neobacillus (ASV00111)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_Hydrolysate_vs_Ctrl","ASV00009","Photobacterium (ASV00009)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","t7_Hydrolysate_vs_Ctrl","ASV00098","Priestia (ASV00098)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_Hydrolysate_vs_Ctrl","ASV00118","Pseudomonas (ASV00118)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t7_Hydrolysate_vs_Ctrl","ASV00162","Vibrio (ASV00162)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","t7_Hydrolysate_vs_Ctrl","ASV00253","liquefaciens (ASV00253)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t90_BL15_vs_Ctrl","ASV00030","monocytogenes (ASV00030)",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"asv","t90_BL30_vs_BL15","ASV00009","Photobacterium (ASV00009)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","t90_BL30_vs_BL15","ASV00016","phosphoreum (ASV00016)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"asv","t90_BL30_vs_Ctrl","ASV00016","phosphoreum (ASV00016)",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","BL15_D30_vs_D07","ASV00019","Bacteroides",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL15_D30_vs_D07","ASV00025","Blautia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL15_D30_vs_D07","ASV00052","Brevundimonas",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL15_D30_vs_D07","ASV00017","Buchnera",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL15_D30_vs_D07","ASV00006","Delftia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL15_D30_vs_D07","ASV00009","Photobacterium",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","BL15_D30_vs_D07","ASV00002","Unclassified Mycoplasmataceae genus",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","BL15_D90_vs_D07","ASV00019","Bacteroides",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL15_D90_vs_D07","ASV00025","Blautia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL15_D90_vs_D07","ASV00052","Brevundimonas",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL15_D90_vs_D07","ASV00017","Buchnera",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL15_D90_vs_D07","ASV00006","Delftia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL15_D90_vs_D07","ASV00002","Unclassified Mycoplasmataceae genus",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","BL15_D90_vs_D30","ASV00009","Photobacterium",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00045","Acinetobacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00080","Anaerobutyricum",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00049","Bacillus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00019","Bacteroides",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00025","Blautia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00017","Buchnera",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00012","Candidatus Hamiltonella",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00006","Delftia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00036","Escherichia-Shigella",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00154","Flavonifractor",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00053","Fusicatenibacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00134","Lachnospiraceae NK4A136 group",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00029","Lactococcus",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00062","Mammaliicoccus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00064","Mediterraneibacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00083","Oscillibacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00068","Parabacteroides",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00035","Pediococcus",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00104","Phascolarctobacterium",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00009","Photobacterium",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00057","Ruminococcus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00060","Staphylococcus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00065","Unclassified Cyanobacteriota genus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D30_vs_D07","ASV00002","Unclassified Mycoplasmataceae genus",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D90_vs_D07","ASV00049","Bacillus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D90_vs_D07","ASV00019","Bacteroides",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D90_vs_D07","ASV00025","Blautia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D90_vs_D07","ASV00017","Buchnera",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D90_vs_D07","ASV00012","Candidatus Hamiltonella",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D90_vs_D07","ASV00006","Delftia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D90_vs_D07","ASV00053","Fusicatenibacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D90_vs_D07","ASV00057","Ruminococcus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D90_vs_D07","ASV00002","Unclassified Mycoplasmataceae genus",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","BL30_D90_vs_D30","ASV00002","Unclassified Mycoplasmataceae genus",TRUE,"up",TRUE,"up","both",TRUE
+"genus","BL30_D90_vs_D30","ASV00001","Vibrio",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00045","Acinetobacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00080","Anaerobutyricum",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00138","Anaerostipes",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00049","Bacillus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00019","Bacteroides",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00025","Blautia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00169","Bradyrhizobium",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00052","Brevundimonas",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00017","Buchnera",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00012","Candidatus Hamiltonella",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00006","Delftia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00100","Enterocloster",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00142","Extibacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00154","Flavonifractor",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00053","Fusicatenibacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00132","Intestinibacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00189","Klebsiella",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00134","Lachnospiraceae NK4A136 group",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00029","Lactococcus",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00062","Mammaliicoccus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00064","Mediterraneibacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00111","Neobacillus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00083","Oscillibacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00146","Pantoea",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00068","Parabacteroides",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00175","Paracoccus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00035","Pediococcus",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00104","Phascolarctobacterium",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00098","Priestia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00059","Pseudomonas",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00057","Ruminococcus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00191","Serratia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00238","Sphingomonas",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00060","Staphylococcus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00109","Streptomyces",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00065","Unclassified Cyanobacteriota genus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00206","Unclassified Enterobacteriaceae genus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D30_vs_D07","ASV00001","Vibrio",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00080","Anaerobutyricum",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00138","Anaerostipes",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00019","Bacteroides",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00025","Blautia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00169","Bradyrhizobium",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00052","Brevundimonas",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00017","Buchnera",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00012","Candidatus Hamiltonella",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00006","Delftia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00100","Enterocloster",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00142","Extibacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00154","Flavonifractor",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00053","Fusicatenibacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00189","Klebsiella",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00134","Lachnospiraceae NK4A136 group",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00062","Mammaliicoccus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00064","Mediterraneibacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00111","Neobacillus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00083","Oscillibacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00068","Parabacteroides",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00175","Paracoccus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00098","Priestia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00057","Ruminococcus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00191","Serratia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00238","Sphingomonas",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00037","Streptococcus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00109","Streptomyces",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00065","Unclassified Cyanobacteriota genus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D07","ASV00206","Unclassified Enterobacteriaceae genus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D30","ASV00030","Listeria",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","Ctrl_D90_vs_D30","ASV00002","Unclassified Mycoplasmataceae genus",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00045","Acinetobacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00080","Anaerobutyricum",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00138","Anaerostipes",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00049","Bacillus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00019","Bacteroides",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00025","Blautia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00017","Buchnera",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00012","Candidatus Hamiltonella",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00006","Delftia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00100","Enterocloster",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00036","Escherichia-Shigella",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00154","Flavonifractor",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00053","Fusicatenibacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00132","Intestinibacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00189","Klebsiella",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00062","Mammaliicoccus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00064","Mediterraneibacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00083","Oscillibacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00068","Parabacteroides",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00104","Phascolarctobacterium",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00009","Photobacterium",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00057","Ruminococcus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00060","Staphylococcus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00065","Unclassified Cyanobacteriota genus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D30_vs_D07","ASV00002","Unclassified Mycoplasmataceae genus",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D90_vs_D07","ASV00045","Acinetobacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D90_vs_D07","ASV00080","Anaerobutyricum",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D90_vs_D07","ASV00049","Bacillus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D90_vs_D07","ASV00019","Bacteroides",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D90_vs_D07","ASV00025","Blautia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D90_vs_D07","ASV00052","Brevundimonas",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D90_vs_D07","ASV00017","Buchnera",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D90_vs_D07","ASV00012","Candidatus Hamiltonella",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D90_vs_D07","ASV00032","Cutibacterium",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D90_vs_D07","ASV00006","Delftia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D90_vs_D07","ASV00154","Flavonifractor",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D90_vs_D07","ASV00053","Fusicatenibacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D90_vs_D07","ASV00062","Mammaliicoccus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D90_vs_D07","ASV00064","Mediterraneibacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D90_vs_D07","ASV00083","Oscillibacter",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D90_vs_D07","ASV00068","Parabacteroides",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D90_vs_D07","ASV00057","Ruminococcus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","Hydrolysate_D90_vs_D07","ASV00002","Unclassified Mycoplasmataceae genus",TRUE,"up",TRUE,"up","both",TRUE
+"genus","Hydrolysate_D90_vs_D30","ASV00002","Unclassified Mycoplasmataceae genus",TRUE,"up",TRUE,"up","both",TRUE
+"genus","global_BL15_vs_Ctrl","ASV00009","Photobacterium",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","global_BL30_vs_Ctrl","ASV00009","Photobacterium",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","global_Hydrolysate_vs_Ctrl","ASV00009","Photobacterium",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","t30_BL15_vs_Ctrl","ASV00009","Photobacterium",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","t30_BL30_vs_Ctrl","ASV00009","Photobacterium",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","t30_BL30_vs_Ctrl","ASV00002","Unclassified Mycoplasmataceae genus",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","t30_Hydrolysate_vs_Ctrl","ASV00009","Photobacterium",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","t30_Hydrolysate_vs_Ctrl","ASV00002","Unclassified Mycoplasmataceae genus",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","t7_BL15_vs_Ctrl","ASV00195","Burkholderia-Caballeronia-Paraburkholderia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","t7_BL15_vs_Ctrl","ASV00098","Priestia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","t7_BL30_vs_Ctrl","ASV00111","Neobacillus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","t7_BL30_vs_Ctrl","ASV00098","Priestia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","t7_BL30_vs_Ctrl","ASV00238","Sphingomonas",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","t7_Hydrolysate_vs_Ctrl","ASV00111","Neobacillus",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","t7_Hydrolysate_vs_Ctrl","ASV00009","Photobacterium",TRUE,"up",FALSE,,"deseq2_only",FALSE
+"genus","t7_Hydrolysate_vs_Ctrl","ASV00098","Priestia",TRUE,"down",FALSE,,"deseq2_only",FALSE
+"genus","t90_BL15_vs_Ctrl","ASV00030","Listeria",TRUE,"down",FALSE,,"deseq2_only",FALSE

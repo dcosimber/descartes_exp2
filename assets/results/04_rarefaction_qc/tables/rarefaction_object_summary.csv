@@ -1,0 +1,4 @@
+"object","samples","min_reads","median_reads","max_reads","min_observed_asvs","median_observed_asvs","max_observed_asvs","common_rarefaction_depth","median_expected_asvs_at_common_depth","median_final_slope_asvs_per_1000_reads"
+"final_all_samples",138,17111,55392,86030,4,16,92,17111,15.5021496614699,1.67613491748733e-07
+"final_biological_intestine",133,17111,55673,86030,4,16,92,17111,15.4661427887103,1.88939082933687e-07
+"raw_all_samples",138,28400,56881,86842,5,40.5,1290,28400,39.2548454365836,0.00576296890832862

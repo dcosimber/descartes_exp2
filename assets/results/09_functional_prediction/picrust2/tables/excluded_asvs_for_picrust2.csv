@@ -1,0 +1,11 @@
+"ASV","Kingdom","Phylum","Class","Order","Family","Genus","Species","Species_addSpecies","exclude_for_picrust2","exclusion_reason","total_reads_interest","reads_intestine","reads_feed","prevalence_interest","prevalence_intestine","prevalence_feed"
+"ASV00018","Bacteria","Pseudomonadota","Alphaproteobacteria","Rickettsiales","Mitochondria",,,,TRUE,"Mitochondria",52778,682,52096,17,14,3
+"ASV00022","Bacteria","Cyanobacteriota","Cyanobacteriia","Chloroplast",,,,,TRUE,"Chloroplast",29400,259,29141,10,7,3
+"ASV00026","Bacteria","Cyanobacteriota","Cyanobacteriia","Chloroplast",,,,,TRUE,"Chloroplast",19452,270,19182,9,6,3
+"ASV00040","Bacteria","Pseudomonadota","Alphaproteobacteria","Rickettsiales","Mitochondria",,,,TRUE,"Mitochondria",7446,168,7278,5,2,3
+"ASV00065","Bacteria","Cyanobacteriota","Cyanobacteriia","Chloroplast",,,,,TRUE,"Chloroplast",2810,2810,0,13,13,0
+"ASV00081","Bacteria","Cyanobacteriota","Cyanobacteriia","Chloroplast",,,,,TRUE,"Chloroplast",2067,0,2067,2,0,2
+"ASV00087","Bacteria","Cyanobacteriota","Cyanobacteriia","Chloroplast",,,,,TRUE,"Chloroplast",1930,1930,0,13,13,0
+"ASV00125","Bacteria","Cyanobacteriota","Cyanobacteriia","Chloroplast",,,,,TRUE,"Chloroplast",1366,1366,0,12,12,0
+"ASV00126","Bacteria","Cyanobacteriota","Cyanobacteriia","Chloroplast",,,,,TRUE,"Chloroplast",1354,1354,0,4,4,0
+"ASV00220","Bacteria","Cyanobacteriota","Cyanobacteriia","Chloroplast",,,,,TRUE,"Chloroplast",632,341,291,8,5,3

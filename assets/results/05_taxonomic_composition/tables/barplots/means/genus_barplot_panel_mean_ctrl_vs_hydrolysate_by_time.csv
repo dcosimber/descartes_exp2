@@ -1,0 +1,97 @@
+"tax_level","panel","timepoint","taxon_plot","mean_rel_abundance","percent"
+"Genus","Ctrl","D07","Vibrio",0.279750906313557,27.9750906313557
+"Genus","Ctrl","D07","Delftia",0.162163468563579,16.2163468563579
+"Genus","Ctrl","D07","Candidatus Hamiltonella",0.110545745653548,11.0545745653548
+"Genus","Ctrl","D07","Others",0.105285020545413,10.5285020545413
+"Genus","Ctrl","D07","Cetobacterium",0.10044497899825,10.044497899825
+"Genus","Ctrl","D07","Unclassified Mycoplasmataceae genus",0.0655427510061647,6.55427510061647
+"Genus","Ctrl","D07","Bacteroides",0.0468974696426945,4.68974696426945
+"Genus","Ctrl","D07","Buchnera",0.0430877657450798,4.30877657450798
+"Genus","Ctrl","D07","Blautia",0.0329135110333088,3.29135110333088
+"Genus","Ctrl","D07","Pseudomonas",0.0238586555519359,2.38586555519359
+"Genus","Ctrl","D07","Acinetobacter",0.0108378329826567,1.08378329826567
+"Genus","Ctrl","D07","Streptococcus",0.00982722026111262,0.982722026111262
+"Genus","Ctrl","D07","Chloroplast",0.00478531178457678,0.478531178457678
+"Genus","Ctrl","D07","Cutibacterium",0.00405936191812396,0.405936191812396
+"Genus","Ctrl","D07","Lactococcus",0,0
+"Genus","Ctrl","D07","Photobacterium",0,0
+"Genus","Ctrl","D30","Vibrio",0.931324681424385,93.1324681424385
+"Genus","Ctrl","D30","Others",0.0217714388786335,2.17714388786335
+"Genus","Ctrl","D30","Cetobacterium",0.0185739437412766,1.85739437412766
+"Genus","Ctrl","D30","Lactococcus",0.0173763100456369,1.73763100456369
+"Genus","Ctrl","D30","Streptococcus",0.00673217281000745,0.673217281000745
+"Genus","Ctrl","D30","Photobacterium",0.00315061333255701,0.315061333255701
+"Genus","Ctrl","D30","Unclassified Mycoplasmataceae genus",0.000697228644590642,0.0697228644590642
+"Genus","Ctrl","D30","Cutibacterium",0.000330972547542868,0.0330972547542868
+"Genus","Ctrl","D30","Acinetobacter",2.75896664158515e-05,0.00275896664158515
+"Genus","Ctrl","D30","Chloroplast",1.50489089541008e-05,0.00150489089541008
+"Genus","Ctrl","D30","Bacteroides",0,0
+"Genus","Ctrl","D30","Blautia",0,0
+"Genus","Ctrl","D30","Buchnera",0,0
+"Genus","Ctrl","D30","Candidatus Hamiltonella",0,0
+"Genus","Ctrl","D30","Delftia",0,0
+"Genus","Ctrl","D30","Pseudomonas",0,0
+"Genus","Ctrl","D90","Unclassified Mycoplasmataceae genus",0.522796136468771,52.2796136468771
+"Genus","Ctrl","D90","Vibrio",0.376244795239528,37.6244795239528
+"Genus","Ctrl","D90","Cetobacterium",0.0931661333308732,9.31661333308732
+"Genus","Ctrl","D90","Others",0.00594785500308919,0.594785500308919
+"Genus","Ctrl","D90","Chloroplast",0.000787979519324212,0.0787979519324212
+"Genus","Ctrl","D90","Cutibacterium",0.000359994912409151,0.0359994912409151
+"Genus","Ctrl","D90","Lactococcus",0.000299979029817926,0.0299979029817926
+"Genus","Ctrl","D90","Pseudomonas",0.000137828820425001,0.0137828820425001
+"Genus","Ctrl","D90","Acinetobacter",0.000132526387371024,0.0132526387371024
+"Genus","Ctrl","D90","Streptococcus",6.76384730893052e-05,0.00676384730893052
+"Genus","Ctrl","D90","Delftia",5.09267795836297e-05,0.00509267795836297
+"Genus","Ctrl","D90","Photobacterium",4.6938440235631e-06,0.00046938440235631
+"Genus","Ctrl","D90","Bacteroides",3.51219169542274e-06,0.000351219169542274
+"Genus","Ctrl","D90","Blautia",0,0
+"Genus","Ctrl","D90","Buchnera",0,0
+"Genus","Ctrl","D90","Candidatus Hamiltonella",0,0
+"Genus","Hydrolysate","D07","Vibrio",0.613895052119948,61.3895052119948
+"Genus","Hydrolysate","D07","Delftia",0.129842727495354,12.9842727495354
+"Genus","Hydrolysate","D07","Candidatus Hamiltonella",0.0675446743834444,6.75446743834444
+"Genus","Hydrolysate","D07","Others",0.0423394296395063,4.23394296395063
+"Genus","Hydrolysate","D07","Buchnera",0.0327698459256929,3.27698459256929
+"Genus","Hydrolysate","D07","Bacteroides",0.0315943080049473,3.15943080049473
+"Genus","Hydrolysate","D07","Blautia",0.0181684395152841,1.81684395152841
+"Genus","Hydrolysate","D07","Acinetobacter",0.0173444161156561,1.73444161156561
+"Genus","Hydrolysate","D07","Unclassified Mycoplasmataceae genus",0.0157841765675167,1.57841765675167
+"Genus","Hydrolysate","D07","Cetobacterium",0.0112934997077558,1.12934997077558
+"Genus","Hydrolysate","D07","Streptococcus",0.00774495499183568,0.774495499183568
+"Genus","Hydrolysate","D07","Cutibacterium",0.00487795848402898,0.487795848402898
+"Genus","Hydrolysate","D07","Chloroplast",0.00478111671032032,0.478111671032032
+"Genus","Hydrolysate","D07","Pseudomonas",0.00104943909858888,0.104943909858888
+"Genus","Hydrolysate","D07","Photobacterium",0.000886913050355338,0.0886913050355338
+"Genus","Hydrolysate","D07","Lactococcus",8.30481897652848e-05,0.00830481897652848
+"Genus","Hydrolysate","D30","Vibrio",0.648083611181911,64.8083611181911
+"Genus","Hydrolysate","D30","Photobacterium",0.21261821088802,21.261821088802
+"Genus","Hydrolysate","D30","Unclassified Mycoplasmataceae genus",0.0732619304870684,7.32619304870684
+"Genus","Hydrolysate","D30","Cetobacterium",0.0559893486854168,5.59893486854168
+"Genus","Hydrolysate","D30","Others",0.00569206128118963,0.569206128118963
+"Genus","Hydrolysate","D30","Streptococcus",0.00125956953108399,0.125956953108399
+"Genus","Hydrolysate","D30","Cutibacterium",0.0011315957972576,0.11315957972576
+"Genus","Hydrolysate","D30","Acinetobacter",0.000941084631182645,0.0941084631182645
+"Genus","Hydrolysate","D30","Lactococcus",0.00091997839913777,0.091997839913777
+"Genus","Hydrolysate","D30","Pseudomonas",9.92292282998258e-05,0.00992292282998258
+"Genus","Hydrolysate","D30","Chloroplast",3.37988943255036e-06,0.000337988943255036
+"Genus","Hydrolysate","D30","Bacteroides",0,0
+"Genus","Hydrolysate","D30","Blautia",0,0
+"Genus","Hydrolysate","D30","Buchnera",0,0
+"Genus","Hydrolysate","D30","Candidatus Hamiltonella",0,0
+"Genus","Hydrolysate","D30","Delftia",0,0
+"Genus","Hydrolysate","D90","Unclassified Mycoplasmataceae genus",0.717619588442577,71.7619588442577
+"Genus","Hydrolysate","D90","Vibrio",0.250432945764074,25.0432945764074
+"Genus","Hydrolysate","D90","Photobacterium",0.0242631016905437,2.42631016905437
+"Genus","Hydrolysate","D90","Others",0.00323793361907847,0.323793361907847
+"Genus","Hydrolysate","D90","Cetobacterium",0.00262923597300856,0.262923597300857
+"Genus","Hydrolysate","D90","Acinetobacter",0.00076367570386211,0.076367570386211
+"Genus","Hydrolysate","D90","Streptococcus",0.000378165335797609,0.0378165335797609
+"Genus","Hydrolysate","D90","Lactococcus",0.000257620824469257,0.0257620824469257
+"Genus","Hydrolysate","D90","Cutibacterium",0.000195356736259264,0.0195356736259264
+"Genus","Hydrolysate","D90","Chloroplast",0.000185969553388737,0.0185969553388737
+"Genus","Hydrolysate","D90","Pseudomonas",3.64063569418645e-05,0.00364063569418645
+"Genus","Hydrolysate","D90","Bacteroides",0,0
+"Genus","Hydrolysate","D90","Blautia",0,0
+"Genus","Hydrolysate","D90","Buchnera",0,0
+"Genus","Hydrolysate","D90","Candidatus Hamiltonella",0,0
+"Genus","Hydrolysate","D90","Delftia",0,0

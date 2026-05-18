@@ -1,0 +1,17 @@
+"tax_level","source","taxon","taxon_plot","count","rel_abundance","percent"
+"Genus","Expected 16S composition","Limosilactobacillus","Limosilactobacillus",,0.184,18.4
+"Genus","Expected 16S composition","Bacillus","Bacillus",,0.174,17.4
+"Genus","Expected 16S composition","Staphylococcus","Staphylococcus",,0.155,15.5
+"Genus","Expected 16S composition","Listeria","Listeria",,0.141,14.1
+"Genus","Expected 16S composition","Salmonella","Salmonella",,0.104,10.4
+"Genus","Expected 16S composition","Escherichia-Shigella","Escherichia-Shigella",,0.101,10.1
+"Genus","Expected 16S composition","Enterococcus","Enterococcus",,0.099,9.9
+"Genus","Expected 16S composition","Pseudomonas","Pseudomonas",,0.042,4.2
+"Genus","Observed after sequencing","Limosilactobacillus","Limosilactobacillus",20576,0.294068886665714,29.4068886665714
+"Genus","Observed after sequencing","Bacillus","Bacillus",10784,0.154123195655281,15.4123195655281
+"Genus","Observed after sequencing","Salmonella","Salmonella",9802,0.14008860940403,14.008860940403
+"Genus","Observed after sequencing","Escherichia-Shigella","Escherichia-Shigella",9399,0.134328998142061,13.4328998142061
+"Genus","Observed after sequencing","Staphylococcus","Staphylococcus",5850,0.0836072602543947,8.36072602543947
+"Genus","Observed after sequencing","Enterococcus","Enterococcus",5838,0.083435758182078,8.3435758182078
+"Genus","Observed after sequencing","Listeria","Listeria",5603,0.0800771759325425,8.00771759325425
+"Genus","Observed after sequencing","Pseudomonas","Pseudomonas",2118,0.0302701157638988,3.02701157638988

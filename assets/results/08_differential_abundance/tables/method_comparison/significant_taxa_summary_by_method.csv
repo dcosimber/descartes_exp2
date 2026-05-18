@@ -1,0 +1,5 @@
+"method","level","n_significant_rows","n_comparisons_with_significant"
+"DESeq2","asv",438,25
+"DESeq2","genus",179,22
+"ALDEx2","asv",8,7
+"ALDEx2","genus",3,3

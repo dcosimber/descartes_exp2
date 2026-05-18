@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>3&nbsp; 03. Dataset stats – DESCARTES Exp2 microbiome</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../chapters/generated/03_rarefaction_qc.html" rel="next">
+<link href="../../chapters/generated/01_filtering.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-87b7f55de2e0c9887283481eb31a794c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b8948fbc8f68ee5b654fb0853b40965b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-87b7f55de2e0c9887283481eb31a794c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/generated/02_dataset_stats.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">03. Dataset stats</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">DESCARTES Exp2 microbiome</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">DESCARTES Exp2 microbiome</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/01_filtering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">02. Filtering</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/02_dataset_stats.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">03. Dataset stats</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/03_rarefaction_qc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">04. Rarefaction QC</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/04_taxonomic_composition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">05. Composición taxonómica</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/05_alpha_diversity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">06. Diversidad alfa</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/06_beta_diversity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Informe de diversidad beta</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/07_differential_abundance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">08. Differential abundance</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/08_functional_prediction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Functional prediction report</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Apéndices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../appendices/reproducibility.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Reproducibilidad</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#objetivo-del-análisis" id="toc-objetivo-del-análisis" class="nav-link active" data-scroll-target="#objetivo-del-análisis"><span class="header-section-number">3.1</span> 1. Objetivo del análisis</a></li>
+  <li><a href="#inputs-outputs-y-organización" id="toc-inputs-outputs-y-organización" class="nav-link" data-scroll-target="#inputs-outputs-y-organización"><span class="header-section-number">3.2</span> 2. Inputs, outputs y organización</a>
+  <ul class="collapse">
+  <li><a href="#objetos-analizados" id="toc-objetos-analizados" class="nav-link" data-scroll-target="#objetos-analizados"><span class="header-section-number">3.2.1</span> 2.1. Objetos analizados</a></li>
+  <li><a href="#tablas-generadas" id="toc-tablas-generadas" class="nav-link" data-scroll-target="#tablas-generadas"><span class="header-section-number">3.2.2</span> 2.2. Tablas generadas</a></li>
+  </ul></li>
+  <li><a href="#diseño-muestral" id="toc-diseño-muestral" class="nav-link" data-scroll-target="#diseño-muestral"><span class="header-section-number">3.3</span> 3. Diseño muestral</a></li>
+  <li><a href="#profundidad-de-secuenciación-y-retención-de-reads" id="toc-profundidad-de-secuenciación-y-retención-de-reads" class="nav-link" data-scroll-target="#profundidad-de-secuenciación-y-retención-de-reads"><span class="header-section-number">3.4</span> 4. Profundidad de secuenciación y retención de reads</a></li>
+  <li><a href="#asvs-abundancia-y-prevalencia" id="toc-asvs-abundancia-y-prevalencia" class="nav-link" data-scroll-target="#asvs-abundancia-y-prevalencia"><span class="header-section-number">3.5</span> 5. ASVs, abundancia y prevalencia</a></li>
+  <li><a href="#asignación-taxonómica" id="toc-asignación-taxonómica" class="nav-link" data-scroll-target="#asignación-taxonómica"><span class="header-section-number">3.6</span> 6. Asignación taxonómica</a></li>
+  <li><a href="#lectura-metodológica-para-el-artículo" id="toc-lectura-metodológica-para-el-artículo" class="nav-link" data-scroll-target="#lectura-metodológica-para-el-artículo"><span class="header-section-number">3.7</span> 7. Lectura metodológica para el artículo</a></li>
+  <li><a href="#texto-breve-reutilizable" id="toc-texto-breve-reutilizable" class="nav-link" data-scroll-target="#texto-breve-reutilizable"><span class="header-section-number">3.8</span> 8. Texto breve reutilizable</a></li>
+  <li><a href="#limitaciones" id="toc-limitaciones" class="nav-link" data-scroll-target="#limitaciones"><span class="header-section-number">3.9</span> 9. Limitaciones</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">03. Dataset stats</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Run: <code>run_02_optimized</code><br>
+Base de datos taxonómica: <code>silva_138_2</code></p>
+<section id="objetivo-del-análisis" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="objetivo-del-análisis"><span class="header-section-number">3.1</span> 1. Objetivo del análisis</h2>
+<p>Este bloque resume las características generales del set de datos antes y después del filtrado. Su objetivo es concentrar en un único sitio los números que normalmente se reportan en un artículo: número de muestras, lecturas, profundidad mínima/mediana/máxima, número de ASVs, prevalencia, abundancia, longitud de ASVs, completitud de asignación taxonómica y retención tras filtrado.</p>
+<p>El bloque no busca interpretar diferencias biológicas entre tratamientos. Su función es documentar la calidad, estructura y trazabilidad del dataset que alimenta los análisis de composición, diversidad alfa, diversidad beta y abundancia diferencial.</p>
+</section>
+<section id="inputs-outputs-y-organización" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="inputs-outputs-y-organización"><span class="header-section-number">3.2</span> 2. Inputs, outputs y organización</h2>
+<section id="objetos-analizados" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="objetos-analizados"><span class="header-section-number">3.2.1</span> 2.1. Objetos analizados</h3>
+<ul>
+<li><code>raw_all_samples</code>: objeto importado con todas las muestras: intestino, mock y feed.</li>
+<li><code>taxonomic_filter</code>: objeto tras retirar ASVs taxonómicamente no deseadas.</li>
+<li><code>prevalence_filter</code>: objeto tras aplicar prevalencia por grupo.</li>
+<li><code>mean_abundance_filter</code>: objeto tras aplicar abundancia relativa media mínima.</li>
+<li><code>final_all_samples</code>: objeto global filtrado final.</li>
+<li><code>final_biological_intestine</code>: subconjunto filtrado usado para análisis biológicos de intestino.</li>
+</ul>
+</section>
+<section id="tablas-generadas" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="tablas-generadas"><span class="header-section-number">3.2.2</span> 2.2. Tablas generadas</h3>
+<ul>
+<li><a href="../../assets/results/03_dataset_stats/tables/sample_counts_by_design.csv"><code>sample_counts_by_design.csv</code></a>: número de muestras por tipo, dieta y tiempo.</li>
+<li><a href="../../assets/results/03_dataset_stats/tables/sample_read_stats_overall.csv"><code>sample_read_stats_overall.csv</code></a>: estadísticos de lecturas por objeto.</li>
+<li><a href="../../assets/results/03_dataset_stats/tables/sample_read_stats_by_sample_type.csv"><code>sample_read_stats_by_sample_type.csv</code></a>: estadísticos de lecturas por tipo de muestra.</li>
+<li><a href="../../assets/results/03_dataset_stats/tables/sample_read_stats_by_group.csv"><code>sample_read_stats_by_group.csv</code></a>: estadísticos de lecturas por grupo experimental.</li>
+<li><a href="../../assets/results/03_dataset_stats/tables/asv_abundance_prevalence_summary.csv"><code>asv_abundance_prevalence_summary.csv</code></a>: resumen de abundancia y prevalencia de ASVs.</li>
+<li><a href="../../assets/results/03_dataset_stats/tables/asv_abundance_prevalence_by_object.csv"><code>asv_abundance_prevalence_by_object.csv</code></a>: una fila por ASV y objeto, con lecturas, prevalencia y abundancia media.</li>
+<li><a href="../../assets/results/03_dataset_stats/tables/asv_prevalence_distribution.csv"><code>asv_prevalence_distribution.csv</code></a>: distribución de ASVs por rangos de prevalencia.</li>
+<li><a href="../../assets/results/03_dataset_stats/tables/taxonomy_assignment_summary.csv"><code>taxonomy_assignment_summary.csv</code></a>: completitud de asignación taxonómica por rango.</li>
+<li><a href="../../assets/results/03_dataset_stats/tables/top50_asvs_raw_all_samples.csv"><code>top50_asvs_raw_all_samples.csv</code></a> y <a href="../../assets/results/03_dataset_stats/tables/top50_asvs_final_all_samples.csv"><code>top50_asvs_final_all_samples.csv</code></a>: ASVs más abundantes antes y después del filtrado. multipestaña con las tablas principales.</li>
+</ul>
+</section>
+</section>
+<section id="diseño-muestral" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="diseño-muestral"><span class="header-section-number">3.3</span> 3. Diseño muestral</h2>
+<p>El dataset global contiene 138 muestras: 133 muestras intestinales, 3 muestras de pienso/feed y 2 mocks. Las muestras intestinales se distribuyen entre tres dietas (<code>Ctrl</code>, <code>BL15</code>, <code>BL30</code>) y tres tiempos (<code>D07</code>, <code>D30</code>, <code>D90</code>).</p>
+<p><strong>Tabla 1. Número de muestras por tipo, dieta y tiempo.</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tipo de muestra</th>
+<th>Dieta</th>
+<th>Grupo hidro</th>
+<th>Tiempo</th>
+<th>Grupo dieta-tiempo</th>
+<th style="text-align: right;">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Intestine</td>
+<td>Ctrl</td>
+<td>Ctrl</td>
+<td>D07</td>
+<td>Ctrl_D07</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td>Intestine</td>
+<td>Ctrl</td>
+<td>Ctrl</td>
+<td>D30</td>
+<td>Ctrl_D30</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="odd">
+<td>Intestine</td>
+<td>Ctrl</td>
+<td>Ctrl</td>
+<td>D90</td>
+<td>Ctrl_D90</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td>Intestine</td>
+<td>BL15</td>
+<td>Hydrolysate</td>
+<td>D07</td>
+<td>BL15_D07</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="odd">
+<td>Intestine</td>
+<td>BL15</td>
+<td>Hydrolysate</td>
+<td>D30</td>
+<td>BL15_D30</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td>Intestine</td>
+<td>BL15</td>
+<td>Hydrolysate</td>
+<td>D90</td>
+<td>BL15_D90</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="odd">
+<td>Intestine</td>
+<td>BL30</td>
+<td>Hydrolysate</td>
+<td>D07</td>
+<td>BL30_D07</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td>Intestine</td>
+<td>BL30</td>
+<td>Hydrolysate</td>
+<td>D30</td>
+<td>BL30_D30</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr class="odd">
+<td>Intestine</td>
+<td>BL30</td>
+<td>Hydrolysate</td>
+<td>D90</td>
+<td>BL30_D90</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr class="even">
+<td>Feed</td>
+<td>Ctrl</td>
+<td>Ctrl</td>
+<td>NA</td>
+<td>NA</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td>Feed</td>
+<td>BL15</td>
+<td>Hydrolysate</td>
+<td>NA</td>
+<td>NA</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td>Feed</td>
+<td>BL30</td>
+<td>Hydrolysate</td>
+<td>NA</td>
+<td>NA</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td>Mock</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td style="text-align: right;">2</td>
+</tr>
+</tbody>
+</table>
+<p>El diseño intestinal está prácticamente balanceado, con 15 muestras por combinación dieta-tiempo salvo <code>BL30_D30</code> y <code>BL30_D90</code>, con 14 muestras cada una. Feed y mock se tratan como controles no biológicos.</p>
+</section>
+<section id="profundidad-de-secuenciación-y-retención-de-reads" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="profundidad-de-secuenciación-y-retención-de-reads"><span class="header-section-number">3.4</span> 4. Profundidad de secuenciación y retención de reads</h2>
+<p>El dataset bruto contiene 7,667,921 lecturas distribuidas en 138 muestras. La profundidad por muestra es alta y relativamente homogénea en intestino, con una mediana global de 56,881 lecturas antes del filtrado. Tras el filtrado global quedan 7,133,190 lecturas, con mediana de 55,392 lecturas por muestra.</p>
+<p><strong>Tabla 2. Estadísticos globales de lecturas por objeto.</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Objeto</th>
+<th style="text-align: right;">Muestras</th>
+<th style="text-align: right;">Reads mín.</th>
+<th style="text-align: right;">Q1</th>
+<th style="text-align: right;">Mediana</th>
+<th style="text-align: right;">Media</th>
+<th style="text-align: right;">Q3</th>
+<th style="text-align: right;">Reads máx.</th>
+<th style="text-align: right;">Reads totales</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Raw all samples</td>
+<td style="text-align: right;">138</td>
+<td style="text-align: right;">28,400</td>
+<td style="text-align: right;">51,835</td>
+<td style="text-align: right;">56,881</td>
+<td style="text-align: right;">55,565</td>
+<td style="text-align: right;">59,025</td>
+<td style="text-align: right;">86,842</td>
+<td style="text-align: right;">7,667,921</td>
+</tr>
+<tr class="even">
+<td>Taxonomic filter</td>
+<td style="text-align: right;">138</td>
+<td style="text-align: right;">17,587</td>
+<td style="text-align: right;">48,939</td>
+<td style="text-align: right;">56,361</td>
+<td style="text-align: right;">54,215</td>
+<td style="text-align: right;">58,771</td>
+<td style="text-align: right;">86,359</td>
+<td style="text-align: right;">7,481,712</td>
+</tr>
+<tr class="odd">
+<td>Prevalence filter</td>
+<td style="text-align: right;">138</td>
+<td style="text-align: right;">17,336</td>
+<td style="text-align: right;">46,991</td>
+<td style="text-align: right;">55,616.5</td>
+<td style="text-align: right;">52,395</td>
+<td style="text-align: right;">58,272</td>
+<td style="text-align: right;">86,087</td>
+<td style="text-align: right;">7,230,537</td>
+</tr>
+<tr class="even">
+<td>Mean abundance filter</td>
+<td style="text-align: right;">138</td>
+<td style="text-align: right;">17,111</td>
+<td style="text-align: right;">45,223</td>
+<td style="text-align: right;">55,392</td>
+<td style="text-align: right;">51,788</td>
+<td style="text-align: right;">58,231</td>
+<td style="text-align: right;">86,030</td>
+<td style="text-align: right;">7,133,190</td>
+</tr>
+<tr class="odd">
+<td>Final all samples</td>
+<td style="text-align: right;">138</td>
+<td style="text-align: right;">17,111</td>
+<td style="text-align: right;">45,223</td>
+<td style="text-align: right;">55,392</td>
+<td style="text-align: right;">51,788</td>
+<td style="text-align: right;">58,231</td>
+<td style="text-align: right;">86,030</td>
+<td style="text-align: right;">7,133,190</td>
+</tr>
+<tr class="even">
+<td>Final biological intestine</td>
+<td style="text-align: right;">133</td>
+<td style="text-align: right;">17,111</td>
+<td style="text-align: right;">47,235</td>
+<td style="text-align: right;">55,673</td>
+<td style="text-align: right;">52,218</td>
+<td style="text-align: right;">58,359</td>
+<td style="text-align: right;">86,030</td>
+<td style="text-align: right;">6,931,390</td>
+</tr>
+</tbody>
+</table>
+<p>El filtrado reduce fuertemente el número de ASVs, pero mantiene la mayor parte de las lecturas. El mínimo global después del filtrado ya no cae por debajo de 17,111 lecturas porque la señal cloroplastidial y mitocondrial del feed se conserva.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../assets/results/03_dataset_stats/figures/read_depth_by_filter_step_sample_type.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figura 1. Profundidad de lecturas por paso de filtrado y tipo de muestra."><img src="../../assets/results/03_dataset_stats/figures/read_depth_by_filter_step_sample_type.png" class="img-fluid figure-img" alt="Figura 1. Profundidad de lecturas por paso de filtrado y tipo de muestra."></a></p>
+<figcaption>Figura 1. Profundidad de lecturas por paso de filtrado y tipo de muestra.</figcaption>
+</figure>
+</div>
+<p><strong>Figura 1. Profundidad de lecturas por paso y tipo de muestra.</strong> La figura muestra la mediana de lecturas por muestra separada por tipo de muestra. El feed conserva ahora la mayor parte de su profundidad tras el filtro taxonómico, porque cloroplasto y mitocondria no se eliminan en este proyecto.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../assets/results/03_dataset_stats/figures/total_read_retention_by_object.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figura 2. Retención total de lecturas por objeto."><img src="../../assets/results/03_dataset_stats/figures/total_read_retention_by_object.png" class="img-fluid figure-img" alt="Figura 2. Retención total de lecturas por objeto."></a></p>
+<figcaption>Figura 2. Retención total de lecturas por objeto.</figcaption>
+</figure>
+</div>
+<p><strong>Figura 2. Retención global de lecturas.</strong> Se observa una pérdida moderada de lecturas a través de los filtros, frente a una reducción mucho más fuerte del número de ASVs.</p>
+</section>
+<section id="asvs-abundancia-y-prevalencia" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="asvs-abundancia-y-prevalencia"><span class="header-section-number">3.5</span> 5. ASVs, abundancia y prevalencia</h2>
+<p>El dataset bruto contiene 14,652 ASVs. La mayoría son muy poco prevalentes: 13,270 ASVs aparecen en menos del 1% de las muestras. Tras el filtrado final quedan 175 ASVs en el objeto global, con una mediana de prevalencia de 13 muestras y una abundancia relativa media mínima de 0.0104%.</p>
+<p><strong>Tabla 3. Resumen de abundancia y prevalencia de ASVs.</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Objeto</th>
+<th style="text-align: right;">ASVs</th>
+<th style="text-align: right;">Reads totales</th>
+<th style="text-align: right;">Reads/ASV mín.</th>
+<th style="text-align: right;">Reads/ASV mediana</th>
+<th style="text-align: right;">Reads/ASV máx.</th>
+<th style="text-align: right;">Prevalencia mediana</th>
+<th style="text-align: right;">Prevalencia máx.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Raw all samples</td>
+<td style="text-align: right;">14,652</td>
+<td style="text-align: right;">7,667,921</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">2,011,726</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">129</td>
+</tr>
+<tr class="even">
+<td>Taxonomic filter</td>
+<td style="text-align: right;">12,461</td>
+<td style="text-align: right;">7,481,712</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">2,011,726</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">129</td>
+</tr>
+<tr class="odd">
+<td>Prevalence filter</td>
+<td style="text-align: right;">1,101</td>
+<td style="text-align: right;">7,230,537</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">2,011,726</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">129</td>
+</tr>
+<tr class="even">
+<td>Final all samples</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: right;">7,133,190</td>
+<td style="text-align: right;">464</td>
+<td style="text-align: right;">1,626</td>
+<td style="text-align: right;">2,011,726</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">129</td>
+</tr>
+<tr class="odd">
+<td>Final biological intestine</td>
+<td style="text-align: right;">169</td>
+<td style="text-align: right;">6,931,390</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">1,342.5</td>
+<td style="text-align: right;">2,011,726</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">129</td>
+</tr>
+</tbody>
+</table>
+<p>La matriz bruta está dominada por ASVs raras y de baja prevalencia. El filtrado final conserva ASVs con mayor soporte en lecturas y presencia en muestras, lo que reduce ruido para análisis multivariantes y figuras de composición.</p>
+<p><strong>Tabla 4. Distribución de ASVs por rango de prevalencia.</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Objeto</th>
+<th style="text-align: right;">&gt;0-1%</th>
+<th style="text-align: right;">1-5%</th>
+<th style="text-align: right;">5-10%</th>
+<th style="text-align: right;">10-25%</th>
+<th style="text-align: right;">25-50%</th>
+<th style="text-align: right;">50-75%</th>
+<th style="text-align: right;">75-100%</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Raw all samples</td>
+<td style="text-align: right;">13,270</td>
+<td style="text-align: right;">1,114</td>
+<td style="text-align: right;">173</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td>Taxonomic filter</td>
+<td style="text-align: right;">12,734</td>
+<td style="text-align: right;">1,096</td>
+<td style="text-align: right;">171</td>
+<td style="text-align: right;">73</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td>Prevalence filter</td>
+<td style="text-align: right;">221</td>
+<td style="text-align: right;">674</td>
+<td style="text-align: right;">171</td>
+<td style="text-align: right;">73</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td>Final all samples</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">66</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td>Final biological intestine</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">64</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">4</td>
+</tr>
+</tbody>
+</table>
+<p>El filtro de prevalencia elimina la mayor parte de ASVs detectadas en muy pocas muestras. El objeto final ya no contiene ASVs presentes en una sola muestra en el análisis global.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../assets/results/03_dataset_stats/figures/asv_prevalence_distribution.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figura 3. Distribución de prevalencia de ASVs."><img src="../../assets/results/03_dataset_stats/figures/asv_prevalence_distribution.png" class="img-fluid figure-img" alt="Figura 3. Distribución de prevalencia de ASVs."></a></p>
+<figcaption>Figura 3. Distribución de prevalencia de ASVs.</figcaption>
+</figure>
+</div>
+<p><strong>Figura 3. Distribución de ASVs por rangos de prevalencia.</strong> La figura resume la transición desde una matriz bruta dominada por ASVs muy raras hacia una matriz filtrada enriquecida en ASVs más prevalentes.</p>
+</section>
+<section id="asignación-taxonómica" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="asignación-taxonómica"><span class="header-section-number">3.6</span> 6. Asignación taxonómica</h2>
+<p>La asignación taxonómica es completa hasta orden en el objeto final: 175 de 175 ASVs tienen asignación hasta orden, y esas ASVs concentran el 100% de las lecturas. A nivel familia, 167 de 175 ASVs están asignadas y explican el 99.2% de las lecturas. A nivel género, 154 de 175 ASVs están asignadas, pero estas explican el 72.5% de las lecturas; esto refleja que una fracción importante de las lecturas pertenece a ASVs abundantes no resueltas a género, especialmente dentro de grupos como Mycoplasmataceae.</p>
+<p><strong>Tabla 5. Completitud taxonómica en el objeto final global.</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Rango</th>
+<th style="text-align: right;">ASVs asignadas</th>
+<th style="text-align: right;">ASVs no asignadas</th>
+<th style="text-align: right;">% ASVs asignadas</th>
+<th style="text-align: right;">Reads asignados</th>
+<th style="text-align: right;">% reads asignados</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Kingdom</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">100.0%</td>
+<td style="text-align: right;">7,133,190</td>
+<td style="text-align: right;">100.0%</td>
+</tr>
+<tr class="even">
+<td>Phylum</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">100.0%</td>
+<td style="text-align: right;">7,133,190</td>
+<td style="text-align: right;">100.0%</td>
+</tr>
+<tr class="odd">
+<td>Class</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">100.0%</td>
+<td style="text-align: right;">7,133,190</td>
+<td style="text-align: right;">100.0%</td>
+</tr>
+<tr class="even">
+<td>Order</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">100.0%</td>
+<td style="text-align: right;">7,133,190</td>
+<td style="text-align: right;">100.0%</td>
+</tr>
+<tr class="odd">
+<td>Family</td>
+<td style="text-align: right;">167</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">95.4%</td>
+<td style="text-align: right;">7,074,179</td>
+<td style="text-align: right;">99.2%</td>
+</tr>
+<tr class="even">
+<td>Genus</td>
+<td style="text-align: right;">154</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">88.0%</td>
+<td style="text-align: right;">5,183,229</td>
+<td style="text-align: right;">72.7%</td>
+</tr>
+<tr class="odd">
+<td>Species</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">113</td>
+<td style="text-align: right;">35.4%</td>
+<td style="text-align: right;">3,509,310</td>
+<td style="text-align: right;">49.2%</td>
+</tr>
+<tr class="even">
+<td>Species_addSpecies</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">60.0%</td>
+<td style="text-align: right;">4,452,658</td>
+<td style="text-align: right;">62.4%</td>
+</tr>
+</tbody>
+</table>
+<p>Los análisis a nivel familia y orden son robustos desde el punto de vista de asignación taxonómica. Los análisis a género son útiles, pero deben mantener categorías como <code>Unclassified_Genus</code> cuando la familia está clara y el género no. Los análisis a especie deben tratarse como exploratorios.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../assets/results/03_dataset_stats/figures/asv_length_distribution_by_object.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figura 4. Distribución de longitud de ASVs."><img src="../../assets/results/03_dataset_stats/figures/asv_length_distribution_by_object.png" class="img-fluid figure-img" alt="Figura 4. Distribución de longitud de ASVs."></a></p>
+<figcaption>Figura 4. Distribución de longitud de ASVs.</figcaption>
+</figure>
+</div>
+<p><strong>Figura 4. Distribución de longitud de ASVs.</strong> La mayoría de ASVs se sitúan en el rango esperado del amplicón. Cambios marcados en esta distribución podrían indicar artefactos, pero no se observan señales obvias a partir del resumen.</p>
+</section>
+<section id="lectura-metodológica-para-el-artículo" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="lectura-metodológica-para-el-artículo"><span class="header-section-number">3.7</span> 7. Lectura metodológica para el artículo</h2>
+<p>El dataset presenta una profundidad suficiente para análisis de microbiota intestinal. La mediana de lecturas por muestra se mantiene alta tras filtrado, y la mayor parte de la pérdida ocurre en ASVs raras o de baja prevalencia. Este comportamiento es deseable para análisis downstream, porque reduce ruido y dimensionalidad sin eliminar la señal dominante de lecturas.</p>
+<p>El filtrado conserva cloroplasto y mitocondria de forma deliberada. Esta decisión es específica de este proyecto: el pienso contiene una señal cloroplastidial/mitocondrial relevante y eliminarla impediría evaluar una parte importante de su composición. Por tanto, las comparaciones con feed deben interpretarse como composición taxonómica ampliada, no como una matriz estrictamente bacteriana.</p>
+<p>Para los análisis biológicos principales debe citarse el objeto <code>final_biological_intestine</code>: 133 muestras intestinales, 169 ASVs y 6,931,390 lecturas. Para trazabilidad global, controles técnicos y feed, debe citarse el objeto <code>final_all_samples</code>: 138 muestras, 175 ASVs y 7,133,190 lecturas.</p>
+</section>
+<section id="texto-breve-reutilizable" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="texto-breve-reutilizable"><span class="header-section-number">3.8</span> 8. Texto breve reutilizable</h2>
+<blockquote class="blockquote">
+<p>Tras el preprocesado e importación downstream, el dataset incluyó 138 muestras y 7,667,921 lecturas distribuidas en 14,652 ASVs. Tras eliminar ASVs con asignación taxonómica no deseada, baja prevalencia y baja abundancia relativa media, conservando cloroplasto y mitocondria para evaluar la composición del pienso, el objeto global filtrado conservó 175 ASVs y 7,133,190 lecturas. El subconjunto intestinal usado para los análisis biológicos principales incluyó 133 muestras, 169 ASVs y 6,931,390 lecturas, con una mediana de 55,673 lecturas por muestra. La asignación taxonómica del objeto final fue alta hasta orden/familia, mientras que la resolución a especie se consideró exploratoria.</p>
+</blockquote>
+</section>
+<section id="limitaciones" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="limitaciones"><span class="header-section-number">3.9</span> 9. Limitaciones</h2>
+<ul>
+<li>Los estadísticos de especie deben interpretarse con cautela por las limitaciones de resolución del marcador 16S.</li>
+<li>La interpretación de feed debe considerar que cloroplasto y mitocondria se conservan de forma deliberada.</li>
+<li>Los objetos filtrados son adecuados para análisis globales conservadores, pero preguntas sobre colonizadores raros o transitorios pueden requerir análisis de sensibilidad usando tablas no filtradas o <code>asv_filtering_status.csv</code>.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/dcosimber\.github\.io\/descartes_exp2\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../chapters/generated/01_filtering.html" class="pagination-link" aria-label="02. Filtering">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">02. Filtering</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../chapters/generated/03_rarefaction_qc.html" class="pagination-link" aria-label="04. Rarefaction QC">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">04. Rarefaction QC</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

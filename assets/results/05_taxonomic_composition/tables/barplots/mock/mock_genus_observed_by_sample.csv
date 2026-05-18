@@ -1,0 +1,17 @@
+"tax_level","sample_id","taxon_plot","count","percent"
+"Genus","M1","Limosilactobacillus",8059,21.2582432075969
+"Genus","M1","Bacillus",6412,16.9137430757056
+"Genus","M1","Salmonella",5320,14.0332366130309
+"Genus","M1","Escherichia-Shigella",5239,13.8195726721182
+"Genus","M1","Staphylococcus",4250,11.2107623318386
+"Genus","M1","Listeria",3982,10.503824848325
+"Genus","M1","Enterococcus",3531,9.31416512793458
+"Genus","M1","Pseudomonas",1117,2.94645212345028
+"Genus","M2","Limosilactobacillus",12517,39.0424204616344
+"Genus","M2","Salmonella",4482,13.9800374298191
+"Genus","M2","Bacillus",4372,13.6369307548347
+"Genus","M2","Escherichia-Shigella",4160,12.975670617592
+"Genus","M2","Enterococcus",2307,7.19588271990019
+"Genus","M2","Listeria",1621,5.05614472863381
+"Genus","M2","Staphylococcus",1600,4.9906425452277
+"Genus","M2","Pseudomonas",1001,3.12227074235808

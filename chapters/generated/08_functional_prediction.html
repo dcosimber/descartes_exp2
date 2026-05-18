@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>9&nbsp; Functional prediction report – DESCARTES Exp2 microbiome</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../appendices/reproducibility.html" rel="next">
+<link href="../../chapters/generated/07_differential_abundance.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-87b7f55de2e0c9887283481eb31a794c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b8948fbc8f68ee5b654fb0853b40965b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-87b7f55de2e0c9887283481eb31a794c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/generated/08_functional_prediction.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Functional prediction report</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">DESCARTES Exp2 microbiome</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">DESCARTES Exp2 microbiome</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/01_filtering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">02. Filtering</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/02_dataset_stats.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">03. Dataset stats</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/03_rarefaction_qc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">04. Rarefaction QC</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/04_taxonomic_composition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">05. Composición taxonómica</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/05_alpha_diversity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">06. Diversidad alfa</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/06_beta_diversity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Informe de diversidad beta</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/07_differential_abundance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">08. Differential abundance</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/08_functional_prediction.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Functional prediction report</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Apéndices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../appendices/reproducibility.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Reproducibilidad</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#objetivo" id="toc-objetivo" class="nav-link active" data-scroll-target="#objetivo"><span class="header-section-number">9.1</span> 1. Objetivo</a></li>
+  <li><a href="#organizacion-del-bloque" id="toc-organizacion-del-bloque" class="nav-link" data-scroll-target="#organizacion-del-bloque"><span class="header-section-number">9.2</span> 2. Organizacion del bloque</a></li>
+  <li><a href="#picrust2-inputs-y-qc" id="toc-picrust2-inputs-y-qc" class="nav-link" data-scroll-target="#picrust2-inputs-y-qc"><span class="header-section-number">9.3</span> 3. PICRUSt2: inputs y QC</a></li>
+  <li><a href="#anotacion-e-interpretacion-funcional" id="toc-anotacion-e-interpretacion-funcional" class="nav-link" data-scroll-target="#anotacion-e-interpretacion-funcional"><span class="header-section-number">9.4</span> 4. Anotacion e interpretacion funcional</a></li>
+  <li><a href="#composicion-funcional-descriptiva" id="toc-composicion-funcional-descriptiva" class="nav-link" data-scroll-target="#composicion-funcional-descriptiva"><span class="header-section-number">9.5</span> 5. Composicion funcional descriptiva</a></li>
+  <li><a href="#ordenacion-funcional" id="toc-ordenacion-funcional" class="nav-link" data-scroll-target="#ordenacion-funcional"><span class="header-section-number">9.6</span> 6. Ordenacion funcional</a></li>
+  <li><a href="#rutas-kegg-diferenciales" id="toc-rutas-kegg-diferenciales" class="nav-link" data-scroll-target="#rutas-kegg-diferenciales"><span class="header-section-number">9.7</span> 7. Rutas KEGG diferenciales</a></li>
+  <li><a href="#interpretacion-biologica-integrada" id="toc-interpretacion-biologica-integrada" class="nav-link" data-scroll-target="#interpretacion-biologica-integrada"><span class="header-section-number">9.8</span> 8. Interpretacion biologica integrada</a></li>
+  <li><a href="#limitaciones" id="toc-limitaciones" class="nav-link" data-scroll-target="#limitaciones"><span class="header-section-number">9.9</span> 9. Limitaciones</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Functional prediction report</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="objetivo" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="objetivo"><span class="header-section-number">9.1</span> 1. Objetivo</h2>
+<p>Este bloque evalua el potencial funcional de la microbiota intestinal a partir de perfiles 16S. La lectura principal se centra en rutas KEGG interpretables, porque los codigos KO, EC o MetaCyc aislados no son suficientemente utiles para discutir los objetivos biologicos del ensayo.</p>
+<p>El bloque queda consolidado en PICRUSt2. La comparacion con Feed se conserva como contexto descriptivo, mientras que los tests diferenciales centrales se restringen a las muestras intestinales.</p>
+</section>
+<section id="organizacion-del-bloque" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="organizacion-del-bloque"><span class="header-section-number">9.2</span> 2. Organizacion del bloque</h2>
+<pre class="text"><code>09_functional_prediction/
+├── picrust2/
+│   ├── inputs/
+│   ├── native/
+│   ├── tables/
+│   ├── figures/
+│   ├── objects/
+│   └── logs/
+└── reports/</code></pre>
+</section>
+<section id="picrust2-inputs-y-qc" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="picrust2-inputs-y-qc"><span class="header-section-number">9.3</span> 3. PICRUSt2: inputs y QC</h2>
+<p>Se prepararon 136 muestras y 160 ASVs para PICRUSt2. Se excluyeron 10 ASVs clasificadas como cloroplasto o mitocondria, que acumulan 119235 lecturas en las muestras consideradas. Esta exclusion se aplica solo a la inferencia funcional, porque estas secuencias no representan genomas bacterianos utiles para PICRUSt2.</p>
+<p>Tabla 1. Resumen de construccion del input de PICRUSt2.</p>
+<p><code>../../assets/results/09_functional_prediction/picrust2/tables/picrust2_input_summary.csv</code></p>
+<p>Tabla 2. Retencion de lecturas por muestra tras excluir cloroplasto y mitocondria para PICRUSt2.</p>
+<p><code>../../assets/results/09_functional_prediction/picrust2/tables/picrust2_read_retention_by_sample.csv</code></p>
+<p>La mediana del NSTI ponderado por abundancia fue 0.073 en las muestras incluidas. Este valor resume la proximidad filogenetica de las ASVs a genomas de referencia y debe considerarse antes de interpretar el potencial funcional.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../assets/results/09_functional_prediction/picrust2/figures/qc/picrust2_weighted_nsti_by_group.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="NSTI ponderado por grupo"><img src="../../assets/results/09_functional_prediction/picrust2/figures/qc/picrust2_weighted_nsti_by_group.png" class="img-fluid figure-img" alt="NSTI ponderado por grupo"></a></p>
+<figcaption>NSTI ponderado por grupo</figcaption>
+</figure>
+</div>
+<p><strong>Figura 1.</strong> Distribucion del NSTI ponderado por abundancia en los grupos incluidos en PICRUSt2.</p>
+</section>
+<section id="anotacion-e-interpretacion-funcional" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="anotacion-e-interpretacion-funcional"><span class="header-section-number">9.4</span> 4. Anotacion e interpretacion funcional</h2>
+<p>PICRUSt2 produce EC, KO y rutas MetaCyc nativas. Esas capas se conservan en tablas para trazabilidad y consulta, pero las figuras finales se limitan a <code>kegg_pathway</code>. Esta capa se deriva desde KO usando los mapas KEGG incluidos en PICRUSt2. Cuando un KO pertenece a varias rutas, su abundancia se reparte entre ellas antes de sumar, evitando inflar artificialmente rutas con muchos solapamientos.</p>
+<p>Tabla 3. Mapa KO a rutas KEGG usado para construir la capa <code>kegg_pathway</code>.</p>
+<p><code>../../assets/results/09_functional_prediction/picrust2/tables/annotations/ko_to_kegg_pathways.csv</code></p>
+<p>Tabla 4. Anotaciones funcionales completas conservadas para EC, KO, KEGG pathway y MetaCyc.</p>
+<p><code>../../assets/results/09_functional_prediction/picrust2/tables/annotations/functional_feature_annotations.csv</code></p>
+</section>
+<section id="composicion-funcional-descriptiva" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="composicion-funcional-descriptiva"><span class="header-section-number">9.5</span> 5. Composicion funcional descriptiva</h2>
+<p>Los barplots resumen las rutas KEGG mas abundantes por dieta-tiempo y la comparacion contextual Ctrl/Hydrolysate/Feed. Feed se interpreta como referencia del potencial funcional bacteriano asociado al pienso, no como grupo biologico equivalente al intestino.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../assets/results/09_functional_prediction/picrust2/figures/barplots/kegg_pathway/barplot_top_kegg_pathway_diet_time.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Rutas KEGG por dieta y tiempo"><img src="../../assets/results/09_functional_prediction/picrust2/figures/barplots/kegg_pathway/barplot_top_kegg_pathway_diet_time.png" class="img-fluid figure-img" alt="Rutas KEGG por dieta y tiempo"></a></p>
+<figcaption>Rutas KEGG por dieta y tiempo</figcaption>
+</figure>
+</div>
+<p><strong>Figura 2.</strong> Rutas KEGG predichas mas abundantes agregadas por dieta y tiempo en muestras intestinales.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../assets/results/09_functional_prediction/picrust2/figures/barplots/kegg_pathway/barplot_top_kegg_pathway_ctrl_hydro_feed.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Rutas KEGG Ctrl Hydrolysate Feed"><img src="../../assets/results/09_functional_prediction/picrust2/figures/barplots/kegg_pathway/barplot_top_kegg_pathway_ctrl_hydro_feed.png" class="img-fluid figure-img" alt="Rutas KEGG Ctrl Hydrolysate Feed"></a></p>
+<figcaption>Rutas KEGG Ctrl Hydrolysate Feed</figcaption>
+</figure>
+</div>
+<p><strong>Figura 3.</strong> Rutas KEGG predichas en Ctrl, Hydrolysate y Feed como comparacion descriptiva.</p>
+</section>
+<section id="ordenacion-funcional" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="ordenacion-funcional"><span class="header-section-number">9.6</span> 6. Ordenacion funcional</h2>
+<p>Las ordenaciones Bray y Aitchison se generan solo para rutas KEGG. Se priorizan tres preguntas: separacion global Ctrl vs Hydrolysate, separacion por nivel de inclusion (Ctrl, BL15, BL30) y posicion del Feed como contexto externo.</p>
+<p>El resultado central es que el potencial funcional agregado no se separa de forma significativa entre Ctrl e Hydrolysate en intestino. Tampoco aparece una separacion significativa cuando el hidrolizado se desglosa en BL15 y BL30. Esto apunta a redundancia funcional: puede haber cambios taxonomicos, pero el repertorio funcional predicho a escala de rutas KEGG permanece bastante conservado.</p>
+<p>En PERMANOVA, Ctrl vs Hydrolysate no fue significativo ni con Bray (R2 = 0.006; p = 0.414) ni con Aitchison (R2 = 0.006; p = 0.473). El desglose Ctrl vs BL15 vs BL30 tampoco fue significativo (Bray R2 = 0.009; p = 0.623; Aitchison R2 = 0.011; p = 0.646). Las pruebas betadisper asociadas no fueron significativas, por lo que no hay evidencia de que estos resultados esten dominados por diferencias de dispersion entre grupos.</p>
+<p>Feed si se desplaza respecto a las muestras intestinales en Aitchison, lo que encaja con que el pienso es una matriz externa con fuerte componente vegetal y de hidrolizado de pescado. Esta comparacion se interpreta como contexto de entrada dietaria, no como contraste biologico principal frente al intestino.</p>
+<p>La comparacion Ctrl/Hydrolysate/Feed fue significativa con Aitchison (R2 = 0.038; p = 0.006) y quedo cerca del umbral con Bray (R2 = 0.035; p = 0.066), sin betadisper significativo. Esto sugiere que el perfil funcional predicho del pienso contiene una senal distinguible, especialmente en geometria composicional, pero no debe mezclarse con la inferencia central sobre peces.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../assets/results/09_functional_prediction/picrust2/figures/ordination/aitchison/functional_aitchison_kegg_pathway_ctrl_vs_hydrolysate.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Aitchison Ctrl Hydrolysate"><img src="../../assets/results/09_functional_prediction/picrust2/figures/ordination/aitchison/functional_aitchison_kegg_pathway_ctrl_vs_hydrolysate.png" class="img-fluid figure-img" alt="Aitchison Ctrl Hydrolysate"></a></p>
+<figcaption>Aitchison Ctrl Hydrolysate</figcaption>
+</figure>
+</div>
+<p><strong>Figura 4.</strong> Ordenacion Aitchison de rutas KEGG para Ctrl frente a Hydrolysate en muestras intestinales.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../assets/results/09_functional_prediction/picrust2/figures/ordination/aitchison/functional_aitchison_kegg_pathway_ctrl_vs_bl15_vs_bl30.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Aitchison Ctrl BL15 BL30"><img src="../../assets/results/09_functional_prediction/picrust2/figures/ordination/aitchison/functional_aitchison_kegg_pathway_ctrl_vs_bl15_vs_bl30.png" class="img-fluid figure-img" alt="Aitchison Ctrl BL15 BL30"></a></p>
+<figcaption>Aitchison Ctrl BL15 BL30</figcaption>
+</figure>
+</div>
+<p><strong>Figura 5.</strong> Ordenacion Aitchison de rutas KEGG comparando Ctrl, BL15 y BL30.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../assets/results/09_functional_prediction/picrust2/figures/ordination/aitchison/functional_aitchison_kegg_pathway_ctrl_vs_hydrolysate_vs_feed.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Aitchison Ctrl Hydrolysate Feed"><img src="../../assets/results/09_functional_prediction/picrust2/figures/ordination/aitchison/functional_aitchison_kegg_pathway_ctrl_vs_hydrolysate_vs_feed.png" class="img-fluid figure-img" alt="Aitchison Ctrl Hydrolysate Feed"></a></p>
+<figcaption>Aitchison Ctrl Hydrolysate Feed</figcaption>
+</figure>
+</div>
+<p><strong>Figura 6.</strong> Ordenacion Aitchison de rutas KEGG incluyendo Feed como contexto descriptivo.</p>
+<p>Tabla 5. Resultados PERMANOVA de las ordenaciones funcionales y pruebas betadisper asociadas.</p>
+<p><code>../../assets/results/09_functional_prediction/picrust2/tables/ordination/functional_permanova_results.csv</code></p>
+<p><code>../../assets/results/09_functional_prediction/picrust2/tables/ordination/functional_betadisper_results.csv</code></p>
+</section>
+<section id="rutas-kegg-diferenciales" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="rutas-kegg-diferenciales"><span class="header-section-number">9.7</span> 7. Rutas KEGG diferenciales</h2>
+<p>Los contrastes diferenciales se limitan a las siete comparaciones clave: Hydrolysate vs Ctrl global, BL15 vs Ctrl global, BL30 vs Ctrl global, BL30 vs BL15 global, y Hydrolysate vs Ctrl dentro de D07, D30 y D90. El modelo usa abundancias CLR y limma; los graficos tipo STAMP muestran medias por grupo, diferencia de medias e intervalo de confianza del 95%.</p>
+<p>Las comparaciones con mas rutas KEGG diferenciales fueron D30_Hydrolysate_vs_Ctrl (7); global_BL30_vs_Ctrl (1); global_Hydrolysate_vs_Ctrl (1); global_BL15_vs_Ctrl (0); global_BL30_vs_BL15 (0) .</p>
+<p>La senal interpretable se concentra en D30_Hydrolysate_vs_Ctrl. Las rutas metabolicas mas defendibles biologicamente son synthesis and degradation of ketone bodies, phenylalanine metabolism y phenylpropanoid biosynthesis, todas reducidas en Hydrolysate en D30. Esta direccion sugiere una menor capacidad funcional predicha para procesar compuestos aromaticos y metabolitos energeticos alternativos en la microbiota intestinal de peces alimentados con hidrolizado en ese momento intermedio.</p>
+<p>En concreto, synthesis and degradation of ketone bodies disminuyo en Hydrolysate (logFC = -0.548; q = 0.010), phenylalanine metabolism tambien disminuyo (logFC = -0.502; q = 0.040) y phenylpropanoid biosynthesis mostro una reduccion similar (logFC = -0.642; q = 0.010). Estas tres rutas son las que sostienen la lectura biologica principal del bloque funcional.</p>
+<p>El resto de rutas significativas en D30 incluyen etiquetas KEGG menos adecuadas para interpretar microbiota intestinal 16S, como categorias de enfermedades humanas u organismal systems. Carbohydrate digestion and absorption tambien aparece reducida, pero se interpreta con cautela porque es una ruta KEGG de contexto hospedador/organismal, no una funcion microbiana directa en sentido estricto.</p>
+<p>Una interpretacion plausible es que el hidrolizado, al aportar peptidos y aminoacidos mas facilmente disponibles, modifique temporalmente el sustrato que alcanza el intestino distal y reduzca la necesidad de metabolismo microbiano de aminoacidos aromaticos o compuestos fenolicos/vegetales. Esto no demuestra actividad metabolica real, pero propone una hipotesis coherente con la composicion de piensos y con la idea de que el efecto funcional del hidrolizado es temporal y no una reprogramacion global estable.</p>
+<p>Las rutas KEGG etiquetadas como enfermedades humanas u organismal systems se conservan en tablas por trazabilidad, pero no sostienen la interpretacion biologica principal en microbiota de rodaballo.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../assets/results/09_functional_prediction/picrust2/figures/effect_plots/kegg_pathway/stamp_effect_D30_Hydrolysate_vs_Ctrl.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="STAMP Hydrolysate vs Ctrl D30"><img src="../../assets/results/09_functional_prediction/picrust2/figures/effect_plots/kegg_pathway/stamp_effect_D30_Hydrolysate_vs_Ctrl.png" class="img-fluid figure-img" alt="STAMP Hydrolysate vs Ctrl D30"></a></p>
+<figcaption>STAMP Hydrolysate vs Ctrl D30</figcaption>
+</figure>
+</div>
+<p><strong>Figura 7.</strong> Rutas KEGG con mayor cambio en la comparacion Hydrolysate vs Ctrl en D30.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../assets/results/09_functional_prediction/picrust2/figures/heatmaps/kegg_pathway/heatmap_kegg_pathway_diet_time_means_significant.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Heatmap rutas KEGG"><img src="../../assets/results/09_functional_prediction/picrust2/figures/heatmaps/kegg_pathway/heatmap_kegg_pathway_diet_time_means_significant.png" class="img-fluid figure-img" alt="Heatmap rutas KEGG"></a></p>
+<figcaption>Heatmap rutas KEGG</figcaption>
+</figure>
+</div>
+<p><strong>Figura 8.</strong> Heatmap resumen de rutas KEGG relevantes por medias dieta-tiempo.</p>
+<p>Tabla 6. Resultados limma/CLR para las comparaciones funcionales finales.</p>
+<p><code>../../assets/results/09_functional_prediction/picrust2/tables/differential/limma_final_pairwise_results.csv</code></p>
+<p>Tabla 7. Tablas tipo STAMP para rutas KEGG finales.</p>
+<p><code>../../assets/results/09_functional_prediction/picrust2/tables/effect_plots/stamp_effect_kegg_pathway_final_results.csv</code></p>
+</section>
+<section id="interpretacion-biologica-integrada" class="level2" data-number="9.8">
+<h2 data-number="9.8" class="anchored" data-anchor-id="interpretacion-biologica-integrada"><span class="header-section-number">9.8</span> 8. Interpretacion biologica integrada</h2>
+<p>La lectura conjunta es potente: la dieta con hidrolizado no parece desplazar de forma masiva el potencial funcional global de la comunidad intestinal, pero si deja una huella metabolica puntual en D30. Esto encaja con una comunidad con redundancia funcional, donde distintos taxones pueden sostener funciones parecidas, y con un posible periodo de adaptacion de la microbiota al cambio de matriz proteica.</p>
+<p>La reduccion de phenylalanine metabolism y phenylpropanoid biosynthesis en D30 puede conectarse con el procesamiento microbiano de compuestos aromaticos. En nutricion acuicola, esto es interesante porque los piensos combinan fracciones animales y vegetales: las rutas de phenylpropanoid biosynthesis remiten a compuestos de origen vegetal, mientras que phenylalanine metabolism conecta con disponibilidad y transformacion de aminoacidos aromaticos. La ruta de ketone bodies apunta a diferencias en uso de acetil-CoA y metabolismo energetico alternativo.</p>
+<p>Por tanto, la historia biologica no seria que el hidrolizado cambia todo el metabolismo microbiano, sino que produce una modulacion temporal y selectiva de rutas asociadas al tipo de sustrato que queda disponible para la microbiota. Esta hipotesis deberia contrastarse despues con abundancia diferencial taxonomica, contribuciones por ASV/genero y, si fuera posible, metabolomica o medidas de digestibilidad.</p>
+</section>
+<section id="limitaciones" class="level2" data-number="9.9">
+<h2 data-number="9.9" class="anchored" data-anchor-id="limitaciones"><span class="header-section-number">9.9</span> 9. Limitaciones</h2>
+<p>Estos resultados son predicciones funcionales inferidas desde 16S, no metagenomica shotgun. Deben interpretarse como potencial funcional esperado y conectarse con composicion taxonomica, diversidad beta y abundancia diferencial. Las rutas KEGG permiten una lectura biologica mas directa que KO/EC aislados, pero dependen de la calidad de la asignacion filogenetica y de la cobertura de genomas de referencia.</p>
+<p>El siguiente paso mas util es cruzar las rutas D30 con las contribuciones por ASV/genero y con la abundancia diferencial taxonomica. Si las rutas reducidas se explican por taxones concretos que tambien cambian en D30, la historia biologica gana coherencia y permite plantear candidatos mecanisticos para discusion.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/dcosimber\.github\.io\/descartes_exp2\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../chapters/generated/07_differential_abundance.html" class="pagination-link" aria-label="08. Differential abundance">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">08. Differential abundance</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../appendices/reproducibility.html" class="pagination-link" aria-label="Reproducibilidad">
+        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Reproducibilidad</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

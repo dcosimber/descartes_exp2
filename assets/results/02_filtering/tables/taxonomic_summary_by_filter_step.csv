@@ -1,0 +1,1555 @@
+"removal_step","Kingdom","Phylum","Class","Order","Family","Genus","asvs","raw_reads"
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rickettsiales","Mitochondria",,102,6199
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Pseudomonadaceae","Pseudomonas",22,3815
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Bacteroidaceae","Bacteroides",17,3094
+"mean_abundance_filter","Bacteria","Cyanobacteriota","Cyanobacteriia","Chloroplast",,,69,2824
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Blautia",14,2413
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Lactobacillus",21,1664
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Acinetobacter",15,1440
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Streptococcaceae","Streptococcus",14,1370
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae",,16,1366
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Bifidobacteriales","Bifidobacteriaceae","Bifidobacterium",8,1328
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Bacillus",10,1250
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Delftia",4,1230
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Limosilactobacillus",16,1194
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Mycobacteriales","Corynebacteriaceae","Corynebacterium",10,1173
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Enterocloster",4,1153
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Staphylococcales","Staphylococcaceae","Staphylococcus",5,1110
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Tannerellaceae","Parabacteroides",5,1049
+"mean_abundance_filter","Bacteria","Actinomycetota","Thermoleophilia","Gaiellales",,,9,1037
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Lachnoclostridium",3,1008
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Enterococcaceae","Enterococcus",3,984
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Periweissella",3,916
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae",,5,866
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Kitasatosporales","Streptomycetaceae","Streptomyces",5,864
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Yersiniaceae","Serratia",2,788
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Ligilactobacillus",9,768
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Citrobacter",3,763
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Xanthobacteraceae",,6,763
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Pelagibacterales","Clade I","Clade Ia",4,741
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Propionibacteriales","Propionibacteriaceae","Cutibacterium",2,734
+"mean_abundance_filter","Bacteria","Acidobacteriota","Acidobacteriae","Subgroup 2",,,2,727
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Sutterellaceae","Sutterella",4,713
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Lacticaseibacillus",6,680
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Mesorhizobium",4,673
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Exiguobacterales","Exiguobacteraceae","Exiguobacterium",3,672
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Erwiniaceae","Pantoea",3,655
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Vibrionaceae","Photobacterium",1,639
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Fusicatenibacter",3,637
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Monoglobales","Monoglobaceae","Monoglobus",2,626
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Klebsiella",2,620
+"mean_abundance_filter","Bacteria","Actinomycetota","Coriobacteriia","Coriobacteriales","Eggerthellaceae","Eggerthella",3,619
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Anaerobutyricum",2,608
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Companilactobacillus",2,588
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae",,22,572
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Lachnospiraceae UCG-010",2,554
+"mean_abundance_filter","Bacteria","Acidobacteriota","Acidobacteriae","Terriglobales",,,3,546
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Peptostreptococcaceae","Romboutsia",1,536
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Leuconostoc",4,536
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","[Eubacterium] siraeum group",2,534
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Albimonas",2,521
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Micrococcaceae",,3,511
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Negativibacillus",2,496
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","SAR86 clade",,3,495
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Enhydrobacter",1,480
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Caulobacterales","Caulobacteraceae","Phenylobacterium",2,480
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Salinimicrobium",2,475
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","WD260",,,2,473
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Caulobacterales","Caulobacteraceae","Brevundimonas",1,463
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Gammaproteobacteria Incertae Sedis","Unknown Family","Acidibacter",2,462
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales","Lysobacteraceae","Stenotrophomonas",4,448
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Vibrionaceae","Vibrio",5,447
+"mean_abundance_filter","Bacteria","Thermodesulfobacteriota","Desulfovibrionia","Desulfovibrionales","Desulfovibrionaceae","Bilophila",1,443
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Mycobacteriales","Mycobacteriaceae","Mycobacterium",3,440
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Oscillospiraceae","Colidextribacter",1,437
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelatoclostridiaceae","Thomasclavelia",2,435
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Eisenbergiella",3,431
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Anaerovoracaceae",,2,429
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelotrichaceae","Faecalibaculum",1,422
+"mean_abundance_filter","Bacteria","Campylobacterota","Campylobacteria","Campylobacterales","Helicobacteraceae","Helicobacter",1,411
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Rhizobium",2,398
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Lachnospiraceae NK4A136 group",1,396
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae",,1,381
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Aliihoeflea",1,380
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Neobacillus",2,378
+"mean_abundance_filter","Bacteria","Acidobacteriota","Acidobacteriae","Terriglobales","Acidobacteriaceae (Subgroup 1)","Silvibacterium",1,368
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Prevotellaceae",,3,368
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Brucella",1,363
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Sellimonas",1,361
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Prevotellaceae","Prevotella",2,358
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Micropepsales","Micropepsaceae",,2,356
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Alcaligenaceae","Achromobacter",1,352
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Streptosporangiales","Streptosporangiaceae","Nonomuraea",1,349
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Acutalibacter",3,345
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Anaerostipes",2,343
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Vibrionaceae","Aliivibrio",2,334
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales",,,3,319
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Sphingomonas",3,317
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Kitasatosporales","Streptomycetaceae",,1,305
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Xanthobacteraceae","Bradyrhizobium",2,304
+"mean_abundance_filter","Bacteria","Acidobacteriota","Acidobacteriae","Bryobacterales","Bryobacteraceae","Bryobacter",3,298
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Propionibacteriales","Nocardioidaceae","Nocardioides",4,293
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Pseudonocardiales","Pseudonocardiaceae","Pseudonocardia",3,285
+"mean_abundance_filter","Bacteria","Acidobacteriota","Acidobacteriae","Terriglobales","Acidobacteriaceae (Subgroup 1)","Edaphobacter",1,283
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Staphylococcales","Staphylococcaceae","Mammaliicoccus",1,274
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Neisseriaceae",,2,270
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Microbacteriaceae",,8,270
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Micrococcaceae","Arthrobacter",1,266
+"mean_abundance_filter","Bacteria","Gemmatimonadota","Gemmatimonadia","Gemmatimonadales","Gemmatimonadaceae",,3,265
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria",,,,3,262
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Dongiales","Dongiaceae","Dongia",2,262
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Francisellales","Francisellaceae","Francisella",1,255
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Frankiales","Frankiaceae","Jatrophihabitans",3,255
+"mean_abundance_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Chthoniobacterales","Chthoniobacteraceae","Candidatus Udaeobacter",2,248
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Muribaculaceae",,3,246
+"mean_abundance_filter","Bacteria","Acidobacteriota","Acidobacteriae","Solibacterales","Solibacteraceae","Candidatus Solibacter",2,244
+"mean_abundance_filter","Bacteria","Chloroflexota","Ktedonobacteria","Ktedonobacterales","Ktedonobacteraceae","1959-1",2,244
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia",,,,1,243
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Extibacter",1,242
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Roseburia",1,241
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Erwiniaceae","Erwinia",3,241
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Frankiales","Acidothermaceae","Acidothermus",3,238
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Micrococcaceae","Kocuria",3,237
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Oscillospiraceae","Oscillibacter",1,233
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Pasteurellaceae","Haemophilus",2,231
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Hyphomicrobiales Incertae Sedis","Nordella",2,230
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Lachnospira",1,226
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Micrococcaceae","Micrococcus",1,225
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Cryomorphaceae",,1,225
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Micrococcaceae","Rothia",4,225
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Anaerovoracaceae","Family XIII AD3011 group",2,223
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Paenibacillales","Paenibacillaceae","Paenibacillus",4,222
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Burkholderiaceae","Burkholderia-Caballeronia-Paraburkholderia",3,219
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Polaribacter",1,216
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Blastomonas",2,215
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Elsterales",,,3,206
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Acetobacterales","Acetobacteraceae",,1,204
+"mean_abundance_filter","Bacteria","Myxococcota","Polyangiia","Polyangiales","BIrii41",,1,204
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Chitinophagaceae","Puia",2,204
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","SC-I-84",,3,203
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Weissella",7,201
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Hyphomicrobiaceae","Hyphomicrobium",1,198
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Faecalicatena",1,196
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Ectobacillus",1,195
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Xanthobacteraceae","Tardiphaga",1,195
+"mean_abundance_filter","Bacteria","Bdellovibrionota","Bacteriovoracia","Bacteriovoracales","Bacteriovoracaceae",,1,192
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Oscillospiraceae","UCG-002",1,191
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Paucilactobacillus",3,191
+"mean_abundance_filter","Bacteria","Chloroflexota","Chloroflexia","Chloroflexales","Roseiflexaceae",,1,188
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales","Lysobacteraceae","Luteimonas",2,188
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Microbacteriaceae","Galbitalea",1,187
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Novosphingobium",4,187
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Anoxybacillus",1,185
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Halieaceae","OM60(NOR5) clade",2,185
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Parablastomonas",1,182
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Frankiales","Geodermatophilaceae",,1,181
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Levilactobacillus",1,181
+"mean_abundance_filter","Bacteria","Chloroflexota","Ktedonobacteria","Ktedonobacterales","JG30-KF-AS9",,2,181
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae",,5,177
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Phyllobacterium",1,175
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Beijerinckiaceae","Methylobacterium",2,172
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Erwiniaceae",,2,172
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Cytophagales","Hymenobacteraceae","Pontibacter",1,171
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Xanthobacteraceae","Pseudolabrys",1,171
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Beijerinckiaceae","Microvirga",3,169
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelatoclostridiaceae","Massiliomicrobiota",2,168
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Mediterraneibacter",2,168
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","[Eubacterium] xylanophilum group",2,167
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Agathobacter",1,166
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Shewanellaceae","Psychrobium",1,165
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae",,2,165
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Pelagibacterales","Clade II",,1,157
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Planktomarina",1,148
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Peptostreptococcaceae","Intestinibacter",2,145
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Hungatella",1,141
+"mean_abundance_filter","Bacteria","Actinomycetota","Thermoleophilia","Solirubrobacterales","Solirubrobacteraceae",,1,139
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Alteromonadaceae","Alteromonas",1,139
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Paracoccus",1,138
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales","Lysobacteraceae","Arenimonas",1,137
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Lelliottia",1,131
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Catenibacillus",1,130
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Gemmiger",1,128
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Faecalibacterium",1,126
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Amb-16S-1323",,1,125
+"mean_abundance_filter","Bacteria","Bacillota","Negativicutes","Veillonellales-Selenomonadales","Veillonellaceae","Veillonella",3,122
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Ruthenibacterium",1,121
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Micromonosporales","Micromonosporaceae",,1,119
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Caulobacterales","Caulobacteraceae",,1,119
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Dermabacteraceae","Brachybacterium",2,119
+"mean_abundance_filter","Bacteria","Actinomycetota","Acidimicrobiia","Microtrichales","Microtrichaceae",,1,117
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Chromatiales","Chromatiaceae",,1,117
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Psychrobacter",4,116
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Parvibaculales","PS1 clade",,1,115
+"mean_abundance_filter","Bacteria","Candidatus Eremiobacterota","Eremiobacteria",,,,1,114
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Pediococcus",1,114
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Marvinbryantia",2,113
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Micromonosporales","Micromonosporaceae","Dactylosporangium",2,113
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Kaistiaceae","Kaistia",2,112
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Clostridiales","Clostridiaceae","Candidatus Arthromitus",1,111
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Pararhizobium",1,108
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Comamonas",5,105
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Ruminococcus",1,103
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","TRA3-20",,1,102
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Yersiniaceae","Rahnella",2,101
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae",,5,99
+"mean_abundance_filter","Bacteria","Bacillota","Negativicutes","Veillonellales-Selenomonadales","Selenomonadaceae","Megamonas",1,98
+"mean_abundance_filter","Bacteria","Myxococcota","Polyangiia","Polyangiales","Sandaracinaceae",,1,97
+"mean_abundance_filter","Bacteria","Actinomycetota","MB-A2-108",,,,1,95
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Alteromonadaceae","Paraglaciecola",1,95
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Frankiales","Sporichthyaceae","hgcI clade",2,95
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Chitinophagaceae",,2,95
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","[Ruminococcus] gauvreauii group",1,94
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Streptosporangiales","Streptosporangiaceae","Streptosporangium",1,93
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Oscillospiraceae","Flavonifractor",1,92
+"mean_abundance_filter","Bacteria","Actinomycetota","Thermoleophilia","Gaiellales","Gaiellaceae","Gaiella",2,92
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Anaerotruncus",1,91
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Oscillospiraceae","UCG-005",1,90
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Rhodoferax",1,88
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Methylophilaceae",,2,88
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Micromonosporales","Micromonosporaceae","Actinoplanes",1,87
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Furfurilactobacillus",1,86
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","[Eubacterium] ventriosum group",1,84
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Crocinitomicaceae","Salinirepens",1,83
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Lactonifactor",1,82
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","KF-JG30-B3",,1,81
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelotrichaceae","[Clostridium] innocuum group",2,81
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Propionibacteriales","Nocardioidaceae","Marmoricola",1,77
+"mean_abundance_filter","Bacteria","Fusobacteriota","Fusobacteriia","Fusobacteriales","Fusobacteriaceae","Cetobacterium",1,77
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Reyranellales","Reyranellaceae","Reyranella",2,77
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Caulobacterales","Caulobacteraceae","Asticcacaulis",1,76
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Aquabacterium",1,74
+"mean_abundance_filter","Bacteria","Campylobacterota","Campylobacteria","Campylobacterales","Arcobacteraceae","Arcobacter",2,74
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Ruegeria",1,73
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Saprospiraceae","Aureispira",1,73
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Cytophagales","Microscillaceae",,1,72
+"mean_abundance_filter","Bacteria","Chloroflexota","KD4-96",,,,1,72
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales","Lysobacteraceae","Pseudoxanthomonas",2,71
+"mean_abundance_filter","Archaea","Thermoproteota","Nitrososphaeria","Nitrososphaerales","Nitrososphaeraceae",,1,68
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Chitinophagaceae","Flavitalea",1,67
+"mean_abundance_filter","Bacteria","Bdellovibrionota","Bdellovibrionia","Bdellovibrionales","Pseudobdellovibrionaceae",,2,67
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Pseudoalteromonadaceae","Pseudoalteromonas",1,64
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Xanthobacteraceae","Afipia",1,63
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Frankiales","Geodermatophilaceae","Geodermatophilus",1,62
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Devosiaceae",,1,61
+"mean_abundance_filter","Bacteria","Patescibacteria","Saccharimonadia","Saccharimonadales",,,2,61
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Kineosporiales","Kineosporiaceae",,1,60
+"mean_abundance_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Chthoniobacterales","Terrimicrobiaceae","Terrimicrobium",1,59
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Butyricicoccaceae","Agathobaculum",1,59
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelotrichaceae","Holdemania",1,59
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Microbacteriaceae","Curtobacterium",1,59
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","NS5 marine group",1,58
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Mycobacteriales","Nocardiaceae","Rhodococcus",1,58
+"mean_abundance_filter","Bacteria","Myxococcota","Polyangiia","Polyangiales","Eel-36e1D6",,1,58
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Acetobacterales","Acetobacteraceae","Acetobacter",2,58
+"mean_abundance_filter","Bacteria","Campylobacterota","Campylobacteria","Campylobacterales",,,1,57
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Pseudonocardiales","Pseudonocardiaceae","Allokutzneria",1,56
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Prevotellaceae","Segatella",1,56
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Weeksellaceae","Empedobacter",1,54
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Chelativorans",1,53
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Thermoactinomycetales","Thermoactinomycetaceae","Kroppenstedtia",1,52
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Oscillospiraceae",,1,47
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Agrobacterium",1,46
+"mean_abundance_filter","Bacteria","Actinomycetota","Acidimicrobiia","Microtrichales","Ilumatobacteraceae",,1,45
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Weeksellaceae","Chryseobacterium",1,44
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Methyloligellaceae",,1,44
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","A0839",,1,43
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Bacillales","Sporolactobacillaceae","Pullulanibacillus",1,43
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Tistrellales","Geminicoccaceae","Candidatus Alysiosphaera",1,43
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Schleiferilactobacillus",1,43
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Latilactobacillus",1,43
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Streptosporangiales","Thermomonosporaceae","Actinocorallia",1,42
+"mean_abundance_filter","Archaea","Thermoproteota","Nitrososphaeria","Nitrososphaerales","Nitrososphaeraceae","Candidatus Nitrosocosmicus",1,42
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Mycoplasmatales","Mycoplasmataceae",,1,42
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Sutterellaceae","Turicimonas",1,40
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Loigolactobacillus",1,38
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Defluviitaleaceae","Defluviitaleaceae UCG-011",1,38
+"mean_abundance_filter","Bacteria","Chloroflexota","Ktedonobacteria","Ktedonobacterales","Ktedonobacteraceae",,1,36
+"mean_abundance_filter","Bacteria","Actinomycetota","Thermoleophilia","Solirubrobacterales","Solirubrobacteraceae","Solirubrobacter",1,35
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rickettsiales","Midichloriaceae","Candidatus Midichloria",1,35
+"mean_abundance_filter","Bacteria","Bdellovibrionota","Bacteriovoracia","Bacteriovoracales","Bacteriovoracaceae","Peredibacter",1,34
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Weeksellaceae","Elizabethkingia",1,34
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","PeM15",,,1,34
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales","Rhodanobacteraceae","Luteibacter",2,34
+"mean_abundance_filter","Archaea","Methanobacteriota","Methanobacteria","Methanobacteriales","Methanobacteriaceae","Methanobrevibacter",1,32
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Streptococcaceae","Lactococcus",5,32
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Liquorilactobacillus",2,31
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","[Eubacterium] coprostanoligenes group",,1,30
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Sanguibacteraceae","Sanguibacter",1,30
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Beijerinckiaceae","Bosea",1,29
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Sphingobacteriales","Sphingobacteriaceae","Sphingobacterium",1,28
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Moraxellaceae",,1,27
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Chitinophagaceae","Terrimonas",1,27
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Ureibacillus",1,27
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Propionibacteriales","Propionibacteriaceae","Propionibacterium",1,26
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Bacillales","Planococcaceae","Savagea",1,26
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales",,,1,26
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Parageobacillus",1,25
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Kordia",1,25
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Marinomonadaceae","Marinomonas",1,25
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales",,,4,25
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelatoclostridiaceae","Catenibacterium",1,24
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Nitrosomonadaceae","Ellin6067",1,24
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Rubellimicrobium",1,24
+"mean_abundance_filter","Archaea","Thermoproteota","Nitrososphaeria","Nitrosopumilales","Nitrosopumilaceae","Candidatus Nitrosopumilus",1,24
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Alkalihalophilus",1,24
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Micrococcaceae","Paenarthrobacter",1,23
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Cereibacter",1,22
+"mean_abundance_filter","Bacteria","Actinomycetota","Coriobacteriia","Coriobacteriales","Eggerthellaceae","CHKCI002",1,22
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Beijerinckiaceae","Lichenibacterium",1,22
+"mean_abundance_filter","Bacteria","Bacillota","Negativicutes","Veillonellales-Selenomonadales","Veillonellaceae","Megasphaera",3,20
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Oscillospirales",,,1,19
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Marinifilaceae","Odoribacter",1,19
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Endobacterium",1,18
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Bacillales","Planococcaceae","Kurthia",2,18
+"mean_abundance_filter","Bacteria","Deinococcota","Deinococci","Deinococcales","Deinococcaceae","Deinococcus",1,17
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Sphingobium",1,16
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Cerasibacillus",1,13
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Weeksellaceae",,1,13
+"mean_abundance_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Hyphomicrobiales Incertae Sedis","Alsobacter",1,13
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Lactiplantibacillus",1,12
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Cytophagales","Spirosomataceae","Dyadobacter",1,12
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Anaerovoracaceae","Family XIII UCG-001",1,11
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Lentilactobacillus",1,10
+"mean_abundance_filter","Bacteria","Actinomycetota","Coriobacteriia","Coriobacteriales","Atopobiaceae","Olsenella",3,10
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli",,,,3,10
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Alcaligenaceae","Paenalcaligenes",1,9
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Oxalobacteraceae","Massilia",1,8
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Bacillales","Planococcaceae",,1,7
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Alcaligenaceae","Pusillimonas",1,7
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Pseudonocardiales","Pseudonocardiaceae","Saccharopolyspora",2,7
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Prevotellaceae","Hoylesella",2,6
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Secundilactobacillus",1,5
+"mean_abundance_filter","Bacteria","Bacillota","Bacilli","Aneurinibacillales","Aneurinibacillaceae","Aneurinibacillus",1,5
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Kosakonia",1,5
+"mean_abundance_filter","Bacteria","Pseudomonadota",,,,,1,5
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Pseudonocardiales","Pseudonocardiaceae","Prauserella",1,4
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Family XI","Sporanaerobacter",1,4
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Natronincolaceae","Alkaliphilus",1,4
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Raoultella",1,4
+"mean_abundance_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Aequorivita",1,3
+"mean_abundance_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae",,1,3
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Actinomycetales","Actinomycetaceae","Schaalia",1,3
+"mean_abundance_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Promicromonosporaceae",,1,2
+"mean_abundance_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Family XI","Tepidimicrobium",1,2
+"mean_abundance_filter","Bacteria","Bacillota",,,,,1,2
+"mean_abundance_filter","Bacteria","Bacillota","Negativicutes","Veillonellales-Selenomonadales","Selenomonadaceae","Mitsuokella",1,2
+"mean_abundance_filter","Bacteria","Chloroflexota","Anaerolineae","Caldilineales","Caldilineaceae",,1,2
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae",,2120,27332
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Mycoplasmatales","Mycoplasmataceae","Malacoplasma",2,16440
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Bacteroidaceae","Bacteroides",589,10191
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Blautia",482,8009
+"prevalence_filter","Bacteria","Bacillota","Clostridia",,,,544,5919
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Streptococcaceae","Streptococcus",262,3963
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Delftia",49,3566
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Vibrionaceae","Vibrio",86,3158
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Beggiatoales","Leucotrichaceae","Leucothrix",7,2886
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Vibrionaceae","Photobacterium",15,2837
+"prevalence_filter","Bacteria","Cyanobacteriota","Cyanobacteriia","Chloroplast",,,67,2745
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Elsterales",,,62,2463
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Ruminococcus",168,2441
+"prevalence_filter","Bacteria","Actinomycetota","Thermoleophilia","Gaiellales",,,69,2214
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Mycobacteriales","Corynebacteriaceae","Corynebacterium",29,2212
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae",,20,2053
+"prevalence_filter","Bacteria","Bacillota",,,,,204,1968
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Fusicatenibacter",112,1932
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Acinetobacter",60,1878
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Muribaculaceae",,153,1806
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Anaerobutyricum",91,1600
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Mediterraneibacter",78,1594
+"prevalence_filter","Bacteria","Acidobacteriota","Acidobacteriae","Solibacterales","Solibacteraceae","Candidatus Solibacter",36,1581
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Xanthobacteraceae",,47,1460
+"prevalence_filter","Bacteria","Actinomycetota","Acidimicrobiia","Acidimicrobiales","Acidimicrobiaceae",,25,1425
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Tannerellaceae","Parabacteroides",71,1394
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Paenibacillales","Paenibacillaceae","Paenibacillus",53,1288
+"prevalence_filter","Bacteria","Acidobacteriota","Acidobacteriae","Terriglobales","Acidobacteriaceae (Subgroup 1)",,18,1281
+"prevalence_filter","Bacteria","Acidobacteriota","Acidobacteriae","Bryobacterales","Bryobacteraceae","Bryobacter",24,1224
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae",,95,1210
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Anaerostipes",78,1208
+"prevalence_filter","Bacteria","Actinomycetota","Acidimicrobiia","Acidimicrobiales","Acidimicrobiaceae","Acidiferrimicrobium",29,1185
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Acutalibacter",68,1154
+"prevalence_filter","Bacteria","Acidobacteriota","Vicinamibacteria","Vicinamibacterales",,,46,1137
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Mycobacteriales","Mycobacteriaceae","Mycobacterium",32,1107
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Prevotellaceae","Segatella",20,1105
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Pseudomonadaceae","Pseudomonas",56,1094
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Erwiniaceae","Pantoea",16,1085
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae",,52,1085
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Sphingomonas",34,1036
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Gammaproteobacteria Incertae Sedis","Unknown Family","Acidibacter",21,1034
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Oscillospiraceae",,82,1026
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales","Lysobacteraceae","Stenotrophomonas",30,986
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae",,65,971
+"prevalence_filter","Bacteria","Gemmatimonadota","Gemmatimonadia","Gemmatimonadales","Gemmatimonadaceae",,42,956
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Caulobacterales","Caulobacteraceae",,23,954
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","SC-I-84",,28,944
+"prevalence_filter","Bacteria","Actinomycetota","Thermoleophilia","Solirubrobacterales","Solirubrobacteraceae","Conexibacter",15,892
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Micropepsales","Micropepsaceae",,27,887
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Alicyclobacillales","Alicyclobacillaceae","Tumebacillus",13,872
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales",,,44,866
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Kitasatosporales","Streptomycetaceae","Streptomyces",33,788
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria",,,,41,777
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Staphylococcales","Staphylococcaceae","Staphylococcus",28,771
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Chitinophagaceae","Puia",8,760
+"prevalence_filter","Bacteria","Actinomycetota","Thermoleophilia","Solirubrobacterales","Solirubrobacteraceae",,21,759
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Mycoplasmatales","Mycoplasmataceae",,7,757
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Oscillospiraceae","Oscillibacter",26,755
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Lactiplantibacillus",10,743
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","[Eubacterium] oxidoreducens group",46,728
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Oscillospiraceae","Flavonifractor",38,710
+"prevalence_filter","Bacteria","Chloroflexota","TK10",,,,18,709
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Beijerinckiaceae","Roseiarcus",8,703
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Monoglobales","Monoglobaceae","Monoglobus",39,702
+"prevalence_filter","Bacteria","Acidobacteriota","Acidobacteriae","Subgroup 2",,,21,699
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria",,,,27,677
+"prevalence_filter","Bacteria","Acidobacteriota","Acidobacteriae","Terriglobales",,,21,669
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Pseudonocardiales","Pseudonocardiaceae","Pseudonocardia",22,666
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Morganellaceae","Candidatus Hamiltonella",25,655
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Burkholderiaceae","Burkholderia-Caballeronia-Paraburkholderia",20,640
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rickettsiales","Mitochondria",,28,632
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Faecalibacterium",12,626
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","[Ruminococcus] gnavus group",26,621
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Prevotellaceae","Prevotella",21,611
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Propionibacteriales","Nocardioidaceae","Nocardioides",23,609
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Bacillus",24,598
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Lachnospiraceae UCG-010",23,597
+"prevalence_filter","Bacteria","Actinomycetota","Thermoleophilia","Solirubrobacterales","67-14",,28,597
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Acetobacterales","Acetobacteraceae",,19,592
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales",,,48,582
+"prevalence_filter","Bacteria","Chloroflexota","Chloroflexia","Chloroflexales","Roseiflexaceae",,19,565
+"prevalence_filter","Bacteria","Myxococcota","Polyangiia","Polyangiales","Polyangiaceae","Pajaroellobacter",16,540
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Lachnospiraceae NK4A136 group",35,539
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Dorea",2,526
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Latilactobacillus",5,523
+"prevalence_filter","Bacteria","Chloroflexota","Chloroflexia","Thermomicrobiales","JG30-KF-CM45",,22,523
+"prevalence_filter","Bacteria","Acidobacteriota","Acidobacteriae","Terriglobales","Acidobacteriaceae (Subgroup 1)","Occallatibacter",8,515
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Paracoccus",14,514
+"prevalence_filter","Bacteria","Actinomycetota","Thermoleophilia","Gaiellales","Gaiellaceae","Gaiella",17,511
+"prevalence_filter","Bacteria","Actinomycetota","Thermoleophilia","Solirubrobacterales","Solirubrobacteraceae","Solirubrobacter",24,509
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales",,,46,507
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Enterocloster",29,506
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Lactobacillus",24,503
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Extibacter",17,503
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","NS5 marine group",9,494
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Oscillospiraceae","UCG-005",11,489
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Kordia",2,473
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Lachnoclostridium",28,471
+"prevalence_filter","Bacteria","Gemmatimonadota","Gemmatimonadia","Gemmatimonadales","Gemmatimonadaceae","Gemmatimonas",16,462
+"prevalence_filter","Bacteria","Acidobacteriota","Acidobacteriae","Terriglobales","Koribacteraceae","Candidatus Koribacter",7,456
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Neobacillus",8,447
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Legionellales","Legionellaceae","Legionella",7,445
+"prevalence_filter","Bacteria","Chloroflexota","KD4-96",,,,23,434
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Sphingobacteriales","Sphingobacteriaceae","Mucilaginibacter",14,417
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Beijerinckiaceae",,12,406
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Xanthobacteraceae","Bradyrhizobium",3,405
+"prevalence_filter","Bacteria","Thermodesulfobacteriota","Desulfuromonadia","Geobacterales","Geobacteraceae","Geomonas",4,405
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Novosphingobium",18,404
+"prevalence_filter","Bacteria","Patescibacteria","Saccharimonadia","Saccharimonadales",,,12,393
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Family XI","Ezakiella",2,392
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Frankiales","Frankiaceae","Jatrophihabitans",11,392
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales",,,42,392
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Prevotellaceae",,33,392
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Intrasporangiaceae","Ornithinimicrobium",2,391
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Lachnospiraceae UCG-004",26,390
+"prevalence_filter","Bacteria","Myxococcota","Polyangiia","Polyangiales","Polyangiaceae",,8,388
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Pasteurellaceae","Haemophilus",16,388
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae",,34,387
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","PeM15",,,19,386
+"prevalence_filter","Bacteria","Candidatus Eremiobacterota","Eremiobacteria",,,,15,380
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Oxalobacteraceae","Massilia",22,375
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Polaribacter",9,374
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Pedosphaerales","Pedosphaeraceae",,14,373
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Exiguobacterales","Exiguobacteraceae","Exiguobacterium",6,372
+"prevalence_filter","Bacteria","Myxococcota","Polyangiia","Haliangiales","Haliangiaceae",,17,372
+"prevalence_filter","Bacteria","Actinomycetota","Coriobacteriia","Coriobacteriales","Eggerthellaceae","Eggerthella",26,370
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Beijerinckiaceae","Microvirga",12,365
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","WD260",,,1,360
+"prevalence_filter","Bacteria","Bacillota","Negativicutes","Acidaminococcales","Acidaminococcaceae","Phascolarctobacterium",31,360
+"prevalence_filter","Bacteria","Acidobacteriota","Acidobacteriae","Terriglobales","Acidobacteriaceae (Subgroup 1)","Granulicella",8,358
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Lachnospiraceae ND3007 group",3,352
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae",,18,351
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Frankiales","Acidothermaceae","Acidothermus",13,349
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Beijerinckiaceae","Methylobacterium",24,346
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Planococcaceae","Lysinibacillus",5,345
+"prevalence_filter","Bacteria","Acidobacteriota","Acidobacteriae","Terriglobales","Acidobacteriaceae (Subgroup 1)","Edaphobacter",6,342
+"prevalence_filter","Bacteria","Fusobacteriota","Fusobacteriia","Fusobacteriales","Fusobacteriaceae","Cetobacterium",17,340
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Kineosporiales","Kineosporiaceae",,6,336
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Sellimonas",20,334
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Christensenellales","Christensenellaceae","Christensenellaceae R-7 group",15,333
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Caulobacterales","Caulobacteraceae","Brevundimonas",16,330
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Microbacteriaceae",,19,320
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Frankiales","Geodermatophilaceae","Geodermatophilus",12,318
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Pseudoalteromonadaceae","Pseudoalteromonas",6,312
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Propionibacteriales","Nocardioidaceae","Marmoricola",10,311
+"prevalence_filter","Bacteria","Acidobacteriota","Blastocatellia","11-24",,,9,308
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Citrobacter",11,308
+"prevalence_filter","Bacteria","Bdellovibrionota","Oligoflexia","Oligoflexales","Oligoflexaceae","Oligoflexus",3,303
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Rikenellaceae","Alistipes",17,300
+"prevalence_filter","Bacteria","Chloroflexota","Ktedonobacteria","Ktedonobacterales","JG30-KF-AS9",,9,300
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","TRA3-20",,9,299
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Oscillospiraceae","UCG-002",12,298
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Saprospiraceae","Lewinella",4,297
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales","Rhodanobacteraceae","Dokdonella",10,295
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Peptostreptococcaceae","Intestinibacter",25,294
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micromonosporales","Micromonosporaceae",,14,291
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Francisellales","Francisellaceae","Francisella",3,290
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Chitinophagaceae",,13,289
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Bifidobacteriales","Bifidobacteriaceae","Bifidobacterium",13,288
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Planktotalea",4,284
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Catenibacillus",17,284
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Chthoniobacterales","Chthoniobacteraceae","Chthoniobacter",13,277
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","[Eubacterium] coprostanoligenes group",,23,276
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","R7C24",,,2,272
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae",,19,272
+"prevalence_filter","Bacteria","Myxococcota","Myxococcia","Myxococcales","Myxococcaceae",,14,272
+"prevalence_filter","Bacteria","Actinomycetota","Coriobacteriia","Coriobacteriales","Coriobacteriaceae","Collinsella",3,269
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Eisenbergiella",20,269
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Sutterellaceae","Sutterella",7,268
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Salegentibacter",2,265
+"prevalence_filter","Bacteria","Actinomycetota","Coriobacteriia","Coriobacteriales","Eggerthellaceae","Gordonibacter",9,265
+"prevalence_filter","Bacteria","Actinomycetota","Thermoleophilia","Solirubrobacterales",,,9,265
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Weeksellaceae","Chryseobacterium",12,258
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Enterococcaceae","Enterococcus",14,256
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Frankiales",,,14,255
+"prevalence_filter","Bacteria","Myxococcota","Myxococcia","Myxococcales","Anaeromyxobacteraceae","Anaeromyxobacter",4,252
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Pelagibacterales","Clade I","Clade Ia",3,250
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Micrococcaceae","Rothia",14,248
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Barnesiellaceae","Barnesiella",1,246
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Hyphomicrobiales Incertae Sedis","Bauldia",3,246
+"prevalence_filter","Bacteria","Bacillota","Negativicutes","Veillonellales-Selenomonadales","Veillonellaceae","Dialister",5,246
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Propionibacteriales","Nocardioidaceae",,6,243
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Oscillospiraceae","Colidextribacter",15,242
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Kitasatosporales","Streptomycetaceae","Kitasatospora",1,241
+"prevalence_filter","Bacteria","Myxococcota","Polyangiia","Polyangiales",,,2,241
+"prevalence_filter","Bacteria","Actinomycetota","Thermoleophilia",,,,8,241
+"prevalence_filter","Bacteria","Deinococcota","Deinococci","Deinococcales","Deinococcaceae","Deinococcus",12,238
+"prevalence_filter","Bacteria","Acidobacteriota","Vicinamibacteria","Vicinamibacterales","Vicinamibacteraceae",,14,238
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Microbacteriaceae","Microbacterium",12,237
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelatoclostridiaceae","Massiliomicrobiota",24,237
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Klebsiella",19,237
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Hyphomicrobiaceae","Hyphomicrobium",8,234
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Morganellaceae","Buchnera",9,234
+"prevalence_filter","Bacteria","Chloroflexota","Ktedonobacteria","Ktedonobacterales","Ktedonobacteraceae",,6,234
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Weeksellaceae","Cloacibacterium",4,230
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Frankiales","Geodermatophilaceae",,6,230
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Variovorax",8,229
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Mesorhizobium",9,228
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Cohaesibacter",2,227
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Frisingicoccus",9,225
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Nitrosomonadaceae","Ellin6067",9,225
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Reyranellales","Reyranellaceae","Reyranella",10,223
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Halieaceae","OM60(NOR5) clade",3,222
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Alteromonadaceae",,4,221
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Lachnospiraceae UCG-008",20,221
+"prevalence_filter","Bacteria","Acidobacteriota","Acidobacteriae","Subgroup 13",,,3,220
+"prevalence_filter","Bacteria","Chloroflexota","Ktedonobacteria","C0119",,,9,215
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Lentilitoribacter",1,213
+"prevalence_filter","Bacteria","Chloroflexota","Ktedonobacteria","Ktedonobacterales","Ktedonobacteraceae","1959-1",4,213
+"prevalence_filter","Bacteria","Acidobacteriota","Blastocatellia","Pyrinomonadales","Pyrinomonadaceae",,6,213
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Xanthobacteraceae","Pseudolabrys",8,210
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Weissella",10,209
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria",,,,17,209
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Nitrosomonadaceae","MND1",11,208
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Rossellomorea",1,206
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Acidovorax",4,204
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Competibacterales","Competibacteraceae","Candidatus Competibacter",1,203
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Tistrellales","Geminicoccaceae","Candidatus Alysiosphaera",8,203
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Alteromonadaceae","Paraglaciecola",2,199
+"prevalence_filter","Bacteria","Elusimicrobiota","Lineage IIa",,,,1,198
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Opitutales","Opitutaceae","Oleiharenicola",2,198
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Saprospiraceae","OLB8",3,196
+"prevalence_filter","Bacteria","Actinomycetota","Thermoleophilia","Solirubrobacterales","Solirubrobacteraceae","Paraconexibacter",2,194
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Aeromonadaceae","Aeromonas",11,194
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Peptostreptococcaceae",,20,192
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Litoreibacter",2,191
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Micavibrionales","Micavibrionaceae",,9,191
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae",,15,191
+"prevalence_filter","Bacteria","Bdellovibrionota","Oligoflexia","0319-6G20",,,9,190
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Lachnospiraceae NC2004 group",17,189
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Clostridiales","Clostridiaceae","Clostridium",11,187
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales","Lysobacteraceae",,7,186
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","[Eubacterium] siraeum group",10,186
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Ligilactobacillus",20,186
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Colwelliaceae","Colwellia",9,185
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Caulobacterales","Caulobacteraceae","Phenylobacterium",11,182
+"prevalence_filter","Bacteria","Thermodesulfobacteriota",,,,,3,180
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Negativibacillus",6,180
+"prevalence_filter","Bacteria","Actinomycetota","Thermoleophilia","Solirubrobacterales","Solirubrobacteraceae","Baekduia",9,180
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Rhizobium",6,179
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Halomonadaceae","Halomonas",3,178
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Coprococcus",4,178
+"prevalence_filter","Bacteria","Actinomycetota","MB-A2-108",,,,8,176
+"prevalence_filter","Bacteria","Myxococcota","Polyangiia","Polyangiales","Sandaracinaceae",,10,176
+"prevalence_filter","Bacteria","Actinomycetota","Acidimicrobiia","Microtrichales","Ilumatobacteraceae","Desertimonas",5,173
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Anaerovoracaceae",,21,172
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Beijerinckiaceae","Bosea",7,171
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Frankiales","Geodermatophilaceae","Blastococcus",3,171
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Xanthobacteraceae","Pseudorhodoplanes",1,168
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Streptococcaceae","Lactococcus",9,168
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Mycoplasmatales","Mycoplasmataceae","Mycoplasma",3,166
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales","Rhodanobacteraceae","Rhodanobacter",8,166
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","JG36-TzT-191",,,6,165
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Ramlibacter",7,165
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales",,,12,164
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","PLTA13",,,6,163
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Erwiniaceae",,6,163
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","[Eubacterium] eligens group",3,162
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Cryomorphaceae",,9,162
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Limosilactobacillus",7,160
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Priestia",4,160
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Propionibacteriales","Propionibacteriaceae","Cutibacterium",10,160
+"prevalence_filter","Bacteria","Actinomycetota","Acidimicrobiia","Microtrichales",,,10,160
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Planococcaceae","Psychrobacillus",1,159
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Lachnospira",6,159
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Clostridiales","Caloramatoraceae","Fonticella",2,158
+"prevalence_filter","Bacteria","Cyanobacteriota","Cyanobacteriia","Cyanobacteriales","Nostocaceae","Cylindrospermum PCC-7417",1,156
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","A21b",,6,156
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Rickettsiellales","Rickettsiellaceae",,5,156
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Marvinbryantia",8,153
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Anaerovoracaceae","Family XIII AD3011 group",8,152
+"prevalence_filter","Bacteria","Nitrospirota","Nitrospiria","Nitrospirales","Nitrospiraceae","Nitrospira",7,152
+"prevalence_filter","Archaea","Thermoproteota","Nitrososphaeria","Nitrososphaerales","Nitrososphaeraceae",,10,152
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Oxalobacteraceae","Herbaspirillum",2,151
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Hungatella",9,151
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales","Lysobacteraceae","Luteimonas",8,151
+"prevalence_filter","Bacteria","Chloroflexota","JG30-KF-CM66",,,,6,149
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Frankiales","Sporichthyaceae","hgcI clade",14,149
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Actinomycetales","Actinomycetaceae","Actinomyces",9,148
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelotrichaceae","[Clostridium] innocuum group",14,147
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Prevotellaceae","Hoylesella",2,146
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelatoclostridiaceae","Erysipelotrichaceae UCG-003",3,146
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Devosiaceae","Devosia",6,146
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Aliihoeflea",1,145
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Rhodocyclaceae","Zoogloea",4,144
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Caulobacterales","Hyphomonadaceae","SWB02",6,144
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Neisseriaceae","Neisseria",11,144
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Chitinophagaceae","Ferruginibacter",5,143
+"prevalence_filter","Bacteria","Patescibacteria","Gracilibacteria","Candidatus Peregrinibacteria",,,2,142
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Hyphomicrobiaceae","Pedomicrobium",7,142
+"prevalence_filter","Bacteria","Actinomycetota","Acidimicrobiia","Actinomarinales",,,6,142
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Anoxybacillus",4,141
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Flavobacterium",5,141
+"prevalence_filter","Bacteria","Patescibacteria","Saccharimonadia","Saccharimonadales","WWH38",,5,141
+"prevalence_filter","Archaea","Thermoproteota","Nitrososphaeria","Nitrosopumilales","Nitrosopumilaceae","Candidatus Nitrosopumilus",7,140
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Actinomycetales","Actinomycetaceae","Schaalia",11,140
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae",,11,139
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelatoclostridiaceae","Thomasclavelia",6,138
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","HT002",7,138
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelotrichaceae","Dubosiella",10,138
+"prevalence_filter","Bacteria","Cyanobacteriota","Vampirivibrionia","Obscuribacterales","Obscuribacteraceae",,4,136
+"prevalence_filter","Bacteria","Bacillota","Negativicutes","Veillonellales-Selenomonadales","Veillonellaceae","Veillonella",11,136
+"prevalence_filter","Bacteria","Chloroflexota","AD3",,,,7,135
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodospirillales","Rhodospirillaceae",,6,133
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Frankiales","Nakamurellaceae","Nakamurella",7,133
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","0319-7L14",,,3,131
+"prevalence_filter","Bacteria","Bacillota","Bacilli",,,,16,131
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Oscillospiraceae","NK4A214 group",5,130
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Staphylococcales","Gemellaceae","Gemella",6,130
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Albimonas",3,128
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Nitrosomonadaceae","mle1-7",7,128
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Aurantivirga",3,126
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","KF-JG30-C25",,,4,124
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Chitinophagaceae","Taibaiella",1,123
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Roseburia",3,123
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Chthoniobacterales","Chthoniobacteraceae","Candidatus Udaeobacter",10,123
+"prevalence_filter","Bacteria","Patescibacteria","Saccharimonadia","Saccharimonadales","LWQ8",,7,122
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Chitinophagaceae","Sediminibacterium",1,121
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Enhydrobacter",3,120
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Gemmobacter",4,120
+"prevalence_filter","Bacteria","NB1-j",,,,,2,119
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Enterobacter",4,119
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Butyricicoccaceae","Agathobaculum",9,118
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Cytophagales","Hymenobacteraceae","Pontibacter",2,117
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Frankiales","Geodermatophilaceae","Klenkia",3,117
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Barnesiellaceae",,4,117
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Niallia",4,117
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micromonosporales","Micromonosporaceae","Actinoplanes",5,117
+"prevalence_filter","Bacteria","Patescibacteria","Parcubacteria",,,,6,116
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rickettsiales","SM2D12",,4,116
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","DTU089",2,115
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Dokdonia",2,115
+"prevalence_filter","Bacteria","Dependentiae","Babeliae","Babeliales",,,7,115
+"prevalence_filter","Bacteria","Actinomycetota","Acidimicrobiia","Microtrichales","Ilumatobacteraceae","CL500-29 marine group",7,115
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Alcaligenaceae","Bordetella",1,113
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Chitinophagaceae","Niastella",8,113
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Cytophagales","Hymenobacteraceae","Hymenobacter",4,112
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Caminicellaceae","Caminicella",2,112
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Beggiatoales","Leucotrichaceae",,3,111
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","KI89A clade",,1,110
+"prevalence_filter","Bacteria","Campylobacterota","Campylobacteria","Campylobacterales","Helicobacteraceae","Helicobacter",9,110
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Alcaligenaceae","Achromobacter",8,110
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Micrococcaceae",,7,110
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales",,,12,109
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Hyphomicrobiales Incertae Sedis",,6,108
+"prevalence_filter","Bacteria","Bdellovibrionota","Bacteriovoracia","Bacteriovoracales","Bacteriovoracaceae","Peredibacter",6,108
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Vibrionaceae",,13,107
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Marinifilaceae","Butyricimonas",4,107
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia",,,,9,107
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Dermacoccaceae","Dermacoccus",1,106
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Acetobacterales","Acetobacteraceae","Commensalibacter",3,106
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Comamonas",6,106
+"prevalence_filter","Bacteria","Thermodesulfobacteriota","Desulfovibrionia","Desulfovibrionales","Desulfovibrionaceae","Bilophila",13,106
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Chitinophagaceae","Nemorincola",4,105
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Oxalobacteraceae","Noviherbaspirillum",6,105
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Neisseriaceae",,3,104
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Methyloligellaceae",,5,104
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Caulobacterales","Hyphomonadaceae","Litorimonas",1,103
+"prevalence_filter","Bacteria","Patescibacteria","Gracilibacteria",,,,2,103
+"prevalence_filter","Bacteria","RCP2-54",,,,,4,101
+"prevalence_filter","Bacteria","Chloroflexota","Gitt-GS-136",,,,3,100
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Moraxellaceae",,4,100
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Winogradskyella",3,100
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Ruthenibacterium",11,100
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Escherichia-Shigella",3,99
+"prevalence_filter","Bacteria","Acidobacteriota","Acidobacteriae","Terriglobales","Acidobacteriaceae (Subgroup 1)","Terracidiphilus",1,98
+"prevalence_filter","Bacteria","Myxococcota","Polyangiia","Polyangiales","Phaselicystaceae","Phaselicystis",3,98
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptococcales","Peptococcaceae",,1,97
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Frankiales","Sporichthyaceae","Candidatus Planktophila",1,97
+"prevalence_filter","Bacteria","Ignavibacteriota","Ignavibacteria","Ignavibacteriales","PHOS-HE36",,3,95
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Methylacidiphilales","Methylacidiphilaceae",,5,95
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Dongiales","Dongiaceae","Dongia",3,95
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Mycobacteriales","Nocardiaceae","Rhodococcus",3,94
+"prevalence_filter","Bacteria","Fusobacteriota","Fusobacteriia","Fusobacteriales","Leptotrichiaceae","Leptotrichia",5,94
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","KF-JG30-B3",,5,94
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Propionibacteriales","Propionibacteriaceae","Microlunatus",4,94
+"prevalence_filter","Bacteria","Gemmatimonadota","Longimicrobiia","Longimicrobiales","Longimicrobiaceae","YC-ZSS-LKJ147",1,93
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Gemmiger",4,92
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Rhizobacter",5,92
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Xanthobacteraceae","Rhodoplanes",6,92
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Methylococcales","Methylococcaceae",,1,91
+"prevalence_filter","Bacteria","Patescibacteria","Saccharimonadia","Saccharimonadales","Saccharimonadaceae","TM7x",3,91
+"prevalence_filter","Bacteria","Fusobacteriota","Fusobacteriia","Fusobacteriales","Fusobacteriaceae","Fusobacterium",8,91
+"prevalence_filter","Bacteria","Myxococcota","Myxococcia","Myxococcales","Myxococcaceae","Cystobacter",1,90
+"prevalence_filter","Bacteria","Gemmatimonadota","Longimicrobiia","Longimicrobiales","Longimicrobiaceae",,3,90
+"prevalence_filter","Bacteria","Sumerlaeota","Sumerlaeia","Sumerlaeales","Sumerlaeaceae","Sumerlaea",2,90
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Litorimicrobium",2,90
+"prevalence_filter","Bacteria","Actinomycetota","Rubrobacteria","Rubrobacterales","Rubrobacteriaceae","Rubrobacter",2,90
+"prevalence_filter","Bacteria","Cyanobacteriota","Cyanobacteriia","Synechococcales","Cyanobiaceae","Cyanobium PCC-6307",7,90
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Micrococcaceae","Kocuria",3,89
+"prevalence_filter","Bacteria","Planctomycetota","Planctomycetes","Gemmatales","Gemmataceae",,10,88
+"prevalence_filter","Bacteria","Patescibacteria","Saccharimonadia","Saccharimonadales","Saccharimonadaceae","TM7a",3,87
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Puniceispirillales","SAR116 clade",,6,87
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales","Rhodanobacteraceae","Dyella",3,87
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Methylophilaceae","OM43 clade",6,87
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Caulobacterales","Caulobacteraceae","Caulobacter",6,87
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Stappiaceae","Pannonibacter",2,86
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Prevotellaceae","Prevotellaceae NK3B31 group",2,86
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Verrucomicrobiales","Rubritaleaceae","Rubritalea",5,86
+"prevalence_filter","Bacteria","Methylomirabilota","Methylomirabilia","Rokubacteriales",,,5,86
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Gammaproteobacteria Incertae Sedis","Unknown Family","Marinicella",2,85
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Tepidimonas",3,85
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Pseudohongiellaceae","Pseudohongiella",4,85
+"prevalence_filter","Bacteria","Myxococcota","Polyangiia","Polyangiales","Polyangiaceae","Aetherobacter",2,85
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Kitasatosporales","Streptomycetaceae",,3,85
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Yersiniaceae","Serratia",4,85
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Shewanellaceae","Psychrobium",2,83
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Intrasporangiaceae","Pedococcus-Phycicoccus",3,83
+"prevalence_filter","Bacteria","Acidobacteriota","Vicinamibacteria","Subgroup 17",,,5,83
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelatoclostridiaceae",,7,83
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Microbacteriaceae","Amnibacterium",3,83
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Pelagibacterales","Clade II",,4,82
+"prevalence_filter","Bacteria","Chloroflexota","Ktedonobacteria","Ktedonobacterales","Ktedonobacteraceae","Thermosporothrix",2,81
+"prevalence_filter","Bacteria","Cyanobacteriota","Cyanobacteriia",,,,3,81
+"prevalence_filter","Bacteria","Spirochaetota","Spirochaetia","Spirochaetales","Spirochaetaceae","Treponema",5,81
+"prevalence_filter","Bacteria","Chloroflexota","Anaerolineae",,,,3,81
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","[Eubacterium] ventriosum group",5,80
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales",,,5,80
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Prevotellaceae","Prevotellaceae UCG-001",8,80
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Peptostreptococcaceae","Filifactor",3,79
+"prevalence_filter","Bacteria","Pseudomonadota",,,,,11,79
+"prevalence_filter","Bacteria","Actinomycetota","Acidimicrobiia","Microtrichales","Iamiaceae","Aquihabitans",3,78
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","NS9 marine group",,4,78
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Frankiales","Sporichthyaceae","Sporichthya",2,77
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Steroidobacterales","Steroidobacteraceae","Steroidobacter",5,77
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Arenicellales","Arenicellaceae","HTCC5015",3,76
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Pelagibacterales","Clade III",,1,75
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Caldimonas",1,75
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Chthoniobacterales","Chthoniobacteraceae","LD29",1,75
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Saprospiraceae",,5,75
+"prevalence_filter","Archaea","Thermoplasmatota","Thermoplasmata","Marine Group II",,,7,75
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Clostridia UCG-014",,,8,75
+"prevalence_filter","Bacteria","Actinomycetota","Acidimicrobiia","Microtrichales","Ilumatobacteraceae",,7,75
+"prevalence_filter","Bacteria","Myxococcota","Polyangiia","Nannocystales","Nannocystaceae",,1,74
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Paenibacillales","Paenibacillaceae",,5,74
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales","Rhodanobacteraceae","Tahibacter",5,74
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Christensenellales","Christensenellaceae",,7,74
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Labraceae","Labrys",2,73
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Pseudonocardiales","Pseudonocardiaceae","Actinomycetospora",2,73
+"prevalence_filter","Bacteria","Chloroflexota","Chloroflexia","Chloroflexales","Chloroflexaceae","FFCH7168",2,73
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Marinifilaceae","Odoribacter",6,73
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Carnobacteriaceae","Granulicatella",4,73
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Rikenellaceae","Rikenellaceae RC9 gut group",9,73
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Defluviitaleaceae",,1,72
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales",,,6,72
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Patiriisocius",1,71
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Rhodocyclaceae","Uliginosibacterium",3,71
+"prevalence_filter","Bacteria","Armatimonadota","Fimbriimonadia","Fimbriimonadales","Fimbriimonadaceae",,3,71
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Cytophagales","Microscillaceae","Chryseotalea",5,71
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Oxalobacteraceae",,7,71
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Hydrogenophaga",6,71
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Shewanellaceae","Shewanella",2,70
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Pseudonocardiales","Pseudonocardiaceae","Amycolatopsis",2,70
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Peptostreptococcaceae","Romboutsia",5,70
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Chitinophagaceae","Flavisolibacter",2,70
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","[Ruminococcus] gauvreauii group",4,70
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Paenibacillales","Paenibacillaceae","Cohnella",4,70
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Lachnospiraceae FCS020 group",2,68
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Microbacteriaceae","Leucobacter",4,68
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Pseudonocardiales","Pseudonocardiaceae",,4,68
+"prevalence_filter","Bacteria","Myxococcota","Polyangiia","Polyangiales","Polyangiaceae","Minicystis",1,67
+"prevalence_filter","Bacteria","Actinomycetota","Acidimicrobiia","Microtrichales","Ilumatobacteraceae","Ilumatobacter",4,67
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Rhodocyclaceae",,4,67
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Mycobacteriales","Dietziaceae","Dietzia",3,66
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Streptosporangiales","Thermomonosporaceae","Actinocorallia",2,66
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Rickettsiellales","Rickettsiellaceae","Aquicella",4,66
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Verrucomicrobiales","Rubritaleaceae","Luteolibacter",5,66
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Lacticaseibacillus",8,66
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Devosiaceae","Maritalea",3,65
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Caulobacterales","Caulobacteraceae","Asticcacaulis",3,65
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Actinomycetales","Actinomycetaceae",,5,65
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Pasteurellaceae",,5,65
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Chromatiales","Chromatiaceae",,2,64
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Brevibacillales","Brevibacillaceae","Brevibacillus",3,64
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micromonosporales","Micromonosporaceae","Micromonospora",2,64
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Rhizorhabdus",3,64
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Frankiales","Sporichthyaceae",,4,64
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelotrichaceae","Holdemania",9,64
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Croceibacterium",3,63
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Hyphomicrobiales Incertae Sedis","Nordella",2,63
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Propionibacteriales","Nocardioidaceae","Aeromicrobium",6,63
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Brucella",6,63
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Anaerotruncus",10,63
+"prevalence_filter","Bacteria","Chloroflexota","Ktedonobacteria","Ktedonobacterales","Ktedonobacteraceae","1921-3",1,62
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Burkholderiaceae","Pandoraea",1,62
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Cytophagales","Cyclobacteriaceae","Reichenbachiella",1,62
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelotrichaceae","Faecalibaculum",2,62
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Crocinitomicaceae","Fluviicola",2,62
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Anaerocolumna",3,62
+"prevalence_filter","Bacteria","Acidobacteriota","Thermoanaerobaculia","Thermoanaerobaculales","Thermoanaerobaculaceae","Subgroup 10",5,62
+"prevalence_filter","Bacteria","Armatimonadota","Chthonomonadia","Chthonomonadales","Chthonomonadaceae","Chthonomonas",5,62
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Alteromonadaceae","Alteromonas",4,61
+"prevalence_filter","Bacteria","Chloroflexota","Chloroflexia","Thermomicrobiales","Thermomicrobiaceae","Nitrolancea",1,60
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptococcales","Peptococcaceae","Peptococcus",1,59
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Mariniflexile",1,59
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Morganellaceae","Providencia",2,59
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Chitinophagaceae","Rurimicrobium",2,59
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Marivita",3,59
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Streptosporangiales","Thermomonosporaceae","Actinomadura",5,59
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Shinella",5,59
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Colwelliaceae","Thalassotalea",3,58
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Streptococcaceae",,3,58
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Verrucomicrobiales","Verrucomicrobiaceae","Roseimicrobium",3,58
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Faecalicatena",4,58
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Rubellimicrobium",6,58
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Harryflintia",9,58
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Clostridiales","Caloramatoraceae",,1,57
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Secundilactobacillus",2,57
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Methylophilaceae",,4,57
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Ensifer",3,57
+"prevalence_filter","Bacteria","Actinomycetota","Acidimicrobiia",,,,4,57
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Azospirillales","Azospirillaceae",,2,56
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Intrasporangiaceae","Ornithinibacter",1,55
+"prevalence_filter","Bacteria","Bacillota","Desulfitobacteriia","Desulfitobacteriales","Desulfitobacteriaceae","Desulfitobacterium",1,55
+"prevalence_filter","Bacteria","Myxococcota","Polyangiia",,,,2,55
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Paludicola",3,55
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Streptosporangiales","Streptosporangiaceae","Nonomuraea",4,55
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Intrasporangiaceae","Knoellia",3,55
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales",,,6,55
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Cytophagales","Microscillaceae",,3,54
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Nitrincolaceae","Aliamphritea",1,53
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Prevotellaceae","Alloprevotella",4,53
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Ellin6055",2,53
+"prevalence_filter","Bacteria","Chloroflexota","Anaerolineae","Aggregatilineales","A4b",,4,53
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Anaerovoracaceae","[Eubacterium] brachy group",4,53
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Brevibacteriaceae","Brevibacterium",5,53
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Thermicanales","Thermicanaceae","Thermicanus",1,52
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Psychrobacter",6,52
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Devosiaceae","Arsenicitalea",2,52
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelotrichaceae",,4,52
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Butyricicoccaceae",,3,52
+"prevalence_filter","Bacteria","Planctomycetota","Planctomycetes","Isosphaerales","Isosphaeraceae",,5,52
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Ascidiaceihabitans",2,51
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelotrichaceae","Turicibacter",3,51
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Mycoplasmatales","Mycoplasmataceae","Candidatus Bacilloplasma",5,51
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Caulobacterales","Hyphomonadaceae","Hellea",3,51
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Frankiales","Cryptosporangiaceae","Cryptosporangium",1,50
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Nitrincolaceae","Profundimonas",1,50
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Xanthobacteraceae","Starkeya",2,50
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Agrobacterium",3,50
+"prevalence_filter","Bacteria","Actinomycetota",,,,,3,50
+"prevalence_filter","Bacteria","Myxococcota","Polyangiia","Polyangiales","BIrii41",,3,50
+"prevalence_filter","Bacteria","Cyanobacteriota","Cyanobacteriia","Synechococcales","Cyanobiaceae","Synechococcus CC9902",4,50
+"prevalence_filter","Bacteria","Campylobacterota","Campylobacteria","Campylobacterales","Sulfurovaceae","Sulfurovum",2,49
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Hyphomicrobiales Incertae Sedis","Alsobacter",3,49
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Yoonia",3,49
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Burkholderiaceae","Ralstonia",4,49
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Azospirillales","Azospirillaceae","Skermanella",3,49
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Porphyromonadaceae","Porphyromonas",4,49
+"prevalence_filter","Archaea","Methanobacteriota","Methanobacteria","Methanobacteriales","Methanobacteriaceae","Methanobrevibacter",6,49
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Thermoactinomycetales","Thermoactinomycetaceae","Seinonella",1,48
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Micrococcaceae","Glutamicibacter",3,48
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Pseudonocardiales","Pseudonocardiaceae","Saccharopolyspora",2,48
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Tropicimonas-Psychromarinibacter",4,48
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Kineosporiales","Kineosporiaceae","Angustibacter",1,47
+"prevalence_filter","Bacteria","Armatimonadota",,,,,2,47
+"prevalence_filter","Bacteria","Chloroflexota","Ktedonobacteria","Ktedonobacterales","Ktedonobacteraceae","HSB OF53-F07",2,47
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Morganellaceae",,5,47
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Devosiaceae",,3,47
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Mycobacteriales","Corynebacteriaceae","Lawsonella",4,47
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Cellvibrionaceae",,3,47
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Lachnoanaerobaculum",5,47
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Pediococcus",10,47
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Pseudalkalibacillus",1,46
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Family XI","Tepidimicrobium",1,46
+"prevalence_filter","Bacteria","Actinomycetota","Coriobacteriia","Coriobacteriales","Coriobacteriales Incertae Sedis",,2,46
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Cellvibrionaceae","Aestuariicella",2,46
+"prevalence_filter","Bacteria","Bdellovibrionota","Bdellovibrionia","Bdellovibrionales","Pseudobdellovibrionaceae","OM27 clade",6,46
+"prevalence_filter","Bacteria","Actinomycetota","Coriobacteriia","Coriobacteriales","Atopobiaceae","Lancefieldella",5,46
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales",,,3,46
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Verrucomicrobiales","Rubritaleaceae","Haloferula",1,45
+"prevalence_filter","Bacteria","Acidobacteriota","Acidobacteriae","Elev-16S-1166","Incertae Sedis","WY65",1,45
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Butyrivibrio",1,45
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","SAR86 clade",,2,45
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rickettsiales","Rickettsiaceae","Candidatus Megaira",4,45
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Chitinophagaceae","Terrimonas",4,45
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Microbacteriaceae","Plantibacter",1,44
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Micrococcaceae","Arthrobacter",3,44
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Murimonas",2,44
+"prevalence_filter","Bacteria","Acidobacteriota","Subgroup 5",,,,3,44
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","A0839",,2,44
+"prevalence_filter","Bacteria","Acidobacteriota","Blastocatellia","Blastocatellales","Blastocatellaceae",,3,44
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Acetobacterales","Acetobacteraceae","Acidiphilium",5,44
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Sphingopyxis",2,43
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Acetobacterales","Acetobacteraceae","Caldovatus",2,43
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Family XI","Peptoniphilus",4,43
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Ruegeria",3,43
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales",,,3,43
+"prevalence_filter","Bacteria","Bacillota","Negativicutes","Veillonellales-Selenomonadales","Veillonellaceae","Megasphaera",3,43
+"prevalence_filter","Bacteria","Cyanobacteriota","Cyanobacteriia","Cyanobacteriales","Chroococcidiopsaceae",,3,43
+"prevalence_filter","Bacteria","Ignavibacteriota","Ignavibacteria","Ignavibacteriales","Melioribacteraceae","IheB3-7",1,42
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Hydrogenophilaceae","Thiobacillus",2,42
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Carnobacteriaceae","Alloiococcus",2,42
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Furfurilactobacillus",3,42
+"prevalence_filter","Bacteria","Gemmatimonadota","Gemmatimonadia","Gemmatimonadales","Gemmatimonadaceae","Gemmatirosa",2,42
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micromonosporales","Micromonosporaceae","Catellatospora",1,41
+"prevalence_filter","Bacteria","Chloroflexota","Anaerolineae","RBG-13-54-9",,,1,41
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Caulobacterales","Hyphomonadaceae","Robiginitomaculum",1,41
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Sphaerotilus",2,41
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Mycobacteriales","Nocardiaceae","Nocardia",2,41
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Beijerinckiaceae","Lichenibacterium",6,41
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Sutterellaceae","Parasutterella",6,41
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Xanthobacteraceae","Afipia",1,40
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Pseudonocardiales","Pseudonocardiaceae","Crossiella",1,40
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","HIMB11",2,40
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","D05-2",,2,40
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales","Rhodanobacteraceae",,2,40
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Faecalimonas",2,40
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Pasteurellaceae","Aggregatibacter",4,40
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Prevotellaceae","Xylanibacter",6,40
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Pueribacillus",1,39
+"prevalence_filter","Bacteria","Bacillota","Negativicutes","Veillonellales-Selenomonadales","Sporomusaceae",,1,39
+"prevalence_filter","Archaea","Thermoproteota","Nitrososphaeria","Nitrosopumilales","Nitrosopumilaceae","Candidatus Nitrosotenuis",1,39
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Catenulisporales","Catenulisporaceae","Catenulispora",1,39
+"prevalence_filter","Bacteria","Chloroflexota","OLB14",,,,2,39
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Caulobacterales","Hyphomonadaceae",,3,39
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Micrococcaceae","Micrococcus",3,39
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Acetobacterales","Acetobacteraceae","Roseomonas",3,39
+"prevalence_filter","Bacteria","Actinomycetota","Coriobacteriia","Coriobacteriales","Eggerthellaceae","CHKCI002",6,39
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Streptosporangiales","Thermomonosporaceae",,1,38
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Streptosporangiales","Streptosporangiaceae","Microbispora",1,38
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Yersiniaceae","Rahnella",1,38
+"prevalence_filter","Bacteria","Planctomycetota","Planctomycetes","Isosphaerales","Isosphaeraceae","Aquisphaera",1,38
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Alcaligenaceae","Alcaligenes",1,38
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Spongiibacterium",1,38
+"prevalence_filter","Bacteria","Dependentiae","Babeliae","Babeliales","Vermiphilaceae",,2,38
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Neisseriaceae","Snodgrassella",3,38
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Microbacteriaceae","Curtobacterium",3,38
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Planococcaceae","Kurthia",1,37
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Leisingera",1,37
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Paracaedibacterales","Paracaedibacteraceae",,2,37
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Stomatobaculum",3,37
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Pasteurellaceae","Rodentibacter",5,37
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Nitrosomonadaceae","IS-44",1,36
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Gottfriedia",1,36
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Carnobacteriaceae","Dolosigranulum",1,36
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","37-13",,1,36
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales","Lysobacteraceae","Lysobacter",2,36
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Microbacteriaceae","Aurantimicrobium",2,36
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Sphingobacteriales","Sphingobacteriaceae","Pedobacter",3,36
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Cytophagales","Cyclobacteriaceae","Roseivirga",2,36
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Acetobacterales","Acetobacteraceae","Roseicella",2,36
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Catenulisporales","Actinospicaceae","Actinocrinis",3,36
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Kineosporiales","Kineosporiaceae","Kineosporia",1,35
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Staphylococcales","Staphylococcaceae","Auricoccus-Abyssicoccus",1,35
+"prevalence_filter","Bacteria","Planctomycetota","Phycisphaerae","Tepidisphaerales","WD2101 soil group",,7,35
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Caulobacterales","Parvularculaceae",,1,34
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Ectobacillus",1,34
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Salinimicrobium",1,34
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Rhodobacter",1,34
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Weizmannia",2,34
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Spongiibacteraceae","BD1-7 clade",2,34
+"prevalence_filter","Bacteria","Bdellovibrionota","Oligoflexia","Oligoflexales","Oligoflexaceae",,3,34
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Oribacterium",3,34
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Butyricicoccaceae","Butyricicoccus",3,34
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Marinococcaceae","Salsuginibacillus",1,33
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Capnocytophaga",2,33
+"prevalence_filter","Bacteria","Planctomycetota","Planctomycetes","Pirellulales","Pirellulaceae",,3,33
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Xanthobacteraceae","Xanthobacter",1,32
+"prevalence_filter","Bacteria","Acidobacteriota","Blastocatellia","Blastocatellales","Blastocatellaceae","Blastocatella",1,32
+"prevalence_filter","Bacteria","MBNT15",,,,,2,32
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Sphingobacteriales","NS11-12 marine group",,2,32
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Lactonifactor",2,32
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Hydrogenophilaceae","Tepidiphilus",2,32
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Anaerovoracaceae","Family XIII UCG-001",3,32
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Burkholderiaceae","Cupriavidus",4,32
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Sphingoaurantiacus",1,31
+"prevalence_filter","Bacteria","Planctomycetota","Phycisphaerae","Tepidisphaerales","CPla-3 termite group",,2,31
+"prevalence_filter","Bacteria","Latescibacterota",,,,,3,31
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Sphingobacteriales","Sphingobacteriaceae","Sphingobacterium",4,31
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Rhodocyclaceae","Candidatus Accumulibacter",1,30
+"prevalence_filter","Bacteria","Chloroflexota","Dehalococcoidia","Dehalococcoidales",,,1,30
+"prevalence_filter","Bacteria","Myxococcota","Polyangiia","Nannocystales","Nannocystaceae","Nannocystis",1,30
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Caulobacterales","Hyphomonadaceae","Hirschia",1,30
+"prevalence_filter","Bacteria","Gemmatimonadota","Gemmatimonadia","Gemmatimonadales","Gemmatimonadaceae","Roseisolibacter",1,30
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Pleomorphomonadaceae","Pleomorphomonas",1,30
+"prevalence_filter","Bacteria","Actinomycetota","Coriobacteriia","Coriobacteriales","Eggerthellaceae",,2,30
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Saccharospirillaceae","Oceaniserpentilla",3,30
+"prevalence_filter","Bacteria","Actinomycetota","Thermoleophilia","Solirubrobacterales","Solirubrobacteraceae","Parviterribacter",3,30
+"prevalence_filter","Bacteria","Gemmatimonadota","S0134 terrestrial group",,,,3,30
+"prevalence_filter","Bacteria","Patescibacteria","Parcubacteria","Candidatus Kaiserbacteria",,,3,30
+"prevalence_filter","Bacteria","Cyanobacteriota","Cyanobacteriia","Synechococcales","Cyanobiaceae","Prochlorococcus MIT9313",4,30
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Intrasporangiaceae","Lapillicoccus",1,29
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Endobacterium",1,29
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Aeromonadaceae","Pseudaeromonas",1,29
+"prevalence_filter","Bacteria","Actinomycetota","Coriobacteriia","Coriobacteriales",,,2,29
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Clostridiales","Clostridiaceae",,2,29
+"prevalence_filter","Bacteria","Planctomycetota","Phycisphaerae","Phycisphaerales","Phycisphaeraceae","SM1A02",2,29
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Maribacter",2,29
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Ideonella",2,29
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Tistrellales","Geminicoccaceae",,2,29
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Peptostreptococcaceae","Peptostreptococcus",3,29
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Opitutales","Opitutaceae",,2,29
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Kineosporiales","Kineosporiaceae","Kineococcus",3,29
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Cytophagales","Spirosomataceae","Dyadobacter",4,29
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","[Eubacterium] xylanophilum group",3,29
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Burkholderiaceae","Polynucleobacter",6,29
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Butyricicoccaceae","UCG-008",1,28
+"prevalence_filter","Bacteria","Latescibacterota","Latescibacteria","Latescibacterales","Latescibacteraceae",,1,28
+"prevalence_filter","Bacteria","Zixibacteria",,,,,1,28
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Micavibrionales",,,2,28
+"prevalence_filter","Bacteria","Campylobacterota","Campylobacteria","Campylobacterales","Arcobacteraceae","Arcobacter",2,28
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Microbacteriaceae","Leifsonia",2,28
+"prevalence_filter","Bacteria","Patescibacteria","Gracilibacteria","JGI 0000069-P22",,,2,28
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelotrichaceae","Culicoidibacter",2,28
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Verrucomicrobiales","Verrucomicrobiaceae","Prosthecobacter",2,28
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Nitrosomonadaceae","Nitrosospira",2,28
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Sphingobium",4,28
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Burkholderiaceae","Limnobacter",5,28
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales","Rhodanobacteraceae","Luteibacter",1,27
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Sulfitobacter",1,27
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Kaistiaceae","Kaistia",1,27
+"prevalence_filter","Bacteria","Cyanobacteriota","Cyanobacteriia","Cyanobacteriales","Nostocaceae","Tolypothrix",1,27
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Aeromonadaceae",,1,27
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Fictibacillus",2,27
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Gammaproteobacteria Incertae Sedis","Unknown Family",,3,27
+"prevalence_filter","Bacteria","Actinomycetota","Coriobacteriia","Coriobacteriales","Coriobacteriales Incertae Sedis","Raoultibacter",3,27
+"prevalence_filter","Bacteria","Chlamydiota","Chlamydiia","Chlamydiales","Waddliaceae","Waddlia",1,26
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Candidatus Soleaferrea",1,26
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Cardiobacteriales","Cardiobacteriaceae","Cardiobacterium",1,26
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Piscirickettsiales","Piscirickettsiaceae","Candidatus Endoecteinascidia",1,26
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Microbacteriaceae","Rhodoluna",4,26
+"prevalence_filter","Bacteria","Actinomycetota","Acidimicrobiia","Microtrichales","Iamiaceae","Iamia",2,26
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Pasteurellaceae","Actinobacillus",3,26
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Alteromonadaceae","Glaciecola",2,26
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Kangiellaceae","Aliikangiella",2,26
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Microbacteriaceae","Candidatus Aquiluna",3,26
+"prevalence_filter","Bacteria","Acidobacteriota","Blastocatellia","Pyrinomonadales","Pyrinomonadaceae","Arenimicrobium",1,25
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Blastomonas",1,25
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Halocynthiibacter",1,25
+"prevalence_filter","Bacteria","Myxococcota","Polyangiia","Blfdi19",,,1,25
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Phocea",2,25
+"prevalence_filter","Bacteria","Acidobacteriota","Blastocatellia","Blastocatellales","Blastocatellaceae","Stenotrophobacter",3,25
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Chthoniobacterales","Terrimicrobiaceae","Terrimicrobium",2,25
+"prevalence_filter","Bacteria","SAR324 clade(Marine group B)","Incertae Sedis","Incertae Sedis","Incertae Sedis","Candidatus Nitrosoarchaeum",3,25
+"prevalence_filter","Bacteria","Actinomycetota","Coriobacteriia","Coriobacteriales","Eggerthellaceae","Adlercreutzia",4,25
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Muricauda",1,24
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Oxalobacteraceae","Duganella",1,24
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Coxiellales","Coxiellaceae","Coxiella",3,24
+"prevalence_filter","Bacteria","Cyanobacteriota","Sericytochromatia",,,,2,24
+"prevalence_filter","Bacteria","Chloroflexota","Chloroflexia","Thermomicrobiales","AKYG1722",,1,23
+"prevalence_filter","Bacteria","Acidobacteriota","Blastocatellia","DS-100",,,1,23
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Pikeienuella",1,23
+"prevalence_filter","Bacteria","Campylobacterota","Campylobacteria","Campylobacterales",,,1,23
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Virgibacillus",1,23
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Thermincolales","Thermincolaceae","Thermincola",2,23
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Planococcaceae","Planococcus",3,23
+"prevalence_filter","Bacteria","Bacillota","Negativicutes",,,,2,23
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Defluviitaleaceae","Defluviitaleaceae UCG-011",2,23
+"prevalence_filter","Bacteria","Bdellovibrionota","Bdellovibrionia","Bdellovibrionales","Pseudobdellovibrionaceae",,4,23
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Pedosphaerales","Pedosphaeraceae","Pedosphaera",1,22
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Rhodocyclaceae","Azospira",1,22
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Paenibacillales","Paenibacillaceae","Ammoniphilus",1,22
+"prevalence_filter","Bacteria","GAL15",,,,,2,22
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Propionibacteriales","Nocardioidaceae","Kribbella",2,22
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Natronincolaceae","Clostridium aceticum group",1,21
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Milano-WF1B-44",,,1,21
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Streptosporangiales","Streptosporangiaceae","Sphaerisporangium",1,21
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Acetobacterales","Acetobacteraceae","Acidisoma",1,21
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Oxalobacteraceae","Janthinobacterium",1,21
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Weeksellaceae","Daejeonia",1,21
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Monaibacterium",1,21
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales","Lysobacteraceae","Pseudoxanthomonas",3,21
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Weeksellaceae",,3,21
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Azospirillales",,,1,20
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Propionibacteriales","Nocardioidaceae","Mumia",1,20
+"prevalence_filter","Bacteria","Bacillota","Symbiobacteriia","Symbiobacteriales","Symbiobacteraceae",,1,20
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Planococcaceae","Sporosarcina",1,20
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelotrichaceae","Holdemanella",1,20
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Xanthobacteraceae","Ancylobacter",1,20
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Acetobacterales","Acetobacteraceae","Acidicaldus",1,20
+"prevalence_filter","Bacteria","Cyanobacteriota","Vampirivibrionia","Caenarcaniphilales",,,1,20
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Mycobacteriales","Nocardiaceae","Gordonia",2,20
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Curvibacter",2,20
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Sutterellaceae","Turicimonas",3,20
+"prevalence_filter","Bacteria","Planctomycetota","Planctomycetes","Isosphaerales","Isosphaeraceae","Paludisphaera",1,19
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Thermoactinomycetales","Thermoactinomycetaceae","Geothermomicrobium",1,19
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Cellulomonadaceae","Cellulomonas",1,19
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Intrasporangiaceae","Terrabacter",1,19
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Peptostreptococcaceae","Paeniclostridium",1,19
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Microbacteriaceae","Pseudoclavibacter",1,19
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rickettsiales","Rickettsiaceae","Rickettsia",1,19
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodospirillales","AEGEAN-169 marine group",,1,19
+"prevalence_filter","Archaea","Thermoplasmatota","Thermoplasmata",,,,1,19
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Oricola",2,19
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Holosporales","Holosporaceae",,2,19
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Levilactobacillus",2,19
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Burkholderiaceae","Hydromonas",2,19
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Nitrincolaceae",,2,19
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Saccharospirillaceae",,2,19
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Hyphomicrobiaceae",,2,19
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Hyphomicrobiales Incertae Sedis","Phreatobacter",2,19
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Clostridiales","Clostridiaceae","Sarcina",2,19
+"prevalence_filter","Bacteria","Actinomycetota","Coriobacteriia","Coriobacteriales","Atopobiaceae","Olsenella",3,19
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Cytophagales","Spirosomataceae",,3,19
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Muribaculaceae","Muribaculum",3,19
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Roseovarius",1,18
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","[Eubacterium] ruminantium group",1,18
+"prevalence_filter","Archaea","Thermoproteota","Nitrososphaeria","Nitrososphaerales","Nitrososphaeraceae","Candidatus Nitrososphaera",1,18
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Amphibacillus",1,18
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Lelliottia",1,18
+"prevalence_filter","Bacteria","Myxococcota","Myxococcia","Myxococcales","Myxococcaceae","Corallococcus",1,18
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Peptostreptococcaceae","Paraclostridium",1,18
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rickettsiales","Rickettsiaceae",,1,18
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Intrasporangiaceae",,1,18
+"prevalence_filter","Bacteria","Patescibacteria","Saccharimonadia","Saccharimonadales","Saccharimonadaceae","Candidatus Saccharimonas",1,18
+"prevalence_filter","Bacteria","Planctomycetota","Planctomycetes","Isosphaerales","Isosphaeraceae","Tundrisphaera",1,18
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelotrichaceae","Ileibacterium",1,18
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Cytophagales","Flammeovirgaceae",,1,18
+"prevalence_filter","Archaea","Thermoproteota","Nitrososphaeria","Nitrosopumilales","Nitrosopumilaceae","Candidatus Nitrosopelagicus",1,18
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Staphylococcales","Staphylococcaceae","Salinicoccus",1,18
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Tenacibaculum",1,18
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Saccharospirillaceae","Oleispira",1,18
+"prevalence_filter","Bacteria","Myxococcota","Myxococcia","Myxococcales",,,2,18
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Streptosporangiales","Streptosporangiales Incertae Sedis","Motilibacter",2,18
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Pedosphaerales","Pedosphaeraceae","Ellin516",2,18
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Incertae Sedis","Incertae Sedis","Hypericibacter",1,17
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Silicimonas",1,17
+"prevalence_filter","Bacteria","Cyanobacteriota","Cyanobacteriia","Limnotrichales","Limnotrichaceae","Limnothrix",1,17
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Arctic97B-4 marine group",,,1,17
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Kineosporiales","Kineosporiaceae","Thalassiella",1,17
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Frankiales","Geodermatophilaceae","Modestobacter",1,17
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Verrucomicrobiales","Rubritaleaceae","Persicirhabdus",1,17
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Family XI","Finegoldia",2,17
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Fusibacteraceae","Fusibacter",2,17
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Vagococcaceae","Vagococcus",2,17
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Chromobacteriaceae","Vogesella",2,17
+"prevalence_filter","Bacteria","Thermodesulfobacteriota","Desulfobacteria","Desulfobacterales","Desulfosarcinaceae","Sva0081 sediment group",2,17
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelotrichaceae","Solobacterium",2,17
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Jannaschia",2,17
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Rikenellaceae","Rikenella",3,17
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rickettsiales","AB1",,2,17
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Roseateles",3,17
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Barnesiellaceae","Coprobacter",1,16
+"prevalence_filter","Bacteria","Dependentiae","Babeliae","Babeliales","Babeliaceae",,1,16
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales","Lysobacteraceae","Arenimonas",1,16
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Dermabacteraceae","Dermabacter",1,16
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Micrococcaceae","Paenarthrobacter",1,16
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Alkanindiges",2,16
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Methylophilaceae","Methylotenera",3,16
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Angelakisella",3,16
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Azospirillales","Inquilinaceae","Inquilinus",1,15
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Enterobacillus",1,15
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Sphingobacteriales","CWT CU03-E12",,1,15
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Roseobacter clade NAC11-7 lineage",1,15
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Burkholderiaceae","Lautropia",1,15
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Shuttleworthia",1,15
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Intrasporangiaceae","Serinicoccus",1,15
+"prevalence_filter","Bacteria","Bacillota","Negativicutes","Acidaminococcales","Acidaminococcaceae","Succiniclasticum",2,15
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Peptostreptococcaceae","Peptoclostridium",2,15
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Pleomorphomonadaceae","Chthonobacter",1,14
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Sphingobacteriales","Sphingobacteriaceae","Daejeonella",1,14
+"prevalence_filter","Bacteria","Planctomycetota","OM190",,,,1,14
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","NS4 marine group",1,14
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Beijerinckiaceae","Salinarimonas",1,14
+"prevalence_filter","Bacteria","Gemmatimonadota","BD2-11 terrestrial group",,,,2,14
+"prevalence_filter","Bacteria","Thermodesulfobacteriota","Desulfovibrionia","Desulfovibrionales","Desulfovibrionaceae",,2,14
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Cellvibrionaceae","Cellvibrio",3,14
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Polaromonas",2,14
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Flavimaricola",1,13
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Anaerovoracaceae","Mogibacterium",1,13
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Cytophagales","Microscillaceae","Hassallia",1,13
+"prevalence_filter","Bacteria","Actinomycetota","Thermoleophilia","Solirubrobacterales","Solirubrobacteraceae","Patulibacter",1,13
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Staphylococcales","Staphylococcaceae","Macrococcus",1,13
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","[Clostridium] methylpentosum group",2,13
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Marinobacteraceae","Marinobacter",2,13
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Alcaligenaceae",,2,13
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Thermoactinomycetales","Thermoactinomycetaceae","Kroppenstedtia",3,13
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Altererythrobacter",1,12
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Alkalihalophilus",1,12
+"prevalence_filter","Bacteria","Myxococcota","Myxococcia","Myxococcales","Vulgatibacteraceae","Vulgatibacter",1,12
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Opitutales","Opitutaceae","Opitutus",1,12
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Sphingobacteriales","env.OPS 17",,1,12
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Cytophagales","Raineyaceae","Raineya",1,12
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Amylibacter",1,12
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Dermacoccaceae",,1,12
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Aliiroseovarius",1,12
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Alcaligenaceae","Saccharedens",1,12
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Cytophagales","Spirosomataceae","Fibrella",1,12
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Promicromonosporaceae","Cellulosimicrobium",1,12
+"prevalence_filter","Bacteria","Bdellovibrionota","Bacteriovoracia","Bacteriovoracales","Bacteriovoracaceae",,2,12
+"prevalence_filter","Bacteria","Chloroflexota","Ktedonobacteria","B12-WMSP1",,,2,12
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Propionibacteriales","Propionibacteriaceae",,2,12
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Aestuariicoccus",2,12
+"prevalence_filter","Bacteria","Bacillota","Negativicutes","Veillonellales-Selenomonadales","Selenomonadaceae","Selenomonas",2,12
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Cytophagales","Cyclobacteriaceae","Algoriphagus",2,12
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Promicromonosporaceae","Promicromonospora",1,11
+"prevalence_filter","Bacteria","Chloroflexota",,,,,1,11
+"prevalence_filter","Bacteria","Myxococcota","Polyangiia","Polyangiales","Polyangiaceae","Sorangium",1,11
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Gramella",1,11
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Roseibacterium",1,11
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Acetobacterales","Acetobacteraceae","Roseococcus",1,11
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Saccharospirillaceae","Oleibacter",1,11
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelatoclostridiaceae","UCG-004",1,11
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Ottowia",1,11
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Caproiciproducens",1,11
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Orbaceae","Gilliamella",1,11
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Catenulisporales","Actinospicaceae",,1,11
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Gallionellaceae",,1,11
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Cryomorphaceae","Owenweeksia",1,11
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Weeksellaceae","Elizabethkingia",1,11
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Leptothrix",1,11
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Yersiniaceae",,2,11
+"prevalence_filter","Bacteria","Actinomycetota","Coriobacteriia","Coriobacteriales","Atopobiaceae","Coriobacteriaceae UCG-002",2,11
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Oscillospiraceae","Intestinimonas",2,11
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","MWH-UniP1 aquatic group",,3,11
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Rhodocyclaceae","C39",1,10
+"prevalence_filter","Bacteria","Chloroflexota","Dehalococcoidia","S085",,,1,10
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Ornithinibacillus",1,10
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Chitinimonadaceae","Chitinimonas",1,10
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Planococcaceae","Chryseomicrobium",1,10
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Propionibacteriales","Propionibacteriaceae","Propionicimonas",1,10
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Cytophagales",,,1,10
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Cuneatibacter",1,10
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Prevotellaceae","Prevotellaceae UCG-004",1,10
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Bifidobacteriales","Bifidobacteriaceae","Aeriscardovia",1,10
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micromonosporales","Micromonosporaceae","Virgisporangium",1,10
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Methylophilaceae","Candidatus Methylopumilus",1,10
+"prevalence_filter","Archaea","Thermoproteota","Nitrososphaeria","Nitrosopumilales","Nitrosopumilaceae",,1,10
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Prolixibacteraceae","Puteibacter",1,10
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Rhodocyclaceae","Thauera",2,10
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Salinisphaerales","Nevskiaceae",,2,10
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Staphylococcales","Staphylococcaceae","Aliicoccus",2,10
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Verrucomicrobiales","Akkermansiaceae","Akkermansia",3,10
+"prevalence_filter","Bacteria","Cyanobacteriota","Cyanobacteriia","Cyanobacteriales","Nostocaceae","Calothrix PCC-6303",1,9
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Aminobacter",1,9
+"prevalence_filter","Bacteria","Chlamydiota","Chlamydiia","Chlamydiales","Parachlamydiaceae",,1,9
+"prevalence_filter","Bacteria","Sva0485",,,,,1,9
+"prevalence_filter","Bacteria","Acidobacteriota","Acidobacteriae","Terriglobales","Acidobacteriaceae (Subgroup 1)","Silvibacterium",1,9
+"prevalence_filter","Bacteria","Cyanobacteriota","Cyanobacteriia","Cyanobacteriales","Nostocaceae",,1,9
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Lachnospiraceae UCG-002",1,9
+"prevalence_filter","Bacteria","Acidobacteriota","Blastocatellia",,,,1,9
+"prevalence_filter","Bacteria","Actinomycetota","Coriobacteriia","Coriobacteriales","Atopobiaceae",,1,9
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Tannerellaceae",,1,9
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Chelativorans",1,9
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","GCA-900066575",1,9
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Acetobacterales","Acetobacteraceae","Rubritepida",1,9
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Crocinitomicaceae","Crocinitomix",1,9
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Actinomycetales","Actinomycetaceae","Varibaculum",1,9
+"prevalence_filter","Bacteria","Bacillota","Negativicutes","Veillonellales-Selenomonadales","Selenomonadaceae","Anaerovibrio",1,9
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Heyndrickxia",1,9
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Prevotellaceae","Prevotellaceae UCG-003",1,9
+"prevalence_filter","Bacteria","Patescibacteria","Gracilibacteria","Absconditabacteriales (SR1)",,,1,9
+"prevalence_filter","Bacteria","Acidobacteriota","Blastocatellia","Pyrinomonadales","Pyrinomonadaceae","RB41",1,9
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Burkholderiaceae",,2,9
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Sporolactobacillaceae","Sporolactobacillus",2,9
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Kordiimonadales","Kordiimonadaceae","Kordiimonas",2,9
+"prevalence_filter","Bacteria","Chloroflexota","Anaerolineae","Aggregatilineales",,,2,9
+"prevalence_filter","Bacteria","Campylobacterota","Campylobacteria","Campylobacterales","Campylobacteraceae","Campylobacter",3,9
+"prevalence_filter","Bacteria","Thermodesulfobacteriota","Syntrophia","Syntrophales",,,2,9
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Clostridiales","Clostridiaceae","Candidatus Arthromitus",2,9
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Listeriaceae","Listeria",4,9
+"prevalence_filter","Bacteria","Planctomycetota","Planctomycetes","Planctomycetales",,,1,8
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Salinisphaerales","Nevskiaceae","Hydrocarboniphaga",1,8
+"prevalence_filter","Bacteria","Acidobacteriota","Vicinamibacteria","Vicinamibacterales","Vicinamibacteraceae","Vicinamibacter",1,8
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales","Rhodanobacteraceae","Mizugakiibacter",1,8
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Kineosporiales","Kineosporiaceae","Quadrisphaera",1,8
+"prevalence_filter","Bacteria","Myxococcota","Polyangiia","mle1-27",,,1,8
+"prevalence_filter","Bacteria","Planctomycetota","Planctomycetes","Isosphaerales","Isosphaeraceae","Tautonia",1,8
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Elsterales","Elsteraceae",,1,8
+"prevalence_filter","Bacteria","Cyanobacteriota","Cyanobacteriia","Leptolyngbyales","Leptolyngbyaceae","Leptolyngbya FYG",1,8
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micromonosporales","Micromonosporaceae","Stackebrandtia",1,8
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Propionibacteriales","Propionibacteriaceae","Tessaracoccus",1,8
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Aneurinibacillales","Aneurinibacillaceae","Aneurinibacillus",1,8
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Microbacteriaceae","Marisediminicola",1,8
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Microbacteriaceae","Clavibacter",1,8
+"prevalence_filter","Bacteria","Bacillota","Bacilli","RsaHf231",,,1,8
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Kiloniellales","Fodinicurvataceae",,1,8
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Rhodocyclaceae","Ferribacterium",1,8
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Francisellales","Francisellaceae",,1,8
+"prevalence_filter","Bacteria","Spirochaetota","Spirochaetia","Spirochaetales","Spirochaetaceae",,1,8
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Planktomarina",1,8
+"prevalence_filter","Bacteria","Cyanobacteriota","Cyanobacteriia","Leptolyngbyales","Leptolyngbyaceae","Leptolyngbya ANT.L52.2",1,8
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Chitinophagaceae","Cnuella",1,8
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Imtechella",1,8
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Hydrogenophilaceae",,1,8
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Parvibaculales","PS1 clade",,1,8
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Xanthobacteraceae","Tardiphaga",1,8
+"prevalence_filter","Bacteria","Chloroflexota","Anaerolineae","Caldilineales","Caldilineaceae",,1,8
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Raoultella",1,8
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Intrasporangiaceae","Oryzobacter",1,8
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Wenyingzhuangia",1,8
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Marivivens",1,8
+"prevalence_filter","Bacteria","Elusimicrobiota","Elusimicrobia","Lineage IV",,,2,8
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Opitutales","Puniceicoccaceae",,2,8
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia",,,,2,8
+"prevalence_filter","Bacteria","Myxococcota","bacteriap25",,,,2,8
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Pseudoalteromonadaceae","Psychrosphaera",2,8
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Leuconostoc",3,8
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Planococcaceae","Bhargavaea",1,7
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rickettsiales","S25-593",,1,7
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Pelagibacterales","Clade I",,1,7
+"prevalence_filter","Bacteria","Chloroflexota","Chloroflexia","Chloroflexales","Roseiflexaceae","Roseiflexus",1,7
+"prevalence_filter","Bacteria","Chloroflexota","Chloroflexia","Chloroflexales","Chloroflexaceae","Chloroflexus",1,7
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Clostridiales","Clostridiaceae","Hathewaya",1,7
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Planococcaceae","Savagea",1,7
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Oxalobacteraceae","Undibacterium",1,7
+"prevalence_filter","Bacteria","Gemmatimonadota","Longimicrobiia","Longimicrobiales","Longimicrobiaceae","Longimicrobium",1,7
+"prevalence_filter","Bacteria","Acidobacteriota","Acidobacteriae","Bryobacterales","Bryobacteraceae","Paludibaculum",1,7
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","p-251-o5",,1,7
+"prevalence_filter","Bacteria","Acidobacteriota","Holophagae","Subgroup 7",,,1,7
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodospirillales",,,1,7
+"prevalence_filter","Bacteria","Planctomycetota","Phycisphaerae","Phycisphaerales","Phycisphaeraceae","FS140-16B-02 marine group",1,7
+"prevalence_filter","Archaea","Halobacteriota","Methanosarcinia","Methanosarcinales","Methanosaetaceae","Methanothrix",1,7
+"prevalence_filter","Bacteria","Patescibacteria","Gracilibacteria","Candidatus Peribacteria",,,1,7
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Chitinophagaceae","Paraflavitalea",1,6
+"prevalence_filter","Bacteria","Thermodesulfobacteriota","Desulfobacteria","Desulfobacterales","Desulfobacteraceae",,1,6
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Propionibacteriales","Propionibacteriaceae","Acidipropionibacterium",1,6
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Chthoniobacterales",,,1,6
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Erythrobacter",1,6
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","F082",,1,6
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Morganellaceae","Morganella",1,6
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Pseudonocardiales","Pseudonocardiaceae","Saccharomonospora",1,6
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Cytophagales","Spirosomataceae","Sandaracinomonas",1,6
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Plesiomonas",1,6
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Oscillospiraceae","Ruminiclostridium",1,6
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Beijerinckiaceae","Methylorubrum",1,6
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Pseudonocardiales","Pseudonocardiaceae","Actinophytocola",1,6
+"prevalence_filter","Bacteria","Campylobacterota","Campylobacteria","Campylobacterales","Helicobacteraceae","Wolinella",1,6
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Propionibacteriales","Propionibacteriaceae","Propioniciclava",1,6
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Azospirillales","Azospirillaceae","Azospirillum",1,6
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Rhodocyclaceae","Dechloromonas",1,6
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales",,,1,6
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Johnsonella",1,6
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Aerococcaceae",,1,6
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Beijerinckiaceae","Methylocystis",1,6
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Aquaticitalea",1,6
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Methylococcales","Methylococcaceae","Methylocaldum",1,6
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Micropepsales","Micropepsaceae","Micropepsis",1,6
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Planococcaceae","Solibacillus",1,6
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Fournierella",1,6
+"prevalence_filter","Bacteria","Methylomirabilota","Methylomirabilia","Methylomirabilales","Methylomirabilaceae","Candidatus Methylomirabilis",1,6
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Spongiibacteraceae",,1,6
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","UCG-010",,2,6
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Methylophilaceae","Methylophilus",1,5
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Sutterellaceae",,1,5
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Bogoriellaceae","Georgenia",1,5
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","EC3",,,1,5
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales","Rhodanobacteraceae","Chujaibacter",1,5
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Family XI",,1,5
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Hahellaceae",,1,5
+"prevalence_filter","Bacteria","Candidatus Kapabacteria","Kapabacteria","Kapabacteriales",,,1,5
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Alteromonadaceae","Rheinheimera",1,5
+"prevalence_filter","Bacteria","Thermodesulfobacteriota","Syntrophorhabdia","Syntrophorhabdales","Syntrophorhabdaceae","Syntrophorhabdus",1,5
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Peribacillus",1,5
+"prevalence_filter","Bacteria","Campylobacterota","Campylobacteria","Campylobacterales","Sulfurimonadaceae",,1,5
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelatoclostridiaceae","Coprobacillus",1,5
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Microbulbiferaceae","Microbulbifer",1,5
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelotrichaceae","Allobaculum",1,5
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Psychromonadaceae","Agarivorans",1,5
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Microbacteriaceae","Galbitalea",1,5
+"prevalence_filter","Archaea","Thermoproteota","Nitrososphaeria","Nitrosopumilales","Nitrosopumilaceae","Nitrosarchaeum",1,5
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Dermacoccaceae","Kytococcus",1,5
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Salinisphaerales","Nevskiaceae","Nevskia",1,5
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Oceanobacillus",1,5
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Lachnospiraceae XPB1014 group",1,5
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Saprospiraceae","Haliscomenobacter",1,5
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Actinomycetales","Actinomycetaceae","Gleimia",1,5
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Alcanivoracaceae1","Alcanivorax",1,5
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales",,,1,5
+"prevalence_filter","Bacteria","Bacillota","Negativicutes","Veillonellales-Selenomonadales","Selenomonadaceae","Centipeda",1,5
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Puniceispirillales","SAR116 clade","Candidatus Puniceispirillum",1,5
+"prevalence_filter","Bacteria","Planctomycetota","Planctomycetes","Pirellulales","Pirellulaceae","Pir4 lineage",1,5
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Stappiaceae",,2,5
+"prevalence_filter","Bacteria","Ignavibacteriota","Ignavibacteria","Ignavibacteriales",,,2,5
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Salmonella",1,4
+"prevalence_filter","Bacteria","Planctomycetota","Planctomycetes","Isosphaerales","Isosphaeraceae","Singulisphaera",1,4
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Staphylococcales","Staphylococcaceae","Jeotgalicoccus",1,4
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","CAG-56",1,4
+"prevalence_filter","Bacteria","Actinomycetota","Coriobacteriia","Coriobacteriales","Eggerthellaceae","Berryella",1,4
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Flavobacteriaceae","Lacinutrix",1,4
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Rhizobiaceae","Pseudahrensia",1,4
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Bifidobacteriales","Bifidobacteriaceae","Gardnerella",1,4
+"prevalence_filter","Bacteria","Chloroflexota","Chloroflexia","Chloroflexales","Roseiflexaceae","Kouleothrix",1,4
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","MN 122.2a",1,4
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Erysipelotrichales","Erysipelotrichaceae","Dielma",1,4
+"prevalence_filter","Archaea","Nanoarchaeota","Nanoarchaeia","Pacearchaeales","Incertae Sedis","GW2011_GWC1_47_15",1,4
+"prevalence_filter","Bacteria","Thermodesulfobacteriota","Syntrophobacteria","Syntrophobacterales","Syntrophobacteraceae",,1,4
+"prevalence_filter","Bacteria","Thermodesulfobacteriota","Desulfovibrionia","Desulfovibrionales","Desulfovibrionaceae","Desulfovibrio",1,4
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Chitinophagaceae","Dinghuibacter",1,4
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Lachnospiraceae UCG-006",1,4
+"prevalence_filter","Bacteria","Bacillota","Negativicutes","Acidaminococcales","Acidaminococcaceae",,1,4
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Opitutales","Opitutaceae","Alterococcus",1,4
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Pectobacteriaceae","Sodalis",1,4
+"prevalence_filter","Bacteria","Campylobacterota","Campylobacteria","Campylobacterales","Sulfurospirillaceae","Sulfurospirillum",1,4
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Paucilactobacillus",2,4
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Steroidobacterales","Woeseiaceae","Woeseia",2,4
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Colwelliaceae",,1,3
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Marinomonadaceae","Marinomonas",1,3
+"prevalence_filter","Bacteria","Acidobacteriota","Acidobacteriae","Terriglobales","Acidobacteriaceae (Subgroup 1)","Terriglobus",1,3
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Beutenbergiaceae","Salana",1,3
+"prevalence_filter","Bacteria","Chloroflexota","Ktedonobacteria","Ktedonobacterales","Ktedonobacteraceae","BacC-u-018",1,3
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Lysobacterales","Lysobacteraceae","Thermomonas",1,3
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Marinilabiliaceae",,1,3
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Porticoccaceae","C1-B045",1,3
+"prevalence_filter","Bacteria","Cyanobacteriota","Cyanobacteriia","Cyanobacteriales","Chroococcidiopsaceae","Aliterella",1,3
+"prevalence_filter","Bacteria","Myxococcota","Polyangiia","Polyangiales","Eel-36e1D6",,1,3
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Butyricicoccaceae","UCG-009",1,3
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Cytophagales","Hymenobacteraceae","Adhaeribacter",1,3
+"prevalence_filter","Bacteria","Bacillota","Negativicutes","Veillonellales-Selenomonadales","Veillonellaceae","Allisonella",1,3
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Sphingobacteriales","Lentimicrobiaceae","Lentimicrobium",1,3
+"prevalence_filter","Bacteria","Verrucomicrobiota","Omnitrophia","Omnitrophales","Omnitrophaceae","Candidatus Omnitrophus",1,3
+"prevalence_filter","Archaea","Nanoarchaeota","Nanoarchaeia","Pacearchaeales",,,1,3
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Thioglobaceae","SUP05 cluster",1,3
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Oscillospiraceae","HN-HF0106",1,3
+"prevalence_filter","Bacteria","Actinomycetota","Coriobacteriia","OPB41",,,1,3
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Flavobacteriales","Weeksellaceae","Empedobacter",1,3
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Parasphingorhabdus",1,3
+"prevalence_filter","Bacteria","Armatimonadota","Armatimonadia","Armatimonadales","Armatimonadaceae","Armatimonas",1,3
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Sutterellaceae","Piscinibacterium",1,3
+"prevalence_filter","Bacteria","Gemmatimonadota","AKAU4049",,,,1,3
+"prevalence_filter","Bacteria","Chloroflexota","Anaerolineae","1-20",,,1,3
+"prevalence_filter","Bacteria","Patescibacteria","ABY1","Candidatus Uhrbacteria",,,1,3
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Micrococcales","Micrococcaceae","Garicola",1,3
+"prevalence_filter","Bacteria","Chloroflexota","Chloroflexia","Kallotenuales",,,1,3
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Thermoactinomycetales","Thermoactinomycetaceae","Planifilum",1,3
+"prevalence_filter","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Pedosphaerales","Pedosphaeraceae","ADurb.Bin063-1",1,2
+"prevalence_filter","Bacteria","Planctomycetota","Planctomycetes","Pirellulales","Pirellulaceae","Pirellula",1,2
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Xenophilus",1,2
+"prevalence_filter","Bacteria","Deferribacterota","Deferribacteres","Deferribacterales","Deferribacteraceae","Mucispirillum",1,2
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Bacillales","Planococcaceae",,1,2
+"prevalence_filter","Bacteria","Acidobacteriota","Acidobacteriae",,,,1,2
+"prevalence_filter","Bacteria","Spirochaetota","Spirochaetia","Spirochaetales","Spirochaetaceae","Rectinema",1,2
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Chitinophagaceae","Chitinophaga",1,2
+"prevalence_filter","Bacteria","Deferrisomatota","Deferrisomatia","Deferrisomatales","Deferrisomataceae","Deferrisoma",1,2
+"prevalence_filter","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Litorivicinaceae","Litorivicinus",1,2
+"prevalence_filter","Bacteria","Bacteroidota","Bacteroidia","Chitinophagales","Chitinophagaceae","Lacibacter",1,2
+"prevalence_filter","Bacteria","Bacillota","Bacilli","Alicyclobacillales","Alicyclobacillaceae","Alicyclobacillus",1,2
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Oscillospirales","Ethanoligenenaceae","Ethanoligenens",1,2
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Caulobacterales","Hyphomonadaceae","Algimonas",1,2
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Thalassobius",1,2
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Family XI","Anaerococcus",1,2
+"prevalence_filter","Bacteria","Thermodesulfobacteriota","Desulfuromonadia","Desulfuromonadales","Desulfuromonadaceae","Desulfuromonas",1,2
+"prevalence_filter","Bacteria","Armatimonadota","Chthonomonadia","Chthonomonadales",,,1,2
+"prevalence_filter","Bacteria","Bacillota","Clostridia","Eubacteriales","Eubacteriaceae","Eubacterium",1,2
+"prevalence_filter","Bacteria","Actinomycetota","Actinobacteria","Propionibacteriales","Propionibacteriaceae","Arachnia",1,2
+"prevalence_filter","Bacteria","Thermodesulfobacteriota","Desulfuromonadia","Bradymonadales",,,1,2
+"prevalence_filter","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Amaricoccus",1,1
+"retained_final","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Vibrionaceae","Vibrio",14,3738295
+"retained_final","Bacteria","Bacillota","Bacilli","Mycoplasmatales","Mycoplasmataceae",,3,1824091
+"retained_final","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Vibrionaceae","Photobacterium",8,377214
+"retained_final","Bacteria","Fusobacteriota","Fusobacteriia","Fusobacteriales","Fusobacteriaceae","Cetobacterium",2,265073
+"retained_final","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Comamonadaceae","Delftia",1,250689
+"retained_final","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Morganellaceae","Candidatus Hamiltonella",1,118683
+"retained_final","Bacteria","Pseudomonadota","Alphaproteobacteria","Rickettsiales","Mitochondria",,2,60224
+"retained_final","Bacteria","Cyanobacteriota","Cyanobacteriia","Chloroplast",,,8,59011
+"retained_final","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Morganellaceae","Buchnera",1,52867
+"retained_final","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Bacteroidaceae","Bacteroides",5,52672
+"retained_final","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Blautia",8,32428
+"retained_final","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Acinetobacter",9,30036
+"retained_final","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Limosilactobacillus",2,23015
+"retained_final","Bacteria","Bacillota","Bacilli","Lactobacillales","Streptococcaceae","Streptococcus",4,20795
+"retained_final","Bacteria","Bacillota","Bacilli","Lactobacillales","Streptococcaceae","Lactococcus",2,17340
+"retained_final","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Bacillus",4,16725
+"retained_final","Bacteria","Bacillota","Bacilli","Staphylococcales","Staphylococcaceae","Staphylococcus",6,13719
+"retained_final","Bacteria","Pseudomonadota","Gammaproteobacteria","Pseudomonadales","Pseudomonadaceae","Pseudomonas",7,13361
+"retained_final","Bacteria","Bacillota","Bacilli","Lactobacillales","Listeriaceae","Listeria",1,12434
+"retained_final","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Ligilactobacillus",2,11358
+"retained_final","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Pediococcus",2,10916
+"retained_final","Bacteria","Actinomycetota","Actinobacteria","Propionibacteriales","Propionibacteriaceae","Cutibacterium",1,10378
+"retained_final","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Escherichia-Shigella",2,10375
+"retained_final","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Salmonella",2,9802
+"retained_final","Bacteria","Pseudomonadota","Alphaproteobacteria","Caulobacterales","Caulobacteraceae","Brevundimonas",3,6976
+"retained_final","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Weissella",2,6349
+"retained_final","Bacteria","Bacillota","Bacilli","Lactobacillales","Enterococcaceae","Enterococcus",1,6198
+"retained_final","Bacteria","Actinomycetota","Actinobacteria","Kitasatosporales","Streptomycetaceae","Streptomyces",4,4675
+"retained_final","Bacteria","Bacillota","Clostridia","Oscillospirales","Ruminococcaceae","Ruminococcus",2,4462
+"retained_final","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Fusicatenibacter",1,4051
+"retained_final","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Anaerobutyricum",3,3485
+"retained_final","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Erwiniaceae","Pantoea",4,3298
+"retained_final","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Lactiplantibacillus",1,3173
+"retained_final","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Lactobacillus",3,3143
+"retained_final","Bacteria","Bacillota","Bacilli","Staphylococcales","Staphylococcaceae","Mammaliicoccus",1,3018
+"retained_final","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Mediterraneibacter",1,2954
+"retained_final","Bacteria","Bacteroidota","Bacteroidia","Bacteroidales","Tannerellaceae","Parabacteroides",1,2565
+"retained_final","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae",,2,2520
+"retained_final","Bacteria","Bacillota","Bacilli","Mycoplasmatales","Mycoplasmataceae","Malacoplasma",1,2363
+"retained_final","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Priestia",2,2332
+"retained_final","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Anaerostipes",2,2198
+"retained_final","Bacteria","Bacillota","Clostridia","Oscillospirales","Oscillospiraceae","Oscillibacter",1,2044
+"retained_final","Bacteria","Bacillota","Clostridia","Oscillospirales","Oscillospiraceae","Flavonifractor",2,1939
+"retained_final","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Klebsiella",3,1825
+"retained_final","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","Latilactobacillus",1,1823
+"retained_final","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Lachnospiraceae NK4A136 group",2,1756
+"retained_final","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Enterocloster",1,1669
+"retained_final","Bacteria","Bacillota","Negativicutes","Acidaminococcales","Acidaminococcaceae","Phascolarctobacterium",1,1614
+"retained_final","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Neobacillus",1,1531
+"retained_final","Bacteria","Pseudomonadota","Alphaproteobacteria","Acetobacterales","Acetobacteraceae","Commensalibacter",1,1399
+"retained_final","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Xanthobacteraceae","Bradyrhizobium",2,1344
+"retained_final","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Yersiniaceae","Serratia",2,1292
+"retained_final","Bacteria","Bacillota","Clostridia","Peptostreptococcales-Tissierellales","Peptostreptococcaceae","Intestinibacter",1,1268
+"retained_final","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae",,2,1207
+"retained_final","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Extibacter",1,1113
+"retained_final","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","[Ruminococcus] gnavus group",1,1007
+"retained_final","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Sutterellaceae","Sutterella",1,994
+"retained_final","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Pseudoalteromonadaceae","Pseudoalteromonas",1,901
+"retained_final","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae",,1,854
+"retained_final","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Paracoccus",1,838
+"retained_final","Bacteria","Bacillota","Bacilli","Lactobacillales","Lactobacillaceae","HT002",1,802
+"retained_final","Bacteria","Pseudomonadota","Alphaproteobacteria","Rhodobacterales","Paracoccaceae","Amylibacter",1,781
+"retained_final","Bacteria","Verrucomicrobiota","Verrucomicrobiia","Verrucomicrobiales","Akkermansiaceae","Akkermansia",1,775
+"retained_final","Bacteria","Bacillota","Bacilli","Bacillales","Bacillaceae","Sutcliffiella",1,752
+"retained_final","Bacteria","Pseudomonadota","Alphaproteobacteria","Hyphomicrobiales","Xanthobacteraceae",,1,747
+"retained_final","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Burkholderiaceae","Burkholderia-Caballeronia-Paraburkholderia",1,733
+"retained_final","Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Enterobacter",1,704
+"retained_final","Bacteria","Bacillota","Clostridia","Oscillospirales","Oscillospiraceae",,1,674
+"retained_final","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Sphingobium",1,637
+"retained_final","Bacteria","Bacillota","Clostridia","Oscillospirales","[Eubacterium] coprostanoligenes group",,1,633
+"retained_final","Bacteria","Pseudomonadota","Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Sphingomonas",1,573
+"retained_final","Bacteria","Campylobacterota","Campylobacteria","Campylobacterales","Helicobacteraceae","Helicobacter",1,561
+"retained_final","Bacteria","Actinomycetota","Actinobacteria","Mycobacteriales","Corynebacteriaceae","Lawsonella",1,546
+"retained_final","Bacteria","Bacillota","Bacilli","Exiguobacterales","Exiguobacteraceae","Exiguobacterium",1,538
+"retained_final","Bacteria","Bacillota","Clostridia","Lachnospirales","Lachnospiraceae","Frisingicoccus",1,533
+"retained_final","Bacteria","Pseudomonadota","Gammaproteobacteria","Burkholderiales","Burkholderiaceae","Cupriavidus",1,519
+"retained_final","Bacteria","Bacillota","Bacilli","Paenibacillales","Paenibacillaceae","Ammoniphilus",1,516
+"retained_final","Bacteria","Actinomycetota","Actinobacteria","Bifidobacteriales","Bifidobacteriaceae","Bifidobacterium",1,487
+"taxonomic_filter",,,,,,,1632,176947
+"taxonomic_filter","Bacteria",,,,,,426,5259
+"taxonomic_filter","Eukaryota",,,,,,133,4003

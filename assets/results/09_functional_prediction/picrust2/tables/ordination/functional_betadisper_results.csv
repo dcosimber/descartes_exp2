@@ -1,0 +1,7 @@
+"feature_type","distance","comparison","group_var","statistic","p_value"
+"kegg_pathway","bray","ctrl_vs_hydrolysate","hydro_group",0.178400093406624,0.658
+"kegg_pathway","aitchison","ctrl_vs_hydrolysate","hydro_group",0.500037905332605,0.477
+"kegg_pathway","bray","ctrl_vs_bl15_vs_bl30","diet_code",0.0859932309825424,0.917
+"kegg_pathway","aitchison","ctrl_vs_bl15_vs_bl30","diet_code",0.519592152240629,0.6
+"kegg_pathway","bray","ctrl_vs_hydrolysate_vs_feed","functional_context_group",0.874473995578462,0.428
+"kegg_pathway","aitchison","ctrl_vs_hydrolysate_vs_feed","functional_context_group",2.25860561644842,0.096

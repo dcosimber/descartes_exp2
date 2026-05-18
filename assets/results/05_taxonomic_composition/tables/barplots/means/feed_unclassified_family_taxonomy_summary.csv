@@ -1,0 +1,11 @@
+"Kingdom","Phylum","Class","Order","Family","Genus","Species","Species_addSpecies","n_asv","X3","Y3","Z3","total_feed_count"
+"Bacteria","Cyanobacteriota","Cyanobacteriia","Chloroplast",,,,,68,17587,15618,19153,52358
+"Bacteria","Bacillota","Bacilli","Lactobacillales",,,,,4,16,7,2,25
+,,,,,,,,8,12,2,4,18
+"Bacteria",,,,,,,,8,0,7,11,18
+"Bacteria","Pseudomonadota","Gammaproteobacteria","Enterobacterales",,,,,2,3,7,4,14
+"Bacteria","Bacillota","Bacilli",,,,,,3,0,2,8,10
+"Bacteria","Pseudomonadota",,,,,,,1,0,0,5,5
+"Bacteria","Patescibacteria","Saccharimonadia","Saccharimonadales",,,,,1,2,0,0,2
+"Bacteria","Pseudomonadota","Gammaproteobacteria",,,,,,1,0,0,2,2
+"Bacteria","Bacillota",,,,,,,1,0,0,2,2

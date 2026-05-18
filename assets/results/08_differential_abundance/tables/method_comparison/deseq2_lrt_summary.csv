@@ -1,0 +1,9 @@
+"level","model","n_significant"
+"asv","diet_adjusted_time",1
+"asv","hydro_adjusted_time",1
+"asv","diet_time_interaction",2
+"asv","hydro_time_interaction",1
+"genus","diet_adjusted_time",1
+"genus","hydro_adjusted_time",1
+"genus","diet_time_interaction",1
+"genus","hydro_time_interaction",1

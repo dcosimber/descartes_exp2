@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; 02. Filtering – DESCARTES Exp2 microbiome</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../chapters/generated/02_dataset_stats.html" rel="next">
+<link href="../../index.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-87b7f55de2e0c9887283481eb31a794c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b8948fbc8f68ee5b654fb0853b40965b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-87b7f55de2e0c9887283481eb31a794c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/generated/01_filtering.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">02. Filtering</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">DESCARTES Exp2 microbiome</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">DESCARTES Exp2 microbiome</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/01_filtering.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">02. Filtering</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/02_dataset_stats.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">03. Dataset stats</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/03_rarefaction_qc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">04. Rarefaction QC</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/04_taxonomic_composition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">05. Composición taxonómica</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/05_alpha_diversity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">06. Diversidad alfa</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/06_beta_diversity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Informe de diversidad beta</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/07_differential_abundance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">08. Differential abundance</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/generated/08_functional_prediction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Functional prediction report</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Apéndices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../appendices/reproducibility.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Reproducibilidad</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#objetivo-del-bloque" id="toc-objetivo-del-bloque" class="nav-link active" data-scroll-target="#objetivo-del-bloque"><span class="header-section-number">2.1</span> 1. Objetivo del bloque</a></li>
+  <li><a href="#inputs-outputs-y-organización" id="toc-inputs-outputs-y-organización" class="nav-link" data-scroll-target="#inputs-outputs-y-organización"><span class="header-section-number">2.2</span> 2. Inputs, outputs y organización</a>
+  <ul class="collapse">
+  <li><a href="#inputs-principales" id="toc-inputs-principales" class="nav-link" data-scroll-target="#inputs-principales"><span class="header-section-number">2.2.1</span> 2.1. Inputs principales</a></li>
+  <li><a href="#tablas-generadas" id="toc-tablas-generadas" class="nav-link" data-scroll-target="#tablas-generadas"><span class="header-section-number">2.2.2</span> 2.2. Tablas generadas</a></li>
+  <li><a href="#objetos-exportados" id="toc-objetos-exportados" class="nav-link" data-scroll-target="#objetos-exportados"><span class="header-section-number">2.2.3</span> 2.3. Objetos exportados</a></li>
+  </ul></li>
+  <li><a href="#diseño-del-filtrado" id="toc-diseño-del-filtrado" class="nav-link" data-scroll-target="#diseño-del-filtrado"><span class="header-section-number">2.3</span> 3. Diseño del filtrado</a>
+  <ul class="collapse">
+  <li><a href="#filtro-taxonómico" id="toc-filtro-taxonómico" class="nav-link" data-scroll-target="#filtro-taxonómico"><span class="header-section-number">2.3.1</span> 3.1. Filtro taxonómico</a></li>
+  <li><a href="#filtro-de-prevalencia" id="toc-filtro-de-prevalencia" class="nav-link" data-scroll-target="#filtro-de-prevalencia"><span class="header-section-number">2.3.2</span> 3.2. Filtro de prevalencia</a></li>
+  <li><a href="#filtro-de-abundancia-media" id="toc-filtro-de-abundancia-media" class="nav-link" data-scroll-target="#filtro-de-abundancia-media"><span class="header-section-number">2.3.3</span> 3.3. Filtro de abundancia media</a></li>
+  </ul></li>
+  <li><a href="#resultados-principales" id="toc-resultados-principales" class="nav-link" data-scroll-target="#resultados-principales"><span class="header-section-number">2.4</span> 4. Resultados principales</a>
+  <ul class="collapse">
+  <li><a href="#retención-por-tipo-de-muestra" id="toc-retención-por-tipo-de-muestra" class="nav-link" data-scroll-target="#retención-por-tipo-de-muestra"><span class="header-section-number">2.4.1</span> 4.1. Retención por tipo de muestra</a></li>
+  <li><a href="#asvs-eliminadas-y-retenidas" id="toc-asvs-eliminadas-y-retenidas" class="nav-link" data-scroll-target="#asvs-eliminadas-y-retenidas"><span class="header-section-number">2.4.2</span> 4.2. ASVs eliminadas y retenidas</a></li>
+  <li><a href="#taxones-relevantes-eliminados" id="toc-taxones-relevantes-eliminados" class="nav-link" data-scroll-target="#taxones-relevantes-eliminados"><span class="header-section-number">2.4.3</span> 4.3. Taxones relevantes eliminados</a></li>
+  </ul></li>
+  <li><a href="#interpretación-metodológica" id="toc-interpretación-metodológica" class="nav-link" data-scroll-target="#interpretación-metodológica"><span class="header-section-number">2.5</span> 5. Interpretación metodológica</a></li>
+  <li><a href="#consecuencias-para-downstream" id="toc-consecuencias-para-downstream" class="nav-link" data-scroll-target="#consecuencias-para-downstream"><span class="header-section-number">2.6</span> 6. Consecuencias para downstream</a></li>
+  <li><a href="#limitaciones-y-próximos-pasos" id="toc-limitaciones-y-próximos-pasos" class="nav-link" data-scroll-target="#limitaciones-y-próximos-pasos"><span class="header-section-number">2.7</span> 7. Limitaciones y próximos pasos</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">02. Filtering</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Run: <code>run_02_optimized</code><br>
+Base de datos taxonómica: <code>silva_138_2</code></p>
+<section id="objetivo-del-bloque" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="objetivo-del-bloque"><span class="header-section-number">2.1</span> 1. Objetivo del bloque</h2>
+<p>Este bloque define el set de ASVs que alimenta los análisis downstream. El filtrado se aplica ahora a <strong>todas las muestras importadas</strong>: intestino, mocks y piensos/feed. Además, se exporta un subconjunto filtrado exclusivamente intestinal para los análisis biológicos principales.</p>
+<p>El objetivo práctico es doble:</p>
+<ul>
+<li>Retener una matriz global trazable donde mock y feed estén disponibles para controles técnicos, composición taxonómica y comparación con pienso.</li>
+<li>Proteger los análisis biológicos de intestino exportando objetos <code>ps_biological_*</code>, sin mock ni feed.</li>
+</ul>
+</section>
+<section id="inputs-outputs-y-organización" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="inputs-outputs-y-organización"><span class="header-section-number">2.2</span> 2. Inputs, outputs y organización</h2>
+<section id="inputs-principales" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="inputs-principales"><span class="header-section-number">2.2.1</span> 2.1. Inputs principales</h3>
+<ul>
+<li>Objeto global importado: <a href="../../01_import/objects/ps_all_silva_138_2.rds"><code>ps_all_silva_138_2.rds</code></a></li>
+<li>Metadatos estandarizados: <a href="../../01_import/tables/sample_metadata_standardized.csv"><code>sample_metadata_standardized.csv</code></a></li>
+<li>Parámetros: <a href="../../../config/downstream_params.yaml"><code>downstream_params.yaml</code></a></li>
+</ul>
+</section>
+<section id="tablas-generadas" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="tablas-generadas"><span class="header-section-number">2.2.2</span> 2.2. Tablas generadas</h3>
+<ul>
+<li><a href="../../assets/results/02_filtering/tables/filtering_summary.csv"><code>filtering_summary.csv</code></a>: resumen por paso de filtrado.</li>
+<li><a href="../../assets/results/02_filtering/tables/filtering_summary_by_sample_type.csv"><code>filtering_summary_by_sample_type.csv</code></a>: retención de lecturas por tipo de muestra.</li>
+<li><a href="../../assets/results/02_filtering/tables/prevalence_filter_groups.csv"><code>prevalence_filter_groups.csv</code></a>: grupos usados para calcular prevalencia.</li>
+<li><a href="../../assets/results/02_filtering/tables/sample_filtering_groups.csv"><code>sample_filtering_groups.csv</code></a>: asignación de cada muestra a su grupo de prevalencia.</li>
+<li><a href="../../assets/results/02_filtering/tables/asv_filtering_status.csv"><code>asv_filtering_status.csv</code></a>: auditoría completa por ASV, con taxonomía, secuencia, reads y paso de eliminación.</li>
+<li><a href="../../assets/results/02_filtering/tables/removed_asvs.csv"><code>removed_asvs.csv</code></a>: ASVs eliminadas.</li>
+<li><a href="../../assets/results/02_filtering/tables/retained_asvs.csv"><code>retained_asvs.csv</code></a>: ASVs retenidas.</li>
+<li><a href="../../assets/results/02_filtering/tables/asv_counts_by_filter_step.csv"><code>asv_counts_by_filter_step.csv</code></a>: recuento de ASVs por motivo/paso de eliminación.</li>
+<li><a href="../../assets/results/02_filtering/tables/taxonomic_summary_by_filter_step.csv"><code>taxonomic_summary_by_filter_step.csv</code></a>: resumen taxonómico de ASVs retenidas y eliminadas. multipestaña con las tablas principales.</li>
+</ul>
+</section>
+<section id="objetos-exportados" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="objetos-exportados"><span class="header-section-number">2.2.3</span> 2.3. Objetos exportados</h3>
+<ul>
+<li>Objetos globales filtrados: <a href="../../assets/results/02_filtering/objects/ps_final_silva_138_2.rds"><code>ps_final_silva_138_2.rds</code></a>, <a href="../../assets/results/02_filtering/objects/ps_genus_silva_138_2.rds"><code>ps_genus_silva_138_2.rds</code></a>, <a href="../../assets/results/02_filtering/objects/ps_family_silva_138_2.rds"><code>ps_family_silva_138_2.rds</code></a> y <a href="../../assets/results/02_filtering/objects/ps_phylum_silva_138_2.rds"><code>ps_phylum_silva_138_2.rds</code></a>.</li>
+<li>Objetos biológicos intestinales: <a href="../../assets/results/02_filtering/objects/ps_biological_final_silva_138_2.rds"><code>ps_biological_final_silva_138_2.rds</code></a>, <a href="../../assets/results/02_filtering/objects/ps_biological_genus_silva_138_2.rds"><code>ps_biological_genus_silva_138_2.rds</code></a>, <a href="../../assets/results/02_filtering/objects/ps_biological_family_silva_138_2.rds"><code>ps_biological_family_silva_138_2.rds</code></a> y <a href="../../assets/results/02_filtering/objects/ps_biological_phylum_silva_138_2.rds"><code>ps_biological_phylum_silva_138_2.rds</code></a>.</li>
+<li>Trayectoria completa: <a href="../../assets/results/02_filtering/objects/filtering_steps_silva_138_2.rds"><code>filtering_steps_silva_138_2.rds</code></a>.</li>
+</ul>
+</section>
+</section>
+<section id="diseño-del-filtrado" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="diseño-del-filtrado"><span class="header-section-number">2.3</span> 3. Diseño del filtrado</h2>
+<p>El filtrado se realiza a nivel de ASV. Primero se eliminan ASVs no deseadas por criterios taxonómicos, después se aplica un filtro de prevalencia dentro de grupos definidos por el diseño, y finalmente se retienen solo ASVs con abundancia relativa media global suficiente.</p>
+<section id="filtro-taxonómico" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="filtro-taxonómico"><span class="header-section-number">2.3.1</span> 3.1. Filtro taxonómico</h3>
+<p>Se eliminan ASVs si cumplen alguno de estos criterios:</p>
+<ul>
+<li>Asignación a <code>Eukaryota</code> o <code>Unassigned</code>.</li>
+<li>Ausencia completa de asignación taxonómica en todos los rangos disponibles (<code>Kingdom</code> a <code>Species</code>).</li>
+<li>Clasificación únicamente a nivel de reino, sin asignación por debajo.</li>
+</ul>
+<p>No se eliminan ASVs asignadas a cloroplasto o mitocondria. Aunque este filtrado es habitual en análisis bacterianos estándar, aquí se conserva esa señal porque el pienso/feed contiene una fracción relevante de composición cloroplastidial o mitocondrial y esta información es necesaria para interpretar su relación con la microbiota intestinal.</p>
+</section>
+<section id="filtro-de-prevalencia" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="filtro-de-prevalencia"><span class="header-section-number">2.3.2</span> 3.2. Filtro de prevalencia</h3>
+<p>La prevalencia se calcula dentro de grupos biológicamente comparables:</p>
+<ul>
+<li>Intestino: grupos <code>diet_time</code>, por ejemplo <code>Ctrl_D07</code>, <code>BL15_D30</code>.</li>
+<li>Feed: <code>Feed_Ctrl</code>, <code>Feed_BL15</code>, <code>Feed_BL30</code>.</li>
+<li>Mock: <code>Mock</code>.</li>
+</ul>
+<p>La regla configurada es:</p>
+<pre class="text"><code>max(2 muestras, 10% del tamaño del grupo)</code></pre>
+<p>El umbral se limita al tamaño real del grupo. Esto permite que los piensos, que tienen una sola muestra por dieta, retengan ASVs presentes en esa muestra.</p>
+<p><strong>Tabla 1. Grupos de prevalencia y umbral aplicado.</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Grupo</th>
+<th style="text-align: right;">n muestras</th>
+<th style="text-align: right;">Umbral requerido</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ctrl_D07</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td>Ctrl_D30</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td>Ctrl_D90</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td>BL15_D07</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td>BL15_D30</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td>BL15_D90</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td>BL30_D07</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td>BL30_D30</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td>BL30_D90</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td>Feed_Ctrl</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td>Feed_BL15</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td>Feed_BL30</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td>Mock</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+</tbody>
+</table>
+<p>La prevalencia se exige dentro de cada grupo, no en el dataset completo. Esto evita perder ASVs que son específicas de un tratamiento, tiempo, feed o mock.</p>
+</section>
+<section id="filtro-de-abundancia-media" class="level3" data-number="2.3.3">
+<h3 data-number="2.3.3" class="anchored" data-anchor-id="filtro-de-abundancia-media"><span class="header-section-number">2.3.3</span> 3.3. Filtro de abundancia media</h3>
+<p>Tras el filtrado de prevalencia, se retienen ASVs con abundancia relativa media global &gt;= <code>0.0001</code> (0.01%).</p>
+</section>
+</section>
+<section id="resultados-principales" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="resultados-principales"><span class="header-section-number">2.4</span> 4. Resultados principales</h2>
+<p>El dataset bruto contiene 138 muestras, 14,652 ASVs y 7,667,921 lecturas. Tras el filtrado final quedan 175 ASVs y 7,133,190 lecturas en el objeto global. El subconjunto intestinal final conserva 133 muestras, 169 ASVs y 6,931,390 lecturas.</p>
+<p><strong>Tabla 2. Resumen global del filtrado.</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Paso</th>
+<th style="text-align: right;">Muestras</th>
+<th style="text-align: right;">ASVs</th>
+<th style="text-align: right;">Reads</th>
+<th style="text-align: right;">Reads mín.</th>
+<th style="text-align: right;">Reads mediana</th>
+<th style="text-align: right;">Reads máx.</th>
+<th style="text-align: right;">ASVs eliminadas vs paso previo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Raw all samples</td>
+<td style="text-align: right;">138</td>
+<td style="text-align: right;">14,652</td>
+<td style="text-align: right;">7,667,921</td>
+<td style="text-align: right;">28,400</td>
+<td style="text-align: right;">56,881</td>
+<td style="text-align: right;">86,842</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td>Taxonomic filter</td>
+<td style="text-align: right;">138</td>
+<td style="text-align: right;">12,461</td>
+<td style="text-align: right;">7,481,712</td>
+<td style="text-align: right;">17,587</td>
+<td style="text-align: right;">56,361</td>
+<td style="text-align: right;">86,359</td>
+<td style="text-align: right;">2,191</td>
+</tr>
+<tr class="odd">
+<td>Prevalence filter</td>
+<td style="text-align: right;">138</td>
+<td style="text-align: right;">1,101</td>
+<td style="text-align: right;">7,230,537</td>
+<td style="text-align: right;">17,336</td>
+<td style="text-align: right;">55,616.5</td>
+<td style="text-align: right;">86,087</td>
+<td style="text-align: right;">11,360</td>
+</tr>
+<tr class="even">
+<td>Mean abundance filter</td>
+<td style="text-align: right;">138</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: right;">7,133,190</td>
+<td style="text-align: right;">17,111</td>
+<td style="text-align: right;">55,392</td>
+<td style="text-align: right;">86,030</td>
+<td style="text-align: right;">926</td>
+</tr>
+</tbody>
+</table>
+<p>El filtro de prevalencia es el paso más restrictivo en número de ASVs: reduce la matriz de 12,461 a 1,101 ASVs, pero elimina relativamente pocas lecturas. Esto indica que la mayoría de ASVs eliminadas son raras o poco prevalentes.</p>
+<section id="retención-por-tipo-de-muestra" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="retención-por-tipo-de-muestra"><span class="header-section-number">2.4.1</span> 4.1. Retención por tipo de muestra</h3>
+<p><strong>Tabla 3. Reads retenidos por tipo de muestra.</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Paso</th>
+<th>Tipo de muestra</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">Reads</th>
+<th style="text-align: right;">Reads mín.</th>
+<th style="text-align: right;">Reads mediana</th>
+<th style="text-align: right;">Reads máx.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Raw all samples</td>
+<td>Intestine</td>
+<td style="text-align: right;">133</td>
+<td style="text-align: right;">7,452,457</td>
+<td style="text-align: right;">28,400</td>
+<td style="text-align: right;">56,945</td>
+<td style="text-align: right;">86,842</td>
+</tr>
+<tr class="even">
+<td>Raw all samples</td>
+<td>Feed</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">145,198</td>
+<td style="text-align: right;">44,535</td>
+<td style="text-align: right;">48,092</td>
+<td style="text-align: right;">52,571</td>
+</tr>
+<tr class="odd">
+<td>Raw all samples</td>
+<td>Mock</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">70,266</td>
+<td style="text-align: right;">32,235</td>
+<td style="text-align: right;">35,133</td>
+<td style="text-align: right;">38,031</td>
+</tr>
+<tr class="even">
+<td>Taxonomic filter</td>
+<td>Intestine</td>
+<td style="text-align: right;">133</td>
+<td style="text-align: right;">7,266,286</td>
+<td style="text-align: right;">17,587</td>
+<td style="text-align: right;">56,361</td>
+<td style="text-align: right;">86,359</td>
+</tr>
+<tr class="odd">
+<td>Taxonomic filter</td>
+<td>Feed</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">145,162</td>
+<td style="text-align: right;">44,521</td>
+<td style="text-align: right;">48,092</td>
+<td style="text-align: right;">52,549</td>
+</tr>
+<tr class="even">
+<td>Taxonomic filter</td>
+<td>Mock</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">70,264</td>
+<td style="text-align: right;">32,233</td>
+<td style="text-align: right;">35,132</td>
+<td style="text-align: right;">38,031</td>
+</tr>
+<tr class="odd">
+<td>Final global</td>
+<td>Intestine</td>
+<td style="text-align: right;">133</td>
+<td style="text-align: right;">6,931,390</td>
+<td style="text-align: right;">17,111</td>
+<td style="text-align: right;">55,673</td>
+<td style="text-align: right;">86,030</td>
+</tr>
+<tr class="even">
+<td>Final global</td>
+<td>Feed</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">131,830</td>
+<td style="text-align: right;">41,298</td>
+<td style="text-align: right;">41,892</td>
+<td style="text-align: right;">48,640</td>
+</tr>
+<tr class="odd">
+<td>Final global</td>
+<td>Mock</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">69,970</td>
+<td style="text-align: right;">32,060</td>
+<td style="text-align: right;">34,985</td>
+<td style="text-align: right;">37,910</td>
+</tr>
+</tbody>
+</table>
+<p>Al conservar cloroplasto y mitocondria, el feed mantiene la mayor parte de sus lecturas durante el filtro taxonómico: pasa de 145,198 a 145,180 reads. Esto es el comportamiento deseado para este proyecto, porque permite evaluar la señal cloroplastidial/mitocondrial del pienso en los análisis de composición. En mock apenas se pierden lecturas, lo que sugiere que la composición del mock está dominada por ASVs bacterianas esperadas y clasificables.</p>
+</section>
+<section id="asvs-eliminadas-y-retenidas" class="level3" data-number="2.4.2">
+<h3 data-number="2.4.2" class="anchored" data-anchor-id="asvs-eliminadas-y-retenidas"><span class="header-section-number">2.4.2</span> 4.2. ASVs eliminadas y retenidas</h3>
+<p><strong>Tabla 4. ASVs por paso/motivo de filtrado.</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 28%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Paso</th>
+<th>Motivo</th>
+<th style="text-align: right;">ASVs</th>
+<th style="text-align: right;">Reads brutos asociados</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Retained final</td>
+<td>Retenidas</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: right;">7,133,190</td>
+</tr>
+<tr class="even">
+<td>Taxonomic filter</td>
+<td>Sin asignación en todos los rangos</td>
+<td style="text-align: right;">1,632</td>
+<td style="text-align: right;">176,947</td>
+</tr>
+<tr class="odd">
+<td>Taxonomic filter</td>
+<td>Kingdom only</td>
+<td style="text-align: right;">559</td>
+<td style="text-align: right;">9,262</td>
+</tr>
+<tr class="even">
+<td>Prevalence filter</td>
+<td>Baja prevalencia</td>
+<td style="text-align: right;">11,360</td>
+<td style="text-align: right;">251,175</td>
+</tr>
+<tr class="odd">
+<td>Mean abundance filter</td>
+<td>Baja abundancia media</td>
+<td style="text-align: right;">926</td>
+<td style="text-align: right;">97,347</td>
+</tr>
+</tbody>
+</table>
+<p>Aunque el número de ASVs eliminadas es alto, las lecturas eliminadas representan una fracción relativamente pequeña del total. La señal dominante del dataset queda conservada, mientras que se reduce mucho la dimensionalidad y el ruido de ASVs raras.</p>
+</section>
+<section id="taxones-relevantes-eliminados" class="level3" data-number="2.4.3">
+<h3 data-number="2.4.3" class="anchored" data-anchor-id="taxones-relevantes-eliminados"><span class="header-section-number">2.4.3</span> 4.3. Taxones relevantes eliminados</h3>
+<p>La tabla <a href="../../assets/results/02_filtering/tables/removed_asvs.csv"><code>removed_asvs.csv</code></a> permite revisar ASVs concretas que desaparecen. Entre las ASVs eliminadas por abundancia media hay ASVs asignadas a géneros como <code>Photobacterium</code>, <code>Delftia</code>, <code>Companilactobacillus</code>, <code>Bacillus</code>, <code>Staphylococcus</code>, <code>Serratia</code> o <code>Bacteroides</code>. Por ejemplo, <code>ASV00214</code>, asignada a <code>Photobacterium</code>, supera el filtro de prevalencia pero se elimina en el filtro final de abundancia media con 639 lecturas brutas.</p>
+<p>Este punto es importante para la interpretación: que un taxón no aparezca en los plots finales no significa necesariamente que esté completamente ausente del dataset bruto; puede estar presente, pero no superar los criterios de prevalencia/abundancia definidos para el objeto final.</p>
+</section>
+</section>
+<section id="interpretación-metodológica" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="interpretación-metodológica"><span class="header-section-number">2.5</span> 5. Interpretación metodológica</h2>
+<p>El filtrado produce un objeto final muy reducido en número de ASVs, pero con alta retención de lecturas. Este comportamiento es esperable en datos 16S: muchas ASVs aparecen con baja abundancia, baja prevalencia o asignación taxonómica débil, mientras que pocas ASVs concentran la mayor parte de la señal.</p>
+<p>La decisión de aplicar el filtrado a todas las muestras mejora la trazabilidad: mock y feed ya no quedan fuera de la auditoría del filtrado. Aun así, los análisis biológicos de peces deben usar los objetos <code>ps_biological_*</code>, porque mock y feed tienen otra naturaleza experimental y no deben mezclarse con muestras intestinales en diversidad alfa, beta o abundancia diferencial.</p>
+<p>El feed requiere una lectura específica. En la versión actual del filtrado, la señal de cloroplasto y mitocondria se conserva deliberadamente para no perder información composicional del pienso. Esto permite evaluar si parte de la señal observada en peces se aproxima al perfil del feed, pero obliga a distinguir entre señal microbiana bacteriana y señal derivada de ingredientes vegetales o material eucariota organelar.</p>
+</section>
+<section id="consecuencias-para-downstream" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="consecuencias-para-downstream"><span class="header-section-number">2.6</span> 6. Consecuencias para downstream</h2>
+<ul>
+<li>Los análisis de diversidad alfa, beta y abundancia diferencial deben partir de <code>ps_biological_final</code> o sus agregados taxonómicos.</li>
+<li>Los análisis de composición que comparen intestino con feed pueden usar el objeto global filtrado, manteniendo claro que cloroplasto y mitocondria están conservados en esta versión.</li>
+<li>Los análisis de mock deben interpretarse principalmente como control técnico de recuperación taxonómica y composición esperada, no como grupo biológico.</li>
+<li>Para taxones concretos de interés, como <code>Photobacterium</code>, conviene consultar <code>asv_filtering_status.csv</code> antes de concluir ausencia/presencia en figuras finales.</li>
+</ul>
+</section>
+<section id="limitaciones-y-próximos-pasos" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="limitaciones-y-próximos-pasos"><span class="header-section-number">2.7</span> 7. Limitaciones y próximos pasos</h2>
+<p>El filtrado actual es adecuado para análisis globales conservadores, pero puede ocultar ASVs raras o transitorias. Si una pregunta se centra en colonizadores tempranos, pienso/feed, mock o taxones de baja abundancia, conviene realizar una revisión dirigida usando <code>asv_filtering_status.csv</code> o una versión de sensibilidad con umbrales menos estrictos.</p>
+<p>Como próximos pasos, este bloque debería complementarse con:</p>
+<ol type="1">
+<li>una figura QC de retención de reads por paso;</li>
+<li>una figura de distribución de prevalencia antes/después del filtrado;</li>
+<li>una revisión dirigida de ASVs eliminadas pertenecientes a taxones biológicos relevantes.</li>
+</ol>
+<p>Estas figuras y estadísticas generales se recopilan en el bloque <a href="../../chapters/generated/02_dataset_stats.html"><code>03_dataset_stats</code></a>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/dcosimber\.github\.io\/descartes_exp2\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../index.html" class="pagination-link" aria-label="DESCARTES Exp2 microbiome">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">DESCARTES Exp2 microbiome</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../chapters/generated/02_dataset_stats.html" class="pagination-link" aria-label="03. Dataset stats">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">03. Dataset stats</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

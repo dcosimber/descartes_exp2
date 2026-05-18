@@ -1,0 +1,97 @@
+"tax_level","panel","timepoint","taxon_plot","mean_rel_abundance","percent"
+"Species","Ctrl","D07","Vibrio scophthalmi",0.239279805778375,23.9279805778375
+"Species","Ctrl","D07","Delftia acidovorans",0.162163468563579,16.2163468563579
+"Species","Ctrl","D07","Others",0.141138113297176,14.1138113297176
+"Species","Ctrl","D07","Candidatus Hamiltonella unresolved",0.110545745653548,11.0545745653548
+"Species","Ctrl","D07","Cetobacterium unresolved",0.10044497899825,10.044497899825
+"Species","Ctrl","D07","Unclassified Mycoplasmataceae genus unresolved",0.0655427510061647,6.55427510061647
+"Species","Ctrl","D07","Buchnera unresolved",0.0430877657450798,4.30877657450798
+"Species","Ctrl","D07","Vibrio unresolved",0.0404711005351815,4.04711005351815
+"Species","Ctrl","D07","Bacteroides dorei",0.0335568215293748,3.35568215293748
+"Species","Ctrl","D07","Blautia unresolved",0.0324005361957672,3.24005361957672
+"Species","Ctrl","D07","Bacteroides thetaiotaomicron",0.00987925749444199,0.987925749444199
+"Species","Ctrl","D07","Streptococcus unresolved",0.00982722026111262,0.982722026111262
+"Species","Ctrl","D07","Acinetobacter johnsonii",0.00760307302382491,0.760307302382491
+"Species","Ctrl","D07","Cutibacterium acnes",0.00405936191812396,0.405936191812396
+"Species","Ctrl","D07","Photobacterium phosphoreum",0,0
+"Species","Ctrl","D07","Photobacterium unresolved",0,0
+"Species","Ctrl","D30","Vibrio scophthalmi",0.741674436455366,74.1674436455366
+"Species","Ctrl","D30","Vibrio unresolved",0.189650244969019,18.9650244969019
+"Species","Ctrl","D30","Others",0.0391728304391939,3.91728304391939
+"Species","Ctrl","D30","Cetobacterium unresolved",0.0185739437412766,1.85739437412766
+"Species","Ctrl","D30","Streptococcus unresolved",0.00673217281000745,0.673217281000745
+"Species","Ctrl","D30","Photobacterium unresolved",0.0026884690218568,0.26884690218568
+"Species","Ctrl","D30","Unclassified Mycoplasmataceae genus unresolved",0.000697228644590642,0.0697228644590642
+"Species","Ctrl","D30","Photobacterium phosphoreum",0.000462144310700215,0.0462144310700215
+"Species","Ctrl","D30","Cutibacterium acnes",0.000330972547542868,0.0330972547542868
+"Species","Ctrl","D30","Acinetobacter johnsonii",1.7557060446451e-05,0.0017557060446451
+"Species","Ctrl","D30","Bacteroides dorei",0,0
+"Species","Ctrl","D30","Bacteroides thetaiotaomicron",0,0
+"Species","Ctrl","D30","Blautia unresolved",0,0
+"Species","Ctrl","D30","Buchnera unresolved",0,0
+"Species","Ctrl","D30","Candidatus Hamiltonella unresolved",0,0
+"Species","Ctrl","D30","Delftia acidovorans",0,0
+"Species","Ctrl","D90","Unclassified Mycoplasmataceae genus unresolved",0.522796136468771,52.2796136468771
+"Species","Ctrl","D90","Vibrio scophthalmi",0.339674522659975,33.9674522659975
+"Species","Ctrl","D90","Cetobacterium unresolved",0.0931661333308732,9.31661333308732
+"Species","Ctrl","D90","Vibrio unresolved",0.036570272579553,3.6570272579553
+"Species","Ctrl","D90","Others",0.00720370070155452,0.720370070155452
+"Species","Ctrl","D90","Cutibacterium acnes",0.000359994912409151,0.0359994912409151
+"Species","Ctrl","D90","Acinetobacter johnsonii",0.000105980250168259,0.0105980250168259
+"Species","Ctrl","D90","Streptococcus unresolved",6.76384730893052e-05,0.00676384730893052
+"Species","Ctrl","D90","Delftia acidovorans",5.09267795836297e-05,0.00509267795836297
+"Species","Ctrl","D90","Photobacterium unresolved",4.6938440235631e-06,0.00046938440235631
+"Species","Ctrl","D90","Bacteroides dorei",0,0
+"Species","Ctrl","D90","Bacteroides thetaiotaomicron",0,0
+"Species","Ctrl","D90","Blautia unresolved",0,0
+"Species","Ctrl","D90","Buchnera unresolved",0,0
+"Species","Ctrl","D90","Candidatus Hamiltonella unresolved",0,0
+"Species","Ctrl","D90","Photobacterium phosphoreum",0,0
+"Species","Hydrolysate","D07","Vibrio scophthalmi",0.472569048993995,47.2569048993995
+"Species","Hydrolysate","D07","Vibrio unresolved",0.141326003125953,14.1326003125953
+"Species","Hydrolysate","D07","Delftia acidovorans",0.129842727495354,12.9842727495354
+"Species","Hydrolysate","D07","Candidatus Hamiltonella unresolved",0.0675446743834444,6.75446743834444
+"Species","Hydrolysate","D07","Others",0.053620305144811,5.3620305144811
+"Species","Hydrolysate","D07","Buchnera unresolved",0.0327698459256929,3.27698459256929
+"Species","Hydrolysate","D07","Bacteroides dorei",0.0215957739961974,2.15957739961974
+"Species","Hydrolysate","D07","Blautia unresolved",0.0177541672839647,1.77541672839647
+"Species","Hydrolysate","D07","Unclassified Mycoplasmataceae genus unresolved",0.0157841765675167,1.57841765675167
+"Species","Hydrolysate","D07","Acinetobacter johnsonii",0.0153651213363084,1.53651213363084
+"Species","Hydrolysate","D07","Cetobacterium unresolved",0.0112934997077558,1.12934997077558
+"Species","Hydrolysate","D07","Streptococcus unresolved",0.00774495499183568,0.774495499183568
+"Species","Hydrolysate","D07","Bacteroides thetaiotaomicron",0.0070248295127869,0.70248295127869
+"Species","Hydrolysate","D07","Cutibacterium acnes",0.00487795848402898,0.487795848402898
+"Species","Hydrolysate","D07","Photobacterium unresolved",0.000603994466096849,0.0603994466096849
+"Species","Hydrolysate","D07","Photobacterium phosphoreum",0.000282918584258488,0.0282918584258488
+"Species","Hydrolysate","D30","Vibrio scophthalmi",0.455638583088942,45.5638583088942
+"Species","Hydrolysate","D30","Vibrio unresolved",0.192445028092969,19.2445028092969
+"Species","Hydrolysate","D30","Photobacterium unresolved",0.140568373469634,14.0568373469634
+"Species","Hydrolysate","D30","Unclassified Mycoplasmataceae genus unresolved",0.0732619304870684,7.32619304870684
+"Species","Hydrolysate","D30","Photobacterium phosphoreum",0.0720498374183858,7.20498374183858
+"Species","Hydrolysate","D30","Cetobacterium unresolved",0.0559893486854168,5.59893486854168
+"Species","Hydrolysate","D30","Others",0.00682020546591405,0.682020546591405
+"Species","Hydrolysate","D30","Streptococcus unresolved",0.00125956953108399,0.125956953108399
+"Species","Hydrolysate","D30","Cutibacterium acnes",0.0011315957972576,0.11315957972576
+"Species","Hydrolysate","D30","Acinetobacter johnsonii",0.000835527963328367,0.0835527963328367
+"Species","Hydrolysate","D30","Bacteroides dorei",0,0
+"Species","Hydrolysate","D30","Bacteroides thetaiotaomicron",0,0
+"Species","Hydrolysate","D30","Blautia unresolved",0,0
+"Species","Hydrolysate","D30","Buchnera unresolved",0,0
+"Species","Hydrolysate","D30","Candidatus Hamiltonella unresolved",0,0
+"Species","Hydrolysate","D30","Delftia acidovorans",0,0
+"Species","Hydrolysate","D90","Unclassified Mycoplasmataceae genus unresolved",0.717619588442577,71.7619588442577
+"Species","Hydrolysate","D90","Vibrio scophthalmi",0.20611346058874,20.611346058874
+"Species","Hydrolysate","D90","Vibrio unresolved",0.0443194851753341,4.43194851753341
+"Species","Hydrolysate","D90","Photobacterium unresolved",0.0200161363122944,2.00161363122944
+"Species","Hydrolysate","D90","Photobacterium phosphoreum",0.00424696537824934,0.424696537824934
+"Species","Hydrolysate","D90","Others",0.00387966124106284,0.387966124106284
+"Species","Hydrolysate","D90","Cetobacterium unresolved",0.00262923597300856,0.262923597300857
+"Species","Hydrolysate","D90","Acinetobacter johnsonii",0.000601944816677593,0.0601944816677593
+"Species","Hydrolysate","D90","Streptococcus unresolved",0.000378165335797609,0.0378165335797609
+"Species","Hydrolysate","D90","Cutibacterium acnes",0.000195356736259264,0.0195356736259264
+"Species","Hydrolysate","D90","Bacteroides dorei",0,0
+"Species","Hydrolysate","D90","Bacteroides thetaiotaomicron",0,0
+"Species","Hydrolysate","D90","Blautia unresolved",0,0
+"Species","Hydrolysate","D90","Buchnera unresolved",0,0
+"Species","Hydrolysate","D90","Candidatus Hamiltonella unresolved",0,0
+"Species","Hydrolysate","D90","Delftia acidovorans",0,0
