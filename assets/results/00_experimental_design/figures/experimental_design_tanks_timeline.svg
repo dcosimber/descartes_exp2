@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="760" viewBox="0 0 1250 760" role="img" aria-labelledby="title desc">
+  <title id="title">Experimental design for DESCARTES Experiment 2</title>
+  <desc id="desc">Schematic representation of three dietary treatments, three replicate tanks per diet and three sampling points over a 90-day feeding trial.</desc>
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .title { font: 700 32px Arial, Helvetica, sans-serif; fill: #25313d; }
+      .subtitle { font: 400 18px Arial, Helvetica, sans-serif; fill: #586472; }
+      .panel-title { font: 700 20px Arial, Helvetica, sans-serif; fill: #25313d; }
+      .label { font: 700 17px Arial, Helvetica, sans-serif; fill: #25313d; }
+      .small { font: 400 14px Arial, Helvetica, sans-serif; fill: #4d5967; }
+      .tiny { font: 400 12px Arial, Helvetica, sans-serif; fill: #687481; }
+      .tank-id { font: 700 18px Arial, Helvetica, sans-serif; fill: #25313d; }
+      .tank-note { font: 400 12px Arial, Helvetica, sans-serif; fill: #52606d; }
+      .outline { fill: none; stroke: #d6dde6; stroke-width: 1.5; }
+      .timeline { stroke: #657282; stroke-width: 4; stroke-linecap: round; }
+      .tick { stroke: #657282; stroke-width: 3; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1250" height="760"/>
+
+  <text x="70" y="60" class="title">DESCARTES Exp2: experimental design</text>
+  <text x="70" y="92" class="subtitle">90-day feeding trial in juvenile turbot: 3 diets x 3 replicate tanks x 3 sampling points</text>
+
+  <rect x="55" y="125" width="1140" height="390" rx="18" fill="#f8fafc" stroke="#d8dee8" stroke-width="1.5"/>
+  <text x="85" y="165" class="panel-title">Dietary treatments and tank replicates</text>
+
+  <rect x="95" y="205" width="310" height="82" rx="12" fill="#eaf3fb" stroke="#4e79a7" stroke-width="2"/>
+  <text x="120" y="237" class="label">Ctrl / X</text>
+  <text x="120" y="262" class="small">0% FPH; 30% fishmeal</text>
+  <text x="120" y="282" class="tiny">Control diet without hydrolysate</text>
+
+  <rect x="95" y="315" width="310" height="82" rx="12" fill="#eef8f0" stroke="#59a14f" stroke-width="2"/>
+  <text x="120" y="347" class="label">BL15 / Y</text>
+  <text x="120" y="372" class="small">15% FPH; reduced fishmeal</text>
+  <text x="120" y="392" class="tiny">Partial replacement with blue whiting hydrolysate</text>
+
+  <rect x="95" y="425" width="310" height="82" rx="12" fill="#fbf0e7" stroke="#9c755f" stroke-width="2"/>
+  <text x="120" y="457" class="label">BL30 / Z</text>
+  <text x="120" y="482" class="small">25.7% FPH; 0% fishmeal</text>
+  <text x="120" y="502" class="tiny">High hydrolysate diet; complete fishmeal replacement</text>
+
+  <g transform="translate(465,190)">
+    <text x="0" y="0" class="small">Tank replicates per diet</text>
+
+    <g transform="translate(0,25)">
+      <rect x="0" y="0" width="135" height="82" rx="12" fill="#ffffff" stroke="#4e79a7" stroke-width="2.5"/>
+      <text x="67.5" y="35" text-anchor="middle" class="tank-id">X1</text>
+      <text x="67.5" y="58" text-anchor="middle" class="tank-note">60 fish</text>
+      <rect x="158" y="0" width="135" height="82" rx="12" fill="#ffffff" stroke="#4e79a7" stroke-width="2.5"/>
+      <text x="225.5" y="35" text-anchor="middle" class="tank-id">X2</text>
+      <text x="225.5" y="58" text-anchor="middle" class="tank-note">60 fish</text>
+      <rect x="316" y="0" width="135" height="82" rx="12" fill="#ffffff" stroke="#4e79a7" stroke-width="2.5"/>
+      <text x="383.5" y="35" text-anchor="middle" class="tank-id">X3</text>
+      <text x="383.5" y="58" text-anchor="middle" class="tank-note">60 fish</text>
+    </g>
+
+    <g transform="translate(0,135)">
+      <rect x="0" y="0" width="135" height="82" rx="12" fill="#ffffff" stroke="#59a14f" stroke-width="2.5"/>
+      <text x="67.5" y="35" text-anchor="middle" class="tank-id">Y1</text>
+      <text x="67.5" y="58" text-anchor="middle" class="tank-note">60 fish</text>
+      <rect x="158" y="0" width="135" height="82" rx="12" fill="#ffffff" stroke="#59a14f" stroke-width="2.5"/>
+      <text x="225.5" y="35" text-anchor="middle" class="tank-id">Y2</text>
+      <text x="225.5" y="58" text-anchor="middle" class="tank-note">60 fish</text>
+      <rect x="316" y="0" width="135" height="82" rx="12" fill="#ffffff" stroke="#59a14f" stroke-width="2.5"/>
+      <text x="383.5" y="35" text-anchor="middle" class="tank-id">Y3</text>
+      <text x="383.5" y="58" text-anchor="middle" class="tank-note">60 fish</text>
+    </g>
+
+    <g transform="translate(0,245)">
+      <rect x="0" y="0" width="135" height="82" rx="12" fill="#ffffff" stroke="#9c755f" stroke-width="2.5"/>
+      <text x="67.5" y="35" text-anchor="middle" class="tank-id">Z1</text>
+      <text x="67.5" y="58" text-anchor="middle" class="tank-note">60 fish</text>
+      <rect x="158" y="0" width="135" height="82" rx="12" fill="#ffffff" stroke="#9c755f" stroke-width="2.5"/>
+      <text x="225.5" y="35" text-anchor="middle" class="tank-id">Z2</text>
+      <text x="225.5" y="58" text-anchor="middle" class="tank-note">60 fish</text>
+      <rect x="316" y="0" width="135" height="82" rx="12" fill="#ffffff" stroke="#9c755f" stroke-width="2.5"/>
+      <text x="383.5" y="35" text-anchor="middle" class="tank-id">Z3</text>
+      <text x="383.5" y="58" text-anchor="middle" class="tank-note">60 fish</text>
+    </g>
+  </g>
+
+  <rect x="965" y="225" width="180" height="232" rx="14" fill="#ffffff" stroke="#d8dee8" stroke-width="1.5"/>
+  <text x="1055" y="260" text-anchor="middle" class="label">Sampling</text>
+  <text x="1055" y="292" text-anchor="middle" class="small">5 fish/tank</text>
+  <text x="1055" y="322" text-anchor="middle" class="small">45 fish/timepoint</text>
+  <text x="1055" y="352" text-anchor="middle" class="small">15 fish/diet/time</text>
+  <line x1="1000" y1="378" x2="1110" y2="378" stroke="#d8dee8" stroke-width="1"/>
+  <text x="1055" y="410" text-anchor="middle" class="label">Total sampled</text>
+  <text x="1055" y="438" text-anchor="middle" class="small">135 intestinal samples</text>
+
+  <rect x="55" y="550" width="1140" height="150" rx="18" fill="#ffffff" stroke="#d8dee8" stroke-width="1.5"/>
+  <text x="85" y="590" class="panel-title">Experimental timeline</text>
+  <line x1="155" y1="640" x2="1095" y2="640" class="timeline"/>
+
+  <g>
+    <line x1="155" y1="620" x2="155" y2="660" class="tick"/>
+    <circle cx="155" cy="640" r="9" fill="#8aa6c1"/>
+    <text x="155" y="690" text-anchor="middle" class="small">Arrival</text>
+    <text x="155" y="712" text-anchor="middle" class="tiny">8 Apr 2025</text>
+  </g>
+  <g>
+    <line x1="325" y1="620" x2="325" y2="660" class="tick"/>
+    <circle cx="325" cy="640" r="9" fill="#8aa6c1"/>
+    <text x="325" y="690" text-anchor="middle" class="small">Start diets</text>
+    <text x="325" y="712" text-anchor="middle" class="tiny">14 Apr; day 1</text>
+  </g>
+  <g>
+    <line x1="510" y1="620" x2="510" y2="660" class="tick"/>
+    <circle cx="510" cy="640" r="11" fill="#d95f02"/>
+    <text x="510" y="690" text-anchor="middle" class="small">D07</text>
+    <text x="510" y="712" text-anchor="middle" class="tiny">22 Apr</text>
+  </g>
+  <g>
+    <line x1="700" y1="620" x2="700" y2="660" class="tick"/>
+    <circle cx="700" cy="640" r="11" fill="#d95f02"/>
+    <text x="700" y="690" text-anchor="middle" class="small">D30</text>
+    <text x="700" y="712" text-anchor="middle" class="tiny">14 May</text>
+  </g>
+  <g>
+    <line x1="1095" y1="620" x2="1095" y2="660" class="tick"/>
+    <circle cx="1095" cy="640" r="11" fill="#d95f02"/>
+    <text x="1095" y="690" text-anchor="middle" class="small">D90</text>
+    <text x="1095" y="712" text-anchor="middle" class="tiny">14 Jul</text>
+  </g>
+
+  <path d="M170 612 C210 580, 270 580, 310 612" fill="none" stroke="#a9b3bf" stroke-width="2" stroke-dasharray="5 5"/>
+  <text x="240" y="585" text-anchor="middle" class="tiny">Acclimation</text>
+</svg>
