@@ -125,6 +125,6 @@
     <text x="1095" y="712" text-anchor="middle" class="tiny">14 Jul</text>
   </g>
 
-  <path d="M170 612 C210 580, 270 580, 310 612" fill="none" stroke="#a9b3bf" stroke-width="2" stroke-dasharray="5 5"/>
-  <text x="240" y="585" text-anchor="middle" class="tiny">Acclimation</text>
+  <path d="M180 616 C220 595, 270 595, 315 616" fill="none" stroke="#a9b3bf" stroke-width="2" stroke-dasharray="5 5"/>
+  <text x="248" y="612" text-anchor="middle" class="tiny">Acclimation</text>
 </svg>
