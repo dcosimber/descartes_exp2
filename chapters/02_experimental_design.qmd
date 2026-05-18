@@ -1,0 +1,227 @@
+# Diseño experimental, animales de experimentación y dietas
+
+## Diseño experimental
+
+El diseño experimental consistió en un ensayo nutricional longitudinal de 90 días, con tres tratamientos dietéticos y tres réplicas independientes por tratamiento. La asignación de dietas se realizó a nivel de tanque, por lo que el tanque constituye la unidad experimental primaria para el efecto de la dieta. Los peces individuales constituyen unidades de muestreo biológico dentro de cada tanque.
+
+La estructura general del diseño se resume en la @tbl-design-overview.
+
+Table: Resumen del diseño experimental del Experimento 2 {#tbl-design-overview}
+
+| Factor                  | Descripción                       |
+|-------------------------|-----------------------------------|
+| Especie                 | Rodaballo, *Scophthalmus maximus* |
+| Fase                    | Juveniles                         |
+| Peso inicial aproximado | 10–20 g                           |
+| Duración del ensayo     | 90 días                           |
+| Número de dietas        | 3                                 |
+| Réplicas por dieta      | 3 tanques                         |
+| Tanques totales         | 9                                 |
+| Peces por tanque        | 60                                |
+| Peces totales estimados | 540                               |
+| Muestreos               | Día 7, día 30 y día 90            |
+| Ayuno previo            | 24 h antes de cada muestreo       |
+
+> Nota importante: el documento del hito de microbiota menciona “720 rodaballos en 12 tanques”, pero eso parece arrastrado del Experimento 1. Para este Experimento 2, la planificación específica indica 3 dietas × 3 réplicas × 60 peces/tanque = 540 peces. Aquí el Excel mental del proyecto ganó al copia-pega, que venía con sueño.
+
+El esquema general del ensayo se resume en la @fig-experimental-design. La figura muestra la disposición lógica de las réplicas por dieta y los tres puntos de muestreo usados para los análisis microbiológicos.
+
+![Esquema del diseño experimental del Experimento 2. Se representan las tres dietas experimentales, los tres tanques réplica por dieta, el número de peces por tanque y los muestreos longitudinales a D07, D30 y D90](../assets/results/00_experimental_design/figures/experimental_design_tanks_timeline.svg){#fig-experimental-design fig-alt="Esquema del diseño experimental con tres dietas, nueve tanques y tres puntos temporales de muestreo."}
+
+## Programación temporal
+
+El ensayo se programó temporalmente en torno a una semana inicial de aclimatación y tres puntos de muestreo posteriores al inicio de la alimentación con las dietas experimentales. La secuencia temporal queda recogida en la @tbl-calendar.
+
+Table: Calendario experimental y puntos de muestreo del Experimento 2 {#tbl-calendar}
+
+| Evento | Fecha | Descripción |
+|----------------------|---------------------------:|----------------------|
+| Llegada de los peces | 8 abril 2025 | Entrada de los rodaballos en las instalaciones |
+| Aclimatación | 8–13 abril 2025 | Periodo previo al inicio de las dietas experimentales |
+| Inicio del experimento | 14 abril 2025 | Día 1; inicio de alimentación con las nuevas dietas |
+| Muestreo 1 | 22 abril 2025 | Día 7 de alimentación experimental |
+| Muestreo 2 | 14 mayo 2025 | Día 30 de alimentación experimental |
+| Muestreo 3 | 14 julio 2025 | Día 90 de alimentación experimental |
+
+El día anterior a cada muestreo se retiró la toma de alimento de las 16:00 h. Con ello se garantizó un ayuno aproximado de 24 h antes de la toma de muestras, reduciendo la variabilidad asociada al contenido digestivo inmediato y permitiendo comparar los grupos en condiciones fisiológicas más homogéneas.
+
+## Dietas experimentales
+
+Las dietas se formularon utilizando hidrolizado proteico de lirio de bajo peso molecular, 1–2 kDa. Este hidrolizado procede de descartes de *Micromesistius poutassou* y se incorporó como ingrediente proteico alternativo a la harina de pescado.
+
+Se utilizaron tres tratamientos dietéticos, codificados como X, Y y Z para facilitar la trazabilidad durante los muestreos (@tbl-diet-codes).
+
+Table: Dietas utilizadas en el Experimento 2 {#tbl-diet-codes}
+
+| Código de muestreo | Nombre del tratamiento | Descripción | Interpretación |
+|------------------|------------------|------------------|------------------|
+| X | Control / CTRL | Dieta con harina de pescado y sin hidrolizado de lirio. | Control nutricional frente al que se comparan las dietas suplementadas. |
+| Y | BL15 | Dieta con inclusión intermedia de hidrolizado de lirio. | Sustitución parcial de harina de pescado; tratamiento puente con el Experimento 1. |
+| Z | BL30 | Dieta con inclusión alta de hidrolizado de lirio. | Escenario de máxima sustitución ensayada, planteado para evaluar la retirada completa de harina de pescado. |
+
+## Composición general de las dietas
+
+La @tbl-diet-summary resume la composición conceptual de las tres dietas. Esta tabla recoge la lógica experimental nominal del ensayo, mientras que la formulación detallada de ingredientes se presenta posteriormente en la @tbl-ingredient-composition.
+
+Table: Composición conceptual de los tratamientos dietéticos {#tbl-diet-summary}
+
+| Dieta | Hidrolizado de lirio | Harina de pescado | Interpretación |
+|------------------|-----------------:|-----------------:|------------------|
+| CTRL / X | 0 % | 30 % | Control sin hidrolizado |
+| BL15 / Y | 15 % | reducida | Sustitución parcial |
+| BL30 / Z | alta inclusión | 0 % | Sustitución completa de harina de pescado |
+
+En la formulación detallada, la dieta BL15 se diseñó para ser comparable a la dieta con 15 % de hidrolizado del Experimento 1, mientras que BL30 fue planteada para llevar la sustitución de harina de pescado al máximo nivel ensayado.
+
+## Composición completa de los piensos
+
+Los piensos se fabricaron con un tamaño de pellet de 2,5 mm y una cantidad producida de 14 kg por dieta. La formulación detallada se muestra en la @tbl-ingredient-composition. En todas las dietas se mantuvo una base común de ingredientes proteicos y energéticos, modificando principalmente la relación entre harina de pescado e hidrolizado de lirio. Esta estrategia permite que la comparación entre tratamientos se centre en el efecto de la sustitución proteica y no en diferencias amplias de composición nutricional global.
+
+Table: Formulación de ingredientes de los piensos experimentales {#tbl-ingredient-composition}
+
+| Ingrediente (%)             |        CTRL |        BL15 |        BL30 |
+|-----------------------------|------------:|------------:|------------:|
+| Fishmeal Super Prime        |      30,000 |      12,400 |       0,000 |
+| Krill meal                  |       5,000 |       5,000 |       5,000 |
+| FPH-Lirio                   |       0,000 |      15,000 |      25,700 |
+| Poultry meal                |       5,700 |       5,700 |       5,700 |
+| Soy protein concentrate     |      14,500 |      14,500 |      14,500 |
+| Pea protein concentrate     |       4,800 |       4,800 |       4,800 |
+| Wheat gluten                |      13,500 |      13,500 |      13,500 |
+| Wheat meal                  |       8,880 |       9,780 |      10,280 |
+| Faba beans, low tannins     |       4,000 |       4,000 |       4,000 |
+| Vitamin and mineral premix  |       1,000 |       1,000 |       1,000 |
+| Choline chloride 50 %       |       0,200 |       0,200 |       0,200 |
+| Antioxidant                 |       0,200 |       0,200 |       0,200 |
+| Sodium propionate           |       0,100 |       0,100 |       0,100 |
+| MAP, monoammonium phosphate |       0,300 |       0,300 |       0,300 |
+| Yttrium oxide               |       0,020 |       0,020 |       0,020 |
+| Rapeseed oil                |       5,800 |       7,500 |       8,700 |
+| Fish oil                    |       6,000 |       6,000 |       6,000 |
+| **Total**                   | **100,000** | **100,000** | **100,000** |
+
+## Composición proximal de los piensos
+
+Las tres dietas fueron formuladas para mantener una composición proximal equivalente en términos de proteína bruta y grasa bruta. Como se muestra en la @tbl-proximal-composition, CTRL, BL15 y BL30 presentan los mismos valores declarados de proteína y grasa. Esta equivalencia es fundamental para interpretar los resultados, ya que permite atribuir las diferencias observadas principalmente al cambio en la fuente proteica y no a variaciones mayores en el contenido total de proteína o lípidos del pienso.
+
+Table: Composición proximal declarada de los piensos experimentales {#tbl-proximal-composition}
+
+| Composición              | CTRL | BL15 | BL30 |
+|--------------------------|-----:|-----:|-----:|
+| Proteína bruta, % pienso | 53,1 | 53,1 | 53,1 |
+| Grasa bruta, % pienso    | 17,1 | 17,1 | 17,1 |
+
+## Animales de experimentación
+
+Los rodaballos (Scophthalmus maximus) juveniles llegaron a las instalaciones el 8 de abril de 2025 con un peso aproximado de 10-20 g. A su llegada se distribuyeron inicialmente en dos tanques durante el periodo de aclimatación. Posteriormente, los animales fueron repartidos en nueve tanques independientes, correspondientes a tres tratamientos dietéticos con tres réplicas por tratamiento.
+
+Cada tanque contenía 60 peces, lo que supone un total previsto de 540 peces para el ensayo. Las dietas fueron distribuidas de forma aleatoria entre los tanques, asegurando una dispersión adecuada de las réplicas y reduciendo el riesgo de sesgos asociados a la posición del tanque, al manejo o a gradientes ambientales no controlados.
+
+La codificación de los tanques se presenta en la @tbl-tank-allocation. Esta nomenclatura se utilizó para mantener la trazabilidad de los peces y de las muestras a lo largo de todo el experimento.
+
+Table: Distribución de tratamientos y códigos de tanque {#tbl-tank-allocation}
+
+| Dieta   | Réplica 1 | Réplica 2 | Réplica 3 |
+|---------|-----------|-----------|-----------|
+| Control | X1        | X2        | X3        |
+| BL15    | Y1        | Y2        | Y3        |
+| BL30    | Z1        | Z2        | Z3        |
+
+Para la interpretación estadística posterior, se debe tener en cuenta lo siguiente: los peces están anidados dentro de tanques, y los tanques están asignados a dietas. Por tanto, aunque se obtengan varias muestras individuales por tanque, la réplica experimental real del tratamiento dietético es el tanque. Esta distinción es especialmente importante para evitar **pseudorreplicación** en los análisis y para modelar adecuadamente el efecto de tanque en análisis microbiológicos.
+
+## Condiciones de mantenimiento
+
+Los peces se mantuvieron bajo condiciones controladas durante todo el periodo experimental (@tbl-husbandry).
+
+Table: Condiciones de mantenimiento y alimentación durante el Experimento 2 {#tbl-husbandry}
+
+| Parámetro | Condición |
+|------------------------------------|------------------------------------|
+| Fotoperiodo | Natural |
+| Temperatura | 17 °C |
+| Alimentación | Dos tomas diarias |
+| Horarios de alimentación | 9:00 y 16:00 h |
+| Régimen de alimentación | *Ad libitum* controlado |
+| Estimación de ingesta | Pesada del pienso ofrecido y del pienso sobrante |
+| Ración preparada por toma | 1,5 % del peso de los peces |
+
+## Esquema de muestreo
+
+Se planificaron tres muestreos destructivos a lo largo del ensayo: D07, D30 y D90 (@tbl-sampling-timepoints). Estos puntos permiten capturar tres ventanas biológicas complementarias: una respuesta temprana tras el cambio de dieta, una fase intermedia de adaptación y un punto final asociado a exposición prolongada al tratamiento dietético.
+
+Table: Puntos temporales de muestreo del Experimento 2 {#tbl-sampling-timepoints}
+
+| Punto de muestreo | Fecha | Tiempo con dieta experimental | Interpretación biológica |
+|------------------|-----------------:|-----------------:|------------------|
+| Muestreo 1 | 22 abril 2025 | Día 7 | Respuesta temprana al cambio de dieta. |
+| Muestreo 2 | 14 mayo 2025 | Día 30 | Fase intermedia de adaptación. |
+| Muestreo 3 | 14 julio 2025 | Día 90 | Respuesta final tras exposición prolongada. |
+
+En cada muestreo se seleccionaron 5 peces por tanque. Dado que el ensayo incluyó 9 tanques, esto equivale a 45 peces por punto temporal. La distribución prevista de muestras se resume en la @tbl-sampling-numbers.
+
+Table: Tamaño muestral previsto para los muestreos destructivos {#tbl-sampling-numbers}
+
+| Cálculo                     | Valor |
+|-----------------------------|------:|
+| Peces por tanque y muestreo |     5 |
+| Tanques totales             |     9 |
+| Peces por muestreo          |    45 |
+| Peces por dieta y muestreo  |    15 |
+| Muestreos totales           |     3 |
+| Peces muestreados en total  |   135 |
+
+La @tbl-sampling-matrix muestra la matriz completa de muestreo prevista por dieta y punto temporal. Esta tabla es especialmente útil para la trazabilidad del análisis microbiológico y para redactar posteriormente el apartado de materiales y métodos del artículo.
+
+Table: Matriz de muestreo prevista por tratamiento y tiempo {#tbl-sampling-matrix}
+
+| Tratamiento | Tanques    |    D07 |    D30 |    D90 | Total por tratamiento |
+|-------------|------------|-------:|-------:|-------:|----------------------:|
+| Control / X | X1, X2, X3 |     15 |     15 |     15 |                    45 |
+| BL15 / Y    | Y1, Y2, Y3 |     15 |     15 |     15 |                    45 |
+| BL30 / Z    | Z1, Z2, Z3 |     15 |     15 |     15 |                    45 |
+| **Total**   | 9 tanques  | **45** | **45** | **45** |               **135** |
+
+El orden previsto de muestreo fue alternado por réplica para evitar procesar todos los tanques de una misma dieta de forma consecutiva:
+
+``` text
+X1 → Y1 → Z1 → X2 → Y2 → Z2 → X3 → Y3 → Z3
+```
+
+Este orden reduce el riesgo de que efectos asociados al tiempo de manipulación, al personal o a pequeñas variaciones durante la jornada de muestreo queden confundidos con el tratamiento dietético.
+
+## Procedimiento general de muestreo
+
+El procedimiento de muestreo fue diseñado para recoger información biométrica, fisiológica, histológica y microbiológica de los mismos individuos o de individuos equivalentes dentro de cada tanque. La secuencia operativa se resume en la @tbl-sampling-procedure.
+
+Table: Secuencia general de muestreo y destino de las muestras {#tbl-sampling-procedure}
+
+| Paso | Procedimiento | Grupo / finalidad principal |
+|---------------------------:|----------------------|----------------------|
+| 1 | Anestesia de los peces con MS-222 tras 24 h de ayuno. | Preparación previa al sacrificio y reducción de estrés. |
+| 2 | Registro de peso y longitud; observación de la coloración ventral. | Biometría y control fenotípico externo. |
+| 3 | Extracción de sangre de la vena caudal, aproximadamente 0,5 mL. | UVIGO; análisis fisiológicos. |
+| 4 | Eutanasia por sección de médula espinal. | Procedimiento terminal. |
+| 5 | Separación de branquia y cabeza. | USC / UVIGO; análisis tisulares y neuroendocrinos. |
+| 6 | Extracción y pesado del hígado para índice hepatosomático; fijación posterior. | USC; histología e índice hepatosomático. |
+| 7 | Disección del tracto digestivo: estómago, intestino anterior, medio y posterior. | USC / UVIGO / CSIC; histología, fisiología y microbiota. |
+| 8 | Conservación del resto del pez en formol. | USC; archivo histológico. |
+| 9 | Frotis y recogida de tejido del intestino posterior. | CSIC; microbiota intestinal. |
+| 10 | Recogida de cerebro y porción de músculo a partir de la cabeza. | UVIGO; análisis de regulación del apetito y composición tisular. |
+
+## Toma de muestras de microbiota intestinal
+
+Para el análisis microbiológico, la región clave fue el intestino posterior. Esta sección se seleccionó porque integra la interacción entre dieta, digestión distal, mucus, contenido fecal y comunidad bacteriana asociada al hospedador. La recogida de muestras de realizó mediante frotis del epitelio intestinal con un hisopo estéril.
+
+## Muestras de pienso
+
+Además de las muestras intestinales, se contempló el análisis de la composición microbiana de los piensos experimentales. Esta información es relevante porque permite diferenciar entre microorganismos o señales moleculares asociadas al alimento y comunidades bacterianas estructuradas por el intestino del hospedador.
+
+La @tbl-feed-samples resume las muestras adicionales vinculadas al diseño microbiológico.
+
+Table: Muestras de pienso asociadas al diseño microbiológico {#tbl-feed-samples}
+
+| Tipo de muestra | Código | Finalidad |
+|------------------------|------------------------|------------------------|
+| Pienso control | X | Caracterizar la señal microbiana de la dieta sin hidrolizado. |
+| Pienso BL15 | Y | Evaluar la señal microbiana del pienso con inclusión intermedia de hidrolizado. |
+| Pienso BL30 | Z | Evaluar la señal microbiana del pienso con inclusión alta de hidrolizado. |

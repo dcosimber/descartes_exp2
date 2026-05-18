@@ -3,6 +3,8 @@ project:
   output-dir: docs
   resources:
     - assets/
+  post-render:
+    - scripts/fix_crossref_punctuation.sh
 
 lang: es
 
@@ -27,16 +29,16 @@ book:
   date: last-modified
   chapters:
     - index.qmd
-    - chapters/00_introduction_objectives.qmd
-    - chapters/0X_Experimental_desing.qmd
-    - chapters/01_filtering.qmd
-    - chapters/02_dataset_stats.qmd
-    - chapters/03_rarefaction_qc.qmd
-    - chapters/04_taxonomic_composition.qmd
-    - chapters/05_alpha_diversity.qmd
-    - chapters/06_beta_diversity.qmd
-    - chapters/07_differential_abundance.qmd
-    - chapters/08_functional_prediction.qmd
+    - chapters/01_introduction_objectives.qmd
+    - chapters/02_experimental_design.qmd
+    - chapters/03_filtering.qmd
+    - chapters/04_dataset_stats.qmd
+    - chapters/05_rarefaction_qc.qmd
+    - chapters/06_taxonomic_composition.qmd
+    - chapters/07_alpha_diversity.qmd
+    - chapters/08_beta_diversity.qmd
+    - chapters/09_differential_abundance.qmd
+    - chapters/10_functional_prediction.qmd
   appendices:
     - appendices/reproducibility.qmd
 

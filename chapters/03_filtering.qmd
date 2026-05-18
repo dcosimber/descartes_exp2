@@ -254,4 +254,4 @@ Como próximos pasos, este bloque debería complementarse con:
    relevantes.
 
 Estas figuras y estadísticas generales se recopilan en el bloque
-[`03_dataset_stats`](02_dataset_stats.qmd).
+[`04_dataset_stats`](04_dataset_stats.qmd).
