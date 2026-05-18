@@ -43,6 +43,38 @@ Table: Calendario experimental y puntos de muestreo del Experimento 2 {#tbl-cale
 
 El día anterior a cada muestreo se retiró la toma de alimento de las 16:00 h. Con ello se garantizó un ayuno aproximado de 24 h antes de la toma de muestras, reduciendo la variabilidad asociada al contenido digestivo inmediato y permitiendo comparar los grupos en condiciones fisiológicas más homogéneas.
 
+## Animales de experimentación
+
+Los rodaballos (Scophthalmus maximus) juveniles llegaron a las instalaciones el 8 de abril de 2025 con un peso aproximado de 10-20 g. A su llegada se distribuyeron inicialmente en dos tanques durante el periodo de aclimatación. Posteriormente, los animales fueron repartidos en nueve tanques independientes, correspondientes a tres tratamientos dietéticos con tres réplicas por tratamiento.
+
+Cada tanque contenía 60 peces, lo que supone un total previsto de 540 peces para el ensayo. Las dietas fueron distribuidas de forma aleatoria entre los tanques, asegurando una dispersión adecuada de las réplicas y reduciendo el riesgo de sesgos asociados a la posición del tanque, al manejo o a gradientes ambientales no controlados.
+
+La codificación de los tanques se presenta en la @tbl-tank-allocation. Esta nomenclatura se utilizó para mantener la trazabilidad de los peces y de las muestras a lo largo de todo el experimento.
+
+Table: Distribución de tratamientos y códigos de tanque {#tbl-tank-allocation}
+
+| Dieta   | Réplica 1 | Réplica 2 | Réplica 3 |
+|---------|-----------|-----------|-----------|
+| Control | X1        | X2        | X3        |
+| BL15    | Y1        | Y2        | Y3        |
+| BL30    | Z1        | Z2        | Z3        |
+
+Para la interpretación estadística posterior, se debe tener en cuenta lo siguiente: los peces están anidados dentro de tanques, y los tanques están asignados a dietas. Por tanto, aunque se obtengan varias muestras individuales por tanque, la réplica experimental real del tratamiento dietético es el tanque. Esta distinción es especialmente importante para evitar **pseudorreplicación** en los análisis y para modelar adecuadamente el efecto de tanque en análisis microbiológicos.
+
+Los peces se mantuvieron bajo condiciones controladas durante todo el periodo experimental (@tbl-husbandry).
+
+Table: Condiciones de mantenimiento y alimentación durante el Experimento 2 {#tbl-husbandry}
+
+| Parámetro | Condición |
+|------------------------------------|------------------------------------|
+| Fotoperiodo | Natural |
+| Temperatura | 17 °C |
+| Alimentación | Dos tomas diarias |
+| Horarios de alimentación | 9:00 y 16:00 h |
+| Régimen de alimentación | *Ad libitum* controlado |
+| Estimación de ingesta | Pesada del pienso ofrecido y del pienso sobrante |
+| Ración preparada por toma | 1,5 % del peso de los peces |
+
 ## Dietas experimentales
 
 Las dietas se formularon utilizando hidrolizado proteico de lirio de bajo peso molecular, 1–2 kDa. Este hidrolizado procede de descartes de *Micromesistius poutassou* y se incorporó como ingrediente proteico alternativo a la harina de pescado.
@@ -108,38 +140,6 @@ Table: Formulación de ingredientes de los piensos experimentales {#tbl-ingredie
 | Rapeseed oil                |       5,800 |       7,500 |       8,700 |
 | Fish oil                    |       6,000 |       6,000 |       6,000 |
 | **Total**                   | **100,000** | **100,000** | **100,000** |
-
-## Animales de experimentación
-
-Los rodaballos (Scophthalmus maximus) juveniles llegaron a las instalaciones el 8 de abril de 2025 con un peso aproximado de 10-20 g. A su llegada se distribuyeron inicialmente en dos tanques durante el periodo de aclimatación. Posteriormente, los animales fueron repartidos en nueve tanques independientes, correspondientes a tres tratamientos dietéticos con tres réplicas por tratamiento.
-
-Cada tanque contenía 60 peces, lo que supone un total previsto de 540 peces para el ensayo. Las dietas fueron distribuidas de forma aleatoria entre los tanques, asegurando una dispersión adecuada de las réplicas y reduciendo el riesgo de sesgos asociados a la posición del tanque, al manejo o a gradientes ambientales no controlados.
-
-La codificación de los tanques se presenta en la @tbl-tank-allocation. Esta nomenclatura se utilizó para mantener la trazabilidad de los peces y de las muestras a lo largo de todo el experimento.
-
-Table: Distribución de tratamientos y códigos de tanque {#tbl-tank-allocation}
-
-| Dieta   | Réplica 1 | Réplica 2 | Réplica 3 |
-|---------|-----------|-----------|-----------|
-| Control | X1        | X2        | X3        |
-| BL15    | Y1        | Y2        | Y3        |
-| BL30    | Z1        | Z2        | Z3        |
-
-Para la interpretación estadística posterior, se debe tener en cuenta lo siguiente: los peces están anidados dentro de tanques, y los tanques están asignados a dietas. Por tanto, aunque se obtengan varias muestras individuales por tanque, la réplica experimental real del tratamiento dietético es el tanque. Esta distinción es especialmente importante para evitar **pseudorreplicación** en los análisis y para modelar adecuadamente el efecto de tanque en análisis microbiológicos.
-
-Los peces se mantuvieron bajo condiciones controladas durante todo el periodo experimental (@tbl-husbandry).
-
-Table: Condiciones de mantenimiento y alimentación durante el Experimento 2 {#tbl-husbandry}
-
-| Parámetro | Condición |
-|------------------------------------|------------------------------------|
-| Fotoperiodo | Natural |
-| Temperatura | 17 °C |
-| Alimentación | Dos tomas diarias |
-| Horarios de alimentación | 9:00 y 16:00 h |
-| Régimen de alimentación | *Ad libitum* controlado |
-| Estimación de ingesta | Pesada del pienso ofrecido y del pienso sobrante |
-| Ración preparada por toma | 1,5 % del peso de los peces |
 
 ## Muestreo
 
