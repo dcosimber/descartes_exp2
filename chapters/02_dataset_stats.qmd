@@ -32,24 +32,24 @@ abundancia diferencial.
 
 ### 2.2. Tablas generadas
 
-- [`sample_counts_by_design.csv`](../../assets/results/03_dataset_stats/tables/sample_counts_by_design.csv):
+- [`sample_counts_by_design.csv`](../assets/results/03_dataset_stats/tables/sample_counts_by_design.csv):
   número de muestras por tipo, dieta y tiempo.
-- [`sample_read_stats_overall.csv`](../../assets/results/03_dataset_stats/tables/sample_read_stats_overall.csv):
+- [`sample_read_stats_overall.csv`](../assets/results/03_dataset_stats/tables/sample_read_stats_overall.csv):
   estadísticos de lecturas por objeto.
-- [`sample_read_stats_by_sample_type.csv`](../../assets/results/03_dataset_stats/tables/sample_read_stats_by_sample_type.csv):
+- [`sample_read_stats_by_sample_type.csv`](../assets/results/03_dataset_stats/tables/sample_read_stats_by_sample_type.csv):
   estadísticos de lecturas por tipo de muestra.
-- [`sample_read_stats_by_group.csv`](../../assets/results/03_dataset_stats/tables/sample_read_stats_by_group.csv):
+- [`sample_read_stats_by_group.csv`](../assets/results/03_dataset_stats/tables/sample_read_stats_by_group.csv):
   estadísticos de lecturas por grupo experimental.
-- [`asv_abundance_prevalence_summary.csv`](../../assets/results/03_dataset_stats/tables/asv_abundance_prevalence_summary.csv):
+- [`asv_abundance_prevalence_summary.csv`](../assets/results/03_dataset_stats/tables/asv_abundance_prevalence_summary.csv):
   resumen de abundancia y prevalencia de ASVs.
-- [`asv_abundance_prevalence_by_object.csv`](../../assets/results/03_dataset_stats/tables/asv_abundance_prevalence_by_object.csv):
+- [`asv_abundance_prevalence_by_object.csv`](../assets/results/03_dataset_stats/tables/asv_abundance_prevalence_by_object.csv):
   una fila por ASV y objeto, con lecturas, prevalencia y abundancia media.
-- [`asv_prevalence_distribution.csv`](../../assets/results/03_dataset_stats/tables/asv_prevalence_distribution.csv):
+- [`asv_prevalence_distribution.csv`](../assets/results/03_dataset_stats/tables/asv_prevalence_distribution.csv):
   distribución de ASVs por rangos de prevalencia.
-- [`taxonomy_assignment_summary.csv`](../../assets/results/03_dataset_stats/tables/taxonomy_assignment_summary.csv):
+- [`taxonomy_assignment_summary.csv`](../assets/results/03_dataset_stats/tables/taxonomy_assignment_summary.csv):
   completitud de asignación taxonómica por rango.
-- [`top50_asvs_raw_all_samples.csv`](../../assets/results/03_dataset_stats/tables/top50_asvs_raw_all_samples.csv) y
-  [`top50_asvs_final_all_samples.csv`](../../assets/results/03_dataset_stats/tables/top50_asvs_final_all_samples.csv):
+- [`top50_asvs_raw_all_samples.csv`](../assets/results/03_dataset_stats/tables/top50_asvs_raw_all_samples.csv) y
+  [`top50_asvs_final_all_samples.csv`](../assets/results/03_dataset_stats/tables/top50_asvs_final_all_samples.csv):
   ASVs más abundantes antes y después del filtrado.
   multipestaña con las tablas principales.
 
@@ -104,14 +104,14 @@ mantiene la mayor parte de las lecturas. El mínimo global después del filtrado
 ya no cae por debajo de 17,111 lecturas porque la señal cloroplastidial y
 mitocondrial del feed se conserva.
 
-![Figura 1. Profundidad de lecturas por paso de filtrado y tipo de muestra.](../../assets/results/03_dataset_stats/figures/read_depth_by_filter_step_sample_type.png)
+![Figura 1. Profundidad de lecturas por paso de filtrado y tipo de muestra.](../assets/results/03_dataset_stats/figures/read_depth_by_filter_step_sample_type.png)
 
 **Figura 1. Profundidad de lecturas por paso y tipo de muestra.** La figura
 muestra la mediana de lecturas por muestra separada por tipo de muestra. El
 feed conserva ahora la mayor parte de su profundidad tras el filtro taxonómico,
 porque cloroplasto y mitocondria no se eliminan en este proyecto.
 
-![Figura 2. Retención total de lecturas por objeto.](../../assets/results/03_dataset_stats/figures/total_read_retention_by_object.png)
+![Figura 2. Retención total de lecturas por objeto.](../assets/results/03_dataset_stats/figures/total_read_retention_by_object.png)
 
 **Figura 2. Retención global de lecturas.** Se observa una pérdida moderada de
 lecturas a través de los filtros, frente a una reducción mucho más fuerte del
@@ -153,7 +153,7 @@ El filtro de prevalencia elimina la mayor parte de ASVs
 detectadas en muy pocas muestras. El objeto final ya no contiene ASVs presentes
 en una sola muestra en el análisis global.
 
-![Figura 3. Distribución de prevalencia de ASVs.](../../assets/results/03_dataset_stats/figures/asv_prevalence_distribution.png)
+![Figura 3. Distribución de prevalencia de ASVs.](../assets/results/03_dataset_stats/figures/asv_prevalence_distribution.png)
 
 **Figura 3. Distribución de ASVs por rangos de prevalencia.** La figura resume
 la transición desde una matriz bruta dominada por ASVs muy raras hacia una matriz
@@ -187,7 +187,7 @@ vista de asignación taxonómica. Los análisis a género son útiles, pero debe
 mantener categorías como `Unclassified_Genus` cuando la familia está clara y el
 género no. Los análisis a especie deben tratarse como exploratorios.
 
-![Figura 4. Distribución de longitud de ASVs.](../../assets/results/03_dataset_stats/figures/asv_length_distribution_by_object.png)
+![Figura 4. Distribución de longitud de ASVs.](../assets/results/03_dataset_stats/figures/asv_length_distribution_by_object.png)
 
 **Figura 4. Distribución de longitud de ASVs.** La mayoría de ASVs se sitúan en
 el rango esperado del amplicón. Cambios marcados en esta distribución podrían

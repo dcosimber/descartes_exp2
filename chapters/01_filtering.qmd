@@ -30,38 +30,38 @@ El objetivo práctico es doble:
 
 ### 2.2. Tablas generadas
 
-- [`filtering_summary.csv`](../../assets/results/02_filtering/tables/filtering_summary.csv): resumen por paso
+- [`filtering_summary.csv`](../assets/results/02_filtering/tables/filtering_summary.csv): resumen por paso
   de filtrado.
-- [`filtering_summary_by_sample_type.csv`](../../assets/results/02_filtering/tables/filtering_summary_by_sample_type.csv):
+- [`filtering_summary_by_sample_type.csv`](../assets/results/02_filtering/tables/filtering_summary_by_sample_type.csv):
   retención de lecturas por tipo de muestra.
-- [`prevalence_filter_groups.csv`](../../assets/results/02_filtering/tables/prevalence_filter_groups.csv):
+- [`prevalence_filter_groups.csv`](../assets/results/02_filtering/tables/prevalence_filter_groups.csv):
   grupos usados para calcular prevalencia.
-- [`sample_filtering_groups.csv`](../../assets/results/02_filtering/tables/sample_filtering_groups.csv):
+- [`sample_filtering_groups.csv`](../assets/results/02_filtering/tables/sample_filtering_groups.csv):
   asignación de cada muestra a su grupo de prevalencia.
-- [`asv_filtering_status.csv`](../../assets/results/02_filtering/tables/asv_filtering_status.csv): auditoría
+- [`asv_filtering_status.csv`](../assets/results/02_filtering/tables/asv_filtering_status.csv): auditoría
   completa por ASV, con taxonomía, secuencia, reads y paso de eliminación.
-- [`removed_asvs.csv`](../../assets/results/02_filtering/tables/removed_asvs.csv): ASVs eliminadas.
-- [`retained_asvs.csv`](../../assets/results/02_filtering/tables/retained_asvs.csv): ASVs retenidas.
-- [`asv_counts_by_filter_step.csv`](../../assets/results/02_filtering/tables/asv_counts_by_filter_step.csv):
+- [`removed_asvs.csv`](../assets/results/02_filtering/tables/removed_asvs.csv): ASVs eliminadas.
+- [`retained_asvs.csv`](../assets/results/02_filtering/tables/retained_asvs.csv): ASVs retenidas.
+- [`asv_counts_by_filter_step.csv`](../assets/results/02_filtering/tables/asv_counts_by_filter_step.csv):
   recuento de ASVs por motivo/paso de eliminación.
-- [`taxonomic_summary_by_filter_step.csv`](../../assets/results/02_filtering/tables/taxonomic_summary_by_filter_step.csv):
+- [`taxonomic_summary_by_filter_step.csv`](../assets/results/02_filtering/tables/taxonomic_summary_by_filter_step.csv):
   resumen taxonómico de ASVs retenidas y eliminadas.
   multipestaña con las tablas principales.
 
 ### 2.3. Objetos exportados
 
 - Objetos globales filtrados:
-  [`ps_final_silva_138_2.rds`](../../assets/results/02_filtering/objects/ps_final_silva_138_2.rds),
-  [`ps_genus_silva_138_2.rds`](../../assets/results/02_filtering/objects/ps_genus_silva_138_2.rds),
-  [`ps_family_silva_138_2.rds`](../../assets/results/02_filtering/objects/ps_family_silva_138_2.rds) y
-  [`ps_phylum_silva_138_2.rds`](../../assets/results/02_filtering/objects/ps_phylum_silva_138_2.rds).
+  [`ps_final_silva_138_2.rds`](../assets/results/02_filtering/objects/ps_final_silva_138_2.rds),
+  [`ps_genus_silva_138_2.rds`](../assets/results/02_filtering/objects/ps_genus_silva_138_2.rds),
+  [`ps_family_silva_138_2.rds`](../assets/results/02_filtering/objects/ps_family_silva_138_2.rds) y
+  [`ps_phylum_silva_138_2.rds`](../assets/results/02_filtering/objects/ps_phylum_silva_138_2.rds).
 - Objetos biológicos intestinales:
-  [`ps_biological_final_silva_138_2.rds`](../../assets/results/02_filtering/objects/ps_biological_final_silva_138_2.rds),
-  [`ps_biological_genus_silva_138_2.rds`](../../assets/results/02_filtering/objects/ps_biological_genus_silva_138_2.rds),
-  [`ps_biological_family_silva_138_2.rds`](../../assets/results/02_filtering/objects/ps_biological_family_silva_138_2.rds) y
-  [`ps_biological_phylum_silva_138_2.rds`](../../assets/results/02_filtering/objects/ps_biological_phylum_silva_138_2.rds).
+  [`ps_biological_final_silva_138_2.rds`](../assets/results/02_filtering/objects/ps_biological_final_silva_138_2.rds),
+  [`ps_biological_genus_silva_138_2.rds`](../assets/results/02_filtering/objects/ps_biological_genus_silva_138_2.rds),
+  [`ps_biological_family_silva_138_2.rds`](../assets/results/02_filtering/objects/ps_biological_family_silva_138_2.rds) y
+  [`ps_biological_phylum_silva_138_2.rds`](../assets/results/02_filtering/objects/ps_biological_phylum_silva_138_2.rds).
 - Trayectoria completa:
-  [`filtering_steps_silva_138_2.rds`](../../assets/results/02_filtering/objects/filtering_steps_silva_138_2.rds).
+  [`filtering_steps_silva_138_2.rds`](../assets/results/02_filtering/objects/filtering_steps_silva_138_2.rds).
 
 ## 3. Diseño del filtrado
 
@@ -192,7 +192,7 @@ dimensionalidad y el ruido de ASVs raras.
 
 ### 4.3. Taxones relevantes eliminados
 
-La tabla [`removed_asvs.csv`](../../assets/results/02_filtering/tables/removed_asvs.csv) permite revisar ASVs
+La tabla [`removed_asvs.csv`](../assets/results/02_filtering/tables/removed_asvs.csv) permite revisar ASVs
 concretas que desaparecen. Entre las ASVs eliminadas por abundancia media hay
 ASVs asignadas a géneros como `Photobacterium`, `Delftia`,
 `Companilactobacillus`, `Bacillus`, `Staphylococcus`, `Serratia` o

@@ -25,36 +25,36 @@ Las curvas se calcularon con rarefacción esperada (`vegan::rarefy`) a nivel ASV
 
 ## 5. Tablas generadas
 
-- [`rarefaction_curve_points.csv`](../../assets/results/04_rarefaction_qc/tables/rarefaction_curve_points.csv): puntos de las curvas por muestra y profundidad.
-- [`rarefaction_sample_summary.csv`](../../assets/results/04_rarefaction_qc/tables/rarefaction_sample_summary.csv): resumen por muestra, incluyendo reads, ASVs observadas, ASVs esperadas a profundidad común y pendiente final.
-- [`rarefaction_object_summary.csv`](../../assets/results/04_rarefaction_qc/tables/rarefaction_object_summary.csv): resumen por objeto.
-- [`rarefaction_sample_type_summary.csv`](../../assets/results/04_rarefaction_qc/tables/rarefaction_sample_type_summary.csv): resumen por objeto y tipo de muestra.
-- [`rarefaction_grouped_ctrl_vs_hydro_time.csv`](../../assets/results/04_rarefaction_qc/tables/rarefaction_grouped_ctrl_vs_hydro_time.csv): curvas pooled por tiempo para `Ctrl` frente a `Hydrolysate`.
-- [`rarefaction_grouped_diet_time.csv`](../../assets/results/04_rarefaction_qc/tables/rarefaction_grouped_diet_time.csv): curvas pooled por tiempo para `Ctrl`, `BL15` y `BL30`.
+- [`rarefaction_curve_points.csv`](../assets/results/04_rarefaction_qc/tables/rarefaction_curve_points.csv): puntos de las curvas por muestra y profundidad.
+- [`rarefaction_sample_summary.csv`](../assets/results/04_rarefaction_qc/tables/rarefaction_sample_summary.csv): resumen por muestra, incluyendo reads, ASVs observadas, ASVs esperadas a profundidad común y pendiente final.
+- [`rarefaction_object_summary.csv`](../assets/results/04_rarefaction_qc/tables/rarefaction_object_summary.csv): resumen por objeto.
+- [`rarefaction_sample_type_summary.csv`](../assets/results/04_rarefaction_qc/tables/rarefaction_sample_type_summary.csv): resumen por objeto y tipo de muestra.
+- [`rarefaction_grouped_ctrl_vs_hydro_time.csv`](../assets/results/04_rarefaction_qc/tables/rarefaction_grouped_ctrl_vs_hydro_time.csv): curvas pooled por tiempo para `Ctrl` frente a `Hydrolysate`.
+- [`rarefaction_grouped_diet_time.csv`](../assets/results/04_rarefaction_qc/tables/rarefaction_grouped_diet_time.csv): curvas pooled por tiempo para `Ctrl`, `BL15` y `BL30`.
 
 ## 6. Figuras
 
-![Grouped rarefaction Ctrl vs Hydrolysate](../../assets/results/04_rarefaction_qc/figures/rarefaction_grouped_ctrl_vs_hydro_time.png)
+![Grouped rarefaction Ctrl vs Hydrolysate](../assets/results/04_rarefaction_qc/figures/rarefaction_grouped_ctrl_vs_hydro_time.png)
 
 **Figura 1. Curvas de rarefacción agrupadas comparando `Ctrl` frente a `Hydrolysate`.** Cada línea representa la riqueza ASV esperada tras agregar los conteos de las muestras pertenecientes a cada grupo y tiempo. La visualización prioriza legibilidad de tendencias grupales por tiempo.
 
-![Grouped rarefaction diet](../../assets/results/04_rarefaction_qc/figures/rarefaction_grouped_diet_time.png)
+![Grouped rarefaction diet](../assets/results/04_rarefaction_qc/figures/rarefaction_grouped_diet_time.png)
 
 **Figura 2. Curvas de rarefacción agrupadas por dieta (`Ctrl`, `BL15`, `BL30`).** Esta versión permite revisar si el patrón global de cobertura cambia al separar los dos niveles de hidrolizado usando abundancias pooled por grupo y tiempo.
 
-![Rarefaction final all samples](../../assets/results/04_rarefaction_qc/figures/rarefaction_final_all_by_sample_type.png)
+![Rarefaction final all samples](../assets/results/04_rarefaction_qc/figures/rarefaction_final_all_by_sample_type.png)
 
 **Figura 3. Curvas de rarefacción del objeto global filtrado.** Las muestras se separan por tipo (`Intestine`, `Feed`, `Mock`). Cloroplasto y mitocondria se conservan en esta versión del filtrado, por lo que feed debe interpretarse como control composicional ampliado.
 
-![Rarefaction biological by diet and time](../../assets/results/04_rarefaction_qc/figures/rarefaction_biological_by_diet_time.png)
+![Rarefaction biological by diet and time](../assets/results/04_rarefaction_qc/figures/rarefaction_biological_by_diet_time.png)
 
 **Figura 4. Curvas de rarefacción de muestras intestinales por dieta y tiempo.** Cada curva representa una muestra intestinal filtrada a nivel ASV.
 
-![Rarefaction biological hydro](../../assets/results/04_rarefaction_qc/figures/rarefaction_biological_ctrl_vs_hydro_time.png)
+![Rarefaction biological hydro](../assets/results/04_rarefaction_qc/figures/rarefaction_biological_ctrl_vs_hydro_time.png)
 
 **Figura 5. Curvas de rarefacción de muestras intestinales comparando `Ctrl` frente a `Hydrolysate`.** La figura permite revisar si los grupos comparados tienen coberturas de riqueza similares dentro de cada tiempo.
 
-![Observed ASVs versus depth](../../assets/results/04_rarefaction_qc/figures/observed_asvs_vs_depth_biological.png)
+![Observed ASVs versus depth](../assets/results/04_rarefaction_qc/figures/observed_asvs_vs_depth_biological.png)
 
 **Figura 6. ASVs observadas frente a profundidad final en muestras intestinales.** Este gráfico ayuda a detectar si la riqueza observada está dominada por profundidad de secuenciación.
 

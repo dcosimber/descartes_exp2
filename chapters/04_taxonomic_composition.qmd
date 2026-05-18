@@ -31,14 +31,14 @@ Inputs principales:
 Outputs principales:
 
 - Figuras de barplots:
-  [`../../assets/results/05_taxonomic_composition/figures/barplots/`](../../assets/results/05_taxonomic_composition/figures/barplots/)
+  [`../assets/results/05_taxonomic_composition/figures/barplots/`](../assets/results/05_taxonomic_composition/figures/barplots/)
 - Tablas fuente de barplots:
-  [`../../assets/results/05_taxonomic_composition/tables/barplots/`](../../assets/results/05_taxonomic_composition/tables/barplots/)
+  [`../assets/results/05_taxonomic_composition/tables/barplots/`](../assets/results/05_taxonomic_composition/tables/barplots/)
 - Figuras Venn/UpSet:
-  [`../../assets/results/05_taxonomic_composition/figures/venn/`](../../assets/results/05_taxonomic_composition/figures/venn/) y
-  [`../../assets/results/05_taxonomic_composition/figures/upset/`](../../assets/results/05_taxonomic_composition/figures/upset/)
+  [`../assets/results/05_taxonomic_composition/figures/venn/`](../assets/results/05_taxonomic_composition/figures/venn/) y
+  [`../assets/results/05_taxonomic_composition/figures/upset/`](../assets/results/05_taxonomic_composition/figures/upset/)
 - Tablas de overlap:
-  [`../../assets/results/05_taxonomic_composition/tables/overlap/`](../../assets/results/05_taxonomic_composition/tables/overlap/)
+  [`../assets/results/05_taxonomic_composition/tables/overlap/`](../assets/results/05_taxonomic_composition/tables/overlap/)
 - Script:
   [`../../../scripts/05_taxonomic_composition.R`](../../../scripts/05_taxonomic_composition.R)
 
@@ -64,13 +64,13 @@ paneles y aportaba menos claridad visual.
 
 ### 4.1. Paneles por tratamiento
 
-![Genus panels by treatment](../../assets/results/05_taxonomic_composition/figures/barplots/means/02_panels_by_treatment_ctrl_bl15_bl30/genus_barplot_panel_mean_ctrl_bl15_bl30_by_time.png)
+![Genus panels by treatment](../assets/results/05_taxonomic_composition/figures/barplots/means/02_panels_by_treatment_ctrl_bl15_bl30/genus_barplot_panel_mean_ctrl_bl15_bl30_by_time.png)
 
 **Figura 1. Composición media a nivel de género por tratamiento.** Cada panel
 corresponde a una dieta (`Ctrl`, `BL15`, `BL30`) y las barras muestran la
 evolución temporal.
 
-![Family panels by treatment](../../assets/results/05_taxonomic_composition/figures/barplots/means/02_panels_by_treatment_ctrl_bl15_bl30/family_barplot_panel_mean_ctrl_bl15_bl30_by_time.png)
+![Family panels by treatment](../assets/results/05_taxonomic_composition/figures/barplots/means/02_panels_by_treatment_ctrl_bl15_bl30/family_barplot_panel_mean_ctrl_bl15_bl30_by_time.png)
 
 **Figura 2. Composición media a nivel de familia por tratamiento.** Esta vista
 resume el mismo patrón con mayor robustez taxonómica.
@@ -112,12 +112,12 @@ La lectura a nivel de familia confirma el mismo patrón:
 
 ### 4.2. Paneles por tiempo
 
-![Genus panels by time](../../assets/results/05_taxonomic_composition/figures/barplots/means/04_panels_by_time_ctrl_bl15_bl30/genus_barplot_panel_by_time_mean_ctrl_bl15_bl30.png)
+![Genus panels by time](../assets/results/05_taxonomic_composition/figures/barplots/means/04_panels_by_time_ctrl_bl15_bl30/genus_barplot_panel_by_time_mean_ctrl_bl15_bl30.png)
 
 **Figura 3. Composición media a nivel de género por tiempo.** Cada panel es un
 tiempo y las barras comparan `Ctrl`, `BL15` y `BL30`.
 
-![Family panels by time](../../assets/results/05_taxonomic_composition/figures/barplots/means/04_panels_by_time_ctrl_bl15_bl30/family_barplot_panel_by_time_mean_ctrl_bl15_bl30.png)
+![Family panels by time](../assets/results/05_taxonomic_composition/figures/barplots/means/04_panels_by_time_ctrl_bl15_bl30/family_barplot_panel_by_time_mean_ctrl_bl15_bl30.png)
 
 **Figura 4. Composición media a nivel de familia por tiempo.** Esta orientación
 facilita comparar dietas dentro de cada día.
@@ -141,13 +141,13 @@ y se asocia a una mayor dominancia tardía de Mycoplasmataceae, especialmente en
 
 ## 5. Comparación Ctrl, Hydrolysate y Feed
 
-![Phylum Ctrl Hydrolysate Feed](../../assets/results/05_taxonomic_composition/figures/barplots/means/05_ctrl_hydrolysate_feed/phylum_barplot_mean_ctrl_hydro_feed.png)
+![Phylum Ctrl Hydrolysate Feed](../assets/results/05_taxonomic_composition/figures/barplots/means/05_ctrl_hydrolysate_feed/phylum_barplot_mean_ctrl_hydro_feed.png)
 
 **Figura 5. Composición media a nivel de filo en `Ctrl`, `Hydrolysate` y
 `Feed`.** Esta figura permite evaluar si la señal del pienso aparece en el
 intestino.
 
-![Genus Ctrl Hydrolysate Feed](../../assets/results/05_taxonomic_composition/figures/barplots/means/05_ctrl_hydrolysate_feed/genus_barplot_mean_ctrl_hydro_feed.png)
+![Genus Ctrl Hydrolysate Feed](../assets/results/05_taxonomic_composition/figures/barplots/means/05_ctrl_hydrolysate_feed/genus_barplot_mean_ctrl_hydro_feed.png)
 
 **Figura 6. Composición media a nivel de género/categoría final identificada en
 `Ctrl`, `Hydrolysate` y `Feed`.**
@@ -230,7 +230,7 @@ arrastre directo del feed.
 
 ## 6. Barplots por muestra
 
-![Genus samples](../../assets/results/05_taxonomic_composition/figures/barplots/samples/genus_barplot_by_sample.png)
+![Genus samples](../assets/results/05_taxonomic_composition/figures/barplots/samples/genus_barplot_by_sample.png)
 
 **Figura 7. Composición individual por muestra a nivel de género.** Los nombres
 de muestra se eliminan del eje para evitar ilegibilidad; la trazabilidad queda
@@ -243,7 +243,7 @@ taxón. En `D30` y `D90`, la variabilidad visual disminuye porque la comunidad s
 vuelve más dominada por `Vibrio` o Mycoplasmataceae, respectivamente.
 
 Tabla fuente:
-[`genus_relative_abundance_by_sample.csv`](../../assets/results/05_taxonomic_composition/tables/barplots/samples/genus_relative_abundance_by_sample.csv)
+[`genus_relative_abundance_by_sample.csv`](../assets/results/05_taxonomic_composition/tables/barplots/samples/genus_relative_abundance_by_sample.csv)
 
 ## 7. Controles mock ZymoBIOMICS
 
@@ -252,17 +252,17 @@ ZymoBIOMICS Microbial Community Standard D6300. Esa columna es la referencia
 adecuada para amplicones 16S. Las levaduras del estándar tienen valor `NA` en la
 columna 16S-only, por lo que no se incluyen en la barra esperada bacteriana.
 
-![Mock genus alluvial](../../assets/results/05_taxonomic_composition/figures/barplots/mock/mock_genus_expected_vs_observed_alluvial.png)
+![Mock genus alluvial](../assets/results/05_taxonomic_composition/figures/barplots/mock/mock_genus_expected_vs_observed_alluvial.png)
 
 **Figura 8. Mock a nivel de género, comparación expected vs observed con
 conexión alluvial.**
 
-![Mock species alluvial](../../assets/results/05_taxonomic_composition/figures/barplots/mock/mock_species_expected_vs_observed_alluvial.png)
+![Mock species alluvial](../assets/results/05_taxonomic_composition/figures/barplots/mock/mock_species_expected_vs_observed_alluvial.png)
 
 **Figura 9. Mock a nivel de especie, comparación expected vs observed con
 conexión alluvial.**
 
-![Mock genus by sample](../../assets/results/05_taxonomic_composition/figures/barplots/mock/mock_genus_observed_by_sample.png)
+![Mock genus by sample](../assets/results/05_taxonomic_composition/figures/barplots/mock/mock_genus_observed_by_sample.png)
 
 **Figura 10. Composición observada por muestra mock a nivel de género.**
 
@@ -300,10 +300,10 @@ Notas de nomenclatura aplicadas:
 
 Tablas fuente:
 
-- [`mock_genus_expected_vs_observed.csv`](../../assets/results/05_taxonomic_composition/tables/barplots/mock/mock_genus_expected_vs_observed.csv)
-- [`mock_species_expected_vs_observed.csv`](../../assets/results/05_taxonomic_composition/tables/barplots/mock/mock_species_expected_vs_observed.csv)
-- [`mock_genus_expected_vs_observed_alluvial.csv`](../../assets/results/05_taxonomic_composition/tables/barplots/mock/mock_genus_expected_vs_observed_alluvial.csv)
-- [`mock_species_expected_vs_observed_alluvial.csv`](../../assets/results/05_taxonomic_composition/tables/barplots/mock/mock_species_expected_vs_observed_alluvial.csv)
+- [`mock_genus_expected_vs_observed.csv`](../assets/results/05_taxonomic_composition/tables/barplots/mock/mock_genus_expected_vs_observed.csv)
+- [`mock_species_expected_vs_observed.csv`](../assets/results/05_taxonomic_composition/tables/barplots/mock/mock_species_expected_vs_observed.csv)
+- [`mock_genus_expected_vs_observed_alluvial.csv`](../assets/results/05_taxonomic_composition/tables/barplots/mock/mock_genus_expected_vs_observed_alluvial.csv)
+- [`mock_species_expected_vs_observed_alluvial.csv`](../assets/results/05_taxonomic_composition/tables/barplots/mock/mock_species_expected_vs_observed_alluvial.csv)
 
 ## 8. Venn y UpSet
 
@@ -323,17 +323,17 @@ el porcentaje respecto al total representado en ese Venn.
 
 Los resultados se guardan en subcarpetas separadas:
 
-- Género: [`../../assets/results/05_taxonomic_composition/figures/venn/genus/`](../../assets/results/05_taxonomic_composition/figures/venn/genus/),
-  [`../../assets/results/05_taxonomic_composition/figures/upset/genus/`](../../assets/results/05_taxonomic_composition/figures/upset/genus/) y
-  [`../../assets/results/05_taxonomic_composition/tables/overlap/genus/`](../../assets/results/05_taxonomic_composition/tables/overlap/genus/).
-- ASV: [`../../assets/results/05_taxonomic_composition/figures/venn/asv/`](../../assets/results/05_taxonomic_composition/figures/venn/asv/),
-  [`../../assets/results/05_taxonomic_composition/figures/upset/asv/`](../../assets/results/05_taxonomic_composition/figures/upset/asv/) y
-  [`../../assets/results/05_taxonomic_composition/tables/overlap/asv/`](../../assets/results/05_taxonomic_composition/tables/overlap/asv/).
+- Género: [`../assets/results/05_taxonomic_composition/figures/venn/genus/`](../assets/results/05_taxonomic_composition/figures/venn/genus/),
+  [`../assets/results/05_taxonomic_composition/figures/upset/genus/`](../assets/results/05_taxonomic_composition/figures/upset/genus/) y
+  [`../assets/results/05_taxonomic_composition/tables/overlap/genus/`](../assets/results/05_taxonomic_composition/tables/overlap/genus/).
+- ASV: [`../assets/results/05_taxonomic_composition/figures/venn/asv/`](../assets/results/05_taxonomic_composition/figures/venn/asv/),
+  [`../assets/results/05_taxonomic_composition/figures/upset/asv/`](../assets/results/05_taxonomic_composition/figures/upset/asv/) y
+  [`../assets/results/05_taxonomic_composition/tables/overlap/asv/`](../assets/results/05_taxonomic_composition/tables/overlap/asv/).
 
 Las etiquetas y porcentajes representados en los Venn quedan documentados en
-[`core_genus_venn_region_labels.csv`](../../assets/results/05_taxonomic_composition/tables/overlap/genus/core_genus_venn_region_labels.csv)
+[`core_genus_venn_region_labels.csv`](../assets/results/05_taxonomic_composition/tables/overlap/genus/core_genus_venn_region_labels.csv)
 y
-[`core_asv_venn_region_labels.csv`](../../assets/results/05_taxonomic_composition/tables/overlap/asv/core_asv_venn_region_labels.csv).
+[`core_asv_venn_region_labels.csv`](../assets/results/05_taxonomic_composition/tables/overlap/asv/core_asv_venn_region_labels.csv).
 
 Las comparaciones seleccionadas para Venn fueron las que responden de
 forma más directa al diseño experimental:
@@ -350,11 +350,11 @@ Los contrastes temporales dentro de una dieta (`D07`, `D30`, `D90` dentro de
 `Ctrl`, `BL15` o `BL30`) se conservan como UpSet y tablas, pero no como Venn,
 porque una figura de tres tiempos tiende a ser menos legible y aporta menos que
 la matriz de intersecciones para este caso. Esta decisión queda recogida en
-[`core_genus_overlap_comparison_plan.csv`](../../assets/results/05_taxonomic_composition/tables/overlap/genus/core_genus_overlap_comparison_plan.csv)
+[`core_genus_overlap_comparison_plan.csv`](../assets/results/05_taxonomic_composition/tables/overlap/genus/core_genus_overlap_comparison_plan.csv)
 y
-[`core_asv_overlap_comparison_plan.csv`](../../assets/results/05_taxonomic_composition/tables/overlap/asv/core_asv_overlap_comparison_plan.csv).
+[`core_asv_overlap_comparison_plan.csv`](../assets/results/05_taxonomic_composition/tables/overlap/asv/core_asv_overlap_comparison_plan.csv).
 
-![Composite key Venn genus](../../assets/results/05_taxonomic_composition/figures/venn/genus/composite/core_genus_venn_key_composite.png)
+![Composite key Venn genus](../assets/results/05_taxonomic_composition/figures/venn/genus/composite/core_genus_venn_key_composite.png)
 
 **Figura 11. Panel compuesto de los Venn más informativos a nivel de género.**
 El panel integra la comparación global `Ctrl`-`Hydrolysate`-`Feed`, los
@@ -363,46 +363,46 @@ contrastes globales por dieta y por hidrolizado, y los contrastes temporales
 forma compacta qué géneros forman parte del core compartido o exclusivo en las
 comparaciones biológicamente más relevantes.
 
-![Composite key Venn ASV](../../assets/results/05_taxonomic_composition/figures/venn/asv/composite/core_asv_venn_key_composite.png)
+![Composite key Venn ASV](../assets/results/05_taxonomic_composition/figures/venn/asv/composite/core_asv_venn_key_composite.png)
 
 **Figura 12. Panel compuesto de los Venn más informativos a nivel de ASV.**
 La misma selección de contrastes se representa a resolución de ASV para
 comprobar si los patrones observados a nivel de género se mantienen cuando no
 se agregan variantes de secuencia.
 
-![UpSet diet global genus](../../assets/results/05_taxonomic_composition/figures/upset/genus/upset_core_genus_diet_global.png)
+![UpSet diet global genus](../assets/results/05_taxonomic_composition/figures/upset/genus/upset_core_genus_diet_global.png)
 
 **Figura 13. UpSet global de géneros core por dieta.**
 
-![Venn diet global genus](../../assets/results/05_taxonomic_composition/figures/venn/genus/venn_core_genus_diet_global.png)
+![Venn diet global genus](../assets/results/05_taxonomic_composition/figures/venn/genus/venn_core_genus_diet_global.png)
 
 **Figura 14. Venn global de géneros core por dieta.** Los círculos representan
 los conjuntos de géneros core de `Ctrl`, `BL15` y `BL30`; las etiquetas indican
 el número real de géneros y su porcentaje dentro del Venn.
 
-![Venn hydro global genus](../../assets/results/05_taxonomic_composition/figures/venn/genus/venn_core_genus_hydro_global.png)
+![Venn hydro global genus](../assets/results/05_taxonomic_composition/figures/venn/genus/venn_core_genus_hydro_global.png)
 
 **Figura 15. Venn global de géneros core comparando `Ctrl` e `Hydrolysate`.**
 Esta figura resume la pregunta global de control frente a hidrolizado agrupando
 `BL15` y `BL30`.
 
-![Venn diet global ASV](../../assets/results/05_taxonomic_composition/figures/venn/asv/venn_core_asv_diet_global.png)
+![Venn diet global ASV](../assets/results/05_taxonomic_composition/figures/venn/asv/venn_core_asv_diet_global.png)
 
 **Figura 16. Venn global de ASVs core por dieta.** Esta versión conserva la
 resolución de ASV y permite comprobar si el patrón observado a nivel de género
 se mantiene a mayor resolución.
 
-![Core genera counts](../../assets/results/05_taxonomic_composition/figures/overlap_summary/genus/core_genus_counts.png)
+![Core genera counts](../assets/results/05_taxonomic_composition/figures/overlap_summary/genus/core_genus_counts.png)
 
 **Figura 17. Resumen del número de géneros core por grupo dieta-tiempo.**
 
-![Core ASV counts](../../assets/results/05_taxonomic_composition/figures/overlap_summary/asv/core_asv_counts.png)
+![Core ASV counts](../assets/results/05_taxonomic_composition/figures/overlap_summary/asv/core_asv_counts.png)
 
 **Figura 18. Resumen del número de ASVs core por grupo dieta-tiempo.**
 
 Estos gráficos deben interpretarse junto con las listas de géneros comunes y
-ASVs comunes y exclusivos en [`../../assets/results/05_taxonomic_composition/tables/overlap/genus/`](../../assets/results/05_taxonomic_composition/tables/overlap/genus/)
-y [`../../assets/results/05_taxonomic_composition/tables/overlap/asv/`](../../assets/results/05_taxonomic_composition/tables/overlap/asv/), ya que el tamaño de las
+ASVs comunes y exclusivos en [`../assets/results/05_taxonomic_composition/tables/overlap/genus/`](../assets/results/05_taxonomic_composition/tables/overlap/genus/)
+y [`../assets/results/05_taxonomic_composition/tables/overlap/asv/`](../assets/results/05_taxonomic_composition/tables/overlap/asv/), ya que el tamaño de las
 intersecciones depende del umbral de prevalencia usado para definir core.
 
 En la comparación global `Ctrl`-`Hydrolysate`-`Feed`, el core del pienso queda

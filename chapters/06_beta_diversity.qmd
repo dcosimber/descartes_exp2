@@ -54,8 +54,8 @@ del centroide, por diferencias de dispersión intra-grupo o por ambas cosas.
 
 Las figuras se guardan por distancia:
 
-- [`../../assets/results/07_beta_diversity/figures/bray/`](../../assets/results/07_beta_diversity/figures/bray/)
-- [`../../assets/results/07_beta_diversity/figures/aitchison/`](../../assets/results/07_beta_diversity/figures/aitchison/)
+- [`../assets/results/07_beta_diversity/figures/bray/`](../assets/results/07_beta_diversity/figures/bray/)
+- [`../assets/results/07_beta_diversity/figures/aitchison/`](../assets/results/07_beta_diversity/figures/aitchison/)
 
 Cada distancia contiene subcarpetas equivalentes: `diet_global`,
 `hydro_global`, `diet_by_time`, `hydro_by_time`, `time_by_diet` y
@@ -63,10 +63,10 @@ Cada distancia contiene subcarpetas equivalentes: `diet_global`,
 
 Las tablas principales son:
 
-- [`../../assets/results/07_beta_diversity/tables/permanova.csv`](../../assets/results/07_beta_diversity/tables/permanova.csv)
-- [`../../assets/results/07_beta_diversity/tables/pairwise_permanova.csv`](../../assets/results/07_beta_diversity/tables/pairwise_permanova.csv)
-- [`../../assets/results/07_beta_diversity/tables/betadisper_significant_permanova.csv`](../../assets/results/07_beta_diversity/tables/betadisper_significant_permanova.csv)
-- [`../../assets/results/07_beta_diversity/tables/betadisper_group_dispersion_summary.csv`](../../assets/results/07_beta_diversity/tables/betadisper_group_dispersion_summary.csv)
+- [`../assets/results/07_beta_diversity/tables/permanova.csv`](../assets/results/07_beta_diversity/tables/permanova.csv)
+- [`../assets/results/07_beta_diversity/tables/pairwise_permanova.csv`](../assets/results/07_beta_diversity/tables/pairwise_permanova.csv)
+- [`../assets/results/07_beta_diversity/tables/betadisper_significant_permanova.csv`](../assets/results/07_beta_diversity/tables/betadisper_significant_permanova.csv)
+- [`../assets/results/07_beta_diversity/tables/betadisper_group_dispersion_summary.csv`](../assets/results/07_beta_diversity/tables/betadisper_group_dispersion_summary.csv)
 
 ## 4. Resultados globales
 
@@ -116,7 +116,7 @@ separación significativa frente a `Ctrl`. Este resultado es importante porque
 evita sobredimensionar el efecto del hidrolizado: si se mezclan `D07`, `D30` y
 `D90`, la señal queda diluida por el fuerte cambio temporal.
 
-![Bray ASV hydro global](../../assets/results/07_beta_diversity/figures/bray/hydro_global/beta_bray_asv_hydro_global.png)
+![Bray ASV hydro global](../assets/results/07_beta_diversity/figures/bray/hydro_global/beta_bray_asv_hydro_global.png)
 
 **Figura 1. Ordenación Bray-Curtis a nivel de ASV para `Ctrl` frente a `Hydrolysate`.**
 
@@ -125,7 +125,7 @@ La distribución de puntos refleja más variabilidad interna que separación cla
 entre grupos. Esto encaja con la idea de que los cambios dominantes en
 abundancia relativa están asociados sobre todo al tiempo.
 
-![Aitchison genus hydro global](../../assets/results/07_beta_diversity/figures/aitchison/hydro_global/beta_aitchison_genus_hydro_global.png)
+![Aitchison genus hydro global](../assets/results/07_beta_diversity/figures/aitchison/hydro_global/beta_aitchison_genus_hydro_global.png)
 
 **Figura 2. Ordenación Aitchison a nivel de género para `Ctrl` frente a `Hydrolysate`.**
 
@@ -143,11 +143,11 @@ todavía no muestran una separación clara por dieta. En `D90`, pese a que la
 composición ha cambiado mucho respecto al inicio, la separación por dieta vuelve
 a ser débil o no significativa.
 
-![Bray ASV diet by time](../../assets/results/07_beta_diversity/figures/bray/diet_by_time/beta_bray_asv_diet_by_time.png)
+![Bray ASV diet by time](../assets/results/07_beta_diversity/figures/bray/diet_by_time/beta_bray_asv_diet_by_time.png)
 
 **Figura 3. Ordenaciones Bray-Curtis locales comparando `Ctrl`, `BL15` y `BL30` dentro de cada tiempo a nivel de ASV.**
 
-![Aitchison genus diet by time](../../assets/results/07_beta_diversity/figures/aitchison/diet_by_time/beta_aitchison_genus_diet_by_time.png)
+![Aitchison genus diet by time](../assets/results/07_beta_diversity/figures/aitchison/diet_by_time/beta_aitchison_genus_diet_by_time.png)
 
 **Figura 4. Ordenaciones Aitchison locales comparando `Ctrl`, `BL15` y `BL30` dentro de cada tiempo a nivel de género.**
 
@@ -172,11 +172,11 @@ la misma conclusión: el hidrolizado se detecta principalmente en `D30`. En `D07
 aparecen tendencias próximas al umbral en algunos casos, pero no son robustas.
 En `D90` la señal desaparece o queda claramente debilitada.
 
-![Bray ASV hydro by time](../../assets/results/07_beta_diversity/figures/bray/hydro_by_time/beta_bray_asv_hydro_by_time.png)
+![Bray ASV hydro by time](../assets/results/07_beta_diversity/figures/bray/hydro_by_time/beta_bray_asv_hydro_by_time.png)
 
 **Figura 5. Ordenaciones Bray-Curtis locales comparando `Ctrl` frente a `Hydrolysate` dentro de cada tiempo a nivel de ASV.**
 
-![Aitchison genus hydro by time](../../assets/results/07_beta_diversity/figures/aitchison/hydro_by_time/beta_aitchison_genus_hydro_by_time.png)
+![Aitchison genus hydro by time](../assets/results/07_beta_diversity/figures/aitchison/hydro_by_time/beta_aitchison_genus_hydro_by_time.png)
 
 **Figura 6. Ordenaciones Aitchison locales comparando `Ctrl` frente a `Hydrolysate` dentro de cada tiempo a nivel de género.**
 
@@ -199,11 +199,11 @@ El tiempo separa de forma significativa las comunidades dentro de cada dieta.
 Esta es la señal más robusta del bloque de beta diversidad. Se observa en
 `Ctrl`, `BL15` y `BL30`, y se mantiene tanto con Bray-Curtis como con Aitchison.
 
-![Bray ASV time by diet](../../assets/results/07_beta_diversity/figures/bray/time_by_diet/beta_bray_asv_time_by_diet.png)
+![Bray ASV time by diet](../assets/results/07_beta_diversity/figures/bray/time_by_diet/beta_bray_asv_time_by_diet.png)
 
 **Figura 7. Ordenaciones Bray-Curtis locales comparando `D07`, `D30` y `D90` dentro de cada dieta a nivel de ASV.**
 
-![Aitchison genus time by diet](../../assets/results/07_beta_diversity/figures/aitchison/time_by_diet/beta_aitchison_genus_time_by_diet.png)
+![Aitchison genus time by diet](../assets/results/07_beta_diversity/figures/aitchison/time_by_diet/beta_aitchison_genus_time_by_diet.png)
 
 **Figura 8. Ordenaciones Aitchison locales comparando `D07`, `D30` y `D90` dentro de cada dieta a nivel de género.**
 
@@ -230,7 +230,7 @@ de composición se detectó una señal importante de cloroplasto y mitocondria e
 el feed; sin embargo, esa señal no implica que la comunidad intestinal sea una
 copia directa de la composición del pienso.
 
-![Bray ASV ctrl hydro feed](../../assets/results/07_beta_diversity/figures/bray/ctrl_hydro_feed/beta_bray_asv_ctrl_hydro_feed.png)
+![Bray ASV ctrl hydro feed](../assets/results/07_beta_diversity/figures/bray/ctrl_hydro_feed/beta_bray_asv_ctrl_hydro_feed.png)
 
 **Figura 9. Ordenación Bray-Curtis a nivel de ASV comparando `Ctrl`, `Hydrolysate` y `Feed`.**
 
@@ -239,7 +239,7 @@ nivel de ASV y género. No obstante, `betadisper` también es significativo para
 Bray, de modo que parte de la señal puede estar asociada a diferencias de
 dispersión entre grupos.
 
-![Aitchison genus ctrl hydro feed](../../assets/results/07_beta_diversity/figures/aitchison/ctrl_hydro_feed/beta_aitchison_genus_ctrl_hydro_feed.png)
+![Aitchison genus ctrl hydro feed](../assets/results/07_beta_diversity/figures/aitchison/ctrl_hydro_feed/beta_aitchison_genus_ctrl_hydro_feed.png)
 
 **Figura 10. Ordenación Aitchison a nivel de género comparando `Ctrl`, `Hydrolysate` y `Feed`.**
 
@@ -272,10 +272,10 @@ intra-grupo.
 
 Tablas completas:
 
-- [`../../assets/results/07_beta_diversity/tables/betadisper_significant_permanova.csv`](../../assets/results/07_beta_diversity/tables/betadisper_significant_permanova.csv)
-- [`../../assets/results/07_beta_diversity/tables/betadisper_group_dispersion_summary.csv`](../../assets/results/07_beta_diversity/tables/betadisper_group_dispersion_summary.csv)
-- [`../../assets/results/07_beta_diversity/tables/bray/permanova/bray_betadisper_significant_permanova.csv`](../../assets/results/07_beta_diversity/tables/bray/permanova/bray_betadisper_significant_permanova.csv)
-- [`../../assets/results/07_beta_diversity/tables/aitchison/permanova/aitchison_betadisper_significant_permanova.csv`](../../assets/results/07_beta_diversity/tables/aitchison/permanova/aitchison_betadisper_significant_permanova.csv)
+- [`../assets/results/07_beta_diversity/tables/betadisper_significant_permanova.csv`](../assets/results/07_beta_diversity/tables/betadisper_significant_permanova.csv)
+- [`../assets/results/07_beta_diversity/tables/betadisper_group_dispersion_summary.csv`](../assets/results/07_beta_diversity/tables/betadisper_group_dispersion_summary.csv)
+- [`../assets/results/07_beta_diversity/tables/bray/permanova/bray_betadisper_significant_permanova.csv`](../assets/results/07_beta_diversity/tables/bray/permanova/bray_betadisper_significant_permanova.csv)
+- [`../assets/results/07_beta_diversity/tables/aitchison/permanova/aitchison_betadisper_significant_permanova.csv`](../assets/results/07_beta_diversity/tables/aitchison/permanova/aitchison_betadisper_significant_permanova.csv)
 
 ## 11. Interpretación biológica integrada
 

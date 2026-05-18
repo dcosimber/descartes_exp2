@@ -1,32 +1,29 @@
 # Reproducibilidad
 
-## Actualizacion de contenidos
+## Proyecto autocontenido
 
-Los capitulos bajo `chapters/generated/` no deben editarse manualmente. Se
-regeneran desde los reports Markdown del proyecto downstream con:
+Este repositorio Quarto contiene los capitulos, figuras y tablas necesarios para renderizar la web sin depender de rutas externas. Los capitulos del libro estan en `chapters/` y los assets usados por las figuras y tablas estan en `assets/results/`.
 
-```bash
-Rscript scripts/sync_downstream_reports.R
-```
+Los contenidos incluidos representan una instantanea curada de los resultados disponibles en el momento de preparar esta web. Cualquier actualizacion del libro debe hacerse editando directamente los archivos del repositorio.
 
-Despues de sincronizar, la web se renderiza con:
+## Render local
+
+Desde la raiz del repositorio:
 
 ```bash
 quarto render
 ```
 
+El HTML renderizado se escribe en `docs/`. Esta carpeta es un producto de salida y no debe editarse manualmente.
+
 ## Publicacion
 
-El repositorio incluye un workflow de GitHub Pages en
-`.github/workflows/pages.yml`. Cuando el repositorio este publicado en GitHub,
-el sitio se podra desplegar automaticamente desde la carpeta `docs/`.
+El repositorio incluye un workflow de GitHub Pages en `.github/workflows/pages.yml`. Cada push a `main` renderiza y publica la web automaticamente.
 
-## Fuente analitica
+## Figuras y tablas
 
-Los resultados proceden de:
+Las figuras incluidas en el libro se guardan como `PNG` y las tablas como `CSV` dentro de `assets/results/`. Estos archivos forman parte del repositorio para que la web sea reproducible y portable.
 
-```text
-/mnt/lustre/scratch/nlsas/home/otras/pia/dci/descartes_exp2/custom_downstream_analysis
-```
+## Bibliografia local
 
-Las figuras y tablas necesarias para la web se copian a `assets/results/`.
+La carpeta `bibliography/` esta reservada para PDFs de articulos de trabajo local. Esta ignorada por Git para evitar subir PDFs a GitHub. Las referencias citables del proyecto deben mantenerse en `references.bib`.

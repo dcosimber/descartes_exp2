@@ -1,11 +1,8 @@
 # DESCARTES Exp2 microbiome
 
-Este libro Quarto recopila los resultados downstream del analisis de microbiota
-16S del experimento `descartes_exp2`.
+Este libro Quarto recopila los resultados del analisis de microbiota 16S del experimento `descartes_exp2` en una web navegable, autocontenida y publicable en GitHub Pages.
 
-La idea es tener una web navegable, limpia y publicable en GitHub Pages, generada
-a partir de los reports Markdown que ya se estan creando dentro de
-`custom_downstream_analysis/results/*/reports/`.
+El repositorio incluye directamente los capitulos, figuras y tablas necesarios para renderizar la web. Las figuras se conservan como `PNG` y las tablas como `CSV` dentro de `assets/results/`, de forma que el proyecto puede editarse y publicarse sin depender de rutas externas.
 
 ## Objetivo del libro
 
@@ -16,25 +13,7 @@ Integrar en una unica documentacion:
 - rarefaccion, composicion taxonomica, diversidad alfa y beta;
 - abundancia diferencial taxonomica;
 - prediccion funcional con PICRUSt2;
-- figuras, tablas y conclusiones biologicas listas para revisar y convertir en
-  texto de articulo.
-
-## Fuente de resultados
-
-Los capitulos generados se sincronizan desde:
-
-```text
-/mnt/lustre/scratch/nlsas/home/otras/pia/dci/descartes_exp2/custom_downstream_analysis
-```
-
-Para actualizar el libro despues de modificar cualquier bloque de analisis. En
-esta web, las figuras se guardan como `PNG` y las tablas como `CSV`; los formatos
-analiticos originales permanecen en `custom_downstream_analysis`.
-
-```bash
-Rscript scripts/sync_downstream_reports.R
-quarto render
-```
+- figuras, tablas y conclusiones biologicas listas para revisar y convertir en texto de articulo.
 
 ## Estructura
 
@@ -49,6 +28,4 @@ quarto render
 
 ## Nota de uso
 
-Este repositorio no sustituye a los scripts analiticos originales. Es una capa
-de comunicacion y revision: recoge salidas ya generadas, las organiza como libro
-Quarto y facilita su publicacion online.
+Este repositorio funciona como manuscrito/web de resultados. Los capitulos pueden editarse directamente en `chapters/`, y los assets usados por la web viven dentro de `assets/results/`.
