@@ -27,6 +27,7 @@ book:
   date: last-modified
   chapters:
     - index.qmd
+    - chapters/00_introduction_objectives.qmd
     - chapters/0X_Experimental_desing.qmd
     - chapters/01_filtering.qmd
     - chapters/02_dataset_stats.qmd
