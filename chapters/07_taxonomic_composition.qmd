@@ -139,6 +139,61 @@ dominancia temprana de `Vibrio`, mantiene `Photobacterium` en la fase intermedia
 y se asocia a una mayor dominancia tardía de Mycoplasmataceae, especialmente en
 `BL30`.
 
+### 4.3. Contexto bibliográfico de los taxones dominantes
+
+La composición observada encaja con lo descrito para peces marinos y, en
+particular, para peces planos cultivados. A escala global, la microbiota
+intestinal de peces suele estar muy condicionada por el hábitat acuático, la
+salinidad, la dieta, la región intestinal y el estado de desarrollo del animal;
+por eso no conviene interpretar un taxón dominante como "beneficioso" o
+"patógeno" sin información adicional de salud, histología o función
+[@sullam2012fishGutMetaAnalysis; @kim2021hostHabitatFishGut;
+@egerton2018gutMicrobiotaMarineFish]. En rodaballo adulto, los estudios
+metagenómicos disponibles describen una comunidad dominada por `Proteobacteria`
+/ `Pseudomonadota` y `Firmicutes` / `Bacillota`, con `Vibrio` y
+`Photobacterium` como géneros relevantes y con presencia de `Mycoplasma` en el
+tracto gastrointestinal [@xing2013turbotGutMetagenome].
+
+::: {.callout-note title="Lectura para este experimento"}
+La pregunta central no es si `Vibrio`, `Photobacterium` o Mycoplasmataceae son
+"buenos" o "malos" de forma aislada, sino si forman parte de una microbiota
+intestinal esperable en peces marinos y si su dominancia cambia con el tiempo y
+con la dieta. En DESCARTES Exp2, la señal más clara es temporal: `Vibrio` domina
+la fase intermedia (`D30`), mientras que Mycoplasmataceae domina la fase tardía
+(`D90`), con mayor intensidad en hidrolizado y especialmente en `BL30`.
+:::
+
+| Rango | Taxón dominante | Patrón en DESCARTES Exp2 | Contexto bibliográfico | Lectura biológica para este estudio |
+|---|---|---|---|---|
+| Filo | `Pseudomonadota` / Proteobacteria | Filo dominante en intestino de `Ctrl` e `Hydrolysate` y también presente en pienso. | Es uno de los filos más frecuentes en microbiota intestinal de peces, especialmente marinos, y su abundancia se relaciona con el hábitat acuático y la salinidad [@kim2021hostHabitatFishGut; @egerton2018gutMicrobiotaMarineFish]. | Compatible con microbiota intestinal marina esperable; no indica por sí solo transferencia desde el pienso. |
+| Familia | `Vibrionaceae` | Dominante en `D30`, muy marcada en `Ctrl`; en hidrolizados se mantiene pero con mayor contribución de `Photobacterium`. | En peces marinos, Vibrionales, incluyendo `Vibrio` y `Photobacterium`, aparecen de forma recurrente como componentes dominantes; en bacalao atlántico se ha descrito incluso una dominancia de oligotipos de Vibrionales/`Photobacterium` [@sullam2012fishGutMetaAnalysis; @riiser2018vibrionalesCod]. | La dominancia de Vibrionaceae en `D30` puede representar una fase de comunidad simplificada típica de peces marinos; debe vigilarse, pero no equivale automáticamente a disbiosis o patología. |
+| Género | `Vibrio` | Principal género en `D30` y componente importante en todos los tiempos. | En rodaballo adulto, `Vibrio` se ha descrito como género muy abundante en el tracto gastrointestinal, especialmente en regiones distales; algunas especies son oportunistas, pero el género también incluye miembros habituales de la microbiota marina [@xing2013turbotGutMetagenome; @egerton2018gutMicrobiotaMarineFish]. | Es probable que forme parte de la microbiota intestinal marina/core ampliado del sistema. La sobre-dominancia en `D30`, especialmente en control, sugiere una fase transitoria de baja equidad. |
+| Género | `Photobacterium` | Aumenta sobre todo en `BL15` y `BL30` en `D30`; casi desaparece después en `D90`, salvo una fracción menor en `BL30`. | `Photobacterium` pertenece a Vibrionaceae y se ha descrito como dominante o co-dominante en intestino de peces marinos como bacalao; también aparece en estudios de rodaballo [@riiser2018vibrionalesCod; @xing2013turbotGutMetagenome]. | Su presencia intermedia en hidrolizados podría reflejar modulación dietaria de Vibrionaceae más que transferencia directa desde el pienso. La desaparición posterior sugiere que no consolida como dominante tardío. |
+| Familia | Mycoplasmataceae | Domina `D90`, con patrón creciente `Ctrl` < `BL15` < `BL30`. | Mycoplasmataceae se ha descrito como taxón dominante en intestino de peces, especialmente salmonidos, con estudios metagenómicos que sugieren adaptación al nicho intestinal y posible relación mutualista; también se ha observado dominancia posterior en el tracto gastrointestinal de lenguado senegalés [@rasmussen2021mycoplasmaSalmonid; @tapiaPaniagua2019soleaUlvaMicrobiota]. | La expansión en `D90` puede indicar maduración/selección de una microbiota más host-asociada. El gradiente con hidrolizado sugiere una posible modulación por dieta, pero no demuestra causalidad funcional. |
+| Género | `Unclassified Mycoplasmataceae genus` | Etiqueta dominante tardía porque la asignación llega de forma robusta a familia, pero no a género. | La falta de resolución a género/especie es esperable en algunos Mollicutes/Mycoplasmataceae con 16S; por eso es más sólido interpretar a nivel de familia que forzar una especie [@rasmussen2021mycoplasmaSalmonid; @tapiaPaniagua2019soleaUlvaMicrobiota]. | Debe tratarse como Mycoplasmataceae no resuelta. Es un candidato fuerte a taxón core tardío, especialmente en hidrolizados. |
+| Filo/Género | `Fusobacteriota` / `Cetobacterium` | Presente en intestino, con abundancias moderadas o bajas según tiempo y dieta. | `Cetobacterium` es frecuente en peces, sobre todo en sistemas de agua dulce, y puede producir vitamina B12 y contribuir a interacciones microbianas relacionadas con salud intestinal [@qi2023cetobacteriumB12Fish; @butt2019gutMicrobiotaEnergyFish]. | En este rodaballo marino no domina, pero puede representar un componente funcional relevante cuando aparece, especialmente por su potencial de metabolismo de vitaminas/cofactores. |
+| Familia/Género | Comamonadaceae / `Delftia` | Importante en `D07`, después pierde peso. | `Delftia` y otros Comamonadaceae son bacterias acuáticas/ambientales y no suelen definirse como core estable de peces marinos en la misma medida que Vibrionaceae o Mycoplasmataceae. | Probable componente temprano, transitorio o asociado a ambiente/recolonización inicial; conviene no sobreinterpretarlo como microbiota core estable. |
+| Familia/Género | Morganellaceae / `Candidatus Hamiltonella` | Aparece sobre todo en `D07`, con menor persistencia posterior. | `Candidatus Hamiltonella` es más conocido como simbionte de insectos que como miembro típico del intestino de peces. Una asignación de 16S a este nivel puede reflejar limitaciones taxonómicas o parentesco con Enterobacterales/Morganellaceae. | Señal interesante pero prudente: debería considerarse transitoria o candidata a revisión por ASV/BLAST antes de construir una interpretación funcional fuerte. |
+
+A nivel de especie, de momento solo merece la pena hacer una lectura dirigida y
+prudente. En grupos como `Vibrio` y `Photobacterium` existen especies descritas
+en peces planos y en acuicultura con comportamientos muy distintos, desde
+comensales o residentes hasta oportunistas. Sin aislamiento, metagenómica o
+marcadores específicos, la resolución 16S V3-V4 no debe usarse para diagnosticar
+especies patógenas. Por tanto, las conclusiones principales de este bloque deben
+quedar a nivel de familia/género, reservando el nivel especie para ASVs concretas
+que se validen posteriormente por BLAST o análisis dirigido.
+
+Los estudios con ingredientes funcionales e hidrolizados en acuicultura muestran
+que la respuesta de la microbiota intestinal depende de la especie, el nivel de
+inclusión, la matriz dietaria y el tiempo de exposición. En este sentido, los
+resultados de DESCARTES Exp2 son coherentes con una modulación temporal de la
+microbiota por el hidrolizado, más que con una sustitución directa de la
+microbiota intestinal por la microbiota del pienso
+[@siddik2021enzymaticFishProteinHydrolysates;
+@rimoldi2020hydrolyzedFishProteinSeabreamMicrobiome;
+@egerton2020fishProteinHydrolysateSalmon; @wei2023fishProteinHydrolysateTurbot].
+
 ## 5. Comparación Ctrl, Hydrolysate y Feed
 
 ![Phylum Ctrl Hydrolysate Feed](../assets/results/05_taxonomic_composition/figures/barplots/means/05_ctrl_hydrolysate_feed/phylum_barplot_mean_ctrl_hydro_feed.svg)
