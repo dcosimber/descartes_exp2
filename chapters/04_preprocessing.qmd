@@ -56,7 +56,7 @@ La asignación taxonómica no se hizo contra la base `full` de SILVA directament
 
 ## Optimización de parámetros de preprocesamiento
 
-Se comparó un run inicial (`run_01_default`) frente al run optimizado (`run_02_optimized`). La comparación se resume en la @tbl-run-comparison. El run optimizado mantuvo el mismo número de pares crudos, aumentó la retención tras cutadapt y filtrado DADA2, recuperó **662,626 lecturas no quiméricas adicionales** y generó un mayor número de ASVs no quiméricas. La ligera subida de pérdida por quimeras fue aceptable porque la fusión de pares siguió siendo muy alta.
+Se comparó un run inicial (`run_01_default`) frente al run optimizado (`run_02_optimized`). La comparación se resume en la @tbl-run-comparison. El run optimizado mantuvo el mismo número de pares crudos, aumentó la retención tras `cutadapt` y filtrado `DADA2`, recuperó **662,626 lecturas no quiméricas adicionales** y generó un mayor número de ASVs no quiméricas. La ligera subida de pérdida por quimeras fue aceptable porque la fusión de pares siguió siendo muy alta.
 
 | Métrica | `run_01_default` | `run_02_optimized` |
 |---|---:|---:|
@@ -80,57 +80,67 @@ Se comparó un run inicial (`run_01_default`) frente al run optimizado (`run_02_
 Se seleccionó `run_02_optimized` porque recuperó más lecturas no quiméricas de alta confianza y mejoró la profundidad final por muestra sin comprometer de forma relevante el éxito de fusión de pares. El resultado clave fue pasar de **7.01 M** a **7.67 M** lecturas no quiméricas.
 :::
 
-La optimización se centró en dos puntos: la retirada de primers y el filtrado por calidad en DADA2. En `cutadapt`, el cambio más relevante fue `discard_untrimmed = FALSE`. Esto evita descartar prematuramente pares en los que el primer no se detecta de forma perfecta, algo especialmente sensible cuando el extremo reverse muestra peor calidad o cuando hay ambigüedad en los primers. En DADA2, el parámetro más influyente fue `maxEE = c(3, 3)`, que controla el número máximo esperado de errores por lectura. Relajar moderadamente `maxEE` recupera lecturas que todavía pueden ser informativas, mientras que mantener `maxN = 0` impide conservar secuencias con bases ambiguas. También se mantuvo `truncLen = c(0, 0)`, de modo que no se impuso un corte fijo de longitud y el control de calidad quedó gobernado por errores esperados y calidad terminal (`truncQ = 2`). La fusión se mantuvo estricta con `maxMismatch = 0` porque el éxito de merging ya era alto y permitir mismatches habría reducido confianza más que resolver un cuello de botella real.
+La optimización se reparte en dos herramientas y conviene leerla así: `cutadapt` resuelve la retirada de primers y decide qué pares llegan a `DADA2`; `DADA2` aplica el filtrado por calidad, aprende errores, infiere ASVs, fusiona pares y retira quimeras. Separar ambos pasos evita mezclar dos decisiones técnicas con consecuencias distintas.
 
-## Parámetros finales
+## cutadapt: retirada de primers
 
-Los parámetros finales se muestran en la @tbl-final-preprocessing-params. El cambio clave frente al run inicial fue no descartar lecturas sin primer detectado en cutadapt y relajar moderadamente el filtro de errores esperados de DADA2 (`maxEE = c(3, 3)`) sin permitir bases ambiguas ni mismatches en la fusión.
+`cutadapt` [@martin2011cutadapt] se utilizó para retirar los primers de amplificación de las lecturas paired-end antes de entrar en `DADA2`. Esta etapa no infiere ASVs ni corrige errores; su objetivo es producir FASTQ recortados, auditables y listos para el filtrado de calidad posterior.
 
-| Etapa | Parámetro | Valor |
+Los parámetros de `cutadapt` se resumen en la @tbl-cutadapt-params. La decisión clave del run optimizado fue `discard_untrimmed = FALSE`: los pares sin primer detectado no se descartaron automáticamente. Esto evita perder lecturas útiles por fallos de detección del primer, especialmente cuando R2 presenta peor calidad o cuando el primer contiene bases degeneradas.
+
+| Parámetro | Valor | Interpretación |
 |---|---|---|
-| cutadapt | Forward primer | `CCTAYGGGRBGCASCAG` |
-| cutadapt | Reverse primer | `GGACTACNNGGGTATCTAAT` |
-| cutadapt | Error rate | `0.1` |
-| cutadapt | Minimum overlap | `3` |
-| cutadapt | Minimum length | `1` |
-| cutadapt | Match read wildcards | `TRUE` |
-| cutadapt | Quality trimming | `-q 0,0` |
-| cutadapt | `discard_untrimmed` | `FALSE` |
-| DADA2 `filterAndTrim` | `truncLen` | `c(0, 0)` |
-| DADA2 `filterAndTrim` | `trimLeft` | `c(0, 0)` |
-| DADA2 `filterAndTrim` | `maxN` | `0` |
-| DADA2 `filterAndTrim` | `maxEE` | `c(3, 3)` |
-| DADA2 `filterAndTrim` | `truncQ` | `2` |
-| DADA2 `filterAndTrim` | `rm.phix` | `TRUE` |
-| DADA2 `learnErrors` | `randomize` | `TRUE` |
-| DADA2 `learnErrors` | `nbases` | `100000000` |
-| DADA2 `dada` | `pool` | `FALSE` |
-| DADA2 `dada` | `selfConsist` | `FALSE` |
-| DADA2 `mergePairs` | `minOverlap` | `12` |
-| DADA2 `mergePairs` | `maxMismatch` | `0` |
-| DADA2 `removeBimeraDenovo` | `method` | `consensus` |
-| Taxonomía | Base primaria | `SILVA 138.2` |
-| Taxonomía | `assignTaxonomy(minBoot)` | `80` |
-| Taxonomía | `tryRC` | `FALSE` |
-| Taxonomía | `addSpecies` | `allowMultiple = TRUE` |
+| Forward primer | `CCTAYGGGRBGCASCAG` | Primer forward de la región 16S V3-V4. |
+| Reverse primer | `GGACTACNNGGGTATCTAAT` | Primer reverse de la región 16S V3-V4. |
+| Error rate | `0.1` | Tolerancia de error para detectar el primer. |
+| Minimum overlap | `3` | Solapamiento mínimo requerido entre primer y lectura. |
+| Minimum length | `1` | Longitud mínima permitida tras recorte. |
+| Match read wildcards | `TRUE` | Permite interpretar bases ambiguas en la lectura durante el matching. |
+| Quality trimming | `-q 0,0` | No se aplica recorte por calidad en `cutadapt`; se delega a `DADA2`. |
+| `discard_untrimmed` | `FALSE` | Conserva pares sin primer detectado para no descartar señal prematuramente. |
 
-: Parámetros finales del run `run_02_optimized` {#tbl-final-preprocessing-params}
+: Parámetros de `cutadapt` en `run_02_optimized` {#tbl-cutadapt-params}
+
+::: {.callout-note title="Qué hace y qué no hace cutadapt"}
+`cutadapt` retira secuencias técnicas, pero **no decide por sí solo qué lecturas son biológicamente fiables**. En este pipeline, la criba de calidad principal se delega a `DADA2` mediante `maxEE`, `maxN` y el modelo de errores.
+:::
+
+### Control de calidad antes y después del recorte
+
+Los perfiles de calidad crudos y recortados se revisaron para comprobar si la retirada de primers generaba lecturas coherentes y para decidir los parámetros de `DADA2`. La @fig-raw-r1-quality y la @fig-raw-r2-quality muestran los perfiles de calidad de las lecturas crudas R1 y R2. La @fig-trimmed-r1-quality y la @fig-trimmed-r2-quality muestran el estado tras `cutadapt`.
+
+![Perfil de calidad de las lecturas crudas R1 del run `run_02_optimized`.](../assets/results/04_preprocessing/figures/run_02_optimized_raw_R1_quality.svg){#fig-raw-r1-quality fig-align="center" width="90%"}
+
+![Perfil de calidad de las lecturas crudas R2 del run `run_02_optimized`.](../assets/results/04_preprocessing/figures/run_02_optimized_raw_R2_quality.svg){#fig-raw-r2-quality fig-align="center" width="90%"}
+
+![Perfil de calidad de las lecturas R1 tras retirada de primers con `cutadapt`.](../assets/results/04_preprocessing/figures/run_02_optimized_trimmed_R1_quality.svg){#fig-trimmed-r1-quality fig-align="center" width="90%"}
+
+![Perfil de calidad de las lecturas R2 tras retirada de primers con `cutadapt`.](../assets/results/04_preprocessing/figures/run_02_optimized_trimmed_R2_quality.svg){#fig-trimmed-r2-quality fig-align="center" width="90%"}
+
+El resultado práctico de `cutadapt` fue muy bueno: en `run_02_optimized` se retuvieron **9,191,390 pares**, es decir, una **mediana de retención del 100%**. Esta retención no significa que todas las lecturas pasen el control final, sino que no se perdieron en la etapa técnica de recorte de primers.
+
+## DADA2: filtrado, ASVs y depuración de errores
+
+`DADA2` [@callahan2016dada2] concentra la parte inferencial del preprocesamiento: filtra lecturas, aprende el modelo de errores, infiere ASVs, fusiona pares y elimina quimeras. Este es el paso que convierte FASTQ recortados en una matriz de ASVs no quiméricas.
+
+### Filtrado de lecturas con `filterAndTrim`
+
+Los parámetros de filtrado de `DADA2` se resumen en la @tbl-dada2-filter-params. El cambio más influyente frente al run inicial fue `maxEE = c(3, 3)`, que relaja moderadamente el número esperado de errores permitidos por lectura. Esta decisión recupera lecturas informativas sin permitir bases ambiguas, porque `maxN = 0` se mantiene estricto.
+
+| Parámetro | Valor | Interpretación |
+|---|---|---|
+| `truncLen` | `c(0, 0)` | No se aplica truncado fijo por posición. |
+| `trimLeft` | `c(0, 0)` | No se recortan bases adicionales al inicio tras `cutadapt`. |
+| `maxN` | `0` | No se permiten bases ambiguas. |
+| `maxEE` | `c(3, 3)` | Máximo de errores esperados en forward y reverse. |
+| `truncQ` | `2` | Truncado terminal si aparece calidad muy baja. |
+| `rm.phix` | `TRUE` | Elimina lecturas compatibles con PhiX. |
+
+: Parámetros de filtrado `DADA2::filterAndTrim` {#tbl-dada2-filter-params}
 
 ::: {.callout-note title="Sin truncado fijo"}
 No se aplicó truncado fijo (`truncLen = c(0, 0)`) porque la fusión de pares era alta y la distribución de longitudes del amplicón se mantuvo coherente. Esta decisión evita perder lecturas por una longitud de truncado demasiado agresiva en un amplicón V3-V4 con calidad variable hacia el final de las lecturas.
 :::
-
-## Control de calidad de lecturas
-
-Los perfiles de calidad crudos y recortados se revisaron antes de fijar los parámetros finales. La @fig-raw-r1-quality y la @fig-raw-r2-quality muestran los perfiles de calidad de las lecturas crudas R1 y R2, mientras que la @fig-trimmed-r1-quality y la @fig-trimmed-r2-quality muestran el estado tras la retirada de primers. Como patrón general, R2 presentó una caída de calidad más marcada que R1 hacia posiciones finales, un comportamiento habitual en lecturas paired-end y una razón para evitar un truncado fijo demasiado conservador.
-
-![Perfil de calidad de las lecturas crudas R1 del run `run_02_optimized`.](../assets/results/04_preprocessing/figures/run_02_optimized_raw_R1_quality.png){#fig-raw-r1-quality fig-align="center" width="90%"}
-
-![Perfil de calidad de las lecturas crudas R2 del run `run_02_optimized`.](../assets/results/04_preprocessing/figures/run_02_optimized_raw_R2_quality.png){#fig-raw-r2-quality fig-align="center" width="90%"}
-
-![Perfil de calidad de las lecturas R1 tras retirada de primers con cutadapt.](../assets/results/04_preprocessing/figures/run_02_optimized_trimmed_R1_quality.png){#fig-trimmed-r1-quality fig-align="center" width="90%"}
-
-![Perfil de calidad de las lecturas R2 tras retirada de primers con cutadapt.](../assets/results/04_preprocessing/figures/run_02_optimized_trimmed_R2_quality.png){#fig-trimmed-r2-quality fig-align="center" width="90%"}
 
 La tabla de umbrales de calidad (@tbl-quality-thresholds) resume las posiciones en las que el percentil 10 de calidad cae por debajo de Q30, Q25 y Q20. Esta lectura apoyó mantener `truncLen = c(0, 0)` y controlar la calidad mediante `maxEE`, en lugar de cortar todas las muestras a una posición fija.
 
@@ -145,15 +155,31 @@ La tabla de umbrales de calidad (@tbl-quality-thresholds) resume las posiciones 
 
 La @fig-quality-q10-position resume gráficamente esos umbrales por posición. La figura debe leerse como un diagnóstico global: el eje X representa la posición dentro de la lectura y el eje Y el percentil 10 de calidad. Las curvas de lecturas crudas y recortadas pueden solaparse parcialmente porque el recorte desplaza el inicio efectivo de algunas lecturas; por eso la interpretación principal no es comparar punto a punto, sino localizar dónde cae la cola de calidad de R1 y R2. La señal más importante es que **R2 pierde calidad antes que R1**, pero la estrategia de `maxEE = c(3, 3)` permitió conservar lecturas útiles sin imponer un corte fijo.
 
-![Resumen de calidad Q10 por posición para lecturas crudas y recortadas. El eje X indica la posición en la lectura y el eje Y el percentil 10 de calidad; valores más bajos indican que al menos el 10% de las lecturas presenta calidad reducida en esa posición.](../assets/results/04_preprocessing/figures/run_02_optimized_quality_q10_by_position.png){#fig-quality-q10-position fig-align="center" width="90%"}
+![Resumen de calidad Q10 por posición para lecturas crudas y recortadas. El eje X indica la posición en la lectura y el eje Y el percentil 10 de calidad; valores más bajos indican que al menos el 10% de las lecturas presenta calidad reducida en esa posición.](../assets/results/04_preprocessing/figures/run_02_optimized_quality_q10_by_position.svg){#fig-quality-q10-position fig-align="center" width="90%"}
 
-## Modelos de error, inferencia de ASVs y fusión
+### Modelo de errores
 
-DADA2 aprendió modelos de error independientes para lecturas forward y reverse. Los modelos resultantes se muestran en la @fig-error-forward y la @fig-error-reverse. En estos gráficos, los puntos representan las tasas de error observadas para cada tipo de sustitución nucleotídica y las líneas representan el modelo de error aprendido. Un modelo adecuado muestra una relación decreciente entre calidad y probabilidad de error, con las tasas observadas próximas a las curvas ajustadas. Esta comprobación es importante porque la inferencia de ASVs de DADA2 depende de distinguir errores de secuenciación frente a variantes biológicas reales.
+`DADA2` aprendió modelos de error independientes para lecturas forward y reverse. Los modelos resultantes se muestran en la @fig-error-forward y la @fig-error-reverse. En estos gráficos, los puntos representan tasas de error observadas para cada tipo de sustitución nucleotídica y las líneas representan el modelo de error aprendido. Un modelo adecuado muestra una relación decreciente entre calidad y probabilidad de error, con las tasas observadas próximas a las curvas ajustadas.
 
-![Modelo de errores aprendido por DADA2 para lecturas forward. Los puntos muestran errores observados y las líneas el modelo ajustado para cada transición nucleotídica; la concordancia visual indica que el modelo es compatible con los datos forward.](../assets/results/04_preprocessing/figures/run_02_optimized_errF.png){#fig-error-forward fig-align="center" width="90%"}
+![Modelo de errores aprendido por `DADA2` para lecturas forward. Los puntos muestran errores observados y las líneas el modelo ajustado para cada transición nucleotídica; la concordancia visual indica que el modelo es compatible con los datos forward.](../assets/results/04_preprocessing/figures/run_02_optimized_errF.svg){#fig-error-forward fig-align="center" width="90%"}
 
-![Modelo de errores aprendido por DADA2 para lecturas reverse. La mayor dispersión relativa frente a R1 es esperable cuando R2 presenta peor calidad terminal, pero el patrón global mantiene coherencia suficiente para la inferencia de ASVs.](../assets/results/04_preprocessing/figures/run_02_optimized_errR.png){#fig-error-reverse fig-align="center" width="90%"}
+![Modelo de errores aprendido por `DADA2` para lecturas reverse. La mayor dispersión relativa frente a R1 es esperable cuando R2 presenta peor calidad terminal, pero el patrón global mantiene coherencia suficiente para la inferencia de ASVs.](../assets/results/04_preprocessing/figures/run_02_optimized_errR.svg){#fig-error-reverse fig-align="center" width="90%"}
+
+### Inferencia de ASVs, fusión y quimeras
+
+La inferencia de ASVs se ejecutó sin pooling (`pool = FALSE`) y sin self-consistency iterativa (`selfConsist = FALSE`). La fusión de pares fue estricta (`maxMismatch = 0`) porque el éxito de merging ya era alto y permitir mismatches habría reducido confianza más que resolver un cuello de botella real. La retirada de quimeras se realizó con `removeBimeraDenovo(method = "consensus")`.
+
+| Etapa DADA2 | Parámetro | Valor |
+|---|---|---|
+| `learnErrors` | `randomize` | `TRUE` |
+| `learnErrors` | `nbases` | `100000000` |
+| `dada` | `pool` | `FALSE` |
+| `dada` | `selfConsist` | `FALSE` |
+| `mergePairs` | `minOverlap` | `12` |
+| `mergePairs` | `maxMismatch` | `0` |
+| `removeBimeraDenovo` | `method` | `consensus` |
+
+: Parámetros de inferencia, fusión y eliminación de quimeras en `DADA2` {#tbl-dada2-denoise-params}
 
 La retención de lecturas a lo largo del preprocesamiento se resume en la @tbl-read-tracking-summary. El run final procesó **9.19 millones de pares crudos**, retuvo **8.39 millones** tras filtrado DADA2, fusionó **8.24 millones** y conservó **7.67 millones de lecturas no quiméricas**.
 
@@ -177,7 +203,7 @@ La retención de lecturas a lo largo del preprocesamiento se resume en la @tbl-r
 
 Todas las muestras intestinales quedaron por encima de **20,000 lecturas no quiméricas**; 2/133 quedaron por debajo de 30,000 y 10/133 por debajo de 40,000. Por tanto, el preprocesamiento generó profundidades suficientes para los análisis posteriores, aunque las decisiones de rarefacción y filtrado se tratan en bloques específicos.
 
-## Longitud de ASVs y eliminación de quimeras
+### Longitud de ASVs y eliminación de quimeras
 
 La distribución de longitudes de ASVs antes y después de retirar quimeras se resume en la @tbl-asv-length-summary. La mediana de longitud no quimérica fue **406 nt**, dentro del rango esperado para el amplicón V3-V4 procesado con pares solapados.
 
@@ -193,6 +219,17 @@ La retirada de quimeras redujo el número de ASVs de 34,452 a 14,652. Este desce
 ## Asignación taxonómica con SILVA 138.2
 
 La asignación taxonómica primaria se realizó con `assignTaxonomy` usando SILVA 138.2 y `minBoot = 80`. La asignación a especie se intentó después con `addSpecies(..., allowMultiple = TRUE)`. La completitud taxonómica tras el preprocesamiento se resume en la @tbl-taxonomy-completeness.
+
+| Parámetro | Valor |
+|---|---|
+| Base primaria | `SILVA 138.2` |
+| Training set | `silva_nr99_v138.2_toSpecies_trainset.fa.gz` |
+| Species set | `silva_v138.2_assignSpecies.fa.gz` |
+| `assignTaxonomy(minBoot)` | `80` |
+| `tryRC` | `FALSE` |
+| `addSpecies` | `allowMultiple = TRUE` |
+
+: Parámetros de asignación taxonómica SILVA {#tbl-taxonomy-params}
 
 | Rango | ASVs asignadas | % ASVs asignadas | Reads asignados | % reads asignados |
 |---|---:|---:|---:|---:|

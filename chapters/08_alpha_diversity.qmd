@@ -1,4 +1,4 @@
-# 06. Diversidad alfa
+# Diversidad alfa
 
 ## 1. Objetivo del análisis
 
@@ -74,7 +74,7 @@ La notación integrada en las figuras sigue: `ns`, `*`, `**`, `***`.
 
 ### 4.1. Efecto de dieta e hidrolizado dentro de cada tiempo
 
-![Figura 1. Diversidad alfa por dieta y tiempo a nivel ASV.](../assets/results/06_alpha_diversity/figures/diet_time/alpha_by_diet_time_asv.png)
+![Figura 1. Diversidad alfa por dieta y tiempo a nivel ASV.](../assets/results/06_alpha_diversity/figures/diet_time/alpha_by_diet_time_asv.svg)
 
 **Figura 1. Diversidad alfa por dieta y tiempo a nivel ASV.** Cada panel muestra
 una métrica de diversidad alfa por tiempo. `Ctrl` se compara con el bloque
@@ -82,7 +82,7 @@ una métrica de diversidad alfa por tiempo. `Ctrl` se compara con el bloque
 representa `Ctrl` vs `Hydrolysate`; la barra inferior representa `BL15` vs
 `BL30`.
 
-![Figura 2. Diversidad alfa por dieta y tiempo a nivel género.](../assets/results/06_alpha_diversity/figures/diet_time/alpha_by_diet_time_genus.png)
+![Figura 2. Diversidad alfa por dieta y tiempo a nivel género.](../assets/results/06_alpha_diversity/figures/diet_time/alpha_by_diet_time_genus.svg)
 
 **Figura 2. Diversidad alfa por dieta y tiempo a nivel género.** La misma
 estructura que la Figura 1, pero con ASVs agregados a género.
@@ -130,14 +130,14 @@ equitativa en los grupos con hidrolizado que en `Ctrl`.
 
 ### 4.2. Cambios temporales dentro de cada dieta
 
-![Figura 3. Diversidad alfa por tiempo dentro de cada dieta a nivel ASV.](../assets/results/06_alpha_diversity/figures/time_diet/alpha_by_time_diet_asv.png)
+![Figura 3. Diversidad alfa por tiempo dentro de cada dieta a nivel ASV.](../assets/results/06_alpha_diversity/figures/time_diet/alpha_by_time_diet_asv.svg)
 
 **Figura 3. Cambios temporales de diversidad alfa a nivel ASV.** Cada columna
 representa una dieta y cada fila una métrica. La barra superior muestra la
 comparación global entre tiempos; las barras inferiores muestran comparaciones
 por pares.
 
-![Figura 4. Diversidad alfa por tiempo dentro de cada dieta a nivel género.](../assets/results/06_alpha_diversity/figures/time_diet/alpha_by_time_diet_genus.png)
+![Figura 4. Diversidad alfa por tiempo dentro de cada dieta a nivel género.](../assets/results/06_alpha_diversity/figures/time_diet/alpha_by_time_diet_genus.svg)
 
 **Figura 4. Cambios temporales de diversidad alfa a nivel género.** La figura
 permite evaluar si la dinámica temporal se conserva tras agrupar ASVs por
@@ -185,7 +185,7 @@ globales entre dietas.
 
 ### 4.3. Comparación complementaria con pienso
 
-![Figura 5. Comparación de diversidad alfa entre Ctrl, Hydrolysate y Feed.](../assets/results/06_alpha_diversity/figures/ctrl_hydro_feed/alpha_ctrl_hydro_feed.png)
+![Figura 5. Comparación de diversidad alfa entre Ctrl, Hydrolysate y Feed.](../assets/results/06_alpha_diversity/figures/ctrl_hydro_feed/alpha_ctrl_hydro_feed.svg)
 
 **Figura 5. Comparación global `Ctrl`/`Hydrolysate`/`Feed`.** Las muestras de
 pienso se incluyen como control complementario. Esta comparación no forma parte

@@ -10,7 +10,7 @@ Integrar en una unica documentacion:
 
 - el diseno del analisis y los filtros aplicados;
 - las estadisticas generales del dataset antes y despues del filtrado;
-- rarefaccion, composicion taxonomica, diversidad alfa y beta;
+- dataset stats/rarefaccion, composicion taxonomica, diversidad alfa y beta;
 - abundancia diferencial taxonomica;
 - prediccion funcional con PICRUSt2;
 - figuras, tablas y conclusiones biologicas listas para revisar y convertir en texto de articulo.
@@ -19,7 +19,7 @@ Integrar en una unica documentacion:
 
 1. **Filtering:** criterios de filtrado, ASVs retenidas/eliminadas y profundidad final.
 2. **Dataset stats:** estadisticas globales para describir el set de datos.
-3. **Rarefaction QC:** suficiencia de profundidad y saturacion de riqueza.
+3. **Dataset stats + rarefacción QC:** estructura del dataset, profundidad, prevalencia y suficiencia de cobertura.
 4. **Taxonomic composition:** barplots, mocks, Feed, Venn/UpSet y tendencias taxonomicas.
 5. **Alpha diversity:** riqueza, Shannon index y Simpson index.
 6. **Beta diversity:** Bray/Aitchison, PERMANOVA y betadisper.

@@ -1,4 +1,4 @@
-# Functional prediction report
+# Functional prediction
 
 ## 1. Objetivo
 
@@ -34,7 +34,7 @@ Tabla 2. Retencion de lecturas por muestra tras excluir cloroplasto y mitocondri
 
 La mediana del NSTI ponderado por abundancia fue 0.073 en las muestras incluidas. Este valor resume la proximidad filogenetica de las ASVs a genomas de referencia y debe considerarse antes de interpretar el potencial funcional.
 
-![NSTI ponderado por grupo](../assets/results/09_functional_prediction/picrust2/figures/qc/picrust2_weighted_nsti_by_group.png)
+![NSTI ponderado por grupo](../assets/results/09_functional_prediction/picrust2/figures/qc/picrust2_weighted_nsti_by_group.svg)
 
 **Figura 1.** Distribucion del NSTI ponderado por abundancia en los grupos incluidos en PICRUSt2.
 
@@ -54,11 +54,11 @@ Tabla 4. Anotaciones funcionales completas conservadas para EC, KO, KEGG pathway
 
 Los barplots resumen las rutas KEGG mas abundantes por dieta-tiempo y la comparacion contextual Ctrl/Hydrolysate/Feed. Feed se interpreta como referencia del potencial funcional bacteriano asociado al pienso, no como grupo biologico equivalente al intestino.
 
-![Rutas KEGG por dieta y tiempo](../assets/results/09_functional_prediction/picrust2/figures/barplots/kegg_pathway/barplot_top_kegg_pathway_diet_time.png)
+![Rutas KEGG por dieta y tiempo](../assets/results/09_functional_prediction/picrust2/figures/barplots/kegg_pathway/barplot_top_kegg_pathway_diet_time.svg)
 
 **Figura 2.** Rutas KEGG predichas mas abundantes agregadas por dieta y tiempo en muestras intestinales.
 
-![Rutas KEGG Ctrl Hydrolysate Feed](../assets/results/09_functional_prediction/picrust2/figures/barplots/kegg_pathway/barplot_top_kegg_pathway_ctrl_hydro_feed.png)
+![Rutas KEGG Ctrl Hydrolysate Feed](../assets/results/09_functional_prediction/picrust2/figures/barplots/kegg_pathway/barplot_top_kegg_pathway_ctrl_hydro_feed.svg)
 
 **Figura 3.** Rutas KEGG predichas en Ctrl, Hydrolysate y Feed como comparacion descriptiva.
 
@@ -74,15 +74,15 @@ Feed si se desplaza respecto a las muestras intestinales en Aitchison, lo que en
 
 La comparacion Ctrl/Hydrolysate/Feed fue significativa con Aitchison (R2 = 0.038; p = 0.006) y quedo cerca del umbral con Bray (R2 = 0.035; p = 0.066), sin betadisper significativo. Esto sugiere que el perfil funcional predicho del pienso contiene una senal distinguible, especialmente en geometria composicional, pero no debe mezclarse con la inferencia central sobre peces.
 
-![Aitchison Ctrl Hydrolysate](../assets/results/09_functional_prediction/picrust2/figures/ordination/aitchison/functional_aitchison_kegg_pathway_ctrl_vs_hydrolysate.png)
+![Aitchison Ctrl Hydrolysate](../assets/results/09_functional_prediction/picrust2/figures/ordination/aitchison/functional_aitchison_kegg_pathway_ctrl_vs_hydrolysate.svg)
 
 **Figura 4.** Ordenacion Aitchison de rutas KEGG para Ctrl frente a Hydrolysate en muestras intestinales.
 
-![Aitchison Ctrl BL15 BL30](../assets/results/09_functional_prediction/picrust2/figures/ordination/aitchison/functional_aitchison_kegg_pathway_ctrl_vs_bl15_vs_bl30.png)
+![Aitchison Ctrl BL15 BL30](../assets/results/09_functional_prediction/picrust2/figures/ordination/aitchison/functional_aitchison_kegg_pathway_ctrl_vs_bl15_vs_bl30.svg)
 
 **Figura 5.** Ordenacion Aitchison de rutas KEGG comparando Ctrl, BL15 y BL30.
 
-![Aitchison Ctrl Hydrolysate Feed](../assets/results/09_functional_prediction/picrust2/figures/ordination/aitchison/functional_aitchison_kegg_pathway_ctrl_vs_hydrolysate_vs_feed.png)
+![Aitchison Ctrl Hydrolysate Feed](../assets/results/09_functional_prediction/picrust2/figures/ordination/aitchison/functional_aitchison_kegg_pathway_ctrl_vs_hydrolysate_vs_feed.svg)
 
 **Figura 6.** Ordenacion Aitchison de rutas KEGG incluyendo Feed como contexto descriptivo.
 
@@ -108,11 +108,11 @@ Una interpretacion plausible es que el hidrolizado, al aportar peptidos y aminoa
 
 Las rutas KEGG etiquetadas como enfermedades humanas u organismal systems se conservan en tablas por trazabilidad, pero no sostienen la interpretacion biologica principal en microbiota de rodaballo.
 
-![STAMP Hydrolysate vs Ctrl D30](../assets/results/09_functional_prediction/picrust2/figures/effect_plots/kegg_pathway/stamp_effect_D30_Hydrolysate_vs_Ctrl.png)
+![STAMP Hydrolysate vs Ctrl D30](../assets/results/09_functional_prediction/picrust2/figures/effect_plots/kegg_pathway/stamp_effect_D30_Hydrolysate_vs_Ctrl.svg)
 
 **Figura 7.** Rutas KEGG con mayor cambio en la comparacion Hydrolysate vs Ctrl en D30.
 
-![Heatmap rutas KEGG](../assets/results/09_functional_prediction/picrust2/figures/heatmaps/kegg_pathway/heatmap_kegg_pathway_diet_time_means_significant.png)
+![Heatmap rutas KEGG](../assets/results/09_functional_prediction/picrust2/figures/heatmaps/kegg_pathway/heatmap_kegg_pathway_diet_time_means_significant.svg)
 
 **Figura 8.** Heatmap resumen de rutas KEGG relevantes por medias dieta-tiempo.
 

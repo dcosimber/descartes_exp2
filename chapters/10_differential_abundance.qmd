@@ -1,4 +1,4 @@
-# 08. Differential abundance
+# Differential abundance
 
 ## 1. Objetivo del bloque
 
@@ -33,7 +33,7 @@ Los metodos trabajan sobre conteos crudos filtrados. No se rarefacciona. El filt
 
 ## 5. Resumen de taxones significativos
 
-![Summary significant taxa](../assets/results/08_differential_abundance/figures/summary/significant_taxa_by_method.png)
+![Summary significant taxa](../assets/results/08_differential_abundance/figures/summary/significant_taxa_by_method.svg)
 
 **Figura 1. Numero de taxones significativos por metodo, nivel taxonomico y contraste.** DESeq2 y ALDEx2 se muestran por separado para permitir una lectura independiente de cada enfoque.
 
@@ -46,7 +46,7 @@ Los metodos trabajan sobre conteos crudos filtrados. No se rarefacciona. El filt
 
 ## 6. Comparacion descriptiva entre metodos
 
-![Method overlap](../assets/results/08_differential_abundance/figures/summary/method_overlap_by_contrast.png)
+![Method overlap](../assets/results/08_differential_abundance/figures/summary/method_overlap_by_contrast.svg)
 
 **Figura 2. Solapamiento descriptivo entre DESeq2 y ALDEx2.** La figura indica cuantos taxones aparecen solo con DESeq2, solo con ALDEx2 o con ambos metodos en cada contraste. Este solapamiento no se usa como filtro automatico.
 
@@ -71,13 +71,13 @@ DESeq2 incluye modelos LRT para evaluar efectos globales ajustados por tiempo e 
 
 Ejemplos principales para revisar primero:
 
-- DESeq2 ASV `Hydrolysate vs Ctrl`: [`../assets/results/08_differential_abundance/figures/volcano/deseq2/asv/volcano_global_Hydrolysate_vs_Ctrl.png`](../assets/results/08_differential_abundance/figures/volcano/deseq2/asv/volcano_global_Hydrolysate_vs_Ctrl.png)
-- ALDEx2 ASV `Hydrolysate vs Ctrl`: [`../assets/results/08_differential_abundance/figures/volcano/aldex2/asv/volcano_global_Hydrolysate_vs_Ctrl.png`](../assets/results/08_differential_abundance/figures/volcano/aldex2/asv/volcano_global_Hydrolysate_vs_Ctrl.png)
-- DESeq2 genus `Hydrolysate vs Ctrl`: [`../assets/results/08_differential_abundance/figures/volcano/deseq2/genus/volcano_global_Hydrolysate_vs_Ctrl.png`](../assets/results/08_differential_abundance/figures/volcano/deseq2/genus/volcano_global_Hydrolysate_vs_Ctrl.png)
-- ALDEx2 genus `Hydrolysate vs Ctrl`: [`../assets/results/08_differential_abundance/figures/volcano/aldex2/genus/volcano_global_Hydrolysate_vs_Ctrl.png`](../assets/results/08_differential_abundance/figures/volcano/aldex2/genus/volcano_global_Hydrolysate_vs_Ctrl.png)
-- Heatmap de medias ASV DESeq2: [`../assets/results/08_differential_abundance/figures/heatmaps/asv/heatmap_deseq2_asv_diet_time_means.png`](../assets/results/08_differential_abundance/figures/heatmaps/asv/heatmap_deseq2_asv_diet_time_means.png)
-- Heatmap de medias ASV ALDEx2: [`../assets/results/08_differential_abundance/figures/heatmaps/asv/heatmap_aldex2_asv_diet_time_means.png`](../assets/results/08_differential_abundance/figures/heatmaps/asv/heatmap_aldex2_asv_diet_time_means.png)
-- Heatmap de medias genero DESeq2: [`../assets/results/08_differential_abundance/figures/heatmaps/genus/heatmap_deseq2_genus_diet_time_means.png`](../assets/results/08_differential_abundance/figures/heatmaps/genus/heatmap_deseq2_genus_diet_time_means.png)
+- DESeq2 ASV `Hydrolysate vs Ctrl`: [`../assets/results/08_differential_abundance/figures/volcano/deseq2/asv/volcano_global_Hydrolysate_vs_Ctrl.svg`](../assets/results/08_differential_abundance/figures/volcano/deseq2/asv/volcano_global_Hydrolysate_vs_Ctrl.svg)
+- ALDEx2 ASV `Hydrolysate vs Ctrl`: [`../assets/results/08_differential_abundance/figures/volcano/aldex2/asv/volcano_global_Hydrolysate_vs_Ctrl.svg`](../assets/results/08_differential_abundance/figures/volcano/aldex2/asv/volcano_global_Hydrolysate_vs_Ctrl.svg)
+- DESeq2 genus `Hydrolysate vs Ctrl`: [`../assets/results/08_differential_abundance/figures/volcano/deseq2/genus/volcano_global_Hydrolysate_vs_Ctrl.svg`](../assets/results/08_differential_abundance/figures/volcano/deseq2/genus/volcano_global_Hydrolysate_vs_Ctrl.svg)
+- ALDEx2 genus `Hydrolysate vs Ctrl`: [`../assets/results/08_differential_abundance/figures/volcano/aldex2/genus/volcano_global_Hydrolysate_vs_Ctrl.svg`](../assets/results/08_differential_abundance/figures/volcano/aldex2/genus/volcano_global_Hydrolysate_vs_Ctrl.svg)
+- Heatmap de medias ASV DESeq2: [`../assets/results/08_differential_abundance/figures/heatmaps/asv/heatmap_deseq2_asv_diet_time_means.svg`](../assets/results/08_differential_abundance/figures/heatmaps/asv/heatmap_deseq2_asv_diet_time_means.svg)
+- Heatmap de medias ASV ALDEx2: [`../assets/results/08_differential_abundance/figures/heatmaps/asv/heatmap_aldex2_asv_diet_time_means.svg`](../assets/results/08_differential_abundance/figures/heatmaps/asv/heatmap_aldex2_asv_diet_time_means.svg)
+- Heatmap de medias genero DESeq2: [`../assets/results/08_differential_abundance/figures/heatmaps/genus/heatmap_deseq2_genus_diet_time_means.svg`](../assets/results/08_differential_abundance/figures/heatmaps/genus/heatmap_deseq2_genus_diet_time_means.svg)
 - En ALDEx2 a nivel de genero puede no generarse heatmap si los resultados significativos se concentran en un unico taxon.
 
 ## 9. Interpretacion inicial
