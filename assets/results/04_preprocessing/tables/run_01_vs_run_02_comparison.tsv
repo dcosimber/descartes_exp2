@@ -1,0 +1,3 @@
+run_id	samples	total_pairs_raw	cutadapt_pairs_written	cutadapt_retention_median_pct	filter_reads_out	filter_retention_median_pct	merged_reads	merge_from_filtered_median_pct	nonchim_reads	nonchim_from_input_median_pct	raw_to_nonchim_median_pct	chimera_of_merged_median_pct	asvs	genus_assigned	species_addSpecies_assigned
+run_01_default	138	9191390	8867098	99	7589851	85.5738862818246	7484395	99.6954457056483	7005295	82.9356802686863	80.3443109765361	2.40455442941636	13130	8845	916
+run_02_optimized	138	9191390	9191390	100	8387911	91.4311377827387	8236246	99.589944588845	7667921	88.1691639874729	88.1691639874729	3.00134984629957	14652	6595	921

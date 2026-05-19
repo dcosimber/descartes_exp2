@@ -1,0 +1,5 @@
+dataset	first_pos_q10_below_30	first_pos_q10_below_25	first_pos_q10_below_20	first_sustained_10bp_q10_below_30	first_sustained_10bp_q10_below_25	first_sustained_10bp_q10_below_20	median_q10_from_200_to_end	min_q10_from_200_to_end	last_position
+raw_R1	89	221	221	133	NA	NA	25	11	256
+raw_R2	104	212	212	141	223	242	17.3	11	256
+trimmed_R1	1	7	7	112	232	232	13.8	11	256
+trimmed_R2	58	110	110	149	224	224	15.7	11	256

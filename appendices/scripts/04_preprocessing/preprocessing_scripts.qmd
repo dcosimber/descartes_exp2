@@ -1,0 +1,1439 @@
+# Scripts del preprocesamiento DADA2 {#sec-preprocessing-scripts}
+
+Este anexo recoge los scripts numerados usados para generar el bloque de preprocesamiento de lecturas: inventario y metadatos, retirada de primers con cutadapt, perfiles de calidad, filtrado DADA2, aprendizaje de errores, inferencia de ASVs, asignación taxonómica con SILVA 138.2, exportación y preparación de inputs downstream.
+
+
+## `00_create_conda_env.sh` {#sec-script-00-create-conda-env-sh}
+
+Archivo fuente autocontenido: [`00_create_conda_env.sh`](source/00_create_conda_env.sh).
+
+```{.bash}
+#!/usr/bin/env bash
+set -euo pipefail
+
+PROJECT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+ENV_NAME="descartes-r45-dada2-1.38-cutadapt-5.2"
+LOG_DIR="${PROJECT}/logs/versions"
+mkdir -p "${LOG_DIR}" "${PROJECT}/logs/stdout_stderr"
+
+if conda env list | awk '{print $1}' | grep -qx "${ENV_NAME}"; then
+  echo "Environment already exists: ${ENV_NAME}"
+else
+  if command -v mamba >/dev/null 2>&1; then
+    mamba env create -f "${PROJECT}/config/environment.yml"
+  else
+    conda env create -f "${PROJECT}/config/environment.yml"
+  fi
+fi
+
+source "$(conda info --base)/etc/profile.d/conda.sh"
+conda activate "${ENV_NAME}"
+conda list > "${LOG_DIR}/conda_list_${ENV_NAME}.txt"
+R --version > "${LOG_DIR}/R_version_${ENV_NAME}.txt"
+cutadapt --version > "${LOG_DIR}/cutadapt_version_${ENV_NAME}.txt"
+Rscript -e 'cat(as.character(packageVersion("dada2")), "\n")' > "${LOG_DIR}/dada2_version_${ENV_NAME}.txt"
+Rscript -e 'sessioninfo::session_info()' > "${LOG_DIR}/session_info_${ENV_NAME}.txt"
+echo "Environment ready: ${ENV_NAME}"
+
+```
+
+## `01_build_metadata.R` {#sec-script-01-build-metadata-r}
+
+Archivo fuente autocontenido: [`01_build_metadata.R`](source/01_build_metadata.R).
+
+```{.r}
+#!/usr/bin/env Rscript
+suppressPackageStartupMessages({
+  library(data.table)
+  library(tools)
+})
+
+source(file.path(dirname(sub("^--file=", "", commandArgs(FALSE)[grep("^--file=", commandArgs(FALSE))[1]])), "lib_pipeline.R"))
+
+args <- parse_cli(list(run_id = "run_01_default", sample_subset = ""))
+project <- script_project_root()
+params <- load_run_params(project, args$run_id)
+
+raw_dir <- normalizePath(file.path(project, params$project$raw_data_dir), mustWork = TRUE)
+md5_file <- normalizePath(file.path(project, params$project$raw_md5_file), mustWork = TRUE)
+metadata_dir <- file.path(project, "metadata")
+symlink_root <- file.path(project, "data", "raw_reads", "by_sample")
+ensure_dir(metadata_dir, symlink_root)
+
+subset_ids <- split_subset(args$sample_subset)
+is_subset_run <- length(subset_ids) > 0
+log_message("Building metadata from", raw_dir)
+
+r1 <- list.files(raw_dir, pattern = "\\.raw_1\\.fastq\\.gz$", recursive = TRUE, full.names = TRUE)
+r2 <- list.files(raw_dir, pattern = "\\.raw_2\\.fastq\\.gz$", recursive = TRUE, full.names = TRUE)
+sample_id <- sub("\\.raw_1\\.fastq\\.gz$", "", basename(r1))
+r1_dt <- data.table(sample_id = sample_id, r1_source = normalizePath(r1))
+r2_dt <- data.table(
+  sample_id = sub("\\.raw_2\\.fastq\\.gz$", "", basename(r2)),
+  r2_source = normalizePath(r2)
+)
+inv <- merge(r1_dt, r2_dt, by = "sample_id", all = TRUE)
+if (length(subset_ids) > 0) inv <- inv[sample_id %in% subset_ids]
+setorder(inv, sample_id)
+
+if (anyNA(inv$r1_source) || anyNA(inv$r2_source)) {
+  stop("Unpaired raw reads detected. Check inventory before continuing.")
+}
+
+md5 <- fread(md5_file, header = FALSE, col.names = c("md5", "relative_path"))
+md5 <- md5[grepl("\\.raw_[12]\\.fastq\\.gz$", relative_path)]
+md5[, sample_id := dirname(relative_path)]
+md5[, read := ifelse(grepl("\\.raw_1\\.fastq\\.gz$", relative_path), "R1", "R2")]
+md5_wide <- dcast(md5, sample_id ~ read, value.var = "md5")
+setnames(md5_wide, old = intersect(names(md5_wide), c("R1", "R2")), new = c("r1_md5_expected", "r2_md5_expected")[seq_along(intersect(names(md5_wide), c("R1", "R2")))])
+inv <- merge(inv, md5_wide, by = "sample_id", all.x = TRUE)
+
+info <- rbindlist(lapply(inv$sample_id, function(id) as.data.table(c(sample_id = id, sample_info_from_id(id)))), fill = TRUE)
+inv <- merge(inv, info, by = "sample_id", all.x = TRUE)
+inv[, `:=`(
+  r1_size_bytes = file.info(r1_source)$size,
+  r2_size_bytes = file.info(r2_source)$size
+)]
+
+inv[, sample_dir := file.path(symlink_root, sample_id)]
+inv[, r1_symlink := file.path(sample_dir, basename(r1_source))]
+inv[, r2_symlink := file.path(sample_dir, basename(r2_source))]
+for (i in seq_len(nrow(inv))) {
+  ensure_dir(inv$sample_dir[i])
+  if (file.exists(inv$r1_symlink[i]) || nzchar(Sys.readlink(inv$r1_symlink[i]))) unlink(inv$r1_symlink[i])
+  if (file.exists(inv$r2_symlink[i]) || nzchar(Sys.readlink(inv$r2_symlink[i]))) unlink(inv$r2_symlink[i])
+  file.symlink(inv$r1_source[i], inv$r1_symlink[i])
+  file.symlink(inv$r2_source[i], inv$r2_symlink[i])
+}
+
+md5_check <- inv[, .(
+  sample_id,
+  read = c("R1", "R2"),
+  file = c(r1_source, r2_source),
+  expected_md5 = c(r1_md5_expected, r2_md5_expected)
+), by = sample_id]
+md5_check[, observed_md5 := unname(tools::md5sum(file))]
+md5_check[, status := fifelse(expected_md5 == observed_md5, "pass", "fail")]
+
+sample_metadata <- inv[, .(
+  sample_id,
+  sample_type,
+  include_qc,
+  include_biological_analysis,
+  diet_code,
+  diet_label,
+  hydrolysate_percent,
+  fishmeal_percent,
+  timepoint_day,
+  tank,
+  fish,
+  group,
+  forward_raw = r1_source,
+  reverse_raw = r2_source,
+  forward_symlink = r1_symlink,
+  reverse_symlink = r2_symlink
+)]
+
+expected <- data.table(sample_id = expected_sample_ids())
+if (is_subset_run) expected <- expected[sample_id %in% subset_ids]
+expected[, expected := "yes"]
+expected_info <- rbindlist(lapply(expected$sample_id, function(id) as.data.table(c(sample_id = id, sample_info_from_id(id)))), fill = TRUE)
+expected <- merge(expected, expected_info, by = "sample_id", all.x = TRUE)
+expected[, observed_raw_pair := fifelse(sample_id %in% inv$sample_id, "yes", "no")]
+missing <- expected[observed_raw_pair == "no"]
+
+dict <- data.table(
+  column = names(sample_metadata),
+  description = c(
+    "Unique sample identifier.",
+    "Sample type inferred from sample id.",
+    "Whether sample should be retained for QC summaries.",
+    "Whether sample is part of biological downstream analysis.",
+    "Diet code X/Y/Z where applicable.",
+    "Human-readable diet label.",
+    "Hydrolysate percentage where applicable.",
+    "Fishmeal percentage where applicable.",
+    "Sampling day.",
+    "Tank number inferred from sample id.",
+    "Fish number inferred from sample id.",
+    "Diet-timepoint group.",
+    "Original raw R1 FASTQ path.",
+    "Original raw R2 FASTQ path.",
+    "Project-local symlink to raw R1.",
+    "Project-local symlink to raw R2."
+  )
+)
+
+if (!is_subset_run) {
+  write_tsv(inv[, !c("sample_dir")], file.path(metadata_dir, "raw_read_inventory.tsv"))
+  write_tsv(md5_check, file.path(metadata_dir, "raw_read_md5_check.tsv"))
+  write_tsv(sample_metadata, file.path(metadata_dir, "sample_metadata.tsv"))
+  write_tsv(expected, file.path(metadata_dir, "expected_samples.tsv"))
+  write_tsv(missing, file.path(metadata_dir, "missing_expected_samples.tsv"))
+}
+write_tsv(inv[, !c("sample_dir")], file.path(metadata_dir, paste0("raw_read_inventory_", args$run_id, ".tsv")))
+write_tsv(md5_check, file.path(metadata_dir, paste0("raw_read_md5_check_", args$run_id, ".tsv")))
+write_tsv(sample_metadata, file.path(metadata_dir, paste0("sample_metadata_", args$run_id, ".tsv")))
+write_tsv(expected, file.path(metadata_dir, paste0("expected_samples_", args$run_id, ".tsv")))
+write_tsv(missing, file.path(metadata_dir, paste0("missing_expected_samples_", args$run_id, ".tsv")))
+write_tsv(dict, file.path(metadata_dir, "sample_metadata_dictionary.tsv"))
+
+log_message("Raw paired libraries:", nrow(inv))
+log_message("MD5 pass:", sum(md5_check$status == "pass"), "fail:", sum(md5_check$status == "fail"))
+if (nrow(missing) > 0) log_message("Missing expected samples:", paste(missing$sample_id, collapse = ", "))
+if (any(md5_check$status != "pass")) stop("At least one raw FASTQ MD5 check failed.")
+
+```
+
+## `02_run_cutadapt.R` {#sec-script-02-run-cutadapt-r}
+
+Archivo fuente autocontenido: [`02_run_cutadapt.R`](source/02_run_cutadapt.R).
+
+```{.r}
+#!/usr/bin/env Rscript
+suppressPackageStartupMessages({
+  library(data.table)
+})
+
+source(file.path(dirname(sub("^--file=", "", commandArgs(FALSE)[grep("^--file=", commandArgs(FALSE))[1]])), "lib_pipeline.R"))
+
+args <- parse_cli(list(run_id = "run_01_default", sample_subset = ""))
+project <- script_project_root()
+run_id <- args$run_id
+params <- load_run_params(project, run_id)
+metadata <- read_run_metadata(project, run_id)
+subset_ids <- split_subset(args$sample_subset)
+if (length(subset_ids) > 0) metadata <- metadata[sample_id %in% subset_ids]
+
+outdir <- run_dir(project, "01_cutadapt", run_id)
+fastq_dir <- file.path(outdir, "trimmed_fastq")
+sample_log_dir <- file.path(outdir, "sample_logs")
+ensure_dir(outdir, fastq_dir, sample_log_dir, file.path(project, "logs", "commands"), file.path(project, "logs", "stdout_stderr"))
+
+cmd_log <- file.path(project, "logs", "commands", paste0("02_run_cutadapt_", run_id, ".commands.sh"))
+stdout_log <- file.path(project, "logs", "stdout_stderr", paste0("02_run_cutadapt_", run_id, ".log"))
+if (file.exists(cmd_log)) unlink(cmd_log)
+if (file.exists(stdout_log)) unlink(stdout_log)
+
+cut <- params$cutadapt
+primers <- params$primers
+cutadapt_bin <- Sys.which("cutadapt")
+if (cutadapt_bin == "") stop("cutadapt not found in PATH. Activate the conda environment first.")
+
+parse_cutadapt_log <- function(file) {
+  txt <- paste(readLines(file, warn = FALSE), collapse = "\n")
+  grab <- function(pattern) {
+    m <- regexpr(pattern, txt, perl = TRUE)
+    if (m < 0) return(NA_real_)
+    as.numeric(gsub(",", "", regmatches(txt, m)))
+  }
+  grab_pct <- function(pattern) {
+    m <- regexec(pattern, txt, perl = TRUE)
+    hit <- regmatches(txt, m)[[1]]
+    if (length(hit) < 2) NA_real_ else as.numeric(hit[[2]])
+  }
+  data.table(
+    pairs_processed = grab("(?<=Total read pairs processed:)\\s*[0-9,]+"),
+    r1_with_adapter_pct = grab_pct("Read 1 with adapter:\\s*[0-9,]+ \\(([0-9.]+)%\\)"),
+    r2_with_adapter_pct = grab_pct("Read 2 with adapter:\\s*[0-9,]+ \\(([0-9.]+)%\\)"),
+    pairs_too_short_pct = grab_pct("Pairs that were too short:\\s*[0-9,]+ \\(([0-9.]+)%\\)"),
+    pairs_discarded_untrimmed_pct = grab_pct("Pairs discarded as untrimmed:\\s*[0-9,]+ \\(([0-9.]+)%\\)"),
+    pairs_written = grab("(?<=Pairs written \\(passing filters\\):)\\s*[0-9,]+"),
+    pairs_written_pct = grab_pct("Pairs written \\(passing filters\\):\\s*[0-9,]+ \\(([0-9.]+)%\\)")
+  )
+}
+
+stats <- list()
+for (i in seq_len(nrow(metadata))) {
+  sid <- metadata$sample_id[i]
+  out_f <- file.path(fastq_dir, paste0(sid, "_R1.trimmed.fastq.gz"))
+  out_r <- file.path(fastq_dir, paste0(sid, "_R2.trimmed.fastq.gz"))
+  sample_log <- file.path(sample_log_dir, paste0(sid, ".cutadapt.log"))
+  cmd <- c(
+    "--cores", as.character(cut$cores),
+    "--error-rate", as.character(cut$error_rate),
+    "--times", as.character(cut$times),
+    "--overlap", as.character(cut$overlap),
+    "--minimum-length", as.character(cut$minimum_length),
+    "-q", paste0(cut$quality_cutoff_forward, ",", cut$quality_cutoff_reverse),
+    "-g", primers$forward,
+    "-G", primers$reverse
+  )
+  if (isTRUE(cut$match_read_wildcards)) cmd <- c(cmd, "--match-read-wildcards")
+  if (isTRUE(cut$discard_untrimmed)) cmd <- c(cmd, "--discard-untrimmed")
+  cmd <- c(cmd, "-o", out_f, "-p", out_r, metadata$forward_symlink[i], metadata$reverse_symlink[i])
+  write(paste(shQuote(cutadapt_bin), paste(shQuote(cmd), collapse = " ")), cmd_log, append = TRUE)
+  log_message("Cutadapt", sid)
+  rc <- system2(cutadapt_bin, cmd, stdout = sample_log, stderr = sample_log)
+  if (!identical(rc, 0L)) stop("cutadapt failed for sample ", sid, ". See ", sample_log)
+  s <- parse_cutadapt_log(sample_log)
+  if (!isTRUE(cut$discard_untrimmed) && is.na(s$pairs_discarded_untrimmed_pct)) {
+    s$pairs_discarded_untrimmed_pct <- 0
+  }
+  s[, `:=`(
+    sample_id = sid,
+    r1_trimmed = out_f,
+    r2_trimmed = out_r,
+    sample_log = sample_log
+  )]
+  stats[[sid]] <- s
+}
+
+stats_dt <- rbindlist(stats, fill = TRUE)
+setcolorder(stats_dt, c("sample_id", setdiff(names(stats_dt), "sample_id")))
+write_tsv(stats_dt, file.path(outdir, "cutadapt_stats.tsv"))
+write_tsv(stats_dt, file.path(project, "results", "08_qc_tables", paste0(run_id, "_cutadapt_stats.tsv")))
+log_message("Cutadapt complete for", nrow(stats_dt), "samples.")
+
+```
+
+## `03_quality_profiles.R` {#sec-script-03-quality-profiles-r}
+
+Archivo fuente autocontenido: [`03_quality_profiles.R`](source/03_quality_profiles.R).
+
+```{.r}
+#!/usr/bin/env Rscript
+suppressPackageStartupMessages({
+  library(data.table)
+  library(dada2)
+})
+
+source(file.path(dirname(sub("^--file=", "", commandArgs(FALSE)[grep("^--file=", commandArgs(FALSE))[1]])), "lib_pipeline.R"))
+
+args <- parse_cli(list(run_id = "run_01_default", n = "12"))
+project <- script_project_root()
+run_id <- args$run_id
+n <- as.integer(args$n)
+metadata <- read_run_metadata(project, run_id)
+cut_stats <- read_tsv(file.path(run_dir(project, "01_cutadapt", run_id), "cutadapt_stats.tsv"))
+ensure_dir(file.path(project, "reports", "preprocessing_summary"))
+
+plot_pdf <- function(files, out, title) {
+  files <- files[file.exists(files)]
+  files <- files[seq_len(min(length(files), n))]
+  if (length(files) == 0) return(invisible(FALSE))
+  pdf(out, width = 12, height = 7)
+  print(plotQualityProfile(files) + ggplot2::ggtitle(title))
+  dev.off()
+  invisible(TRUE)
+}
+
+plot_pdf(metadata$forward_symlink, file.path(project, "reports", "preprocessing_summary", paste0(run_id, "_raw_R1_quality.pdf")), "Raw R1 quality")
+plot_pdf(metadata$reverse_symlink, file.path(project, "reports", "preprocessing_summary", paste0(run_id, "_raw_R2_quality.pdf")), "Raw R2 quality")
+plot_pdf(cut_stats$r1_trimmed, file.path(project, "reports", "preprocessing_summary", paste0(run_id, "_trimmed_R1_quality.pdf")), "Cutadapt-trimmed R1 quality")
+plot_pdf(cut_stats$r2_trimmed, file.path(project, "reports", "preprocessing_summary", paste0(run_id, "_trimmed_R2_quality.pdf")), "Cutadapt-trimmed R2 quality")
+log_message("Quality profile PDFs complete for", run_id)
+
+```
+
+## `04_filter_trim.R` {#sec-script-04-filter-trim-r}
+
+Archivo fuente autocontenido: [`04_filter_trim.R`](source/04_filter_trim.R).
+
+```{.r}
+#!/usr/bin/env Rscript
+suppressPackageStartupMessages({
+  library(data.table)
+  library(dada2)
+})
+
+source(file.path(dirname(sub("^--file=", "", commandArgs(FALSE)[grep("^--file=", commandArgs(FALSE))[1]])), "lib_pipeline.R"))
+
+args <- parse_cli(list(run_id = "run_01_default"))
+project <- script_project_root()
+run_id <- args$run_id
+params <- load_run_params(project, run_id)
+filt <- params$dada2$filter_and_trim
+
+cut_stats <- read_tsv(file.path(run_dir(project, "01_cutadapt", run_id), "cutadapt_stats.tsv"))
+outdir <- run_dir(project, "02_filter_trim", run_id)
+fastq_dir <- file.path(outdir, "filtered_fastq")
+ensure_dir(outdir, fastq_dir, file.path(project, "logs", "commands"), file.path(project, "logs", "stdout_stderr"))
+
+filt_f <- file.path(fastq_dir, paste0(cut_stats$sample_id, "_R1.filtered.fastq.gz"))
+filt_r <- file.path(fastq_dir, paste0(cut_stats$sample_id, "_R2.filtered.fastq.gz"))
+
+cmd_log <- file.path(project, "logs", "commands", paste0("04_filter_trim_", run_id, ".commands.R"))
+writeLines(capture.output(str(filt)), cmd_log)
+
+log_message("Running DADA2 filterAndTrim for", nrow(cut_stats), "samples.")
+filter_stats <- filterAndTrim(
+  fwd = cut_stats$r1_trimmed,
+  filt = filt_f,
+  rev = cut_stats$r2_trimmed,
+  filt.rev = filt_r,
+  truncLen = c(as.integer(filt$trunc_len_f), as.integer(filt$trunc_len_r)),
+  trimLeft = c(as.integer(filt$trim_left_f), as.integer(filt$trim_left_r)),
+  maxN = as.integer(filt$max_n),
+  maxEE = c(as.numeric(filt$max_ee_f), as.numeric(filt$max_ee_r)),
+  truncQ = as.integer(filt$trunc_q),
+  rm.phix = isTRUE(filt$rm_phix),
+  compress = isTRUE(filt$compress),
+  multithread = TRUE
+)
+
+filter_dt <- as.data.table(filter_stats, keep.rownames = "input_path")
+filter_dt[, sample_id := cut_stats$sample_id]
+filter_dt[, `:=`(filt_f = filt_f, filt_r = filt_r)]
+setcolorder(filter_dt, c("sample_id", setdiff(names(filter_dt), "sample_id")))
+
+write_tsv(filter_dt, file.path(outdir, "dada2_filter_stats.tsv"))
+write_tsv(filter_dt, file.path(project, "results", "08_qc_tables", paste0(run_id, "_dada2_filter_stats.tsv")))
+saveRDS(list(params = filt, stats = filter_dt), file.path(outdir, "filter_trim_params_and_stats.rds"))
+log_message("filterAndTrim complete.")
+
+```
+
+## `05_learn_errors.R` {#sec-script-05-learn-errors-r}
+
+Archivo fuente autocontenido: [`05_learn_errors.R`](source/05_learn_errors.R).
+
+```{.r}
+#!/usr/bin/env Rscript
+suppressPackageStartupMessages({
+  library(data.table)
+  library(dada2)
+})
+
+source(file.path(dirname(sub("^--file=", "", commandArgs(FALSE)[grep("^--file=", commandArgs(FALSE))[1]])), "lib_pipeline.R"))
+
+args <- parse_cli(list(run_id = "run_01_default"))
+project <- script_project_root()
+run_id <- args$run_id
+params <- load_run_params(project, run_id)
+learn <- params$dada2$learn_errors
+
+filter_stats <- read_tsv(file.path(run_dir(project, "02_filter_trim", run_id), "dada2_filter_stats.tsv"))
+outdir <- run_dir(project, "03_error_models", run_id)
+ensure_dir(outdir, file.path(project, "reports", "preprocessing_summary"), file.path(project, "logs", "commands"))
+
+cmd_log <- file.path(project, "logs", "commands", paste0("05_learn_errors_", run_id, ".commands.R"))
+writeLines(capture.output(str(learn)), cmd_log)
+
+log_message("Learning forward errors.")
+err_f <- learnErrors(
+  filter_stats$filt_f,
+  multithread = TRUE,
+  randomize = isTRUE(learn$randomize),
+  nbases = as.numeric(learn$nbases)
+)
+log_message("Learning reverse errors.")
+err_r <- learnErrors(
+  filter_stats$filt_r,
+  multithread = TRUE,
+  randomize = isTRUE(learn$randomize),
+  nbases = as.numeric(learn$nbases)
+)
+
+saveRDS(err_f, file.path(outdir, "errF.rds"))
+saveRDS(err_r, file.path(outdir, "errR.rds"))
+
+pdf(file.path(project, "reports", "preprocessing_summary", paste0(run_id, "_errF.pdf")), width = 10, height = 7)
+print(plotErrors(err_f, nominalQ = TRUE))
+dev.off()
+pdf(file.path(project, "reports", "preprocessing_summary", paste0(run_id, "_errR.pdf")), width = 10, height = 7)
+print(plotErrors(err_r, nominalQ = TRUE))
+dev.off()
+
+log_message("Error models complete.")
+
+```
+
+## `06_denoise_merge_chimera.R` {#sec-script-06-denoise-merge-chimera-r}
+
+Archivo fuente autocontenido: [`06_denoise_merge_chimera.R`](source/06_denoise_merge_chimera.R).
+
+```{.r}
+#!/usr/bin/env Rscript
+suppressPackageStartupMessages({
+  library(data.table)
+  library(dada2)
+})
+
+source(file.path(dirname(sub("^--file=", "", commandArgs(FALSE)[grep("^--file=", commandArgs(FALSE))[1]])), "lib_pipeline.R"))
+
+args <- parse_cli(list(run_id = "run_01_default"))
+project <- script_project_root()
+run_id <- args$run_id
+params <- load_run_params(project, run_id)
+dada_params <- params$dada2$dada
+merge_params <- params$dada2$merge_pairs
+chimera_params <- params$dada2$chimera
+
+filter_stats <- read_tsv(file.path(run_dir(project, "02_filter_trim", run_id), "dada2_filter_stats.tsv"))
+err_f <- readRDS(file.path(run_dir(project, "03_error_models", run_id), "errF.rds"))
+err_r <- readRDS(file.path(run_dir(project, "03_error_models", run_id), "errR.rds"))
+
+outdir <- run_dir(project, "04_denoise_merge", run_id)
+chimera_dir <- run_dir(project, "05_chimera", run_id)
+ensure_dir(outdir, chimera_dir, file.path(project, "logs", "commands"))
+
+cmd_log <- file.path(project, "logs", "commands", paste0("06_denoise_merge_chimera_", run_id, ".commands.R"))
+writeLines(c(capture.output(str(dada_params)), capture.output(str(merge_params)), capture.output(str(chimera_params))), cmd_log)
+
+sample_names <- filter_stats$sample_id
+log_message("Dereplicating filtered reads.")
+derep_f <- derepFastq(filter_stats$filt_f, verbose = TRUE)
+derep_r <- derepFastq(filter_stats$filt_r, verbose = TRUE)
+names(derep_f) <- sample_names
+names(derep_r) <- sample_names
+
+log_message("Denoising forward reads.")
+dada_f <- dada(
+  derep_f,
+  err = err_f,
+  multithread = TRUE,
+  pool = isTRUE(dada_params$pool),
+  selfConsist = isTRUE(dada_params$self_consist)
+)
+log_message("Denoising reverse reads.")
+dada_r <- dada(
+  derep_r,
+  err = err_r,
+  multithread = TRUE,
+  pool = isTRUE(dada_params$pool),
+  selfConsist = isTRUE(dada_params$self_consist)
+)
+
+log_message("Merging paired reads.")
+mergers <- mergePairs(
+  dadaF = dada_f,
+  derepF = derep_f,
+  dadaR = dada_r,
+  derepR = derep_r,
+  minOverlap = as.integer(merge_params$min_overlap),
+  maxMismatch = as.integer(merge_params$max_mismatch),
+  verbose = TRUE
+)
+
+seqtab <- makeSequenceTable(mergers)
+log_message("Removing chimeras.")
+seqtab_nochim <- removeBimeraDenovo(
+  seqtab,
+  method = chimera_params$method,
+  multithread = TRUE,
+  verbose = TRUE
+)
+
+get_n <- function(x) sum(getUniques(x))
+track <- data.table(
+  sample_id = sample_names,
+  filtered_input = filter_stats$reads.in,
+  filtered_output = filter_stats$reads.out,
+  denoised_forward = sapply(dada_f, get_n),
+  denoised_reverse = sapply(dada_r, get_n),
+  merged = rowSums(seqtab),
+  nonchim = rowSums(seqtab_nochim)
+)
+track[, `:=`(
+  filter_retention_pct = filtered_output / filtered_input * 100,
+  merge_retention_pct = merged / filtered_input * 100,
+  nonchim_retention_pct = nonchim / filtered_input * 100,
+  chimera_loss_pct = (merged - nonchim) / filtered_input * 100
+)]
+
+saveRDS(derep_f, file.path(outdir, "derepF.rds"))
+saveRDS(derep_r, file.path(outdir, "derepR.rds"))
+saveRDS(dada_f, file.path(outdir, "dadaF.rds"))
+saveRDS(dada_r, file.path(outdir, "dadaR.rds"))
+saveRDS(mergers, file.path(outdir, "mergers.rds"))
+saveRDS(seqtab, file.path(outdir, "seqtab.rds"))
+saveRDS(seqtab_nochim, file.path(chimera_dir, "seqtab_nochim.rds"))
+
+write_tsv(track, file.path(chimera_dir, "dada2_merge_chimera_stats.tsv"))
+write_tsv(track, file.path(project, "results", "08_qc_tables", paste0(run_id, "_dada2_merge_chimera_stats.tsv")))
+
+seq_lengths <- data.table(sequence = colnames(seqtab_nochim), length = nchar(colnames(seqtab_nochim)), total_abundance = colSums(seqtab_nochim))
+write_tsv(seq_lengths, file.path(chimera_dir, "asv_length_distribution.tsv"))
+log_message("Denoise/merge/chimera complete. ASVs:", ncol(seqtab_nochim), "reads:", sum(seqtab_nochim))
+
+```
+
+## `07_assign_taxonomy.R` {#sec-script-07-assign-taxonomy-r}
+
+Archivo fuente autocontenido: [`07_assign_taxonomy.R`](source/07_assign_taxonomy.R).
+
+```{.r}
+#!/usr/bin/env Rscript
+suppressPackageStartupMessages({
+  library(data.table)
+  library(dada2)
+})
+
+source(file.path(dirname(sub("^--file=", "", commandArgs(FALSE)[grep("^--file=", commandArgs(FALSE))[1]])), "lib_pipeline.R"))
+
+args <- parse_cli(list(run_id = "run_01_default", only_database = ""))
+project <- script_project_root()
+run_id <- args$run_id
+params <- load_run_params(project, run_id)
+tax_params <- params$taxonomy
+
+download_if_missing <- function(url, dest) {
+  if (file.exists(dest) && file.info(dest)$size > 0) return(invisible(TRUE))
+  log_message("Downloading", basename(dest))
+  download.file(url, destfile = dest, mode = "wb", quiet = FALSE)
+}
+
+taxonomy_databases <- function(tax_params) {
+  if (!is.null(tax_params$databases)) return(tax_params$databases)
+  list(silva_138_2 = list(
+    label = tax_params$database %||% "SILVA",
+    version = tax_params$version %||% "unknown",
+    reference_dir = "silva_138_2_dada2",
+    training_set_filename = "silva_nr99_v138.2_toSpecies_trainset.fa.gz",
+    training_set_url = tax_params$training_set_url,
+    species_set_filename = "silva_v138.2_assignSpecies.fa.gz",
+    species_set_url = tax_params$species_set_url,
+    min_boot = tax_params$min_boot %||% 50,
+    try_rc = tax_params$try_rc %||% FALSE,
+    add_species = TRUE
+  ))
+}
+
+seqtab_nochim <- readRDS(file.path(run_dir(project, "05_chimera", run_id), "seqtab_nochim.rds"))
+outdir <- run_dir(project, "06_taxonomy", run_id)
+ensure_dir(outdir, file.path(project, "logs", "commands"))
+cmd_log <- file.path(project, "logs", "commands", paste0("07_assign_taxonomy_", run_id, ".commands.R"))
+writeLines(capture.output(str(tax_params)), cmd_log)
+
+dbs <- taxonomy_databases(tax_params)
+primary_db <- tax_params$primary %||% names(dbs)[[1]]
+if (!is.null(args$only_database) && !isTRUE(args$only_database) && !is.na(args$only_database) && nzchar(args$only_database)) {
+  dbs <- dbs[names(dbs) %in% args$only_database]
+  if (length(dbs) == 0) stop("Requested taxonomy database not configured: ", args$only_database)
+}
+summary_rows <- list()
+
+for (db_id in names(dbs)) {
+  db <- dbs[[db_id]]
+  ref_dir <- file.path(project, "data", "reference_databases", db$reference_dir %||% db_id)
+  db_outdir <- file.path(outdir, db_id)
+  ensure_dir(ref_dir, db_outdir)
+  train_fa <- file.path(ref_dir, db$training_set_filename)
+  download_if_missing(db$training_set_url, train_fa)
+
+  species_fa <- NA_character_
+  if (isTRUE(db$add_species) && !is.null(db$species_set_url) && !is.null(db$species_set_filename)) {
+    species_fa <- file.path(ref_dir, db$species_set_filename)
+    download_if_missing(db$species_set_url, species_fa)
+  }
+
+  min_boot <- as.integer(db$min_boot %||% tax_params$min_boot %||% 50)
+  try_rc <- isTRUE(db$try_rc %||% tax_params$try_rc)
+  multithread <- if (!is.null(db$multithread)) isTRUE(db$multithread) else TRUE
+  tax_levels <- db$tax_levels
+
+  log_message("Assigning taxonomy with", db_id, basename(train_fa))
+  assign_args <- list(
+    seqs = seqtab_nochim,
+    refFasta = train_fa,
+    minBoot = min_boot,
+    tryRC = try_rc,
+    multithread = multithread,
+    outputBootstraps = TRUE
+  )
+  if (!is.null(tax_levels)) assign_args$taxLevels <- unlist(tax_levels)
+  taxa <- do.call(assignTaxonomy, assign_args)
+  tax_table <- taxa$tax
+  boot_table <- taxa$boot
+
+  tax_species <- NULL
+  if (!is.na(species_fa) && file.exists(species_fa) && file.info(species_fa)$size > 0) {
+    log_message("Adding species with", db_id, basename(species_fa))
+    tax_species <- addSpecies(tax_table, species_fa, tryRC = try_rc, allowMultiple = TRUE)
+  }
+
+  saveRDS(tax_table, file.path(db_outdir, paste0(db_id, "_assignTaxonomy.rds")))
+  saveRDS(boot_table, file.path(db_outdir, paste0(db_id, "_bootstraps.rds")))
+  if (!is.null(tax_species)) saveRDS(tax_species, file.path(db_outdir, paste0(db_id, "_addSpecies.rds")))
+
+  tax_final <- if (!is.null(tax_species)) tax_species else tax_table
+  tax_export <- as.data.table(tax_final, keep.rownames = "sequence")
+  if (anyDuplicated(names(tax_export))) {
+    names(tax_export) <- make.unique(names(tax_export), sep = "_")
+    names(tax_export) <- sub("^Species_1$", "Species_addSpecies", names(tax_export))
+  }
+  boot_export <- as.data.table(boot_table, keep.rownames = "sequence")
+  write_tsv(tax_export, file.path(db_outdir, "taxonomy.tsv"))
+  write_tsv(boot_export, file.path(db_outdir, "taxonomy_bootstraps.tsv"))
+
+  if (identical(db_id, primary_db)) {
+    write_tsv(tax_export, file.path(outdir, "taxonomy.tsv"))
+    write_tsv(boot_export, file.path(outdir, "taxonomy_bootstraps.tsv"))
+    saveRDS(tax_table, file.path(outdir, "taxonomy_assignTaxonomy.rds"))
+    saveRDS(boot_table, file.path(outdir, "taxonomy_bootstraps.rds"))
+    if (!is.null(tax_species)) saveRDS(tax_species, file.path(outdir, "taxonomy_addSpecies.rds"))
+  }
+
+  rank_cols <- intersect(c("Kingdom", "Domain", "Phylum", "Class", "Order", "Family", "Genus", "Species", "Species_addSpecies"), names(tax_export))
+  assigned <- if (length(rank_cols) > 0) {
+    tax_export[, lapply(.SD, function(x) sum(!is.na(x) & x != "")), .SDcols = rank_cols]
+  } else data.table()
+  summary_rows[[db_id]] <- data.table(
+    database_id = db_id,
+    label = db$label %||% db_id,
+    version = db$version %||% NA_character_,
+    min_boot = min_boot,
+    try_rc = try_rc,
+    multithread = multithread,
+    asvs = nrow(tax_export),
+    assigned
+  )
+  log_message("Taxonomy complete for", db_id, nrow(tax_export), "ASVs.")
+}
+
+new_summary <- rbindlist(summary_rows, fill = TRUE)
+old_summary_file <- file.path(outdir, "taxonomy_database_summary.tsv")
+if (file.exists(old_summary_file)) {
+  old_summary <- read_tsv(old_summary_file)
+  old_summary <- old_summary[!database_id %in% new_summary$database_id]
+  new_summary <- rbindlist(list(old_summary, new_summary), fill = TRUE)
+}
+write_tsv(new_summary, old_summary_file)
+log_message("All taxonomy databases complete for", run_id)
+
+```
+
+## `08_export_outputs.R` {#sec-script-08-export-outputs-r}
+
+Archivo fuente autocontenido: [`08_export_outputs.R`](source/08_export_outputs.R).
+
+```{.r}
+#!/usr/bin/env Rscript
+suppressPackageStartupMessages({
+  library(data.table)
+  library(sessioninfo)
+})
+
+source(file.path(dirname(sub("^--file=", "", commandArgs(FALSE)[grep("^--file=", commandArgs(FALSE))[1]])), "lib_pipeline.R"))
+
+args <- parse_cli(list(run_id = "run_01_default"))
+project <- script_project_root()
+run_id <- args$run_id
+params <- load_run_params(project, run_id)
+
+metadata <- read_run_metadata(project, run_id)
+cutadapt_stats <- read_tsv(file.path(run_dir(project, "01_cutadapt", run_id), "cutadapt_stats.tsv"))
+filter_stats <- read_tsv(file.path(run_dir(project, "02_filter_trim", run_id), "dada2_filter_stats.tsv"))
+merge_stats <- read_tsv(file.path(run_dir(project, "05_chimera", run_id), "dada2_merge_chimera_stats.tsv"))
+seqtab_nochim <- readRDS(file.path(run_dir(project, "05_chimera", run_id), "seqtab_nochim.rds"))
+taxonomy <- read_tsv(file.path(run_dir(project, "06_taxonomy", run_id), "taxonomy.tsv"))
+boot <- read_tsv(file.path(run_dir(project, "06_taxonomy", run_id), "taxonomy_bootstraps.tsv"))
+if (anyDuplicated(names(taxonomy))) names(taxonomy) <- make.unique(names(taxonomy), sep = "_")
+if (anyDuplicated(names(boot))) names(boot) <- make.unique(names(boot), sep = "_")
+taxonomy_summary_file <- file.path(run_dir(project, "06_taxonomy", run_id), "taxonomy_database_summary.tsv")
+taxonomy_summary <- if (file.exists(taxonomy_summary_file)) read_tsv(taxonomy_summary_file) else data.table()
+
+outdir <- run_dir(project, "07_exports", run_id)
+report_dir <- file.path(project, "reports", "preprocessing_summary")
+ensure_dir(outdir, report_dir, file.path(project, "logs", "versions"))
+
+seqs <- colnames(seqtab_nochim)
+asv_ids <- sprintf("ASV%05d", seq_along(seqs))
+sequence_map <- data.table(asv_id = asv_ids, sequence = seqs, length = nchar(seqs), total_abundance = colSums(seqtab_nochim))
+
+asv_table <- as.data.table(t(seqtab_nochim))
+asv_table[, asv_id := asv_ids]
+setcolorder(asv_table, "asv_id")
+write_tsv(asv_table, file.path(outdir, "asv_table.tsv"))
+write_tsv(sequence_map, file.path(outdir, "asv_sequence_map.tsv"))
+
+fasta_lines <- as.vector(rbind(paste0(">", sequence_map$asv_id), sequence_map$sequence))
+writeLines(fasta_lines, file.path(outdir, "asv_sequences.fasta"))
+
+taxonomy <- merge(sequence_map[, .(asv_id, sequence)], taxonomy, by = "sequence", all.x = TRUE)
+boot <- merge(sequence_map[, .(asv_id, sequence)], boot, by = "sequence", all.x = TRUE)
+write_tsv(taxonomy, file.path(outdir, "taxonomy.tsv"))
+write_tsv(boot, file.path(outdir, "taxonomy_bootstraps.tsv"))
+if (nrow(taxonomy_summary) > 0) write_tsv(taxonomy_summary, file.path(outdir, "taxonomy_database_summary.tsv"))
+
+tax_run_dir <- run_dir(project, "06_taxonomy", run_id)
+tax_db_dirs <- list.dirs(tax_run_dir, recursive = FALSE, full.names = TRUE)
+for (db_dir in tax_db_dirs) {
+  db_id <- basename(db_dir)
+  db_tax_file <- file.path(db_dir, "taxonomy.tsv")
+  db_boot_file <- file.path(db_dir, "taxonomy_bootstraps.tsv")
+  if (file.exists(db_tax_file)) {
+    db_tax <- read_tsv(db_tax_file)
+    if (anyDuplicated(names(db_tax))) names(db_tax) <- make.unique(names(db_tax), sep = "_")
+    db_tax <- merge(sequence_map[, .(asv_id, sequence)], db_tax, by = "sequence", all.x = TRUE)
+    write_tsv(db_tax, file.path(outdir, paste0("taxonomy_", db_id, ".tsv")))
+  }
+  if (file.exists(db_boot_file)) {
+    db_boot <- read_tsv(db_boot_file)
+    if (anyDuplicated(names(db_boot))) names(db_boot) <- make.unique(names(db_boot), sep = "_")
+    db_boot <- merge(sequence_map[, .(asv_id, sequence)], db_boot, by = "sequence", all.x = TRUE)
+    write_tsv(db_boot, file.path(outdir, paste0("taxonomy_bootstraps_", db_id, ".tsv")))
+  }
+}
+
+track <- merge(metadata[, .(sample_id, sample_type, include_biological_analysis, diet_code, timepoint_day, group)], cutadapt_stats, by = "sample_id", all.x = TRUE)
+track <- merge(track, filter_stats[, .(sample_id, reads.in, reads.out)], by = "sample_id", all.x = TRUE)
+track <- merge(track, merge_stats, by = "sample_id", all.x = TRUE, suffixes = c("", "_dada2"))
+track[, `:=`(
+  cutadapt_retention_pct = pairs_written / pairs_processed * 100,
+  raw_to_nonchim_pct = nonchim / pairs_processed * 100
+)]
+write_tsv(track, file.path(outdir, "track_reads.tsv"))
+
+write_tsv(metadata, file.path(outdir, "sample_metadata.tsv"))
+write_tsv(cutadapt_stats, file.path(outdir, "cutadapt_stats.tsv"))
+write_tsv(filter_stats, file.path(outdir, "dada2_filter_stats.tsv"))
+write_tsv(merge_stats, file.path(outdir, "dada2_merge_chimera_stats.tsv"))
+write_yaml(params, file.path(outdir, "run_parameters.yaml"))
+writeLines(capture.output(sessioninfo::session_info()), file.path(outdir, "session_info.txt"))
+writeLines(capture.output(sessioninfo::session_info()), file.path(project, "logs", "versions", paste0(run_id, "_session_info.txt")))
+
+depths <- params$qc$depth_thresholds
+bio <- track[include_biological_analysis == "yes"]
+threshold_lines <- vapply(depths, function(d) sprintf("- Biological samples below %s reads: %s/%s", d, sum(bio$nonchim < d, na.rm = TRUE), nrow(bio)), character(1))
+
+rank_cols <- intersect(c("Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species"), names(taxonomy))
+tax_lines <- character()
+if (nrow(taxonomy_summary) > 0) {
+  tax_lines <- c(tax_lines, capture.output(print(taxonomy_summary)))
+} else if (length(rank_cols) > 0) {
+  tax_lines <- c(tax_lines, sprintf("- ASVs with %s: %s", rank_cols, colSums(!is.na(taxonomy[, ..rank_cols]) & taxonomy[, ..rank_cols] != "")))
+}
+
+report <- c(
+  paste0("# ", run_id, " QC report"),
+  "",
+  "## Summary",
+  "",
+  sprintf("- Samples: %s", nrow(track)),
+  sprintf("- Biological samples: %s", nrow(bio)),
+  sprintf("- ASVs: %s", nrow(sequence_map)),
+  sprintf("- Non-chimeric reads: %s", sum(track$nonchim, na.rm = TRUE)),
+  sprintf("- Median non-chimeric reads/sample: %.0f", median(track$nonchim, na.rm = TRUE)),
+  sprintf("- Median cutadapt retention: %.2f%%", median(track$cutadapt_retention_pct, na.rm = TRUE)),
+  sprintf("- Median filter retention: %.2f%%", median(track$filter_retention_pct, na.rm = TRUE)),
+  sprintf("- Median non-chimeric/input retention: %.2f%%", median(track$nonchim_retention_pct, na.rm = TRUE)),
+  "",
+  "## Depth thresholds",
+  "",
+  threshold_lines,
+  "",
+  "## Sequence lengths",
+  "",
+  sprintf("- Min: %s", min(sequence_map$length)),
+  sprintf("- Median: %.0f", median(sequence_map$length)),
+  sprintf("- Max: %s", max(sequence_map$length)),
+  "",
+  "## Taxonomy",
+  "",
+  tax_lines,
+  "",
+  "## Files",
+  "",
+  "- `asv_table.tsv`",
+  "- `asv_sequences.fasta`",
+  "- `taxonomy.tsv`",
+  "- `taxonomy_<database>.tsv` when multiple databases are configured",
+  "- `track_reads.tsv`"
+)
+writeLines(report, file.path(report_dir, paste0(run_id, "_qc.md")))
+log_message("Exports and QC report complete:", outdir)
+
+```
+
+## `09_evaluate_run.R` {#sec-script-09-evaluate-run-r}
+
+Archivo fuente autocontenido: [`09_evaluate_run.R`](source/09_evaluate_run.R).
+
+```{.r}
+#!/usr/bin/env Rscript
+suppressPackageStartupMessages({
+  library(data.table)
+  library(ggplot2)
+  library(ShortRead)
+})
+
+source(file.path(dirname(sub("^--file=", "", commandArgs(FALSE)[grep("^--file=", commandArgs(FALSE))[1]])), "lib_pipeline.R"))
+
+args <- parse_cli(list(run_id = "run_01_default", reads_per_file = "1000"))
+project <- script_project_root()
+run_id <- args$run_id
+reads_per_file <- as.integer(args$reads_per_file)
+
+report_dir <- file.path(project, "reports", "preprocessing_summary")
+qc_dir <- file.path(project, "results", "08_qc_tables")
+ensure_dir(report_dir, qc_dir)
+
+metadata <- read_run_metadata(project, run_id)
+cutadapt_stats <- read_tsv(file.path(run_dir(project, "01_cutadapt", run_id), "cutadapt_stats.tsv"))
+filter_stats <- read_tsv(file.path(run_dir(project, "02_filter_trim", run_id), "dada2_filter_stats.tsv"))
+merge_stats <- read_tsv(file.path(run_dir(project, "05_chimera", run_id), "dada2_merge_chimera_stats.tsv"))
+seqtab <- readRDS(file.path(run_dir(project, "04_denoise_merge", run_id), "seqtab.rds"))
+seqtab_nochim <- readRDS(file.path(run_dir(project, "05_chimera", run_id), "seqtab_nochim.rds"))
+
+track <- merge(metadata[, .(sample_id, sample_type, include_biological_analysis, diet_code, timepoint_day, group)],
+               cutadapt_stats, by = "sample_id", all.x = TRUE)
+track <- merge(track, filter_stats[, .(sample_id, reads.in, reads.out)], by = "sample_id", all.x = TRUE)
+track <- merge(track, merge_stats, by = "sample_id", all.x = TRUE, suffixes = c("", "_dada2"))
+track[, `:=`(
+  cutadapt_retention_pct = pairs_written / pairs_processed * 100,
+  raw_to_filtered_pct = reads.out / pairs_processed * 100,
+  raw_to_nonchim_pct = nonchim / pairs_processed * 100,
+  denoise_forward_loss_pct = (reads.out - denoised_forward) / reads.out * 100,
+  denoise_reverse_loss_pct = (reads.out - denoised_reverse) / reads.out * 100,
+  merge_from_filtered_output_pct = merged / reads.out * 100,
+  merge_loss_from_denoised_pct = (pmin(denoised_forward, denoised_reverse) - merged) / pmin(denoised_forward, denoised_reverse) * 100,
+  chimera_loss_of_merged_pct = (merged - nonchim) / merged * 100
+)]
+
+sample_first_reads <- function(file, n) {
+  if (!file.exists(file)) return(NULL)
+  stream <- FastqStreamer(file, n = n)
+  on.exit(close(stream))
+  fq <- yield(stream)
+  if (length(fq) == 0) return(NULL)
+  q <- as(quality(fq), "matrix")
+  len <- width(sread(fq))
+  list(q = q, length = len)
+}
+
+quality_by_position <- function(files, label, n) {
+  pos_tables <- list()
+  length_rows <- list()
+  for (i in seq_along(files)) {
+    sampled <- sample_first_reads(files[[i]], n)
+    if (is.null(sampled)) next
+    q <- sampled$q
+    length_rows[[length(length_rows) + 1L]] <- data.table(
+      file = basename(files[[i]]),
+      reads_sampled = nrow(q),
+      min_length = min(sampled$length),
+      median_length = median(sampled$length),
+      max_length = max(sampled$length)
+    )
+    pos_tables[[length(pos_tables) + 1L]] <- data.table(
+      position = seq_len(ncol(q)),
+      mean_q = colMeans(q),
+      median_q = apply(q, 2, median),
+      q10 = apply(q, 2, quantile, probs = 0.10, na.rm = TRUE),
+      q25 = apply(q, 2, quantile, probs = 0.25, na.rm = TRUE),
+      reads_at_position = colSums(!is.na(q))
+    )
+  }
+  if (length(pos_tables) == 0) {
+    return(list(quality = data.table(), lengths = data.table()))
+  }
+  qdt <- rbindlist(pos_tables)
+  qdt <- qdt[, .(
+    mean_q = mean(mean_q, na.rm = TRUE),
+    median_q = median(median_q, na.rm = TRUE),
+    q10 = median(q10, na.rm = TRUE),
+    q25 = median(q25, na.rm = TRUE),
+    reads_at_position = sum(reads_at_position, na.rm = TRUE)
+  ), by = position]
+  qdt[, dataset := label]
+  list(quality = qdt, lengths = rbindlist(length_rows, fill = TRUE)[, dataset := label])
+}
+
+log_message("Sampling qualities for", run_id, "with", reads_per_file, "reads/file")
+raw_r1 <- quality_by_position(metadata$forward_symlink, "raw_R1", reads_per_file)
+raw_r2 <- quality_by_position(metadata$reverse_symlink, "raw_R2", reads_per_file)
+trim_r1 <- quality_by_position(cutadapt_stats$r1_trimmed, "trimmed_R1", reads_per_file)
+trim_r2 <- quality_by_position(cutadapt_stats$r2_trimmed, "trimmed_R2", reads_per_file)
+qual <- rbindlist(list(raw_r1$quality, raw_r2$quality, trim_r1$quality, trim_r2$quality), fill = TRUE)
+len_samples <- rbindlist(list(raw_r1$lengths, raw_r2$lengths, trim_r1$lengths, trim_r2$lengths), fill = TRUE)
+
+write_tsv(track, file.path(qc_dir, paste0(run_id, "_optimization_track_reads.tsv")))
+write_tsv(qual, file.path(qc_dir, paste0(run_id, "_quality_by_position_sampled.tsv")))
+write_tsv(len_samples, file.path(qc_dir, paste0(run_id, "_read_length_sampled.tsv")))
+
+qual_plot <- ggplot(qual, aes(position, q10, color = dataset)) +
+  geom_line(linewidth = 0.35) +
+  geom_hline(yintercept = c(20, 25, 30), linetype = "dashed", color = "grey65") +
+  labs(x = "Position", y = "Median per-file Q10", title = paste(run_id, "sampled quality tails")) +
+  theme_minimal(base_size = 11)
+ggsave(file.path(report_dir, paste0(run_id, "_quality_q10_by_position.pdf")), qual_plot, width = 10, height = 6)
+
+asv_lengths_all <- data.table(sequence = colnames(seqtab), length = nchar(colnames(seqtab)), abundance = colSums(seqtab), nonchim = FALSE)
+asv_lengths_nochim <- data.table(sequence = colnames(seqtab_nochim), length = nchar(colnames(seqtab_nochim)), abundance = colSums(seqtab_nochim), nonchim = TRUE)
+asv_len_summary <- rbindlist(list(
+  asv_lengths_all[, .(stage = "merged", asvs = .N, reads = sum(abundance), min = min(length), q25 = quantile(length, .25), median = median(length), q75 = quantile(length, .75), max = max(length))],
+  asv_lengths_nochim[, .(stage = "nonchim", asvs = .N, reads = sum(abundance), min = min(length), q25 = quantile(length, .25), median = median(length), q75 = quantile(length, .75), max = max(length))]
+))
+write_tsv(asv_len_summary, file.path(qc_dir, paste0(run_id, "_asv_length_summary.tsv")))
+
+summ <- function(x) {
+  sprintf("min %.2f | q25 %.2f | median %.2f | mean %.2f | q75 %.2f | max %.2f",
+          min(x, na.rm = TRUE), quantile(x, 0.25, na.rm = TRUE), median(x, na.rm = TRUE),
+          mean(x, na.rm = TRUE), quantile(x, 0.75, na.rm = TRUE), max(x, na.rm = TRUE))
+}
+
+first_sustained_below <- function(position, value, threshold, window = 10L) {
+  o <- order(position)
+  position <- position[o]
+  value <- value[o]
+  below <- value < threshold
+  if (length(below) < window) return(NA_integer_)
+  runs <- stats::filter(as.integer(below), rep(1L, window), sides = 1)
+  hit <- which(runs >= window)[1]
+  if (is.na(hit)) NA_integer_ else position[[hit - window + 1L]]
+}
+
+q_tail <- qual[, .(
+  first_pos_q10_below_30 = suppressWarnings(min(position[q10 < 30], na.rm = TRUE)),
+  first_pos_q10_below_25 = suppressWarnings(min(position[q10 < 25], na.rm = TRUE)),
+  first_pos_q10_below_20 = suppressWarnings(min(position[q10 < 20], na.rm = TRUE)),
+  first_sustained_10bp_q10_below_30 = first_sustained_below(position, q10, 30),
+  first_sustained_10bp_q10_below_25 = first_sustained_below(position, q10, 25),
+  first_sustained_10bp_q10_below_20 = first_sustained_below(position, q10, 20),
+  median_q10_from_200_to_end = median(q10[position >= 200], na.rm = TRUE),
+  min_q10_from_200_to_end = min(q10[position >= 200], na.rm = TRUE),
+  last_position = max(position)
+), by = dataset]
+for (col in c("first_pos_q10_below_30", "first_pos_q10_below_25", "first_pos_q10_below_20",
+              "first_sustained_10bp_q10_below_30", "first_sustained_10bp_q10_below_25",
+              "first_sustained_10bp_q10_below_20")) {
+  q_tail[is.infinite(get(col)), (col) := NA_integer_]
+}
+write_tsv(q_tail, file.path(qc_dir, paste0(run_id, "_quality_threshold_positions.tsv")))
+
+low_depth <- track[include_biological_analysis == "yes"][order(nonchim)][1:min(.N, 15)]
+high_chim <- track[order(-chimera_loss_of_merged_pct)][1:min(.N, 15)]
+low_merge <- track[order(merge_from_filtered_output_pct)][1:min(.N, 15)]
+low_filter <- track[order(filter_retention_pct)][1:min(.N, 15)]
+
+decision <- "Keep run_01_default as a strong baseline; test one adjusted DADA2 run aimed at recovering filter-stage losses without increasing chimera/merge penalties."
+if (median(track$merge_from_filtered_output_pct, na.rm = TRUE) < 95) {
+  decision <- "Prioritize truncLen tuning before relaxing maxEE, because merge retention suggests tail noise or insufficient overlap."
+} else if (median(track$filter_retention_pct, na.rm = TRUE) < 88 && median(track$merge_from_filtered_output_pct, na.rm = TRUE) >= 95) {
+  decision <- "Prioritize a modest maxEE relaxation; merge is robust enough that the main recoverable loss is filterAndTrim."
+}
+
+report <- c(
+  paste0("# ", run_id, " DADA2 optimization evaluation"),
+  "",
+  "## Decision",
+  "",
+  paste0("- ", decision),
+  "- Suggested next run: `run_02_dada2_maxee_3_3` with the same cutadapt outputs, `truncLen=c(0,0)`, `maxEE=c(3,3)`, `maxN=0`, `truncQ=2`, `mergePairs(maxMismatch=0)`, and the same chimera method. Compare against run_01 on raw-to-nonchim retention, chimera read loss, ASV length distribution, and taxonomy completeness.",
+  "- Do not loosen `maxMismatch` yet: current merging is already high, so allowing mismatches would mostly reduce confidence rather than solve the main bottleneck.",
+  "",
+  "## Read Retention",
+  "",
+  paste0("- Cutadapt retention (%): ", summ(track$cutadapt_retention_pct)),
+  paste0("- DADA2 filter retention from primer-trimmed reads (%): ", summ(track$filter_retention_pct)),
+  paste0("- Merged reads relative to filterAndTrim output (%): ", summ(track$merge_from_filtered_output_pct)),
+  paste0("- Merged reads relative to primer-trimmed input (%): ", summ(track$merge_retention_pct)),
+  paste0("- Non-chimeric reads relative to primer-trimmed input (%): ", summ(track$nonchim_retention_pct)),
+  paste0("- Raw-to-nonchim retention (%): ", summ(track$raw_to_nonchim_pct)),
+  paste0("- Chimera read loss (% of merged reads): ", summ(track$chimera_loss_of_merged_pct)),
+  "",
+  "## Quality And Length",
+  "",
+  paste0("- Sampled reads per FASTQ for quality table: ", reads_per_file),
+  paste0("- ASV length summary: ", paste(sprintf("%s median=%s q25=%s q75=%s min=%s max=%s ASVs=%s",
+                                                asv_len_summary$stage, asv_len_summary$median,
+                                                asv_len_summary$q25, asv_len_summary$q75,
+                                                asv_len_summary$min, asv_len_summary$max,
+                                                asv_len_summary$asvs), collapse = "; ")),
+  "",
+  "## Quality Threshold Positions",
+  "",
+  paste(capture.output(print(q_tail)), collapse = "\n"),
+  "",
+  "## Samples To Inspect",
+  "",
+  "### Lowest Final Depth",
+  paste(capture.output(print(low_depth[, .(sample_id, group, pairs_processed, reads.out, merged, nonchim, raw_to_nonchim_pct)])), collapse = "\n"),
+  "",
+  "### Highest Chimera Loss",
+  paste(capture.output(print(high_chim[, .(sample_id, group, merged, nonchim, chimera_loss_of_merged_pct)])), collapse = "\n"),
+  "",
+  "### Lowest Merge Retention",
+  paste(capture.output(print(low_merge[, .(sample_id, group, reads.out, merged, merge_from_filtered_output_pct)])), collapse = "\n"),
+  "",
+  "### Lowest Filter Retention",
+  paste(capture.output(print(low_filter[, .(sample_id, group, pairs_written, reads.out, filter_retention_pct)])), collapse = "\n"),
+  "",
+  "## Files",
+  "",
+  paste0("- `results/08_qc_tables/", run_id, "_optimization_track_reads.tsv`"),
+  paste0("- `results/08_qc_tables/", run_id, "_quality_by_position_sampled.tsv`"),
+  paste0("- `results/08_qc_tables/", run_id, "_quality_threshold_positions.tsv`"),
+  paste0("- `results/08_qc_tables/", run_id, "_asv_length_summary.tsv`"),
+  paste0("- `reports/preprocessing_summary/", run_id, "_quality_q10_by_position.pdf`")
+)
+writeLines(report, file.path(report_dir, paste0(run_id, "_optimization_evaluation.md")))
+log_message("Optimization evaluation complete:", file.path(report_dir, paste0(run_id, "_optimization_evaluation.md")))
+
+```
+
+## `10_prepare_downstream_inputs.R` {#sec-script-10-prepare-downstream-inputs-r}
+
+Archivo fuente autocontenido: [`10_prepare_downstream_inputs.R`](source/10_prepare_downstream_inputs.R).
+
+```{.r}
+#!/usr/bin/env Rscript
+suppressPackageStartupMessages({
+  library(data.table)
+})
+
+source(file.path(dirname(sub("^--file=", "", commandArgs(FALSE)[grep("^--file=", commandArgs(FALSE))[1]])), "lib_pipeline.R"))
+
+args <- parse_cli(list(run_id = "run_01_default"))
+project <- script_project_root()
+run_id <- args$run_id
+
+downstream_sample_info <- function(sample_id) {
+  if (grepl("^M[0-9]+$", sample_id)) {
+    return(list(
+      sample_id_clean = sprintf("Mock_M%02d", as.integer(sub("^M", "", sample_id))),
+      diet_code = NA_character_, diet_label = "mock_community",
+      treatment = "Mock", treatment_label = "mock_community",
+      hydrolysate_percent = NA_integer_, timepoint_label = NA_character_,
+      group = "Mock"
+    ))
+  }
+
+  feed <- grepl("^[XYZ]3$", sample_id)
+  m <- regexec("^([XYZ])([0-9]+)\\.([0-9]+)t([0-9]+)$", sample_id)
+  parts <- regmatches(sample_id, m)[[1]]
+  if (!feed && length(parts) != 5) {
+    return(list(
+      sample_id_clean = sample_id,
+      diet_code = NA_character_, diet_label = NA_character_,
+      treatment = NA_character_, treatment_label = NA_character_,
+      hydrolysate_percent = NA_integer_, timepoint_label = NA_character_,
+      group = "Unknown"
+    ))
+  }
+
+  code <- if (feed) substr(sample_id, 1, 1) else parts[[2]]
+  treatment <- unname(c(X = "Ctrl", Y = "BL15", Z = "BL30")[code])
+  label <- unname(c(
+    Ctrl = "control",
+    BL15 = "blue_whiting_hydrolysate_15",
+    BL30 = "blue_whiting_hydrolysate_30"
+  )[treatment])
+  hydrolysate <- unname(c(Ctrl = 0L, BL15 = 15L, BL30 = 30L)[treatment])
+
+  if (feed) {
+    return(list(
+      sample_id_clean = paste0(treatment, "_Feed"),
+      diet_code = treatment, diet_label = paste0(label, "_feed"),
+      treatment = treatment, treatment_label = paste0(label, "_feed"),
+      hydrolysate_percent = hydrolysate, timepoint_label = NA_character_,
+      group = paste0(treatment, "_Feed")
+    ))
+  }
+
+  tank <- as.integer(parts[[3]])
+  fish <- as.integer(parts[[4]])
+  timepoint <- as.integer(parts[[5]])
+  timepoint_label <- sprintf("D%02d", timepoint)
+  list(
+    sample_id_clean = sprintf("%s_%s_Tk%d_F%02d", treatment, timepoint_label, tank, fish),
+    diet_code = treatment, diet_label = label,
+    treatment = treatment, treatment_label = label,
+    hydrolysate_percent = hydrolysate, timepoint_label = timepoint_label,
+    group = paste0(treatment, "_", timepoint_label)
+  )
+}
+
+export_dir <- run_dir(project, "07_exports", run_id)
+outdir <- run_dir(project, "09_downstream_ready", run_id)
+if (dir.exists(outdir)) unlink(outdir, recursive = TRUE)
+ensure_dir(outdir)
+
+asv_table <- read_tsv(file.path(export_dir, "asv_table.tsv"))
+sample_metadata <- read_tsv(file.path(export_dir, "sample_metadata.tsv"))
+sequence_map <- read_tsv(file.path(export_dir, "asv_sequence_map.tsv"))
+track_reads <- read_tsv(file.path(export_dir, "track_reads.tsv"))
+
+recoded_info <- rbindlist(lapply(sample_metadata$sample_id, function(id) {
+  as.data.table(c(sample_id = id, downstream_sample_info(id)))
+}), fill = TRUE)
+for (col in setdiff(names(recoded_info), "sample_id")) {
+  sample_metadata[[col]] <- recoded_info[[col]][match(sample_metadata$sample_id, recoded_info$sample_id)]
+}
+if (anyNA(sample_metadata$sample_id_clean) || anyDuplicated(sample_metadata$sample_id_clean)) {
+  stop("Clean sample identifiers are missing or duplicated. Check sample metadata before downstream export.")
+}
+setcolorder(sample_metadata, c("sample_id", "sample_id_clean", setdiff(names(sample_metadata), c("sample_id", "sample_id_clean"))))
+
+write_tsv(asv_table, file.path(outdir, "otu_table_taxa_are_rows.tsv"))
+counts <- asv_table[, -"asv_id"]
+sample_rows <- as.data.table(t(as.matrix(counts)))
+setnames(sample_rows, asv_table$asv_id)
+sample_rows[, sample_id := names(counts)]
+setcolorder(sample_rows, "sample_id")
+write_tsv(sample_rows, file.path(outdir, "otu_table_samples_are_rows.tsv"))
+write_tsv(sample_metadata, file.path(outdir, "sample_data.tsv"))
+write_tsv(sequence_map, file.path(outdir, "asv_sequence_map.tsv"))
+invisible(file.copy(file.path(export_dir, "asv_sequences.fasta"), file.path(outdir, "rep_seqs.fasta"), overwrite = TRUE))
+invisible(file.copy(file.path(export_dir, "track_reads.tsv"), file.path(outdir, "preprocessing_track_reads.tsv"), overwrite = TRUE))
+
+tax_files <- list.files(export_dir, pattern = "^taxonomy(_[A-Za-z0-9_.-]+)?\\.tsv$", full.names = TRUE)
+tax_files <- tax_files[basename(tax_files) != "taxonomy_database_summary.tsv"]
+tax_files <- tax_files[!grepl("^taxonomy_bootstraps", basename(tax_files))]
+for (tax_file in tax_files) {
+  db_label <- sub("^taxonomy_?", "", tools::file_path_sans_ext(basename(tax_file)))
+  if (db_label == "") db_label <- "primary"
+  tax <- read_tsv(tax_file)
+  tax_cols <- setdiff(names(tax), c("sequence"))
+  if ("asv_id" %in% names(tax)) {
+    tax_out <- tax[, c("asv_id", setdiff(tax_cols, "asv_id")), with = FALSE]
+  } else {
+    tax_out <- merge(sequence_map[, .(asv_id, sequence)], tax, by = "sequence", all.x = TRUE)
+    tax_out <- tax_out[, c("asv_id", setdiff(names(tax_out), c("asv_id", "sequence"))), with = FALSE]
+  }
+  write_tsv(tax_out, file.path(outdir, paste0("tax_table_", db_label, ".tsv")))
+}
+
+notes <- c(
+  paste0("# Downstream-ready inputs for ", run_id),
+  "",
+  "- `otu_table_taxa_are_rows.tsv`: ASVs in rows, samples in columns; use `taxa_are_rows=TRUE` in phyloseq.",
+  "- `otu_table_samples_are_rows.tsv`: samples in rows, ASVs in columns for ordination/statistical tools that prefer sample-wise matrices.",
+  "- `sample_data.tsv`: complete sample metadata.",
+  "- `tax_table_primary.tsv` or `tax_table_<database>.tsv`: taxonomy tables keyed by `asv_id`.",
+  "- `rep_seqs.fasta`: ASV representative sequences with ASV IDs.",
+  "- `preprocessing_track_reads.tsv`: read retention/QC by sample.",
+  "- `sample_data.tsv` keeps original technical `sample_id` values and adds clean downstream metadata fields such as `sample_id_clean`, `diet_code`, `timepoint_label`, and `group`.",
+  "",
+  "No downstream normalization, filtering, rarefaction, compositional transform, or phyloseq object construction is applied here."
+)
+writeLines(notes, file.path(outdir, "README.md"))
+log_message("Downstream-ready inputs complete:", outdir)
+
+```
+
+## `run_all.R` {#sec-script-run-all-r}
+
+Archivo fuente autocontenido: [`run_all.R`](source/run_all.R).
+
+```{.r}
+#!/usr/bin/env Rscript
+source(file.path(dirname(sub("^--file=", "", commandArgs(FALSE)[grep("^--file=", commandArgs(FALSE))[1]])), "lib_pipeline.R"))
+
+args <- parse_cli(list(run_id = "run_01_default", sample_subset = ""))
+project <- script_project_root()
+run_id <- args$run_id
+subset_arg <- args$sample_subset
+
+scripts <- c(
+  "01_build_metadata.R",
+  "02_run_cutadapt.R",
+  "03_quality_profiles.R",
+  "04_filter_trim.R",
+  "05_learn_errors.R",
+  "06_denoise_merge_chimera.R",
+  "07_assign_taxonomy.R",
+  "08_export_outputs.R",
+  "09_evaluate_run.R",
+  "10_prepare_downstream_inputs.R"
+)
+
+ensure_dir(file.path(project, "logs", "stdout_stderr"))
+log_file <- file.path(project, "logs", "stdout_stderr", paste0("run_all_", run_id, ".log"))
+log_message("Starting full pipeline", run_id)
+
+for (s in scripts) {
+  script_path <- file.path(project, "scripts", s)
+  cmd <- c(script_path, "--run-id", run_id)
+  if (!is.null(subset_arg) && !isTRUE(subset_arg) && !is.na(subset_arg) && nzchar(subset_arg)) {
+    cmd <- c(cmd, "--sample-subset", subset_arg)
+  }
+  log_message("Running", s)
+  rc <- system2("Rscript", cmd, stdout = log_file, stderr = log_file)
+  if (!identical(rc, 0L)) stop("Pipeline step failed: ", s, ". See ", log_file)
+}
+
+log_message("Full pipeline complete:", run_id)
+
+```
+
+## `lib_pipeline.R` {#sec-script-lib-pipeline-r}
+
+Archivo fuente autocontenido: [`lib_pipeline.R`](source/lib_pipeline.R).
+
+```{.r}
+suppressPackageStartupMessages({
+  library(data.table)
+  library(yaml)
+})
+
+project_root <- function() {
+  normalizePath(file.path(dirname(sys.frame(1)$ofile %||% "scripts"), ".."), mustWork = FALSE)
+}
+
+`%||%` <- function(x, y) if (is.null(x) || length(x) == 0 || is.na(x)) y else x
+
+script_project_root <- function() {
+  args <- commandArgs(trailingOnly = FALSE)
+  file_arg <- "--file="
+  script_path <- sub(file_arg, "", args[startsWith(args, file_arg)][1])
+  if (is.na(script_path)) {
+    normalizePath(getwd())
+  } else {
+    normalizePath(file.path(dirname(script_path), ".."))
+  }
+}
+
+parse_cli <- function(defaults = list()) {
+  args <- commandArgs(trailingOnly = TRUE)
+  out <- defaults
+  i <- 1
+  while (i <= length(args)) {
+    key <- args[[i]]
+    if (!startsWith(key, "--")) stop("Unexpected argument: ", key)
+    key <- gsub("-", "_", sub("^--", "", key))
+    if (i == length(args) || startsWith(args[[i + 1]], "--")) {
+      out[[key]] <- TRUE
+      i <- i + 1
+    } else {
+      out[[key]] <- args[[i + 1]]
+      i <- i + 2
+    }
+  }
+  out
+}
+
+load_params <- function(project = script_project_root()) {
+  yaml::read_yaml(file.path(project, "config", "preprocessing_params.yaml"))
+}
+
+merge_lists <- function(base, override) {
+  if (is.null(override)) return(base)
+  for (nm in names(override)) {
+    if (is.list(base[[nm]]) && is.list(override[[nm]]) &&
+        !is.data.frame(base[[nm]]) && !is.data.frame(override[[nm]])) {
+      base[[nm]] <- merge_lists(base[[nm]], override[[nm]])
+    } else {
+      base[[nm]] <- override[[nm]]
+    }
+  }
+  base
+}
+
+load_run_params <- function(project = script_project_root(), run_id = NULL) {
+  params <- load_params(project)
+  if (!is.null(run_id) && !is.na(run_id) && nzchar(run_id)) {
+    override_file <- file.path(project, "config", "run_overrides", paste0(run_id, ".yaml"))
+    if (file.exists(override_file)) {
+      params <- merge_lists(params, yaml::read_yaml(override_file))
+    }
+  }
+  params
+}
+
+path_from_project <- function(project, path) {
+  normalizePath(file.path(project, path), mustWork = FALSE)
+}
+
+path_from_descartes <- function(project, path) {
+  normalizePath(file.path(project, path), mustWork = FALSE)
+}
+
+ensure_dir <- function(...) {
+  dirs <- unlist(list(...), use.names = FALSE)
+  for (d in dirs) if (!dir.exists(d)) dir.create(d, recursive = TRUE, showWarnings = FALSE)
+}
+
+write_tsv <- function(x, file) {
+  ensure_dir(dirname(file))
+  data.table::fwrite(as.data.table(x), file, sep = "\t", na = "NA", quote = FALSE)
+}
+
+read_tsv <- function(file) {
+  data.table::fread(file, sep = "\t", na.strings = c("NA", ""))
+}
+
+timestamp <- function() format(Sys.time(), "%Y-%m-%d %H:%M:%S")
+
+log_message <- function(...) {
+  cat(sprintf("[%s] %s\n", timestamp(), paste(..., collapse = " ")))
+}
+
+split_subset <- function(x) {
+  if (is.null(x) || isTRUE(x) || is.na(x) || x == "") character()
+  else trimws(strsplit(x, ",", fixed = TRUE)[[1]])
+}
+
+sample_info_from_id <- function(sample_id) {
+  if (grepl("^M[0-9]+$", sample_id)) {
+    return(list(
+      sample_type = "Mock", include_qc = "yes", include_biological_analysis = "no",
+      diet_code = NA_character_, diet_label = "mock_community",
+      hydrolysate_percent = NA_integer_, fishmeal_percent = NA_integer_,
+      timepoint_day = NA_integer_, tank = NA_integer_, fish = NA_integer_,
+      group = "Mock"
+    ))
+  }
+  if (grepl("^[XYZ]3$", sample_id)) {
+    code <- substr(sample_id, 1, 1)
+    labels <- c(
+      X = "commercial_control_feed",
+      Y = "fishmeal_free_feed",
+      Z = "blue_whiting_hydrolysate_30_feed"
+    )
+    return(list(
+      sample_type = "Feed", include_qc = "yes", include_biological_analysis = "no",
+      diet_code = code, diet_label = labels[[code]],
+      hydrolysate_percent = ifelse(code == "Z", 30L, ifelse(code == "Y", 0L, 0L)),
+      fishmeal_percent = ifelse(code == "X", 30L, 0L),
+      timepoint_day = NA_integer_, tank = 3L, fish = NA_integer_,
+      group = paste0(code, ".Feed")
+    ))
+  }
+  m <- regexec("^([XYZ])([0-9]+)\\.([0-9]+)t([0-9]+)$", sample_id)
+  parts <- regmatches(sample_id, m)[[1]]
+  if (length(parts) == 5) {
+    code <- parts[[2]]
+    tank <- as.integer(parts[[3]])
+    fish <- as.integer(parts[[4]])
+    timepoint <- as.integer(parts[[5]])
+    labels <- c(
+      X = "commercial_control",
+      Y = "fishmeal_free",
+      Z = "blue_whiting_hydrolysate_30"
+    )
+    return(list(
+      sample_type = "Intestine", include_qc = "yes", include_biological_analysis = "yes",
+      diet_code = code, diet_label = labels[[code]],
+      hydrolysate_percent = ifelse(code == "Z", 30L, 0L),
+      fishmeal_percent = ifelse(code == "X", 30L, 0L),
+      timepoint_day = timepoint, tank = tank, fish = fish,
+      group = paste0(code, ".t", timepoint)
+    ))
+  }
+  list(
+    sample_type = "Unknown", include_qc = "yes", include_biological_analysis = "no",
+    diet_code = NA_character_, diet_label = NA_character_,
+    hydrolysate_percent = NA_integer_, fishmeal_percent = NA_integer_,
+    timepoint_day = NA_integer_, tank = NA_integer_, fish = NA_integer_,
+    group = "Unknown"
+  )
+}
+
+expected_sample_ids <- function() {
+  ids <- c("M1", "M2", "X3", "Y3", "Z3")
+  for (diet in c("X", "Y", "Z")) {
+    for (tank in 1:3) {
+      for (fish in 1:5) {
+        for (timepoint in c(7, 30, 90)) {
+          ids <- c(ids, sprintf("%s%d.%dt%d", diet, tank, fish, timepoint))
+        }
+      }
+    }
+  }
+  ids
+}
+
+read_run_metadata <- function(project, run_id) {
+  file <- file.path(project, "metadata", paste0("sample_metadata_", run_id, ".tsv"))
+  if (!file.exists(file)) file <- file.path(project, "metadata", "sample_metadata.tsv")
+  read_tsv(file)
+}
+
+run_dir <- function(project, step, run_id) {
+  file.path(project, "results", step, run_id)
+}
+
+```

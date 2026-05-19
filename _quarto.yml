@@ -32,7 +32,7 @@ book:
     - chapters/01_introduction_objectives.qmd
     - chapters/02_experimental_design.qmd
     - chapters/03_dna_extraction_sequencing.qmd
-    - chapters/04_filtering.qmd
+    - chapters/04_preprocessing.qmd
     - chapters/05_dataset_stats.qmd
     - chapters/06_rarefaction_qc.qmd
     - chapters/07_taxonomic_composition.qmd
@@ -42,6 +42,7 @@ book:
     - chapters/11_functional_prediction.qmd
   appendices:
     - appendices/powerfecal_protocol.qmd
+    - appendices/scripts/04_preprocessing/preprocessing_scripts.qmd
     - appendices/reproducibility.qmd
 
 bibliography: references.bib
