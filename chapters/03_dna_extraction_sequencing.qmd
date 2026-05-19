@@ -13,7 +13,7 @@ Table: Tipos de muestras secuenciadas y papel dentro del estudio {#tbl-sequenced
 | ZymoBIOMICS Microbial Community Standard (Cat. No. D6300) | 2 | Control técnico para comprobar la recuperación de una composición bacteriana conocida. |
 | **Total** | **138** | Conjunto completo recibido y usado como punto de partida para el control de calidad de secuenciación. |
 
-El diseño experimental contemplaba 135 muestras intestinales, correspondientes a 3 dietas x 3 tanques x 3 tiempos x 5 peces. Hubo dos muestras descartadas debido a fallos en la extracción, `Z1.5t90` y `Z2.1t30`, ambas pertenecientes al tratamiento Z.
+El diseño experimental contemplaba 135 muestras intestinales, correspondientes a 3 dietas x 3 tanques x 3 tiempos x 5 peces. Hubo dos muestras descartadas debido a fallos en la extracción, `Z1.5t90` y `Z2.1t30`, ambas pertenecientes al tratamiento Z. La distribución final de muestras intestinales secuenciadas se resume en la @tbl-sequenced-intestinal-design.
 
 Table: Distribución de muestras intestinales secuenciadas por código dietario y punto temporal {#tbl-sequenced-intestinal-design}
 
@@ -30,7 +30,11 @@ El ADN genómico total se extrajo a partir de muestras de microbioma intestinal 
 
 La concentración y la calidad/pureza del ADN extraído se determinaron mediante `NanoDrop One` (Thermo Fisher Scientific, EE.UU.), registrando la concentración de ADN (ng/µL) y las relaciones espectrofotométricas de pureza `A260/A280` y `A260/A230`. Estas medidas se usaron como control preanalítico *in house* previo al envío de las muestras al servicio externo y a la preparación de librerías y secuenciación. El protocolo de extracción de ADN se recoge como anexo metodológico en @sec-appendix-powerfecal.
 
-A lo largo del proyecto, para mantener la trazabilidad en el análisis, estos códigos se recodificaron posteriormente como `Ctrl`, `BL15` y `BL30` de acuerdo con el diseño actualizado.
+::: {.callout-note title="Codificación usada en los análisis downstream"}
+Para mantener la trazabilidad entre el diseño experimental y los resultados, los códigos originales de dieta se recodificaron posteriormente como `Ctrl`, `BL15` y `BL30`.
+:::
+
+La @tbl-dna-extraction-summary resume los puntos principales de la extracción de ADN y del control preanalítico de concentración y pureza.
 
 Table: Resumen metodológico de la extracción y control de calidad del ADN {#tbl-dna-extraction-summary}
 
@@ -45,7 +49,7 @@ Table: Resumen metodológico de la extracción y control de calidad del ADN {#tb
 
 ## Secuenciación ARNr 16S por Novogene
 
-La secuenciación fue realizada por Novogene como un servicio de secuenciación de amplicones del ARNr 16S bacteriano de las regiones hipervariables `V3-V4` mediante tecnología Illumina. El diseño de secuenciación corresponde a lecturas paired-end de 250 nt orientadas a una profundidad objetivo aproximada de 30K lecturas por muestra.
+La secuenciación fue realizada por Novogene como un servicio de secuenciación de amplicones del ARNr 16S bacteriano de las regiones hipervariables `V3-V4` mediante tecnología Illumina. El diseño de secuenciación corresponde a lecturas paired-end de 250 nt orientadas a una profundidad objetivo aproximada de 30K lecturas por muestra. Los metadatos principales del servicio se recogen en la @tbl-novogene-service-metadata.
 
 Table: Metadatos principales del servicio de secuenciación {#tbl-novogene-service-metadata}
 
@@ -82,6 +86,8 @@ La @fig-novogene-library-workflow muestra el flujo de construcción de librería
 
 ![Workflow de construcción de librerías de amplicón 16S descrito por Novogene. El flujo resume la amplificación de la región diana, selección de productos, preparación de librerías, control de calidad y secuenciación final.](../assets/results/03_dna_extraction_sequencing/figures/novogene_library_construction_workflow.png){#fig-novogene-library-workflow fig-align="center" width="100%"}
 
+La misma información se sintetiza de forma textual en la @tbl-library-preparation-workflow para facilitar la trazabilidad metodológica dentro del informe.
+
 Table: Resumen del flujo de generación de librerías descrito por Novogene {#tbl-library-preparation-workflow}
 
 | Paso | Descripción |
@@ -96,7 +102,7 @@ Table: Resumen del flujo de generación de librerías descrito por Novogene {#tb
 
 ## Estructura de los datos recibidos
 
-El paquete de Novogene contiene lecturas crudas y archivos derivados generados por el proveedor. En este capítulo se documenta únicamente la estructura de entrega y el control de calidad global asociado a la secuenciación.
+El paquete de Novogene contiene lecturas crudas y archivos derivados generados por el proveedor. En este capítulo se documenta únicamente la estructura de entrega y el control de calidad global asociado a la secuenciación. Los principales archivos recibidos se describen en la @tbl-novogene-delivered-files.
 
 Table: Principales archivos recibidos en el paquete de Novogene {#tbl-novogene-delivered-files}
 
@@ -114,7 +120,7 @@ Table: Principales archivos recibidos en el paquete de Novogene {#tbl-novogene-d
 
 ## Control de calidad de secuenciación
 
-El informe de Novogene define cuatro etapas principales de control de lecturas: `RawPE`, `Combined`, `Qualified` y `Nochime`. `RawPE` corresponde a las lecturas paired-end crudas. `Combined` representa las lecturas pareadas fusionadas. `Qualified` corresponde a las lecturas que superan el filtrado de calidad del proveedor. `Nochime` representa las secuencias finales tras detección y retirada de quimeras.
+El informe de Novogene define cuatro etapas principales de control de lecturas: `RawPE`, `Combined`, `Qualified` y `Nochime`. `RawPE` corresponde a las lecturas paired-end crudas. `Combined` representa las lecturas pareadas fusionadas. `Qualified` corresponde a las lecturas que superan el filtrado de calidad del proveedor. `Nochime` representa las secuencias finales tras detección y retirada de quimeras. El resumen global de calidad se muestra en la @tbl-novogene-global-qc.
 
 Table: Resumen global de lecturas reportadas por Novogene {#tbl-novogene-global-qc}
 
