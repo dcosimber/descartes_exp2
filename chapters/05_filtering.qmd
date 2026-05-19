@@ -1,10 +1,10 @@
-# Filtering downstream
+# Filtrados del conjunto de datos
 
 ## Objetivo del bloque
 
-Este capítulo documenta el filtrado downstream aplicado a la tabla de ASVs generada en el preprocesamiento. Su función no es volver a procesar FASTQ, sino definir el **set de ASVs que alimenta los análisis biológicos posteriores**. El filtrado parte del objeto importado con todas las muestras y genera dos tipos de salida: un objeto global filtrado, útil para mock/feed/composición, y un subconjunto intestinal para diversidad, abundancia diferencial y análisis funcional.
+En este capítulo se documenta el filtrado aplicado a la tabla de ASVs generada en el preprocesamiento. Aquí se define el **set de ASVs que alimenta los análisis posteriores**. El filtrado parte del objeto importado con todas las muestras y genera dos tipos de salida: un objeto global filtrado, útil para mock/feed/composición, y un subconjunto intestinal para diversidad, abundancia diferencial y análisis funcional.
 
-El run documentado es `run_02_optimized` con taxonomía primaria `silva_138_2`. El filtrado se aplicó a **todas las muestras importadas**: intestino, mock y pienso/feed. Esta decisión mejora la trazabilidad porque los controles técnicos y las muestras de pienso no quedan fuera de la auditoría, aunque los análisis biológicos principales de peces se ejecutan con los objetos intestinales `ps_biological_*`.
+El run documentado es `run_02_optimized` con taxonomía primaria `silva_138_2`. El filtrado se aplicó a **todas las muestras importadas**: intestino, mock y pienso. Esta decisión mejora la trazabilidad porque los controles técnicos y las muestras de pienso no quedan fuera de la auditoría, aunque los análisis biológicos principales de peces se ejecutan con los objetos intestinales `ps_biological_*`.
 
 ::: {.callout-important title="Decisión específica de este proyecto"}
 En esta versión **no se eliminan cloroplastos ni mitocondrias**. Aunque suele hacerse en análisis bacterianos estándar, aquí se conserva esa señal porque las muestras de pienso contienen componentes vegetales y derivados de pescado, y esa información es necesaria para interpretar si parte de la señal del feed aparece o no en intestino.
@@ -25,7 +25,7 @@ Los inputs del bloque se resumen en la @tbl-filtering-inputs. El script principa
 Los parámetros relevantes del bloque se muestran en la @tbl-filtering-params. El filtrado se aplica a nivel de ASV, antes de generar objetos agregados a género, familia y filo.
 
 | Parámetro | Valor | Interpretación |
-|----------------------|----------------------------:|----------------------|
+|----------------------|---------------------------:|----------------------|
 | `remove_eukaryota` | `TRUE` | Elimina ASVs asignadas a Eukaryota o no asignadas como señal bacteriana útil. |
 | `remove_unclassified_all_ranks` | `TRUE` | Elimina ASVs sin asignación en todos los rangos disponibles. |
 | `remove_kingdom_only` | `TRUE` | Elimina ASVs clasificadas solo a nivel de reino. |
@@ -42,11 +42,11 @@ El filtrado sigue tres pasos secuenciales. Primero se aplica un filtro taxonómi
 
 ### Filtro taxonómico
 
-El filtro taxonómico elimina ASVs asignadas a `Eukaryota` o `Unassigned`, ASVs sin clasificación en todos los rangos disponibles, y ASVs clasificadas únicamente a nivel de reino. En cambio, cloroplasto y mitocondria quedan retenidos. Esta diferencia es clave: se elimina señal taxonómicamente inutilizable para microbiota bacteriana, pero se conserva señal organelar interpretable en el contexto del pienso.
+El filtro taxonómico elimina ASVs asignadas a `Eukaryota` o `Unassigned`, ASVs sin clasificación en todos los rangos disponibles, y ASVs clasificadas únicamente a nivel de reino. En cambio, cloroplasto y mitocondria quedan retenidos. Esta diferencia es clave: se elimina señal taxonómicamente inutilizable para microbiota bacteriana, pero se conserva señal organelar interpretable en el contexto del pienso, ya que estas muestras poseen componentes vegetales y animales que determinan esta composición.
 
 ### Filtro de prevalencia
 
-La prevalencia se calcula dentro de grupos definidos por el diseño experimental, no sobre todo el dataset mezclado. Los grupos y umbrales aplicados se resumen en la @tbl-prevalence-groups. Para intestino se usa `diet_time`, para feed se usa el tipo de pienso y para mock se usa el grupo técnico `Mock`.
+La prevalencia se calcula dentro de grupos definidos por el diseño experimental, no sobre todo el dataset mezclado. Esto evita penalizar ASVs que son reproducibles dentro de un contexto concreto, por ejemplo una dieta-tiempo, un tipo de pienso o el mock, pero que no tienen por qué aparecer en grupos biológicamente distintos. Si la prevalencia se calculara sobre todas las muestras a la vez, se favorecerían taxones ubicuos y se perdería señal específica de tratamiento, tiempo o control técnico. Los grupos y umbrales aplicados se resumen en la @tbl-prevalence-groups. Para intestino se usa `diet_time`, para feed se usa el tipo de pienso y para mock se usa el grupo técnico `Mock`.
 
 | Grupo | n muestras | Fracción mínima | Umbral absoluto configurado | Umbral aplicado |
 |---------------|--------------:|--------------:|--------------:|--------------:|
@@ -66,8 +66,8 @@ La prevalencia se calcula dentro de grupos definidos por el diseño experimental
 
 : Grupos de prevalencia y umbral aplicado {#tbl-prevalence-groups}
 
-::: {.callout-note title="Por qué el umbral baja a 1 en feed"}
-Las muestras de feed tienen una única muestra por dieta. Por eso el umbral absoluto se limita al tamaño real del grupo: si se exigieran 2 muestras, todo el feed quedaría artificialmente eliminado.
+::: {.callout-warning title="Umbral especial en feed"}
+Las muestras de pienso (`Feed`) tienen una única muestra por dieta. Por eso el umbral absoluto se limita al tamaño real del grupo: si se exigieran 2 muestras, todas las ASVs específicas de feed quedarían artificialmente eliminadas por diseño, no por ausencia biológica.
 :::
 
 ### Filtro de abundancia media
@@ -89,6 +89,10 @@ La @tbl-filtering-summary muestra el efecto de cada paso. El filtro más restric
 
 : Resumen global del filtrado {#tbl-filtering-summary}
 
+La @fig-filtering-retention-asvs-reads resume visualmente el efecto del filtrado: el objeto final conserva **93.0% de las lecturas brutas**, pero solo **1.2% de las ASVs iniciales**. Este desacoplamiento es importante porque indica que el filtrado elimina sobre todo variantes raras o de bajo soporte, no la señal cuantitativa dominante.
+
+![Retención relativa de ASVs y lecturas a lo largo del filtrado downstream. Cada panel muestra el porcentaje retenido respecto al dataset bruto inicial.](../assets/results/02_filtering/figures/filtering_retention_asvs_reads.svg){#fig-filtering-retention-asvs-reads fig-align="center" width="85%"}
+
 La retención por tipo de muestra se resume en la @tbl-filtering-by-sample-type. La señal de mock se conserva casi íntegramente y el feed pierde pocas lecturas en el filtro taxonómico, precisamente porque cloroplasto y mitocondria no se eliminan.
 
 | Paso | Tipo de muestra | n | Reads | Reads mín. | Reads mediana | Reads máx. |
@@ -108,12 +112,12 @@ La retención por tipo de muestra se resume en la @tbl-filtering-by-sample-type.
 La @tbl-asv-counts-by-filter-step resume las ASVs retenidas y eliminadas por motivo. Aunque se eliminan muchas ASVs, el número de lecturas afectadas es proporcionalmente bajo. La señal dominante queda conservada mientras la dimensionalidad baja de forma drástica.
 
 | Paso | Motivo | ASVs | Reads brutos asociados |
-|-----------------|-----------------|------------------:|------------------:|
-| Retained final | Retenidas | 175 | 7,133,190 |
-| Taxonomic filter | Sin asignación en todos los rangos | 1,632 | 176,947 |
-| Taxonomic filter | Kingdom only | 559 | 9,262 |
-| Prevalence filter | Baja prevalencia | 11,360 | 251,175 |
-| Mean abundance filter | Baja abundancia media | 926 | 97,347 |
+|------------------|------------------|------------------:|------------------:|
+| Retenidas finales | Retenidas | 175 | 7,133,190 |
+| Filtro taxonómico | Sin asignación en todos los rangos | 1,632 | 176,947 |
+| Filtro taxonómico | Solo reino | 559 | 9,262 |
+| Filtro de prevalencia | Baja prevalencia | 11,360 | 251,175 |
+| Filtro de abundancia media | Baja abundancia media | 926 | 97,347 |
 
 : ASVs por paso y motivo de filtrado {#tbl-asv-counts-by-filter-step}
 
@@ -136,6 +140,7 @@ Las tablas principales están incluidas como CSV descargables en el repositorio 
 | `prevalence_filter_groups.csv` | Grupos y umbrales usados para prevalencia. | <a href="../assets/results/02_filtering/tables/prevalence_filter_groups.csv" download>Descargar CSV</a> |
 | `sample_filtering_groups.csv` | Asignación de cada muestra a su grupo de prevalencia. | <a href="../assets/results/02_filtering/tables/sample_filtering_groups.csv" download>Descargar CSV</a> |
 | `asv_counts_by_filter_step.csv` | Conteo de ASVs por paso/motivo de filtrado. | <a href="../assets/results/02_filtering/tables/asv_counts_by_filter_step.csv" download>Descargar CSV</a> |
+| `filtering_retention_asvs_reads.csv` | Datos resumidos usados para representar la retención relativa de ASVs y lecturas. | <a href="../assets/results/02_filtering/tables/filtering_retention_asvs_reads.csv" download>Descargar CSV</a> |
 | `retained_asvs.csv` | ASVs retenidas en el objeto final. | <a href="../assets/results/02_filtering/tables/retained_asvs.csv" download>Descargar CSV</a> |
 | `removed_asvs.csv` | ASVs eliminadas, con taxonomía y motivo. | <a href="../assets/results/02_filtering/tables/removed_asvs.csv" download>Descargar CSV</a> |
 | `asv_filtering_status.csv` | Auditoría completa por ASV y paso de filtrado. | <a href="../assets/results/02_filtering/tables/asv_filtering_status.csv" download>Descargar CSV</a> |
@@ -187,7 +192,7 @@ La trazabilidad del bloque queda respaldada por el script principal `02_filter_a
 
 El filtrado produce un objeto final muy reducido en número de ASVs, pero con **alta retención de lecturas**. Este comportamiento es esperable en datos 16S: muchas ASVs aparecen con baja abundancia, baja prevalencia o asignación taxonómica débil, mientras que pocas ASVs concentran la mayor parte de la señal cuantitativa.
 
-La decisión de aplicar el filtrado a todas las muestras mejora la trazabilidad: mock y feed ya no quedan fuera de la auditoría. Aun así, los análisis biológicos de peces deben usar los objetos intestinales `ps_biological_*`. La señal de feed requiere una lectura específica porque conserva cloroplasto y mitocondria; esto permite estudiar si componentes del pienso se detectan en intestino, pero obliga a distinguir señal microbiana bacteriana de señal derivada de ingredientes vegetales o material eucariota prodcedente de mitocondrias, principalmente.
+La decisión de aplicar el filtrado a todas las muestras mejora la trazabilidad: mock y feed ya no quedan fuera de la auditoría. Aun así, los análisis biológicos de peces deben usar los objetos intestinales `ps_biological_*`. La señal de feed requiere una lectura específica porque conserva cloroplasto y mitocondria; esto permite estudiar si componentes del pienso se detectan en intestino, pero obliga a distinguir señal microbiana bacteriana de señal derivada de ingredientes vegetales o material eucariota procedente de mitocondrias, principalmente.
 
 ## Consecuencias para los bloques siguientes
 

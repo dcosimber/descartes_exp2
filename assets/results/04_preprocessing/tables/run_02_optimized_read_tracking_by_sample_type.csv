@@ -1,0 +1,21 @@
+stage_label,stage_order,reads,sample_type
+After DADA2 filter,3,8387911,Total
+After cutadapt,2,9191390,Total
+Merged pairs,4,8236246,Total
+Non-chimeric,5,7667921,Total
+Raw pairs,1,9191390,Total
+After DADA2 filter,3,186649,Feed
+After cutadapt,2,204266,Feed
+Merged pairs,4,175519,Feed
+Non-chimeric,5,145198,Feed
+Raw pairs,1,204266,Feed
+After DADA2 filter,3,8074138,Intestine
+After cutadapt,2,8848541,Intestine
+Merged pairs,4,7941473,Intestine
+Non-chimeric,5,7452457,Intestine
+Raw pairs,1,8848541,Intestine
+After DADA2 filter,3,127124,Mock
+After cutadapt,2,138583,Mock
+Merged pairs,4,119254,Mock
+Non-chimeric,5,70266,Mock
+Raw pairs,1,138583,Mock

@@ -1,0 +1,9 @@
+stage_label,stage_order,metric,value,absolute
+Raw,1,ASVs retained,100,14652
+Taxonomic,2,ASVs retained,85.04641004641005,12461
+Prevalence,3,ASVs retained,7.514332514332514,1101
+Final,4,ASVs retained,1.1943761943761944,175
+Raw,1,Reads retained,100,7667921
+Taxonomic,2,Reads retained,97.5715842664524,7481712
+Prevalence,3,Reads retained,94.29592454069362,7230537
+Final,4,Reads retained,93.02638876952436,7133190
