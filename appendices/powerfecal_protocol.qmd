@@ -1,0 +1,48 @@
+# Anexo: protocolo de extracción PowerFecal {#sec-appendix-powerfecal}
+
+Este anexo resume el procedimiento interno `PG/EXT/01/00`, titulado "Extracción de ADN genómico microbiano de heces y muestras intestinales con QIAamp PowerFecal Pro DNA Kit". El documento original se conserva localmente como material de trabajo en la carpeta `bibliography/`, que no se sincroniza con GitHub.
+
+## Objetivo y alcance
+
+El procedimiento tiene como finalidad extraer ADN genómico total, tanto microbiano como del huésped, a partir de muestras de heces o de intestino. El protocolo está pensado para matrices con inhibidores habituales en muestras fecales e intestinales, como polisacáridos, compuestos hemo y sales biliares, y se ha aplicado en rodaballo (*Scophthalmus maximus*).
+
+## Principio del método
+
+Las muestras se procesan en tubos de agitación con esferas `PowerBead Pro`, donde se combinan lisis mecánica y química. Tras la lisis, el protocolo incorpora reactivos destinados a retirar inhibidores de PCR y otros compuestos que pueden interferir con la amplificación y secuenciación. El ADN genómico total se captura posteriormente en una membrana de sílice, se lava y se eluye para su uso en PCR, qPCR, secuenciación 16S u otras aplicaciones moleculares.
+
+## Materiales principales
+
+Table: Materiales y reactivos principales del protocolo PowerFecal {#tbl-powerfecal-materials}
+
+| Categoría | Elementos principales |
+|---|---|
+| Kit | `QIAamp PowerFecal Pro DNA Kit`, cat. no. 51804. |
+| Lisis y homogeneización | Tubos `PowerBead Pro`, `Solution CD1`, vórtex y adaptador para tubos de 1.5-2 mL. |
+| Eliminación de inhibidores | `Solution CD2` y `Solution CD3`. |
+| Purificación | Columnas `MB Spin Column`, tubos de colección y soluciones de lavado. |
+| Elución | `Solution C6`, volumen final recomendado de 50-100 µL. |
+| Equipamiento general | Micropipetas, puntas estériles con filtro y microcentrífuga. |
+
+## Procedimiento resumido
+
+Table: Resumen operativo del procedimiento de extracción PowerFecal {#tbl-powerfecal-workflow}
+
+| Paso | Descripción resumida |
+|---:|---|
+| 1 | Añadir la muestra al tubo `PowerBead Pro` junto con 800 µL de `Solution CD1`. |
+| 2 | Homogeneizar y lisar la muestra mediante agitación en vórtex a máxima velocidad durante 10 min. |
+| 3 | Centrifugar el tubo de lisis y transferir el sobrenadante a un tubo limpio. |
+| 4 | Añadir `Solution CD2`, mezclar y centrifugar para favorecer la retirada de inhibidores. |
+| 5 | Transferir el sobrenadante evitando el pellet y añadir `Solution CD3`. |
+| 6 | Cargar el lisado en la columna `MB Spin Column` y centrifugar para capturar el ADN en la membrana de sílice. |
+| 7 | Lavar la columna con las soluciones indicadas por el kit y realizar una centrifugación final para secar la membrana. |
+| 8 | Eluir el ADN en 50-100 µL de `Solution C6`. |
+| 9 | Cuantificar y evaluar la pureza del ADN por `NanoDrop` antes de la preparación de librerías. |
+
+Para muestras tomadas con hisopo, el procedimiento permite añadir el tampón de lisis al tubo del hisopo para recuperar el material adherido antes de transferir la mezcla al tubo `PowerBead Pro`. Esta adaptación es útil para maximizar la recuperación de biomasa en muestras intestinales de baja cantidad.
+
+## Conservación y control de calidad
+
+Según el protocolo, `Solution CD2` debe mantenerse refrigerada a 2-8 °C, mientras que el resto de componentes se conservan a temperatura ambiente. Las centrifugaciones se realizan a temperatura ambiente y el trabajo debe efectuarse con guantes para minimizar la contaminación. Tras la extracción, el ADN eluido puede almacenarse congelado para preservar su integridad.
+
+La concentración y pureza del ADN se evalúan mediante `NanoDrop`. Para este proyecto, las variables de interés son la concentración de ADN y las relaciones `A260/A280` y `A260/A230`, que permiten detectar de forma preliminar contaminación por proteínas, fenoles, sales u otros compuestos residuales que podrían afectar a la amplificación 16S.

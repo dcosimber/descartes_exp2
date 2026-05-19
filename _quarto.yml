@@ -31,15 +31,17 @@ book:
     - index.qmd
     - chapters/01_introduction_objectives.qmd
     - chapters/02_experimental_design.qmd
-    - chapters/03_filtering.qmd
-    - chapters/04_dataset_stats.qmd
-    - chapters/05_rarefaction_qc.qmd
-    - chapters/06_taxonomic_composition.qmd
-    - chapters/07_alpha_diversity.qmd
-    - chapters/08_beta_diversity.qmd
-    - chapters/09_differential_abundance.qmd
-    - chapters/10_functional_prediction.qmd
+    - chapters/03_dna_extraction_sequencing.qmd
+    - chapters/04_filtering.qmd
+    - chapters/05_dataset_stats.qmd
+    - chapters/06_rarefaction_qc.qmd
+    - chapters/07_taxonomic_composition.qmd
+    - chapters/08_alpha_diversity.qmd
+    - chapters/09_beta_diversity.qmd
+    - chapters/10_differential_abundance.qmd
+    - chapters/11_functional_prediction.qmd
   appendices:
+    - appendices/powerfecal_protocol.qmd
     - appendices/reproducibility.qmd
 
 bibliography: references.bib
