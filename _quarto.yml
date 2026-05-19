@@ -52,6 +52,8 @@ format:
     toc: true
     toc-depth: 3
     toc-location: right
+    tbl-cap-location: top
+    fig-cap-location: bottom
     number-sections: true
     smooth-scroll: true
     anchor-sections: true

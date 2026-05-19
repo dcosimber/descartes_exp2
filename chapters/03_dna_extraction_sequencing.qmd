@@ -7,13 +7,13 @@ El conjunto secuenciado incluye tres tipos de material (@tbl-sequenced-sample-ty
 Table: Tipos de muestras secuenciadas y papel dentro del estudio {#tbl-sequenced-sample-types}
 
 | Tipo de muestra | n secuenciado | Uso principal |
-|:--------------------:|:---------------------------:|:---------------------|
+|:--------------------:|:--------------------------:|:---------------------|
 | Intestino | 133 | Conjunto biológico principal para evaluar el efecto de dieta y tiempo sobre la microbiota intestinal. |
 | Pienso | 3 | Control/contexto de la señal microbiana asociada a los alimentos experimentales. |
 | ZymoBIOMICS Microbial Community Standard (Cat. No. D6300) | 2 | Control técnico para comprobar la recuperación de una composición bacteriana conocida. |
 | **Total** | **138** | Conjunto completo recibido y usado como punto de partida para el control de calidad de secuenciación. |
 
-La planificación experimental contemplaba 135 muestras intestinales, correspondientes a 3 dietas x 3 tanques x 3 tiempos x 5 peces. Hubo dos muestras descartadas debido a fallos en la extracción, `Z1.5t90` y `Z2.1t30`, ambas pertenecientes al tratamiento Z.
+El diseño experimental contemplaba 135 muestras intestinales, correspondientes a 3 dietas x 3 tanques x 3 tiempos x 5 peces. Hubo dos muestras descartadas debido a fallos en la extracción, `Z1.5t90` y `Z2.1t30`, ambas pertenecientes al tratamiento Z.
 
 Table: Distribución de muestras intestinales secuenciadas por código dietario y punto temporal {#tbl-sequenced-intestinal-design}
 
@@ -64,7 +64,7 @@ Table: Metadatos principales del servicio de secuenciación {#tbl-novogene-servi
 | Modo de lectura indicado por contrato | PE250 |
 | Profundidad objetivo indicada por contrato | 30K lecturas por muestra |
 
-Los cebadores usados por Novogene para la región bacteriana `V3V4` fueron los indicados en la @tbl-novogene-primers. Estos primers contienen bases degeneradas para aumentar la cobertura de distintos linajes bacterianos en la región diana.
+Los cebadores usados por Novogene para la región bacteriana `V3V4` fueron los indicados en la @tbl-novogene-primers. En el informe del proveedor aparecen con el nombre interno `16SV34`; por posición y secuencia corresponden al par universal tipo `341F/806R`, ampliamente usado para amplificar la región V3-V4 del gen del ARNr 16S bacteriano en estudios de diversidad microbiana [@klindworth2013]. Estos primers contienen bases degeneradas para aumentar la cobertura de distintos linajes bacterianos en la región diana.
 
 Table: Cebadores usados para la amplificación bacteriana 16SV34 {#tbl-novogene-primers}
 
@@ -77,6 +77,10 @@ Table: Cebadores usados para la amplificación bacteriana 16SV34 {#tbl-novogene-
 El flujo experimental descrito por Novogene consistió en amplificar la región diana mediante PCR con cebadores específicos conectados a barcodes. Los productos de PCR con el tamaño esperado se seleccionaron mediante electroforesis en gel de agarosa. Posteriormente, se mezcló una cantidad equivalente de producto de PCR por muestra para construir la librería conjunta.
 
 Según el informe del proveedor, los productos agrupados fueron sometidos a reparación de extremos, adición de cola A y ligación de adaptadores Illumina. Las librerías se cuantificaron mediante Qubit y PCR en tiempo real, y la distribución de tamaños se evaluó mediante bioanalyzer. Tras esta validación, las librerías cuantificadas se mezclaron de acuerdo con la concentración efectiva y la profundidad requerida, y se secuenciaron en modo paired-end.
+
+La @fig-novogene-library-workflow muestra el flujo de construcción de librerías incluido en el informe original de Novogene. Este esquema resume la secuencia técnica desde la amplificación con barcodes hasta la preparación final de librerías para secuenciación.
+
+![Workflow de construcción de librerías de amplicón 16S descrito por Novogene. El flujo resume la amplificación de la región diana, selección de productos, preparación de librerías, control de calidad y secuenciación final.](../assets/results/03_dna_extraction_sequencing/figures/novogene_library_construction_workflow.png){#fig-novogene-library-workflow fig-align="center" width="100%"}
 
 Table: Resumen del flujo de generación de librerías descrito por Novogene {#tbl-library-preparation-workflow}
 
