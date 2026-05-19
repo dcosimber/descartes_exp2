@@ -1,78 +1,75 @@
 # Extracción de ADN y secuenciación
 
-## Objetivo del bloque
+## Muestras
 
-Este capítulo documenta la fase preanalítica y de generación de datos de secuenciación del estudio de microbiota del Experimento 2. El objetivo es dejar trazable qué material biológico se procesó, cómo se extrajo y controló el ADN, y qué características técnicas tuvo la secuenciación 16S realizada por Novogene.
-
-La información de secuenciación se ha extraído del paquete de resultados `result_X204SC25103850-Z01-F001`, del informe de amplicón 16S de Novogene y de los ficheros técnicos `SampleSeq_info.xls`, `data_table.xls`, `Rawdata_Readme.txt` y `QC_tags_Readme.txt`.
-
-## Extracción de ADN
-
-El ADN genómico total se extrajo a partir de muestras intestinales empleando el kit `QIAamp PowerFecal Pro DNA Kit` de QIAGEN, siguiendo el procedimiento interno `PG/EXT/01/00` para extracción de ADN microbiano de heces y muestras intestinales. Este método combina lisis mecánica en tubos `PowerBead Pro`, lisis química, eliminación de inhibidores frecuentes en matrices fecales o intestinales y purificación del ADN mediante membrana de sílice. Cuando la muestra procedía de hisopo, el tampón de lisis se utilizó para recuperar el material adherido antes de transferirlo al tubo de lisis con esferas. El ADN eluido se conservó para la amplificación posterior de la región 16S.
-
-La concentración y la calidad/pureza del ADN extraído se determinaron mediante `NanoDrop`, registrando la concentración de ADN y las relaciones espectrofotométricas de pureza, especialmente `A260/A280` y `A260/A230`. Estas medidas se usaron como control preanalítico antes de la preparación de librerías y secuenciación. El protocolo resumido de extracción se recoge como anexo metodológico en @sec-appendix-powerfecal.
-
-Table: Resumen metodológico de la extracción y control de calidad del ADN {#tbl-dna-extraction-summary}
-
-| Etapa | Descripción |
-|---|---|
-| Matriz principal | Muestras intestinales de rodaballo; el protocolo es aplicable a heces y muestras intestinales. |
-| Kit de extracción | `QIAamp PowerFecal Pro DNA Kit` de QIAGEN. |
-| Principio del método | Lisis mecánica/química, eliminación de inhibidores y captura del ADN en columna de sílice. |
-| Homogeneización | Tubos `PowerBead Pro` con agitación en vórtex. |
-| Volumen de elución | 50-100 µL de solución de elución, según el protocolo interno. |
-| Control de concentración y pureza | Medición por `NanoDrop`, con registro de concentración, `A260/A280` y `A260/A230`. |
-
-El conjunto secuenciado incluye tres tipos de material: muestras intestinales de rodaballo, muestras de pienso y controles mock. Las muestras intestinales constituyen el conjunto biológico principal, mientras que los piensos y mocks se emplean como controles y contexto técnico.
+El conjunto secuenciado incluye tres tipos de material (@tbl-sequenced-sample-types): muestras de microbiota intestinal de rodaballo, muestras de pienso y controles mock. Las muestras intestinales constituyen el conjunto biológico principal, mientras que los piensos y la comunidad mock se emplean como controles y contexto técnico.
 
 Table: Tipos de muestras secuenciadas y papel dentro del estudio {#tbl-sequenced-sample-types}
 
 | Tipo de muestra | n secuenciado | Uso principal |
-|---|---:|---|
+|:--------------------:|:---------------------------:|:---------------------|
 | Intestino | 133 | Conjunto biológico principal para evaluar el efecto de dieta y tiempo sobre la microbiota intestinal. |
 | Pienso | 3 | Control/contexto de la señal microbiana asociada a los alimentos experimentales. |
-| Mock community | 2 | Control técnico para comprobar la recuperación de una composición bacteriana conocida. |
+| ZymoBIOMICS Microbial Community Standard (Cat. No. D6300) | 2 | Control técnico para comprobar la recuperación de una composición bacteriana conocida. |
 | **Total** | **138** | Conjunto completo recibido y usado como punto de partida para el control de calidad de secuenciación. |
 
-La planificación experimental contemplaba 135 muestras intestinales, correspondientes a 3 dietas x 3 tanques x 3 tiempos x 5 peces. En el paquete de secuenciación se recibieron 133 muestras intestinales. Las dos muestras esperadas pero no observadas en los datos crudos fueron `Z1.5t90` y `Z2.1t30`, ambas pertenecientes al tratamiento Z.
+La planificación experimental contemplaba 135 muestras intestinales, correspondientes a 3 dietas x 3 tanques x 3 tiempos x 5 peces. Hubo dos muestras descartadas debido a fallos en la extracción, `Z1.5t90` y `Z2.1t30`, ambas pertenecientes al tratamiento Z.
 
 Table: Distribución de muestras intestinales secuenciadas por código dietario y punto temporal {#tbl-sequenced-intestinal-design}
 
-| Código dietario | D07 | D30 | D90 | Total |
-|---|---:|---:|---:|---:|
-| X | 15 | 15 | 15 | 45 |
-| Y | 15 | 15 | 15 | 45 |
-| Z | 15 | 14 | 14 | 43 |
+| Código    |    D07 |    D30 |    D90 |   Total |
+|-----------|-------:|-------:|-------:|--------:|
+| X         |     15 |     15 |     15 |      45 |
+| Y         |     15 |     15 |     15 |      45 |
+| Z         |     15 |     14 |     14 |      43 |
 | **Total** | **45** | **44** | **44** | **133** |
 
-En la interpretación experimental del proyecto, estos códigos se recodifican como `Ctrl`, `BL15` y `BL30` de acuerdo con el diseño actualizado.
+## Extracción de ADN
 
-## Secuenciación 16S por Novogene
+El ADN genómico total se extrajo a partir de muestras de microbioma intestinal empleando el kit `QIAamp PowerFecal Pro DNA Kit` (QIAGEN, Germany, Cat. No. 51804) siguiendo el protocolo del fabricante. Este kit está diseñado para la extracción de ADN microbiano de heces y muestras intestinales. El método combina lisis mecánica en tubos `PowerBead Pro`, lisis química, eliminación de inhibidores frecuentes en matrices fecales o intestinales y purificación del ADN mediante membrana de sílice. En el caso de las muestras de microbiota intestinal tomadas mediante frotis con hisopo, el tampón de lisis se utilizó para recuperar el material adherido antes de transferirlo al tubo de lisis con esferas. El ADN eluido se conservó para la amplificación posterior de la región 16S.
 
-La secuenciación fue realizada por Novogene como un servicio de amplicón 16S. El informe del proveedor especifica una amplificación bacteriana de la región `16SV34`, con lecturas paired-end en plataforma Illumina. El nombre contractual del servicio incluye `16SAmpliconSeqPE250-30K`, por lo que el diseño de secuenciación corresponde a lecturas paired-end de 250 nt orientadas a una profundidad objetivo aproximada de 30K lecturas por muestra.
+La concentración y la calidad/pureza del ADN extraído se determinaron mediante `NanoDrop One` (Thermo Fisher Scientific, EE.UU.), registrando la concentración de ADN (ng/µL) y las relaciones espectrofotométricas de pureza `A260/A280` y `A260/A230`. Estas medidas se usaron como control preanalítico *in house* previo al envío de las muestras al servicio externo y a la preparación de librerías y secuenciación. El protocolo de extracción de ADN se recoge como anexo metodológico en @sec-appendix-powerfecal.
+
+A lo largo del proyecto, para mantener la trazabilidad en el análisis, estos códigos se recodificaron posteriormente como `Ctrl`, `BL15` y `BL30` de acuerdo con el diseño actualizado.
+
+Table: Resumen metodológico de la extracción y control de calidad del ADN {#tbl-dna-extraction-summary}
+
+| Etapa | Descripción |
+|------------------------------------|------------------------------------|
+| Matriz principal | Muestras intestinales de rodaballo; el protocolo es aplicable a heces y muestras intestinales. |
+| Kit de extracción | `QIAamp PowerFecal Pro DNA Kit` de QIAGEN. |
+| Principio del método | Lisis mecánica/química, eliminación de inhibidores y captura del ADN en columna de sílice. |
+| Homogeneización | Tubos `PowerBead Pro` con agitación en vórtex. |
+| Volumen de elución | 50 µL de solución de elución. |
+| Control de concentración y pureza | Medición por `NanoDrop`, con registro de concentración, `A260/A280` y `A260/A230`. |
+
+## Secuenciación ARNr 16S por Novogene
+
+La secuenciación fue realizada por Novogene como un servicio de secuenciación de amplicones del ARNr 16S bacteriano de las regiones hipervariables `V3-V4` mediante tecnología Illumina. El diseño de secuenciación corresponde a lecturas paired-end de 250 nt orientadas a una profundidad objetivo aproximada de 30K lecturas por muestra.
 
 Table: Metadatos principales del servicio de secuenciación {#tbl-novogene-service-metadata}
 
 | Campo | Valor |
-|---|---|
+|------------------------------------|------------------------------------|
 | Proveedor | Novogene |
 | Tipo de servicio | Secuenciación de amplicón 16S |
 | Contract ID | `X204SC25103850-Z01` |
 | Batch ID | `X204SC25103850-Z01-F001` |
 | Contract name | `NVUK2025091933-EU-ES-IIM-CSIC-138-16SAmpliconSeqPE250-30K-WBI` |
 | Fecha del informe | 2025-11-29 |
-| Región amplificada | `16SV34` |
+| Región amplificada | `V3V4` |
 | Tipo de marcador | 16S rRNA bacteriano |
 | Plataforma | Illumina, paired-end |
+| Modelo de secuenciador | No especificado en el informe de Novogene |
 | Modo de lectura indicado por contrato | PE250 |
 | Profundidad objetivo indicada por contrato | 30K lecturas por muestra |
 
-Los cebadores usados por Novogene para la región bacteriana `16SV34` fueron los indicados en la @tbl-novogene-primers. Estos primers contienen bases degeneradas para aumentar la cobertura de distintos linajes bacterianos en la región diana.
+Los cebadores usados por Novogene para la región bacteriana `V3V4` fueron los indicados en la @tbl-novogene-primers. Estos primers contienen bases degeneradas para aumentar la cobertura de distintos linajes bacterianos en la región diana.
 
 Table: Cebadores usados para la amplificación bacteriana 16SV34 {#tbl-novogene-primers}
 
-| Marcador | Región | Cebador forward | Cebador reverse |
-|---|---|---|---|
+| Marcador            | Región | Cebador forward     | Cebador reverse        |
+|---------------------|--------|---------------------|------------------------|
 | 16S rRNA bacteriano | 16SV34 | `CCTAYGGGRBGCASCAG` | `GGACTACNNGGGTATCTAAT` |
 
 ## Preparación de librerías
@@ -84,7 +81,7 @@ Según el informe del proveedor, los productos agrupados fueron sometidos a repa
 Table: Resumen del flujo de generación de librerías descrito por Novogene {#tbl-library-preparation-workflow}
 
 | Paso | Descripción |
-|---:|---|
+|:---------------------------------------:|-------------------------------|
 | 1 | PCR de la región 16SV34 con primers específicos y barcodes por muestra. |
 | 2 | Selección de productos de PCR con tamaño adecuado mediante gel de agarosa. |
 | 3 | Pooling equimolar o equivalente de productos de PCR por muestra. |
@@ -100,7 +97,7 @@ El paquete de Novogene contiene lecturas crudas y archivos derivados generados p
 Table: Principales archivos recibidos en el paquete de Novogene {#tbl-novogene-delivered-files}
 
 | Carpeta / archivo | Contenido | Papel en la entrega |
-|---|---|---|
+|------------------------|------------------------|------------------------|
 | `01.RawData/Sample_Name/*.raw_1.fastq.gz` | Lectura R1 con barcode y primer conservados. | Lecturas crudas entregadas. |
 | `01.RawData/Sample_Name/*.raw_2.fastq.gz` | Lectura R2 con barcode y primer conservados. | Lecturas crudas entregadas. |
 | `01.RawData/Sample_Name/*_1.fastq.gz` | R1 con barcode y primer retirados por Novogene. | Archivo derivado del proveedor. |
@@ -117,22 +114,22 @@ El informe de Novogene define cuatro etapas principales de control de lecturas: 
 
 Table: Resumen global de lecturas reportadas por Novogene {#tbl-novogene-global-qc}
 
-| Métrica | Valor |
-|---|---:|
-| Muestras secuenciadas | 138 |
-| RawPE total | 9,191,390 |
-| Combined total | 8,796,812 |
-| Qualified total | 8,563,224 |
-| Nochime total | 8,133,481 |
-| RawPE medio por muestra | 66,604.3 |
-| Nochime medio por muestra | 58,938.3 |
-| RawPE mínimo por muestra | 31,070 |
-| RawPE máximo por muestra | 91,938 |
-| Nochime mínimo por muestra | 29,360 |
-| Nochime máximo por muestra | 88,510 |
-| Longitud media de tags | 426.30 nt |
-| GC medio | 50.15 % |
-| Q20 medio | 97.60 % |
-| Q30 medio | 92.58 % |
+| Métrica                    |     Valor |
+|----------------------------|----------:|
+| Muestras secuenciadas      |       138 |
+| RawPE total                | 9,191,390 |
+| Combined total             | 8,796,812 |
+| Qualified total            | 8,563,224 |
+| Nochime total              | 8,133,481 |
+| RawPE medio por muestra    |  66,604.3 |
+| Nochime medio por muestra  |  58,938.3 |
+| RawPE mínimo por muestra   |    31,070 |
+| RawPE máximo por muestra   |    91,938 |
+| Nochime mínimo por muestra |    29,360 |
+| Nochime máximo por muestra |    88,510 |
+| Longitud media de tags     | 426.30 nt |
+| GC medio                   |   50.15 % |
+| Q20 medio                  |   97.60 % |
+| Q30 medio                  |   92.58 % |
 
 La retención global desde lecturas paired-end crudas hasta tags no quiméricos fue alta para un análisis de amplicón 16S: 8.13 millones de tags no quiméricos a partir de 9.19 millones de pares crudos. Esto equivale a una retención global aproximada del 88.5 % respecto a `RawPE`.
