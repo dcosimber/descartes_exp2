@@ -2,19 +2,21 @@
 
 ## Objetivos de análisis
 
-Este bloque evalúa si la diversidad alfa de la microbiota intestinal cambia con la dieta, el nivel de hidrolizado y el tiempo de muestreo. Se analizan dos niveles taxonómicos, ASV y género, y tres métricas complementarias: **Observed richness**, **Shannon index** y **Simpson index**. Las definiciones, fórmulas e interpretación de cada índice se detallan en la sección siguiente.
+Este bloque evalúa si la diversidad alfa de la microbiota intestinal cambia con la dieta, el nivel de hidrolizado y el tiempo de muestreo. Se analizan dos niveles taxonómicos, ASV y género, y cuatro métricas complementarias: **Observed richness**, **Shannon index**, **Simpson index** y **Pielou evenness**. Las definiciones, fórmulas e interpretación de cada índice se detallan en la sección siguiente.
 
 El objetivo biológico es determinar si el hidrolizado modifica la complejidad interna de la comunidad intestinal, si existe una respuesta dependiente de dosis (`BL15` vs `BL30`) y si esos efectos dependen del tiempo.
 
 ## Métricas de diversidad alfa: definición e interpretación
 
-La diversidad alfa resume la estructura de una comunidad **dentro de cada muestra**. En este análisis, cada muestra se representa como una tabla de abundancias de ASVs o de géneros. Si $n_i$ es el número de lecturas asignadas al taxón $i$ y $N$ es el total de lecturas de la muestra, la abundancia relativa de cada taxón se define como:
+La **diversidad alfa** resume la estructura de una comunidad **dentro de cada muestra**. En microbiota, esto significa describir cuántos taxones se detectan en una muestra y cómo se reparten sus abundancias relativas. Dos muestras pueden tener el mismo número de taxones, pero ser ecológicamente muy distintas si una está dominada por un único microorganismo y la otra presenta una distribución más equilibrada. Por eso, la diversidad alfa no es una única propiedad: combina conceptos relacionados pero diferentes, como **riqueza** (número de taxones), **equidad** (grado de reparto de las abundancias) y **dominancia** (peso de los taxones más abundantes).
+
+En este análisis, cada muestra se representa como una tabla de abundancias de ASVs o de géneros. Si $n_i$ es el número de lecturas asignadas al taxón $i$ y $N$ es el total de lecturas de la muestra, la abundancia relativa de cada taxón se define como:
 
 $$
 N = \sum_{i=1}^{S} n_i, \qquad p_i = \frac{n_i}{N}
 $$
 
-donde $S$ representa el conjunto de taxones detectados en la matriz analizada. Todas las métricas se calcularon con `phyloseq::estimate_richness`, que para Shannon y Simpson utiliza las funciones de diversidad de `vegan` [@mcmurdie2013phyloseq; @oksanen2024vegan]. Por tanto, los valores deben interpretarse como diversidad de la **matriz filtrada y procesada**, no como una medida absoluta de toda la microbiota real.
+donde $S$ representa el conjunto de taxones detectados en la matriz analizada. Observed richness, Shannon index y Simpson index se calcularon con `phyloseq::estimate_richness`, que para Shannon y Simpson utiliza las funciones de diversidad de `vegan` [@mcmurdie2013phyloseq; @oksanen2024vegan]. Pielou evenness se calculó posteriormente a partir de Shannon index y Observed richness. Por tanto, todos los valores deben interpretarse como diversidad de la **matriz filtrada y procesada**, no como una medida absoluta de toda la microbiota real.
 
 ### Observed richness
 
@@ -44,7 +46,19 @@ $$
 
 Shannon index combina riqueza y equidad, pero conserva unidades logarítmicas. Por eso, una diferencia de Shannon no equivale directamente a “un taxón más” o “un género más”. Para una interpretación más intuitiva, Shannon puede transformarse en número efectivo de taxones mediante $\exp(H')$, que corresponde al número de taxones igualmente abundantes que producirían la misma diversidad [@hill1973diversityEvenness; @jost2006entropyDiversity]. En este bloque se reporta el valor clásico $H'$, no su transformación a número efectivo.
 
-### Simpson index usado en este informe
+### Pielou evenness
+
+Pielou evenness es una medida explícita de **equidad**. Normaliza Shannon index por el máximo teórico que tendría una muestra con el mismo número de taxones observados y abundancias perfectamente equilibradas [@pielou1966measurementDiversity]. Se calcula como:
+
+$$
+J' = \frac{H'}{\ln(S_{obs})}
+$$
+
+donde $H'$ es Shannon index y $S_{obs}$ es la riqueza observada. Su rango teórico va de 0 a 1. Valores cercanos a 1 indican que los taxones presentes tienen abundancias similares; valores bajos indican que la comunidad está dominada por uno o pocos taxones. En este análisis, cuando $S_{obs} \leq 1$, Pielou se fija en 0 porque no existe equidad que estimar entre varios taxones.
+
+Pielou es especialmente útil aquí porque separa mejor la lectura de **equidad** de la lectura de **riqueza**. Si Shannon aumenta pero Pielou no cambia, la diferencia podría deberse sobre todo a más taxones detectados. Si Pielou aumenta, la interpretación es más directa: la comunidad está menos dominada y las abundancias están más repartidas.
+
+### Simpson index 
 
 El índice original de Simpson mide la probabilidad de que dos lecturas escogidas al azar pertenezcan al mismo taxón [@simpson1949measurementDiversity]:
 
@@ -66,15 +80,16 @@ Gini-Simpson toma valores entre 0 y un máximo cercano a 1. Valores bajos indica
 
 ### Lectura conjunta de las métricas
 
-Las tres métricas se interpretan de forma complementaria:
+Las cuatro métricas se interpretan de forma complementaria:
 
 | Métrica | Qué mide principalmente | Qué hace que aumente | Qué hace que disminuya | Lectura en este estudio |
-|---|---|---|---|---|
+|---------------|---------------|---------------|---------------|---------------|
 | Observed richness | Número de taxones detectados | Más ASVs/géneros presentes tras filtrado | Pérdida de taxones raros, menor profundidad, dominancia extrema o filtrado estricto | Complejidad taxonómica observada, muy dependiente del procesamiento. |
 | Shannon index | Riqueza + equidad | Más taxones y abundancias más equilibradas | Dominancia de pocos taxones | Diversidad general de la comunidad; útil para comparar complejidad ecológica. |
-| Simpson index / Gini-Simpson | Equidad y dominancia de taxones abundantes | Menor dominancia, distribución más equilibrada | Dominancia fuerte de uno o pocos taxones | Señal de dominancia/equidad; ayuda a interpretar comunidades dominadas por `Vibrio` o Mycoplasmataceae. |
+| Simpson index / Gini-Simpson | Equidad y dominancia de taxones abundantes | Menor dominancia, distribución más equilibrada | Dominancia fuerte de uno o pocos taxones | Señal de dominancia/equidad; responde sobre todo a los taxones más abundantes. |
+| Pielou evenness | Equidad normalizada por riqueza | Abundancias más homogéneas entre los taxones observados | Dominancia de uno o pocos taxones | Permite distinguir si los cambios de Shannon se deben a equidad y no solo a riqueza. |
 
-Cuando riqueza observada no cambia pero Shannon o Simpson sí lo hacen, la interpretación más probable es un cambio en **equidad** o **dominancia**, no necesariamente la aparición de nuevos taxones. En este bloque, esa distinción es importante porque la señal más clara del hidrolizado aparece en D30 a nivel género para Shannon index y Simpson index, pero no de forma equivalente para riqueza observada.
+Cuando riqueza observada no cambia pero Shannon, Simpson o Pielou sí lo hacen, la interpretación más probable es un cambio en **equidad** o **dominancia**, no necesariamente la aparición de nuevos taxones. En este bloque, esa distinción es importante porque la señal más clara del hidrolizado aparece en D30 a nivel género para Shannon index, Simpson index y Pielou evenness, pero no de forma equivalente para riqueza observada.
 
 ## Inputs, outputs y organización
 
@@ -119,38 +134,44 @@ La notación integrada en las figuras sigue: `ns`, `*`, `**`, `***`.
 
 ![Figura 1. Diversidad alfa por dieta y tiempo a nivel ASV.](../assets/results/06_alpha_diversity/figures/diet_time/alpha_by_diet_time_asv.svg)
 
-**Figura 1. Diversidad alfa por dieta y tiempo a nivel ASV.** Cada panel muestra una métrica de diversidad alfa por tiempo. `Ctrl` se compara con el bloque `Hydrolysate`, dentro del cual se desglosan `BL15` y `BL30`. La barra superior representa `Ctrl` vs `Hydrolysate`; la barra inferior representa `BL15` vs `BL30`.
+**Figura 1. Diversidad alfa por dieta y tiempo a nivel ASV.** Cada panel muestra una métrica de diversidad alfa por tiempo, incluyendo Pielou evenness como medida explícita de equidad. `Ctrl` se compara con el bloque `Hydrolysate`, dentro del cual se desglosan `BL15` y `BL30`. La barra superior representa `Ctrl` vs `Hydrolysate`; la barra inferior representa `BL15` vs `BL30`.
 
 ![Figura 2. Diversidad alfa por dieta y tiempo a nivel género.](../assets/results/06_alpha_diversity/figures/diet_time/alpha_by_diet_time_genus.svg)
 
 **Figura 2. Diversidad alfa por dieta y tiempo a nivel género.** La misma estructura que la Figura 1, pero con ASVs agregados a género.
 
-El análisis no muestra un efecto global estable de dieta ni de hidrolizado sobre la diversidad alfa cuando se combinan todos los tiempos. A nivel ASV, ni la riqueza observada ni Shannon index difieren de forma significativa entre `Ctrl`, `BL15` y `BL30`. Lo mismo ocurre para el contraste agregado `Ctrl` vs `Hydrolysate`. Simpson index confirma la misma lectura global: no hay efecto sostenido de dieta/hidrolizado al combinar todos los tiempos.
+El análisis no muestra un efecto global estable de dieta ni de hidrolizado sobre la diversidad alfa cuando se combinan todos los tiempos. A nivel ASV, ni la riqueza observada, Shannon index, Simpson index ni Pielou evenness difieren de forma significativa entre `Ctrl`, `BL15` y `BL30`. Lo mismo ocurre para el contraste agregado `Ctrl` vs `Hydrolysate`. A nivel género se mantiene la misma lectura global: no hay efecto sostenido de dieta/hidrolizado al combinar todos los tiempos.
 
-La señal más clara asociada al hidrolizado aparece en **D30 a nivel género**, especialmente en Shannon index y Simpson index. En ese punto, el efecto de dieta es significativo para Shannon index (`p = 0.0023`) y Simpson index (`p = 0.0020`). El contraste agregado `Ctrl` vs `Hydrolysate` también es significativo en D30 para Shannon index (`p = 0.00053`) y Simpson index (`p = 0.00044`) a nivel género. No se observa una señal comparable para riqueza observada.
+La señal más clara asociada al hidrolizado aparece en **D30 a nivel género**, especialmente en las métricas de equidad. En ese punto, el efecto de dieta es significativo para Shannon index (`p = 0.0026`), Simpson index (`p = 0.0022`) y Pielou evenness (`p = 0.0020`). El contraste agregado `Ctrl` vs `Hydrolysate` también es significativo en D30 para Shannon index (`p = 0.00060`), Simpson index (`p = 0.00050`) y Pielou evenness (`p = 0.00046`) a nivel género. No se observa una señal comparable para riqueza observada.
 
 **Tabla 1. Resumen estadístico de las comparaciones globales y de D30.**
 
 | Nivel | Métrica | Comparación | Estrato | Test | Contraste | p |
 |-----------|-----------|-----------|-----------|-----------|-----------|----------:|
-| ASV | Observed richness | Dieta | Global | Kruskal-Wallis | `Ctrl`/`BL15`/`BL30` | 0.848 |
-| ASV | Shannon index | Dieta | Global | Kruskal-Wallis | `Ctrl`/`BL15`/`BL30` | 0.789 |
-| ASV | Simpson index | Dieta | Global | Kruskal-Wallis | `Ctrl`/`BL15`/`BL30` | 0.813 |
-| ASV | Observed richness | Hidrolizado | Global | Wilcoxon | `Ctrl` vs `Hydrolysate` | 0.607 |
-| ASV | Shannon index | Hidrolizado | Global | Wilcoxon | `Ctrl` vs `Hydrolysate` | 0.821 |
-| ASV | Simpson index | Hidrolizado | Global | Wilcoxon | `Ctrl` vs `Hydrolysate` | 0.911 |
-| Genus | Observed richness | Dieta | Global | Kruskal-Wallis | `Ctrl`/`BL15`/`BL30` | 0.832 |
-| Genus | Shannon index | Dieta | Global | Kruskal-Wallis | `Ctrl`/`BL15`/`BL30` | 0.710 |
-| Genus | Simpson index | Dieta | Global | Kruskal-Wallis | `Ctrl`/`BL15`/`BL30` | 0.661 |
-| Genus | Observed richness | Hidrolizado | Global | Wilcoxon | `Ctrl` vs `Hydrolysate` | 0.973 |
-| Genus | Shannon index | Hidrolizado | Global | Wilcoxon | `Ctrl` vs `Hydrolysate` | 0.431 |
-| Genus | Simpson index | Hidrolizado | Global | Wilcoxon | `Ctrl` vs `Hydrolysate` | 0.373 |
-| Genus | Shannon index | Dieta | D30 | Kruskal-Wallis | `Ctrl`/`BL15`/`BL30` | 0.0023 |
-| Genus | Simpson index | Dieta | D30 | Kruskal-Wallis | `Ctrl`/`BL15`/`BL30` | 0.0020 |
-| Genus | Shannon index | Hidrolizado | D30 | Wilcoxon | `Ctrl` vs `Hydrolysate` | 0.00053 |
-| Genus | Simpson index | Hidrolizado | D30 | Wilcoxon | `Ctrl` vs `Hydrolysate` | 0.00044 |
+| ASV | Observed richness | Dieta | Global | Kruskal-Wallis | `Ctrl`/`BL15`/`BL30` | 0.864 |
+| ASV | Shannon index | Dieta | Global | Kruskal-Wallis | `Ctrl`/`BL15`/`BL30` | 0.825 |
+| ASV | Simpson index | Dieta | Global | Kruskal-Wallis | `Ctrl`/`BL15`/`BL30` | 0.842 |
+| ASV | Pielou evenness | Dieta | Global | Kruskal-Wallis | `Ctrl`/`BL15`/`BL30` | 0.840 |
+| ASV | Observed richness | Hidrolizado | Global | Wilcoxon | `Ctrl` vs `Hydrolysate` | 0.627 |
+| ASV | Shannon index | Hidrolizado | Global | Wilcoxon | `Ctrl` vs `Hydrolysate` | 0.840 |
+| ASV | Simpson index | Hidrolizado | Global | Wilcoxon | `Ctrl` vs `Hydrolysate` | 0.919 |
+| ASV | Pielou evenness | Hidrolizado | Global | Wilcoxon | `Ctrl` vs `Hydrolysate` | 0.960 |
+| Genus | Observed richness | Dieta | Global | Kruskal-Wallis | `Ctrl`/`BL15`/`BL30` | 0.765 |
+| Genus | Shannon index | Dieta | Global | Kruskal-Wallis | `Ctrl`/`BL15`/`BL30` | 0.684 |
+| Genus | Simpson index | Dieta | Global | Kruskal-Wallis | `Ctrl`/`BL15`/`BL30` | 0.633 |
+| Genus | Pielou evenness | Dieta | Global | Kruskal-Wallis | `Ctrl`/`BL15`/`BL30` | 0.669 |
+| Genus | Observed richness | Hidrolizado | Global | Wilcoxon | `Ctrl` vs `Hydrolysate` | 0.860 |
+| Genus | Shannon index | Hidrolizado | Global | Wilcoxon | `Ctrl` vs `Hydrolysate` | 0.396 |
+| Genus | Simpson index | Hidrolizado | Global | Wilcoxon | `Ctrl` vs `Hydrolysate` | 0.343 |
+| Genus | Pielou evenness | Hidrolizado | Global | Wilcoxon | `Ctrl` vs `Hydrolysate` | 0.391 |
+| Genus | Shannon index | Dieta | D30 | Kruskal-Wallis | `Ctrl`/`BL15`/`BL30` | 0.0026 |
+| Genus | Simpson index | Dieta | D30 | Kruskal-Wallis | `Ctrl`/`BL15`/`BL30` | 0.0022 |
+| Genus | Pielou evenness | Dieta | D30 | Kruskal-Wallis | `Ctrl`/`BL15`/`BL30` | 0.0020 |
+| Genus | Shannon index | Hidrolizado | D30 | Wilcoxon | `Ctrl` vs `Hydrolysate` | 0.00060 |
+| Genus | Simpson index | Hidrolizado | D30 | Wilcoxon | `Ctrl` vs `Hydrolysate` | 0.00050 |
+| Genus | Pielou evenness | Hidrolizado | D30 | Wilcoxon | `Ctrl` vs `Hydrolysate` | 0.00046 |
 
-Los resultados globales indican ausencia de un efecto estable de dieta/hidrolizado sobre diversidad alfa. La excepción principal es D30 a nivel género, donde Shannon index y Simpson index apuntan a una comunidad más equitativa en los grupos con hidrolizado que en `Ctrl`.
+Los resultados globales indican ausencia de un efecto estable de dieta/hidrolizado sobre diversidad alfa. La excepción principal es D30 a nivel género, donde Shannon index, Simpson index y Pielou evenness apuntan a una comunidad más equitativa en los grupos con hidrolizado que en `Ctrl`.
 
 ### Cambios temporales dentro de cada dieta
 
@@ -164,30 +185,30 @@ Los resultados globales indican ausencia de un efecto estable de dieta/hidroliza
 
 El efecto del tiempo es el patrón más fuerte del análisis de diversidad alfa. La riqueza observada disminuye claramente desde D07 hacia D30 y/o D90. Este descenso se observa tanto a nivel ASV como género, y aparece dentro de varias dietas y también en el conjunto agregado `Hydrolysate`.
 
-En ASV, el efecto global de tiempo es significativo para riqueza observada (`p < 0.001`), Shannon index (`p < 0.001`) y Simpson index (`p < 0.001`). La riqueza observada baja de D07 a D30 y D90, y Shannon/Simpson descienden especialmente en D90. A nivel género, la riqueza observada también cambia con el tiempo (`p < 0.001`) y las métricas de equidad muestran una señal temporal más moderada pero significativa: Shannon index (`p = 0.0032`) y Simpson index (`p = 0.0082`).
+En ASV, el efecto global de tiempo es significativo para riqueza observada (`p < 0.001`), Shannon index (`p < 0.001`), Simpson index (`p < 0.001`) y Pielou evenness (`p < 0.001`). La riqueza observada baja de D07 a D30 y D90, y las métricas de diversidad/equidad descienden especialmente en D90. A nivel género, la riqueza observada también cambia con el tiempo (`p < 0.001`) y Shannon index (`p = 0.0075`) y Simpson index (`p = 0.016`) muestran una señal temporal significativa. Pielou evenness a nivel género apunta en la misma dirección, pero queda como tendencia no significativa (`p = 0.063`), lo que sugiere que parte del cambio temporal a nivel género está ligado a riqueza y dominancia, no solo a equidad normalizada.
 
 **Tabla 2. Medianas de diversidad alfa por dieta y tiempo.**
 
-| Nivel | Dieta | Tiempo |   n | Observed median | Shannon median | Simpson median |
-|-------|-------|--------|----:|----------------:|---------------:|---------------:|
-| ASV   | Ctrl  | D07    |  15 |            56.0 |          1.713 |          0.661 |
-| ASV   | Ctrl  | D30    |  15 |            15.0 |          1.349 |          0.671 |
-| ASV   | Ctrl  | D90    |  15 |            13.0 |          0.879 |          0.418 |
-| ASV   | BL15  | D07    |  15 |            24.0 |          1.208 |          0.587 |
-| ASV   | BL15  | D30    |  15 |            17.0 |          1.736 |          0.740 |
-| ASV   | BL15  | D90    |  15 |            14.0 |          0.945 |          0.485 |
-| ASV   | BL30  | D07    |  15 |            30.0 |          1.741 |          0.698 |
-| ASV   | BL30  | D30    |  14 |            18.5 |          1.707 |          0.751 |
-| ASV   | BL30  | D90    |  14 |            10.5 |          0.244 |          0.081 |
-| Genus | Ctrl  | D07    |  15 |            29.0 |          1.392 |          0.535 |
-| Genus | Ctrl  | D30    |  15 |             5.0 |          0.016 |          0.004 |
-| Genus | Ctrl  | D90    |  15 |             6.0 |          0.253 |          0.114 |
-| Genus | BL15  | D07    |  15 |            10.0 |          0.225 |          0.107 |
-| Genus | BL15  | D30    |  15 |             7.0 |          0.364 |          0.203 |
-| Genus | BL15  | D90    |  15 |             5.0 |          0.473 |          0.191 |
-| Genus | BL30  | D07    |  15 |            11.0 |          0.579 |          0.303 |
-| Genus | BL30  | D30    |  14 |             6.5 |          0.427 |          0.247 |
-| Genus | BL30  | D90    |  14 |             4.0 |          0.140 |          0.061 |
+| Nivel | Dieta | Tiempo | n | Observed median | Shannon median | Simpson median | Pielou median |
+|-------|-------|--------|----:|----------------:|---------------:|---------------:|--------------:|
+| ASV | Ctrl | D07 | 15 | 52.0 | 1.681 | 0.661 | 0.558 |
+| ASV | Ctrl | D30 | 15 | 15.0 | 1.349 | 0.670 | 0.562 |
+| ASV | Ctrl | D90 | 15 | 12.0 | 0.874 | 0.417 | 0.365 |
+| ASV | BL15 | D07 | 15 | 21.0 | 1.203 | 0.586 | 0.508 |
+| ASV | BL15 | D30 | 15 | 16.0 | 1.736 | 0.740 | 0.626 |
+| ASV | BL15 | D90 | 15 | 12.0 | 0.943 | 0.485 | 0.357 |
+| ASV | BL30 | D07 | 15 | 27.0 | 1.741 | 0.698 | 0.569 |
+| ASV | BL30 | D30 | 14 | 17.5 | 1.700 | 0.751 | 0.616 |
+| ASV | BL30 | D90 | 14 | 10.5 | 0.242 | 0.080 | 0.090 |
+| Genus | Ctrl | D07 | 15 | 28.0 | 1.364 | 0.530 | 0.497 |
+| Genus | Ctrl | D30 | 15 | 5.0 | 0.012 | 0.003 | 0.011 |
+| Genus | Ctrl | D90 | 15 | 6.0 | 0.251 | 0.111 | 0.156 |
+| Genus | BL15 | D07 | 15 | 9.0 | 0.225 | 0.106 | 0.157 |
+| Genus | BL15 | D30 | 15 | 6.0 | 0.362 | 0.203 | 0.227 |
+| Genus | BL15 | D90 | 15 | 5.0 | 0.404 | 0.168 | 0.208 |
+| Genus | BL30 | D07 | 15 | 10.0 | 0.538 | 0.292 | 0.322 |
+| Genus | BL30 | D30 | 14 | 5.5 | 0.421 | 0.246 | 0.260 |
+| Genus | BL30 | D90 | 14 | 3.0 | 0.139 | 0.061 | 0.106 |
 
 Las medianas muestran una caída pronunciada de riqueza desde D07, especialmente en controles. El patrón temporal domina sobre las diferencias globales entre dietas.
 
@@ -197,26 +218,26 @@ Las medianas muestran una caída pronunciada de riqueza desde D07, especialmente
 
 **Figura 5. Comparación global `Ctrl`/`Hydrolysate`/`Feed`.** Las muestras de pienso se incluyen como control complementario. Esta comparación no forma parte de la inferencia intestinal principal, pero ayuda a evaluar si el pienso tiene una diversidad alfa comparable a la microbiota de los peces.
 
-La comparación `Ctrl`/`Hydrolysate`/`Feed` no muestra diferencias significativas en diversidad alfa a nivel ASV ni a nivel género. Tras conservar cloroplasto y mitocondria, las muestras de pienso muestran medianas de riqueza y equidad relativamente altas, especialmente a nivel género, pero el tamaño muestral del pienso es bajo (`n = 3`) y la diversidad alfa no evalúa identidad taxonómica compartida.
+La comparación `Ctrl`/`Hydrolysate`/`Feed` no muestra diferencias significativas en diversidad alfa a nivel ASV ni a nivel género, incluyendo Pielou evenness. Tras conservar cloroplasto y mitocondria, las muestras de pienso muestran medianas de riqueza y equidad relativamente altas, especialmente a nivel género, pero el tamaño muestral del pienso es bajo (`n = 3`) y la diversidad alfa no evalúa identidad taxonómica compartida.
 
 **Tabla 3. Resumen de la comparación `Ctrl`/`Hydrolysate`/`Feed`.**
 
-| Nivel | Grupo       |   n | Observed median | Shannon median | Simpson median |
-|-------|-------------|----:|----------------:|---------------:|---------------:|
-| ASV   | Ctrl        |  45 |            16.0 |          1.325 |          0.610 |
-| ASV   | Hydrolysate |  88 |            18.0 |          1.446 |          0.662 |
-| ASV   | Feed        |   3 |            25.0 |          1.783 |          0.754 |
-| Genus | Ctrl        |  45 |             7.0 |          0.191 |          0.087 |
-| Genus | Hydrolysate |  88 |             7.0 |          0.345 |          0.153 |
-| Genus | Feed        |   3 |            15.0 |          1.199 |          0.628 |
+| Nivel | Grupo | n | Observed median | Shannon median | Simpson median | Pielou median |
+|-------|-------------|----:|----------------:|---------------:|---------------:|--------------:|
+| ASV | Ctrl | 45 | 15.0 | 1.321 | 0.610 | 0.539 |
+| ASV | Hydrolysate | 88 | 16.0 | 1.421 | 0.655 | 0.520 |
+| ASV | Feed | 3 | 25.0 | 1.783 | 0.754 | 0.554 |
+| Genus | Ctrl | 45 | 6.0 | 0.175 | 0.061 | 0.098 |
+| Genus | Hydrolysate | 88 | 6.0 | 0.340 | 0.152 | 0.172 |
+| Genus | Feed | 3 | 15.0 | 1.199 | 0.628 | 0.464 |
 
-No se detectan diferencias significativas entre `Ctrl`, `Hydrolysate` y `Feed` para riqueza observada, Shannon index o Simpson index. Aun así, el patrón descriptivo del pienso es relevante porque ahora se conservan componentes como cloroplasto/mitocondria. La pregunta de si la microbiota intestinal contiene taxones del pienso debe abordarse principalmente con composición taxonómica, beta diversidad y análisis de solapamiento/core.
+No se detectan diferencias significativas entre `Ctrl`, `Hydrolysate` y `Feed` para riqueza observada, Shannon index, Simpson index o Pielou evenness. Aun así, el patrón descriptivo del pienso es relevante porque ahora se conservan componentes como cloroplasto/mitocondria. La pregunta de si la microbiota intestinal contiene taxones del pienso debe abordarse principalmente con composición taxonómica, beta diversidad y análisis de solapamiento/core.
 
 ## Interpretación biológica
 
 La lectura biológica principal es que la microbiota intestinal parece seguir un proceso de sucesión temporal o estabilización ecológica durante el experimento. En D07 las comunidades son más ricas y variables, lo que puede reflejar una microbiota aún poco estabilizada tras el inicio del ensayo, más sensible al ambiente, al manejo, al lote inicial o a la transición dietaria. Con el tiempo, especialmente hacia D90, la riqueza baja y las comunidades parecen más seleccionadas. Este patrón es compatible con filtrado ecológico por el huésped, la dieta y las condiciones del sistema.
 
-El hidrolizado no parece aumentar ni reducir de forma general la diversidad alfa a lo largo de todo el ensayo. Su efecto es más específico y transitorio: en D30, los grupos `BL15` y `BL30` muestran mayor Shannon index y Simpson index a nivel género que `Ctrl`. Esto sugiere que, en esa ventana intermedia, el hidrolizado podría favorecer una comunidad más equilibrada entre géneros, con menor dominancia de unos pocos grupos. No implica necesariamente una ganancia fuerte de nuevos taxones, porque la señal es más clara en las métricas de equidad que en riqueza observada.
+El hidrolizado no parece aumentar ni reducir de forma general la diversidad alfa a lo largo de todo el ensayo. Su efecto es más específico y transitorio: en D30, los grupos `BL15` y `BL30` muestran mayor Shannon index, Simpson index y Pielou evenness a nivel género que `Ctrl`. Esto sugiere que, en esa ventana intermedia, el hidrolizado podría favorecer una comunidad más equilibrada entre géneros, con menor dominancia de unos pocos grupos. La incorporación de Pielou refuerza esta lectura porque normaliza Shannon por la riqueza observada: la señal no depende solo de detectar más géneros, sino de un reparto menos extremo de las abundancias.
 
 No se observa una respuesta dosis-dependiente clara entre `BL15` y `BL30`. Cuando aparece la señal de hidrolizado en D30, ambas dosis se comportan de forma similar y no difieren entre sí. Esto sugiere que, para diversidad alfa, la presencia de hidrolizado puede ser más importante que el porcentaje exacto, o que las métricas alfa no son suficientemente sensibles para separar las dos dosis.
 
@@ -224,4 +245,4 @@ La desaparición de diferencias entre dietas en D90 apunta a convergencia o adap
 
 ## Conclusión del bloque
 
-La diversidad alfa responde principalmente al tiempo. El hidrolizado muestra una señal puntual en D30 a nivel género, consistente con una comunidad más equitativa en `BL15` y `BL30` que en `Ctrl` según Shannon index y Simpson index, pero no se observa un efecto global sostenido ni una respuesta dosis-dependiente clara. Estos resultados apoyan continuar la interpretación con beta diversidad, composición taxonómica, solapamientos con pienso y abundancia diferencial para identificar qué taxones explican la señal observada en D30.
+La diversidad alfa responde principalmente al tiempo. El hidrolizado muestra una señal puntual en D30 a nivel género, consistente con una comunidad más equitativa en `BL15` y `BL30` que en `Ctrl` según Shannon index, Simpson index y Pielou evenness, pero no se observa un efecto global sostenido ni una respuesta dosis-dependiente clara. Estos resultados apoyan continuar la interpretación con beta diversidad, composición taxonómica, solapamientos con pienso y abundancia diferencial para identificar qué taxones explican la señal observada en D30.
