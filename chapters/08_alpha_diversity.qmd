@@ -107,6 +107,12 @@ Cuando riqueza observada no cambia pero Shannon, Simpson o Pielou sí lo hacen, 
 -   [`alpha_diversity_ctrl_hydro_feed.csv`](../assets/results/06_alpha_diversity/tables/alpha_diversity_ctrl_hydro_feed.csv): valores alfa para la comparación complementaria `Ctrl`/`Hydrolysate`/`Feed`.
 -   [`alpha_tests_ctrl_hydro_feed.csv`](../assets/results/06_alpha_diversity/tables/alpha_tests_ctrl_hydro_feed.csv): pruebas estadísticas de la comparación con pienso.
 
+### Script reproducible
+
+-   [06_alpha_diversity.R](../appendices/scripts/06_alpha_diversity/alpha_diversity_scripts.qmd#sec-script-06-alpha-diversity-r): script principal del bloque; calcula las métricas, incluyendo `Pielou = Shannon / log(Observed)`, ejecuta los tests y genera tablas y figuras.
+-   [downstream_params.yaml](../appendices/scripts/06_alpha_diversity/alpha_diversity_scripts.qmd#sec-alpha-diversity-parameters): configuración usada para el análisis; registra `alpha_measures: [Observed, Shannon, Simpson, Pielou]`.
+-   [lib_downstream.R](../appendices/scripts/06_alpha_diversity/alpha_diversity_scripts.qmd#sec-script-alpha-lib-downstream-r): funciones auxiliares comunes de carga, escritura y estructura de resultados.
+
 ### Figuras generadas
 
 Las figuras se exportan como `PDF` y `SVG` y se ordenan por comparación:

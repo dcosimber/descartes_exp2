@@ -44,6 +44,7 @@ book:
     - appendices/powerfecal_protocol.qmd
     - appendices/scripts/04_preprocessing/preprocessing_scripts.qmd
     - appendices/scripts/05_filtering/filtering_scripts.qmd
+    - appendices/scripts/06_alpha_diversity/alpha_diversity_scripts.qmd
     - appendices/reproducibility.qmd
 
 bibliography: references.bib

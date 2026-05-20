@@ -1,0 +1,27 @@
+# Scripts del bloque de diversidad alfa {#sec-alpha-diversity-scripts}
+
+Este anexo conserva una copia autocontenida de los archivos usados para generar el bloque de diversidad alfa. Se incluyen el script principal, la librería auxiliar downstream y la configuración usada para ejecutar el análisis, de modo que las figuras, tablas e interpretación del capítulo de diversidad alfa no dependan de rutas externas al libro Quarto.
+
+## Archivos fuente {#sec-alpha-diversity-source-files}
+
+- [06_alpha_diversity.R](source/06_alpha_diversity.R): calcula Observed richness, Shannon index, Simpson index y Pielou evenness, ejecuta las pruebas estadísticas y exporta tablas y figuras.
+- [downstream_params.yaml](source/downstream_params.yaml): configuración del análisis downstream; en este bloque define `alpha_measures: [Observed, Shannon, Simpson, Pielou]`.
+- [lib_downstream.R](source/lib_downstream.R): funciones auxiliares compartidas por los bloques downstream.
+
+## Configuración downstream {#sec-alpha-diversity-parameters}
+
+```yaml
+{{< include source/downstream_params.yaml >}}
+```
+
+## 06_alpha_diversity.R {#sec-script-06-alpha-diversity-r}
+
+```r
+{{< include source/06_alpha_diversity.R >}}
+```
+
+## lib_downstream.R {#sec-script-alpha-lib-downstream-r}
+
+```r
+{{< include source/lib_downstream.R >}}
+```

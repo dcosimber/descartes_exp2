@@ -1,0 +1,110 @@
+project:
+  name: descartes_exp2_downstream
+  preprocessing_project: ../custom_dada2_preprocessing
+  final_preprocessing_run: run_02_optimized
+  taxonomy_database: silva_138_2
+
+design:
+  biological_sample_type: Intestine
+  diet_levels: ["Ctrl", "BL15", "BL30"]
+  hydro_group_levels: ["Ctrl", "Hydrolysate"]
+  diet_labels:
+    "Ctrl": Control
+    "BL15": Hydrolysate_15
+    "BL30": Hydrolysate_30
+  timepoint_levels: [7, 30, 90]
+  main_group: diet_time
+
+colors:
+  diet:
+    "Ctrl": "#2B6CB0"
+    "BL15": "#38A169"
+    "BL30": "#DD6B20"
+  hydro_group:
+    "Ctrl": "#2B6CB0"
+    "Hydrolysate": "#C53030"
+  timepoint:
+    "D07": "#0072B2"
+    "D30": "#E69F00"
+    "D90": "#CC79A7"
+  diet_time:
+    Ctrl_D07: "#9CC3E6"
+    Ctrl_D30: "#2B6CB0"
+    Ctrl_D90: "#173B70"
+    BL15_D07: "#A7D9B8"
+    BL15_D30: "#38A169"
+    BL15_D90: "#1F6F46"
+    BL30_D07: "#F7B27A"
+    BL30_D30: "#DD6B20"
+    BL30_D90: "#8C3A0C"
+
+filtering:
+  remove_sample_types: [Mock, Feed, Unknown]
+  remove_eukaryota: true
+  remove_mitochondria_chloroplast: false
+  remove_unclassified_all_ranks: true
+  remove_kingdom_only: true
+  min_prevalence_fraction_within_diet_time: 0.10
+  min_prevalence_absolute: 2
+  min_mean_relative_abundance: 0.0001
+
+analysis:
+  alpha_measures: [Observed, Shannon, Simpson, Pielou]
+  beta_distances: [bray, aitchison]
+  pseudocount: 0.5
+  permanova_permutations: 999
+  permanova_seed: 123
+  top_taxa_n: 15
+  rarefy_seed: 123
+  deseq_alpha: 0.05
+  deseq_lfc_threshold: 1
+  differential_seed: 123
+  aldex_mc_samples: 128
+  aldex_denom: iqlr
+  aldex_alpha: 0.05
+  aldex_effect_threshold: 1
+  differential_heatmap_top_n: 40
+  functional_seed: 123
+  functional_fdr_alpha: 0.05
+  functional_effect_threshold: 0.5
+  functional_min_prevalence_fraction: 0.10
+  functional_min_mean_relative_abundance: 0.000001
+  functional_top_n: 20
+  functional_heatmap_top_n: 40
+  functional_permanova_permutations: 999
+  functional_final_plot_comparisons:
+    - global_Hydrolysate_vs_Ctrl
+    - global_BL15_vs_Ctrl
+    - global_BL30_vs_Ctrl
+    - global_BL30_vs_BL15
+    - D07_Hydrolysate_vs_Ctrl
+    - D30_Hydrolysate_vs_Ctrl
+    - D90_Hydrolysate_vs_Ctrl
+  functional_plot_feature_types: ["kegg_pathway"]
+
+picrust2:
+  module_stack: ["cesga/system", "picrust2/2.6.2"]
+  version: "2.6.2"
+  processes: 24
+  max_nsti: 2.0
+  in_traits: "EC,KO"
+  native_subdir: native
+  kegg_pathway_normalize_multi_membership: true
+
+contrasts:
+  hydro_global:
+    - ["Ctrl", "Hydrolysate"]
+  hydro_by_time:
+    - ["Ctrl", "Hydrolysate"]
+  diet_global:
+    - ["Ctrl", "BL15"]
+    - ["Ctrl", "BL30"]
+    - ["BL15", "BL30"]
+  diet_by_time:
+    - ["Ctrl", "BL15"]
+    - ["Ctrl", "BL30"]
+    - ["BL15", "BL30"]
+  time_within_diet:
+    - [7, 30]
+    - [7, 90]
+    - [30, 90]
